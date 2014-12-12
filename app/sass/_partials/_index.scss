@@ -3,7 +3,10 @@
 $color_fuscous_gray_approx: #515151;
 $white_80: rgba(255, 255, 255, 0.8);
 $black_15: rgba(0, 0, 0, 0.15);
+$black_60: rgba(0, 0, 0, 0.60);
+$black: #000;
 $white: #fff;
+$color_blue: #0091d9;
 $color_mountain_mist_approx: #999;
 $color_dove_gray_approx: #6d6d6d;
 $color_picton_blue_approx: #48c4f2;
@@ -22,40 +25,10 @@ $color_westar_approx: #e0dfd2;
 
 
 //@extend-elements
-//original selectors
-//html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
-%extend_1 {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	font-size: 100%;
-	vertical-align: baseline;
-}
 
-//original selectors
-//caption, th, td
-%extend_2 {
-	text-align: left;
-	font-weight: normal;
-	vertical-align: middle;
-}
-
-//original selectors
-//.block, #street h1, #thanks h1, #people h1, #map h1, #boxes h1, #installer > div > h1, #apartment h1, #clock h1, #heatwave h1, #stats-text-1, #phone h1, #balloons h2
-%extend_3 {
-	font-size: 51px;
-	color: $color_fuscous_gray_approx;
-	background-color: $white_80;
-	width: 888px;
-	display: block;
-	//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: $black_15 3px 2px 1px;
-	text-align: center;
-	line-height: 60px;
-	padding: 31px;
-	margin: 0 15px;
-	z-index: 1;
+%verticalboxes {
+	position: absolute;
+	width: 100%;
 }
 
 //original selectors
@@ -90,280 +63,17 @@ $color_westar_approx: #e0dfd2;
 	float: left;
 }
 
+//global selectors
 
-html {
-	@extend %extend_1;
-	line-height: 1;
-}
 body {
 	font-family: $font_0;
-	@extend %extend_1;
+	color: $white;
 	h1 {
 		font-weight: 700;
-	}
-	h2 {
-		font-weight: 700;
-	}
+	}	
 }
-div {
-	@extend %extend_1;
-}
-span {
-	@extend %extend_1;
-}
-applet {
-	@extend %extend_1;
-}
-object {
-	@extend %extend_1;
-}
-iframe {
-	@extend %extend_1;
-}
-h1 {
-	@extend %extend_1;
-}
-h2 {
-	@extend %extend_1;
-}
-h3 {
-	@extend %extend_1;
-}
-h4 {
-	@extend %extend_1;
-}
-h5 {
-	@extend %extend_1;
-}
-h6 {
-	@extend %extend_1;
-}
-p {
-	@extend %extend_1;
-}
-blockquote {
-	@extend %extend_1;
-	quotes: none;
-	&:before {
-		content: "";
-		content: none;
-	}
-	&:after {
-		content: "";
-		content: none;
-	}
-}
-pre {
-	@extend %extend_1;
-}
-a {
-	@extend %extend_1;
-	img {
-		border: none;
-	}
-}
-abbr {
-	@extend %extend_1;
-}
-acronym {
-	@extend %extend_1;
-}
-address {
-	@extend %extend_1;
-}
-big {
-	@extend %extend_1;
-}
-cite {
-	@extend %extend_1;
-}
-code {
-	@extend %extend_1;
-}
-del {
-	@extend %extend_1;
-}
-dfn {
-	@extend %extend_1;
-}
-em {
-	@extend %extend_1;
-}
-img {
-	@extend %extend_1;
-}
-ins {
-	@extend %extend_1;
-}
-kbd {
-	@extend %extend_1;
-}
-q {
-	@extend %extend_1;
-	quotes: none;
-	&:before {
-		content: "";
-		content: none;
-	}
-	&:after {
-		content: "";
-		content: none;
-	}
-}
-s {
-	@extend %extend_1;
-}
-samp {
-	@extend %extend_1;
-}
-small {
-	@extend %extend_1;
-}
-strike {
-	@extend %extend_1;
-}
-strong {
-	@extend %extend_1;
-}
-sub {
-	@extend %extend_1;
-}
-sup {
-	@extend %extend_1;
-}
-tt {
-	@extend %extend_1;
-}
-var {
-	@extend %extend_1;
-}
-b {
-	@extend %extend_1;
-}
-u {
-	@extend %extend_1;
-}
-i {
-	@extend %extend_1;
-}
-center {
-	@extend %extend_1;
-}
-dl {
-	@extend %extend_1;
-}
-dt {
-	@extend %extend_1;
-}
-dd {
-	@extend %extend_1;
-}
-ol {
-	@extend %extend_1;
-	list-style: none;
-}
-ul {
-	@extend %extend_1;
-	list-style: none;
-}
-li {
-	@extend %extend_1;
-}
-fieldset {
-	@extend %extend_1;
-}
-form {
-	@extend %extend_1;
-}
-label {
-	@extend %extend_1;
-}
-legend {
-	@extend %extend_1;
-}
-table {
-	@extend %extend_1;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-caption {
-	@extend %extend_1;
-	@extend %extend_2;
-}
-tbody {
-	@extend %extend_1;
-}
-tfoot {
-	@extend %extend_1;
-}
-thead {
-	@extend %extend_1;
-}
-tr {
-	@extend %extend_1;
-}
-th {
-	@extend %extend_1;
-	@extend %extend_2;
-}
-td {
-	@extend %extend_1;
-	@extend %extend_2;
-}
-article {
-	@extend %extend_1;
-	display: block;
-}
-aside {
-	@extend %extend_1;
-	display: block;
-}
-canvas {
-	@extend %extend_1;
-}
-details {
-	@extend %extend_1;
-	display: block;
-}
-embed {
-	@extend %extend_1;
-}
-figure {
-	@extend %extend_1;
-	display: block;
-}
-figcaption {
-	@extend %extend_1;
-	display: block;
-}
-footer {
-	@extend %extend_1;
-	display: block;
-}
-header {
-	@extend %extend_1;
-	display: block;
-}
-hgroup {
-	@extend %extend_1;
-	display: block;
-}
-menu {
-	@extend %extend_1;
-	display: block;
-}
-nav {
-	@extend %extend_1;
-	display: block;
-}
-output {
-	@extend %extend_1;
-}
-ruby {
-	@extend %extend_1;
-}
+
 section {
-	@extend %extend_1;
 	display: block;
 	position: relative;
 	height: 900px;
@@ -371,299 +81,6 @@ section {
 	overflow: hidden;
 	&.double {
 		height: 1800px;
-	}
-}
-summary {
-	@extend %extend_1;
-	display: block;
-}
-time {
-	@extend %extend_1;
-}
-mark {
-	@extend %extend_1;
-}
-audio {
-	@extend %extend_1;
-}
-video {
-	@extend %extend_1;
-}
-main {
-	display: block;
-}
-.block {
-	@extend %extend_3;
-}
-#street {
-	background-image: url("../assets/street.png?1378388695");
-	h1 {
-		@extend %extend_3;
-		position: absolute;
-	}
-	#ye-olde-ie body h1 {
-		@extend %extend_4;
-	}
-}
-#thanks {
-	//Instead of the line below you could use @includebox-sizing($bs)
-	box-sizing: border-box;
-	background-image: url("../assets/thanks-bg.png?1379364736");
-	border-top: solid 47px $color_dove_gray_approx;
-	overflow: visible;
-	h1 {
-		@extend %extend_3;
-		position: absolute;
-		top: 282px;
-		width: 758px;
-		margin: 0 91px;
-	}
-	#ye-olde-ie body h1 {
-		@extend %extend_4;
-	}
-	> div {
-		position: relative;
-	}
-}
-#people {
-	background-color: $color_picton_blue_approx;
-	h1 {
-		@extend %extend_3;
-		position: absolute;
-		top: 359px;
-	}
-	#ye-olde-ie body h1 {
-		@extend %extend_4;
-	}
-}
-#map {
-	background-color: $color_cararra_approx;
-	h1 {
-		@extend %extend_3;
-		position: absolute;
-		width: 720px;
-		top: 138px;
-		margin: auto 99px;
-	}
-	#ye-olde-ie body h1 {
-		@extend %extend_4;
-	}
-	> div {
-		position: relative;
-	}
-}
-#boxes {
-	background-color: $color_cararra_approx;
-	background-image: url("../assets/conveyor-belt-bg.png?1378923365");
-	background-repeat: repeat-x;
-	background-position: 20px 100%;
-	h1 {
-		@extend %extend_3;
-		position: absolute;
-		top: 173px;
-	}
-	#ye-olde-ie body h1 {
-		@extend %extend_4;
-	}
-	> div {
-		position: relative;
-		height: 900px;
-	}
-}
-#installer {
-	background-color: $color_puerto_rico_approx;
-	background-image: url("../assets/installer-floor.png?1378926212");
-	background-position: 0 791px;
-	background-repeat: repeat-x;
-	> div > {
-		h1 {
-			@extend %extend_3;
-			position: absolute;
-		}
-		img {
-			position: absolute;
-		}
-	}
-}
-#apartment {
-	background-color: $color_jelly_bean_approx;
-	overflow: hidden;
-	h1 {
-		@extend %extend_3;
-		position: absolute;
-		top: 329px;
-	}
-	#ye-olde-ie body h1 {
-		@extend %extend_4;
-	}
-	> .wrapper-small {
-		position: relative;
-	}
-}
-#clock {
-	background-image: url("../assets/clock-wallpaper.png?1378930756");
-	h1 {
-		@extend %extend_3;
-		position: absolute;
-	}
-	img {
-		position: absolute;
-	}
-	#ye-olde-ie body h1 {
-		@extend %extend_4;
-	}
-	> div {
-		position: relative;
-	}
-}
-#heatwave {
-	background-image: url("../assets/heat-wave-bg.png?1378932070");
-	h1 {
-		@extend %extend_3;
-		position: absolute;
-	}
-	#ye-olde-ie body h1 {
-		@extend %extend_4;
-	}
-	> div {
-		position: relative;
-	}
-}
-#stats-text-1 {
-	@extend %extend_3;
-	top: 329px;
-}
-#phone {
-	background-color: $color_mantis_approx;
-	h1 {
-		@extend %extend_3;
-		position: absolute;
-		top: 324px;
-		width: 720px;
-		margin: auto 99px;
-	}
-	#ye-olde-ie body h1 {
-		@extend %extend_4;
-	}
-	> div {
-		position: relative;
-	}
-}
-#balloons {
-	background-color: $color_spray_approx;
-	overflow-y: hidden;
-	background-image: url("../assets/bank.png?1379016639");
-	background-repeat: repeat-x;
-	background-position: 0 770px;
-	height: 970px;
-	h2 {
-		@extend %extend_3;
-		position: absolute;
-		top: 329px;
-	}
-	#ye-olde-ie body h2 {
-		@extend %extend_4;
-	}
-	> div {
-		position: relative;
-		> {
-			img {
-				position: absolute;
-			}
-			div {
-				position: relative;
-				> img {
-					position: absolute;
-				}
-			}
-		}
-	}
-}
-#ye-olde-ie {
-	body {
-		font-family: $font_0;
-		.block {
-			@extend %extend_4;
-		}
-		#stats-text-1 {
-			@extend %extend_4;
-		}
-		h1 {
-			font-weight: bold;
-		}
-		h2 {
-			font-weight: bold;
-		}
-		#installer > div > h1 {
-			@extend %extend_4;
-		}
-		#street h1 {
-			@extend %extend_4;
-		}
-		#thanks h1 {
-			@extend %extend_4;
-		}
-		#people h1 {
-			@extend %extend_4;
-		}
-		#map h1 {
-			@extend %extend_4;
-		}
-		#boxes h1 {
-			@extend %extend_4;
-		}
-		#apartment h1 {
-			@extend %extend_4;
-		}
-		#clock h1 {
-			@extend %extend_4;
-		}
-		#heatwave h1 {
-			@extend %extend_4;
-		}
-		#phone h1 {
-			@extend %extend_4;
-		}
-		#balloons h2 {
-			@extend %extend_4;
-		}
-	}
-	a > img {
-		border: 0;
-	}
-}
-#thanks-bubble {
-	@extend %extend_5;
-}
-#thanks-bubble-cover {
-	@extend %extend_5;
-}
-#thanks-text {
-	@extend %extend_6;
-}
-#thanks-text-cover {
-	@extend %extend_6;
-	width: 160px;
-}
-#outro-social-media {
-	margin: 10px 121px;
-	width: 738px;
-	height: 114px;
-	> div > a {
-		@extend %extend_7;
-		width: 20%;
-		background-position: center center;
-		background-repeat: no-repeat;
-		&:hover {
-			opacity: 1;
-		}
-		&:focus {
-			outline: none;
-		}
-		> span {
-			@extend %extend_7;
-			width: 0;
-		}
 	}
 }
 
@@ -763,10 +180,20 @@ main {
 	font-size: 60px;
 	text-align: center;
 	color: $color_cerulean_approx;
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	@include transform(translate(-50%, -50%));
 }
 #intro-content {
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url("../assets/bgphotos/sky.jpg");
+	background-position: center center;
+	background-attachment: fixed;
 	height: 100%;
 	width: 100%;
 }
@@ -774,157 +201,390 @@ main {
 	background-color: $white_50;
 	width: 100%;
 	height: 40%;
+	position: relative;
 }
-.shorty {
-	#intro-title {
-	}
-	#map-bronx-label {
-		top: 240px;
-		z-index: 2;
-	}
-	#outro-text-2 {
-		padding-top: 160px;
-	}
-	#street-upper h1 {
-		top: 350px;
-	}
-	#map h1 {
-		top: 350px;
-	}
-	#boxes h1 {
-		top: 300px;
-		z-index: 3;
-	}
-}
+
 #intro-content-bottom{
 	color: $white;
 	display: block;
-	#intro-year {
-		float: left;
-		font-size: 127px;
-	}
-	#intro-text {
-		text-align: left;
-		font-size: 20px;
-		line-height:35px;
-		font-weight: 400;
-		float:right;
+	position: relative;
+	height: 35%;
+	#intro-section{
+		position: absolute;
+		width: 62%;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		@include transform(translate(-50%, -50%));
+		#intro-year {
+			float: left;
+			font-size: 127px;
+			margin: 0;
+			display: block;
+			margin-top: -19px;
+		}
+		#intro-text {
+			text-align: left;
+			font-size: 20px;
+			line-height:35px;
+			font-weight: 400;
+			float:right;
+		}
 	}
 }
 
 #intro-footer {
 	position: absolute;
 	bottom: 0;
-	left: 0;
 	width: 100%;
 	height: 100px;
 	background-color: $white;
-	color: $color_cerulean_approx;
-}
-#intro-scroll {
-	display: none;
-	font-style: italic;
-	color: $color_spray_approx;
-	font-size: 23px;
 	text-align: center;
-	margin-top: 47px;
+	color: $color_cerulean_approx;
+	.wrapper-large {
+		margin-top: 15px;
+		#intro-scroll {
+			display: none;
+			font-size: 14px;
+			font-style: italic;
+		}
+	}
 }
+
 #intro-play {
 	margin-bottom: -16px;
 	cursor: pointer;
 }
-#street-lower {
-	position: absolute;
-	top: 1048px;
-	background-image: url("../assets/sidewalk.png?1378388277");
-	background-repeat: repeat-x;
-	width: 100%;
-	height: 752px;
+
+#street-upper {
+	background-image: url("../assets/bgphotos/street.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+#street-content{
+	position: relative;
+	text-align: center;
+	height: 62%;
+	background-color: $black_60;
+	top: 116px;	
+	font-size: 20px;
+	.bottom {
+		height: 11px;
+		background-color: $white;
+		top: 557px;
+		@extend %verticalboxes;
+	}
+	.top {
+		position: absolute;
+		&.left{
+			top: 43px;
+			left: 0px;
+			width: 27%;
+			height: 4px;
+			background-color: $white;
+		}
+		&.right{
+			top: 43px;
+			width: 67%;
+			height: 4px;
+			background-color: $white;
+			right: 0px;
+		}
+		&.asterick {
+			width: 46px;
+			top: 23px;
+			left: 464px;
+		}
+	}
+	.street-text {
+			position: absolute;
+			width: 100%;
+			margin: 0;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			@include transform(translate(-50%, -50%));
+			h1 {
+				font-size: 141px;
+				span {
+					font-size: 185px;
+				}
+			}
+			p {
+				line-height: 37px;
+				margin-top: 24px;
+			}
+	
+		}
+	}
+
+
+#thanks {
+	//Instead of the line below you could use @includebox-sizing($bs)
+	box-sizing: border-box;
+	background-image: url("../assets/thanks-bg.png?1379364736");
+	border-top: solid 47px $color_dove_gray_approx;
+	overflow: visible;
 	h1 {
-		top: 345px;
+		
+		position: absolute;
+		top: 282px;
+		width: 758px;
+		margin: 0 91px;
+	}
+	#ye-olde-ie body h1 {
+		@extend %extend_4;
 	}
 	> div {
 		position: relative;
 	}
 }
-#crosswalk {
-	position: absolute;
-	top: 195px;
-	left: 55px;
-}
-#manhole {
-	position: absolute;
-	left: 1302px;
-	top: 550px;
-}
-#bus {
-	position: absolute;
-	top: 70px;
-	left: 1147px;
-}
-#street-upper {
-	background-color: $color_spray_approx;
-	height: 1048px;
+#people {
+	background-color: $color_picton_blue_approx;
 	h1 {
-		top: 171px;
-	}
-}
-#street-buildings {
-	width: 1001px;
-	height: 801px;
-	position: absolute;
-	top: 300px;
-	background-image: url("../assets/buildings.png?1379364738");
-	> img {
+		
 		position: absolute;
-		top: 14px;
-		left: 11px;
+		top: 359px;
+	}
+	#ye-olde-ie body h1 {
+		@extend %extend_4;
 	}
 }
-#street-sky {
-	position: relative;
+#map {
+	background-color: $color_cararra_approx;
+	h1 {
+		
+		position: absolute;
+		width: 720px;
+		top: 138px;
+		margin: auto 99px;
+	}
+	#ye-olde-ie body h1 {
+		@extend %extend_4;
+	}
+	> div {
+		position: relative;
+	}
+}
+#boxes {
+	background-color: $color_cararra_approx;
+	background-image: url("../assets/conveyor-belt-bg.png?1378923365");
+	background-repeat: repeat-x;
+	background-position: 20px 100%;
+	h1 {
+		
+		position: absolute;
+		top: 173px;
+	}
+	#ye-olde-ie body h1 {
+		@extend %extend_4;
+	}
+	> div {
+		position: relative;
+		height: 900px;
+	}
+}
+#installer {
+	background-color: $color_puerto_rico_approx;
+	background-image: url("../assets/installer-floor.png?1378926212");
+	background-position: 0 791px;
+	background-repeat: repeat-x;
+	> div > {
+		h1 {
+			
+			position: absolute;
+		}
+		img {
+			position: absolute;
+		}
+	}
+}
+#apartment {
+	background-color: $color_jelly_bean_approx;
+	overflow: hidden;
+	h1 {
+		
+		position: absolute;
+		top: 329px;
+	}
+	#ye-olde-ie body h1 {
+		@extend %extend_4;
+	}
+	> .wrapper-small {
+		position: relative;
+	}
+}
+#clock {
+	background-image: url("../assets/clock-wallpaper.png?1378930756");
+	h1 {
+		
+		position: absolute;
+	}
 	img {
 		position: absolute;
 	}
-	#cloud-1 {
-		left: 106px;
-		top: 40px;
+	#ye-olde-ie body h1 {
+		@extend %extend_4;
 	}
-	#cloud-2 {
-		left: 203px;
-		top: 314px;
+	> div {
+		position: relative;
 	}
-	#cloud-3 {
-		left: 1132px;
-		top: 85px;
+}
+#heatwave {
+	background-image: url("../assets/heat-wave-bg.png?1378932070");
+	h1 {
+		
+		position: absolute;
 	}
-	#cloud-4 {
-		left: 764px;
-		top: 428px;
+	#ye-olde-ie body h1 {
+		@extend %extend_4;
 	}
-	#cloud-5 {
-		left: 1196px;
-		top: 433px;
+	> div {
+		position: relative;
 	}
-	#sun {
-		> div {
-			position: relative;
-			> img {
+}
+#stats-text-1 {
+	
+	top: 329px;
+}
+#phone {
+	background-color: $color_mantis_approx;
+	h1 {
+		
+		position: absolute;
+		top: 324px;
+		width: 720px;
+		margin: auto 99px;
+	}
+	#ye-olde-ie body h1 {
+		@extend %extend_4;
+	}
+	> div {
+		position: relative;
+	}
+}
+#balloons {
+	background-color: $color_spray_approx;
+	overflow-y: hidden;
+	background-image: url("../assets/bank.png?1379016639");
+	background-repeat: repeat-x;
+	background-position: 0 770px;
+	height: 970px;
+	h2 {
+		
+		position: absolute;
+		top: 329px;
+	}
+	#ye-olde-ie body h2 {
+		@extend %extend_4;
+	}
+	> div {
+		position: relative;
+		> {
+			img {
 				position: absolute;
 			}
-		}
-		#sun-halo > img {
-			left: 1296px;
-			top: 34px;
-			opacity: 0.5;
-			filter: alpha(opacity=50);
-		}
-		#sun-center > img {
-			left: 1327px;
-			top: 66px;
+			div {
+				position: relative;
+				> img {
+					position: absolute;
+				}
+			}
 		}
 	}
 }
+#ye-olde-ie {
+	body {
+		font-family: $font_0;
+		.block {
+			@extend %extend_4;
+		}
+		#stats-text-1 {
+			@extend %extend_4;
+		}
+		h1 {
+			font-weight: bold;
+		}
+		h2 {
+			font-weight: bold;
+		}
+		#installer > div > h1 {
+			@extend %extend_4;
+		}
+		#street h1 {
+		}
+		#thanks h1 {
+			@extend %extend_4;
+		}
+		#people h1 {
+			@extend %extend_4;
+		}
+		#map h1 {
+			@extend %extend_4;
+		}
+		#boxes h1 {
+			@extend %extend_4;
+		}
+		#apartment h1 {
+			@extend %extend_4;
+		}
+		#clock h1 {
+			@extend %extend_4;
+		}
+		#heatwave h1 {
+			@extend %extend_4;
+		}
+		#phone h1 {
+			@extend %extend_4;
+		}
+		#balloons h2 {
+			@extend %extend_4;
+		}
+	}
+	a > img {
+		border: 0;
+	}
+}
+#thanks-bubble {
+	@extend %extend_5;
+}
+#thanks-bubble-cover {
+	@extend %extend_5;
+}
+#thanks-text {
+	@extend %extend_6;
+}
+#thanks-text-cover {
+	@extend %extend_6;
+	width: 160px;
+}
+#outro-social-media {
+	margin: 10px 121px;
+	width: 738px;
+	height: 114px;
+	> div > a {
+		@extend %extend_7;
+		width: 20%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		&:hover {
+			opacity: 1;
+		}
+		&:focus {
+			outline: none;
+		}
+		> span {
+			@extend %extend_7;
+			width: 0;
+		}
+	}
+}
+
+
 #veronica {
 	position: absolute;
 	display: block;
@@ -1050,8 +710,43 @@ h2[class^="map-percentage-"][class*="dark"] {
 	}
 	> img {
 		position: absolute;
+		width: 100%;
 	}
 }
+
+#opacity-10 {
+  @include opacity(0.1);
+}
+
+#street-lower {
+	text-align: center;
+	background-color: $color_blue;
+	background-image: url(../assets/map.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	#map-header{
+		background-color: $black;
+		height: 162px;
+		position: relative;
+		top: 88px;
+		h1 {
+			position: absolute;
+			width: 100%;
+			font-size: 56px;
+			font-weight: 400;
+			margin: 0;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			@include transform(translate(-50%, -50%));
+			span {
+				font-weight: 700;
+				color: $color_blue;
+			}
+		}
+	}
+}
+
 #map-staten-label {
 	bottom: 247px;
 	left: 222px;
@@ -1584,4 +1279,25 @@ h2[class^="map-percentage-"][class*="dark"] {
 }
 #ie a > img {
 	border: 0;
+}
+
+.shorty {
+	#intro-title {
+	}
+	#map-bronx-label {
+		top: 240px;
+		z-index: 2;
+	}
+	#outro-text-2 {
+		padding-top: 160px;
+	}
+	#street-upper h1 {
+	}
+	#map h1 {
+		top: 350px;
+	}
+	#boxes h1 {
+		top: 300px;
+		z-index: 3;
+	}
 }

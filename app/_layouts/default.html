@@ -13,6 +13,7 @@
 
     <!-- build:css({app,.tmp}) /css/main.css -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
     <!-- endbuild -->
@@ -27,7 +28,7 @@
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="scroll-wrapper" id="scroll-wrapper-body" data-start="bottom:-14400px" data-_bstreetupper="bottom:-13453px" data-_astreetupper="bottom:-13453px" data-_bstreetlower="bottom:-12553px" data-_astreetlower="bottom:-12553px" data-_bthanks = "bottom:-11700px" data-_athanks = "bottom:-11700px" data-_bpeople="bottom:-10800px" data-_apeople="bottom:-10800px" data-_bparticipants="bottom:-9900px" data-_aparticipants="bottom:-9900px" data-_bmap="bottom:-9000px" data-_amap="bottom:-9000px" data-_bboxes="bottom:-8100px" data-_aboxes="bottom:-8100px" data-_binstaller="bottom:-7200px" data-_ainstaller="bottom:-7200px" data-_bapartment="bottom:-6300px" data-_aapartment="bottom:-6300px" data-_bclock="bottom:-5400px" data-_aclock="bottom:-5400px" data-_bheatwave="bottom:-4500px" data-_aheatwave="bottom:-4500px" data-_bstats="bottom:-3600px" data-_astats="bottom:-3600px" data-_bletter="bottom:-2700px" data-_aletter="bottom:-2700px"  data-_bphone="bottom:-1800px" data-_aphone="bottom:-1800px" data-_bballoons="bottom:-900px" data-_aballoons="bottom:-900px" data-_boutro="bottom:0px" data-_aoutro="bottom:0px">
+    <div class="scroll-wrapper" id="scroll-wrapper-body" data-start="bottom:-14400px" data-_bstreet-upper="bottom:-13453px" data-_astreet-upper="bottom:-13453px" data-_bstreetlower="bottom:-12553px" data-_astreetlower="bottom:-12553px" data-_bthanks = "bottom:-11700px" data-_athanks = "bottom:-11700px" data-_bpeople="bottom:-10800px" data-_apeople="bottom:-10800px" data-_bparticipants="bottom:-9900px" data-_aparticipants="bottom:-9900px" data-_bmap="bottom:-9000px" data-_amap="bottom:-9000px" data-_bboxes="bottom:-8100px" data-_aboxes="bottom:-8100px" data-_binstaller="bottom:-7200px" data-_ainstaller="bottom:-7200px" data-_bapartment="bottom:-6300px" data-_aapartment="bottom:-6300px" data-_bclock="bottom:-5400px" data-_aclock="bottom:-5400px" data-_bheatwave="bottom:-4500px" data-_aheatwave="bottom:-4500px" data-_bstats="bottom:-3600px" data-_astats="bottom:-3600px" data-_bletter="bottom:-2700px" data-_aletter="bottom:-2700px"  data-_bphone="bottom:-1800px" data-_aphone="bottom:-1800px" data-_bballoons="bottom:-900px" data-_aballoons="bottom:-900px" data-_boutro="bottom:0px" data-_aoutro="bottom:0px">
     <nav id="main">
         <span id="back-to-top">
             <img src="assets/nav/top/1.png" data-start="display: block" data-_bstreetupper--1="display:none">
@@ -96,97 +97,55 @@
         </header>
         <div id="intro-content">
           <div id="intro-content-top">
-            <div class="wrapper-large">
-                <div class="wrapper-small">
-                    <h1 id="intro-title">It's been another great year!</h1>
-                </div>
-            </div>
+                <h1 id="intro-title">It's been another great year!</h1>
           </div>
           <div id="intro-content-bottom">
-            <div class="wrapper-large">
-                <div class="wrapper-small">
-                    <h1 id="intro-year">2014<h1>
+                <div id="intro-section">    
+                    <h1 id="intro-year">2014</h1>
                     <h2 id="intro-text">
-                        Now in it’s 5th year Lorem ipsum dolor sit amet, consectetur adipisng eit,<br>
+                        Now in it’s 5th year Lorem ipsum dolor sit amet, consectetur adipisng eit,<br>s
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim<br>
                         ad minim veniam, quis nostrud exercitation.
                     </h2>
                 </div>
-            </div>
           </div>
         </div>
         <div id="intro-footer">
           <div class="wrapper-large">
-            <h3 id="intro-scroll"><img src="assets/play.png" id="intro-play">Scroll Down</h3>
+            <span><i class="fa fa-caret-square-o-down fa-3x"></i><br><h3 id="intro-scroll">Scroll Down</h3></span>
           </div>
         </div>
     </section>
-    <section id="street" class="double">
-            <div id="street-lower">
-                <div class="wrapper-large">
-                    <img src="assets/crosswalk.png" id="crosswalk">
-                    <img src="assets/manhole.png" id="manhole">
-                    <div class="layer" id="street-bus">
-                        <img src="assets/bus.png" id="bus" data-_bstreetlower="left: 239px" data-_astreetlower="left: 1147px">
-                    </div>
-                    <div class="wrapper-small">
-                        <h1 id="street-lower-text-1" data-start="opacity:0" data-_bstreetlower="opacity: 0" data-_bstreetlower-500="opacity: 1" data-_bstreetlower-3500="opacity: 1" data-_bstreetlower-3900="opacity: 0">
-                            A/Cs account for approximately 25% of the grid load during the summer months.
-                        </h1>
-                        <h1 id="street-lower-text-2" data-start="opacity: 0" data-_bstreetlower-3900="opacity: 0", data-_bstreetlower-4300="opacity: 1">
-                            That's a lot of power!
-                        </h1>
-                    </div>
+    <section id="street-upper">
+                <div id="street-content">
+                        <div class="street-text">
+                            <h1><span>2032</span> units</h1>
+                            <p>Set up in the first lorem ipsum dolor sit amet, consectetur adipisng eit,<br>
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                                Enim ad minim veniam, quis nostrud exercitation.</p>              
+                        </div>
+                <div class="top left"></div>
+                <div class="top right"></div>
+                <div class="bottom"></div>
+                <img src="assets/asterick_white.svg" class="top asterick">
+            </div>
+    </section>
+    <section id="street-lower">
+            <div id="map-header">
+                <h1>Here is an <span>area breakdown</span></h1>
+            </div>
+            <div class="wrapper-large">
+            <div class="wrapper-small" id="map=wrapper" data-start="opacity: 1" data-_bboxes--200="opacity: 1" data-_bboxes="opacity: 0">
+                <div class= "borough" id="opacity-10">
+                    <img src="assets/map.svg">
                 </div>
             </div>
-            <div id="street-upper">
-                <div class="wrapper-large">
-                    <div id="street-sky">
-                        <div id="sun">
-                            <div class="layer" id="sun-halo">
-                                <img src="assets/sun-halo.png" data-_bstreetupper-3200="width:0px;height:0px;top:146px;left:1407px;opacity:.5" data-_bstreetupper-3900="width:245px;height:245px;top:34px;left:1296px;opacity:.5" data-_bstreetupper-4600="width:245px;height:245px;top:34px;left:1296px;opacity:.65" data-_bstreetupper-5300="width:245px;height:245px;top:34px;left:1296px;opacity:.5">
-                            </div>
-                            <div class="layer" id="sun-center">
-                                <img src="assets/sun-center.png" data-_bstreetupper-3000="width:0px;height:0px;top:146px;left:1407px" data-_bstreetupper-4000="width:181px;height:181px;top:66px;left:1327px">
-                            </div>
-                        </div>
-                        <div class="layer cloud left">
-                             <img src="assets/cloud.png" id="cloud-1" data-_bstreetupper="left: 10px" data-_astreetupper="left: 140px">
-                        </div>
-                        <div class="layer cloud left">
-                             <img src="assets/cloud-flipped.png" id="cloud-2" data-_bstreetupper="left: 160px" data-_astreetupper="left: 220px">
-                        </div>
-                        <div class="layer cloud right">
-                             <img src="assets/cloud.png" id="cloud-3" data-_bstreetupper="left: 1250px" data-_astreetupper="left: 1132px">
-                        </div>
-                        <div class="layer cloud right">
-                             <img src="assets/cloud.png" id="cloud-4" data-_bstreetupper="left:800px" data-_astreetupper="left:760px">
-                        </div>
-                        <div class="layer cloud right">
-                             <img src="assets/cloud-small.png" id="cloud-5" data-_bstreetupper="left: 1220px" data-_astreetupper="left: 1194px">
-                        </div>
-                    </div>
-                    <div class="wrapper-small">
-                        <h1 id="street-upper-text-1" data-start="opacity: 0" data-_bstreetupper="opacity:0" data-_bstreetupper-500="opacity: 1", data-_bstreetupper-2500="opacity: 1" data-_bstreetupper-3000="opacity:0">
-                            There are 6.5 million A/Cs in NYC.
-                        </h1>
-                        <h1 id="street-upper-text-2" data-start="opacity: 0" data-_bstreetupper-3000="opacity: 0" data-_bstreetupper-3500="opacity: 1">
-                            When it gets really hot, they work overtime to keep the city cool.
-                        </h1>
-                        <div id="street-buildings">
-                            <img src="assets/buildings-ac-1.png" id="buildings-ac-1" data-start="opacity: 0" data-_bstreetupper-500="opacity: 0" data-_bstreetupper-1000="opacity: 1">
-                            <img src="assets/buildings-ac-2.png" id="buildings-ac-2" data-start="opacity: 0" data-_bstreetupper-1500="opacity: 0" data-_bstreetupper-2000="opacity: 1">
-                            <img src="assets/buildings-ac-3.png" id="buildings-ac-3" data-start="opacity: 0" data-_bstreetupper-2500="opacity: 0" data-_bstreetupper-3000="opacity: 1">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
     <section id="thanks">
     <div class="wrapper-large">
             <div class="layer">
                 <span id="veronica" data-start="top: -500px" data-_bstreetlower="top: -500px" data-_bthanks-1000="top: 352px">
-                    <img src="assets/veronica-1.png" id="veronica-1" data-_bthanks-999="display: block" data-_bthanks-1000="display: none">
                     <img src="assets/veronica-2.png" id="veronica-2" data-start="display: none" data-_bthanks-999="display: none" data-_bthanks-1000="display: block">
                 </span>
             </div>
