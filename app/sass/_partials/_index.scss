@@ -1,29 +1,8 @@
-@import "_fonts";
-
-$color_fuscous_gray_approx: #515151;
-$white_80: rgba(255, 255, 255, 0.8);
-$white_60: rgba(255,255,255, 0.6);
-$black_15: rgba(0, 0, 0, 0.15);
-$black_60: rgba(0, 0, 0, 0.60);
-$black: #000;
-$white: #fff;
-$color_blue: #0091d9;
-$color_mountain_mist_approx: #999;
-$color_dove_gray_approx: #6d6d6d;
-$color_picton_blue_approx: #48c4f2;
-$color_cararra_approx: #ebebe9;
-$color_jelly_bean_approx: #1e7ea2;
-$color_mantis_approx: #87cc5a;
-$color_spray_approx: #73d9ff;
-$color_niagara_approx: #129c8a;
-$white_50: rgba(255,255,255,.5);
-$color_cerulean_approx: #00aced;
-$color_anakiwa_approx: #8fe1ff;
-$color_puerto_rico_approx: #51bfa3;
-$color_pumpkin_approx: #fb6d17;
-$color_sun_approx: #f9a61a;
-$color_westar_approx: #e0dfd2;
-
+@import "fonts";
+@import "colors";
+@import "utils";
+@import "breakpoints";
+@import "_components/panel1";
 
 //@extend-elements
 
@@ -72,7 +51,9 @@ $color_westar_approx: #e0dfd2;
 
 body {
 	font-family: $font_0;
+	font-size: 16px;
 	color: $white;
+	 text-align: center;
 	h1 {
 		font-weight: 700;
 	}	
@@ -97,7 +78,7 @@ section {
 }
 .wrapper-small {
 	margin: auto;
-	width: 980px;
+	width: 100%;
 }
 .scroll-wrapper {
 	left: 0;
@@ -155,22 +136,7 @@ section {
 	right: 50px;
 	z-index: 9000;
 }
-#top {
-	height: 86px;
-	background-color: $white;
-	text-align: center;
-}
-#top-logo {
-	margin-top: 9px;
-	width: 159px;
-}
-#top-tagline {
-	color: $color_cerulean_approx;
-	margin-top: 7px;
-	font-size: 12px;
-	font-weight: normal;
-	font-family: $font_1;
-}
+
 #addthis {
 	margin-top: 18px;
 	display: inline-block;
@@ -179,81 +145,6 @@ section {
 	.addthis_toolbox > a {
 		float: left;
 		margin-left: 20px;
-	}
-}
-#intro-title {
-	font-size: 4.5em;
-	text-align: center;
-	color: $color_blue;
-	position: absolute;
-	width: 100%;
-	margin: 0;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	@include transform(translate(-50%, -50%));
-}
-#intro-content {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: url("../assets/bgphotos/sky.jpg");
-	background-position: center center;
-	background-attachment: fixed;
-	height: 100%;
-	width: 100%;
-}
-#intro-content-top {
-	background-color: $white_50;
-	height: 40%;
-	position: relative;
-}
-
-#intro-content-bottom{
-	color: $white;
-	display: block;
-	position: relative;
-	height: 48.5%;
-	#intro-section{
-		position: absolute;
-		width: 64.5%;
-		margin: 0;
-		top: 50%;
-		left: 50%;
-		margin-right: -50%;
-		@include transform(translate(-50%, -50%));
-		#intro-year {
-			float: left;
-			font-size: 8em;
-			margin: 0;
-			display: block;
-			margin-top: -1%;
-			margin-left: 4%;
-		}
-		#intro-text {
-			text-align: left;
-			font-size: 1.1em;
-			line-height:2.1em;
-			font-weight: 400;
-			float:right;
-		}
-	}
-}
-
-#intro-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 100px;
-	background-color: $white;
-	text-align: center;
-	color: $color_cerulean_approx;
-	.wrapper-large {
-		margin-top: 15px;
-		#intro-scroll {
-			display: none;
-			font-size: 14px;
-			font-style: italic;
-		}
 	}
 }
 

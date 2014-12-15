@@ -1,0 +1,48 @@
+/* These mixins handle IE < 9, which doesn't respond to media queries.
+  To "activate" them in ye-olde-ie stylesheet, set $dim to NUMpx and
+  set $ye-olde-ie to a version number and then import the main stylesheet. */
+
+// generates media queries based on min screen width, or straight css if $dim
+
+$dim: false !default;
+
+@mixin break-min($width) {
+  @if $dim {
+    @if $dim >= $width {
+      @content;
+    }
+  }
+  @else {
+    @media screen and (min-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin break-max($width) {
+  @if $dim {
+    @if $dim < $width - 1 {
+      @content;
+    }
+  }
+  @else {
+    @media screen and (max-width: $width - 1) {
+      @content;
+    }
+  }
+}
+
+@mixin break-between($min, $max) {
+  @if $dim {
+    @if $dim >= $min {
+      @if $dim < $max {
+        @content;
+      }
+    }
+  }
+  @else {
+    @media screen and (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  }
+}

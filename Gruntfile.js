@@ -395,6 +395,7 @@ module.exports = function (grunt) {
     'build'
   ]);
 
+grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
   

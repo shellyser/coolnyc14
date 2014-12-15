@@ -13,6 +13,7 @@
 
     <!-- build:css({app,.tmp}) /css/main.css -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
     <!-- endbuild -->
@@ -27,7 +28,7 @@
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="scroll-wrapper" id="scroll-wrapper-body" data-start="bottom:-14400px" data-_bstreetupper="bottom:-13453px" data-_astreetupper="bottom:-13453px" data-_bstreetlower="bottom:-12553px" data-_astreetlower="bottom:-12553px" data-_bthanks = "bottom:-11700px" data-_athanks = "bottom:-11700px" data-_bpeople="bottom:-10800px" data-_apeople="bottom:-10800px" data-_bparticipants="bottom:-9900px" data-_aparticipants="bottom:-9900px" data-_bmap="bottom:-9000px" data-_amap="bottom:-9000px" data-_bboxes="bottom:-8100px" data-_aboxes="bottom:-8100px" data-_binstaller="bottom:-7200px" data-_ainstaller="bottom:-7200px" data-_bapartment="bottom:-6300px" data-_aapartment="bottom:-6300px" data-_bclock="bottom:-5400px" data-_aclock="bottom:-5400px" data-_bheatwave="bottom:-4500px" data-_aheatwave="bottom:-4500px" data-_bstats="bottom:-3600px" data-_astats="bottom:-3600px" data-_bletter="bottom:-2700px" data-_aletter="bottom:-2700px"  data-_bphone="bottom:-1800px" data-_aphone="bottom:-1800px" data-_bballoons="bottom:-900px" data-_aballoons="bottom:-900px" data-_boutro="bottom:0px" data-_aoutro="bottom:0px">
+    <div class="scroll-wrapper" id="scroll-wrapper-body" data-start="bottom: -9000px"  data-_bstreetupper="bottom:-8100px" data-_astreetupper="bottom:-8100px" data-_bstreetlower="bottom:-7200px" data-_astreetlower="bottom:-7200px" data-_bthanks="bottom:-6300px" data-_athanks="bottom:-6300px" data-_bpeople="bottom:-5400px" data-_apeople="bottom:-5400px" data-_bparticipants="bottom:-4500px" data-_aparticipants="bottom:-4500px" data-_bmap="bottom:-3600px" data-_amap="bottom:-3600px" data-_bboxes="bottom:-2700px" data-_aboxes="bottom:-2700px"  data-_binstaller="bottom:-1800px" data-_ainstaller="bottom:-1800px" data-_bballoons="bottom:-900px" data-_aballoons="bottom:-900px" data-_boutro="bottom:0px" data-_aoutro="bottom:0px">
     <nav id="main">
         <span id="back-to-top">
             <img src="assets/nav/top/1.png" data-start="display: block" data-_bstreetupper--1="display:none">
@@ -87,7 +88,6 @@
     </nav>
     <section id="intro">
         <header id="top">
-            <div id="intro-overlay"></div>
             <div class="wrapper-small">
                 <a href="http://coolnycprogram.com">
                     <img id="top-logo"src="assets/coolnyc-logo-blue.svg" alt="coolNYC">
@@ -95,95 +95,65 @@
                 <h2 id="top-tagline">A Con Edison program in partnership with ThinkEco</h2>
             </div>
         </header>
-        <div class="wrapper-large">
-            <div class="wrapper-small">
+        <div id="intro-content">
+          <div id="intro-content-top">
                 <h1 id="intro-title">It's been another great year!</h1>
-                <h2 id="intro-text">
-                    Thanks for a great third year of the coolNYC program.<br>
-                    Here's a closer look at summer 2013.
-                </h2>
-                <h3 id="intro-scroll"><img src="assets/play.png" id="intro-play"> to view, or start scrolling</h3>
+          </div>
+          <div id="intro-content-bottom">
+                <div id="intro-section">    
+                    <h1 id="intro-year">2014</h1>
+                    <h2 id="intro-text">
+                        Now in it’s 5th year Lorem ipsum dolor sit amet, consectetur adipisng eit,<br>s
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim<br>
+                        ad minim veniam, quis nostrud exercitation.
+                    </h2>
+                </div>
+          </div>
+        </div>
+        <div id="intro-footer">
+          <div class="wrapper-large">
+            <span><i class="fa fa-caret-square-o-down fa-3x"></i><br><h3 id="intro-scroll">Scroll Down</h3></span>
+          </div>
+        </div>
+    </section>
+    <section id="street-upper">
+                <div id="street-content">
+                        <div class="street-text">
+                            <h1><span>2032</span> units</h1>
+                            <p>Set up in the first lorem ipsum dolor sit amet, consectetur adipisng eit,<br>
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                                Enim ad minim veniam, quis nostrud exercitation.</p>              
+                        </div>
+                <div class="top left"></div>
+                <div class="top right"></div>
+                <div class="bottom"></div>
+                <img src="assets/asterick_white.svg" class="top asterick">
+            </div>
+    </section>
+    <section id="street-lower">
+            <div id="map-header">
+                <h1>Here is an <span>area breakdown</span></h1>
+            </div>
+            <div class="wrapper-large">
+            <div class="wrapper-small" id="map=wrapper" data-start="opacity: 1" data-_bboxes--200="opacity: 1" data-_bboxes="opacity: 0">
+                <div class= "borough" id="opacity-10">
+                    <img src="assets/map.svg">
+                </div>
             </div>
         </div>
     </section>
-    <section id="street" class="double">
-            <div id="street-lower">
-                <div class="wrapper-large">
-                    <img src="assets/crosswalk.png" id="crosswalk">
-                    <img src="assets/manhole.png" id="manhole">
-                    <div class="layer" id="street-bus">
-                        <img src="assets/bus.png" id="bus" data-_bstreetlower="left: 239px" data-_astreetlower="left: 1147px">
-                    </div>
-                    <div class="wrapper-small">
-                        <h1 id="street-lower-text-1" data-start="opacity:0" data-_bstreetlower="opacity: 0" data-_bstreetlower-500="opacity: 1" data-_bstreetlower-3500="opacity: 1" data-_bstreetlower-3900="opacity: 0">
-                            A/Cs account for approximately 25% of the grid load during the summer months.
-                        </h1>
-                        <h1 id="street-lower-text-2" data-start="opacity: 0" data-_bstreetlower-3900="opacity: 0", data-_bstreetlower-4300="opacity: 1">
-                            That's a lot of power!
-                        </h1>
-                    </div>
-                </div>
-            </div>
-            <div id="street-upper">
-                <div class="wrapper-large">
-                    <div id="street-sky">
-                        <div id="sun">
-                            <div class="layer" id="sun-halo">
-                                <img src="assets/sun-halo.png" data-_bstreetupper-3200="width:0px;height:0px;top:146px;left:1407px;opacity:.5" data-_bstreetupper-3900="width:245px;height:245px;top:34px;left:1296px;opacity:.5" data-_bstreetupper-4600="width:245px;height:245px;top:34px;left:1296px;opacity:.65" data-_bstreetupper-5300="width:245px;height:245px;top:34px;left:1296px;opacity:.5">
-                            </div>
-                            <div class="layer" id="sun-center">
-                                <img src="assets/sun-center.png" data-_bstreetupper-3000="width:0px;height:0px;top:146px;left:1407px" data-_bstreetupper-4000="width:181px;height:181px;top:66px;left:1327px">
-                            </div>
-                        </div>
-                        <div class="layer cloud left">
-                             <img src="assets/cloud.png" id="cloud-1" data-_bstreetupper="left: 10px" data-_astreetupper="left: 140px">
-                        </div>
-                        <div class="layer cloud left">
-                             <img src="assets/cloud-flipped.png" id="cloud-2" data-_bstreetupper="left: 160px" data-_astreetupper="left: 220px">
-                        </div>
-                        <div class="layer cloud right">
-                             <img src="assets/cloud.png" id="cloud-3" data-_bstreetupper="left: 1250px" data-_astreetupper="left: 1132px">
-                        </div>
-                        <div class="layer cloud right">
-                             <img src="assets/cloud.png" id="cloud-4" data-_bstreetupper="left:800px" data-_astreetupper="left:760px">
-                        </div>
-                        <div class="layer cloud right">
-                             <img src="assets/cloud-small.png" id="cloud-5" data-_bstreetupper="left: 1220px" data-_astreetupper="left: 1194px">
-                        </div>
-                    </div>
-                    <div class="wrapper-small">
-                        <h1 id="street-upper-text-1" data-start="opacity: 0" data-_bstreetupper="opacity:0" data-_bstreetupper-500="opacity: 1", data-_bstreetupper-2500="opacity: 1" data-_bstreetupper-3000="opacity:0">
-                            There are 6.5 million A/Cs in NYC.
-                        </h1>
-                        <h1 id="street-upper-text-2" data-start="opacity: 0" data-_bstreetupper-3000="opacity: 0" data-_bstreetupper-3500="opacity: 1">
-                            When it gets really hot, they work overtime to keep the city cool.
-                        </h1>
-                        <div id="street-buildings">
-                            <img src="assets/buildings-ac-1.png" id="buildings-ac-1" data-start="opacity: 0" data-_bstreetupper-500="opacity: 0" data-_bstreetupper-1000="opacity: 1">
-                            <img src="assets/buildings-ac-2.png" id="buildings-ac-2" data-start="opacity: 0" data-_bstreetupper-1500="opacity: 0" data-_bstreetupper-2000="opacity: 1">
-                            <img src="assets/buildings-ac-3.png" id="buildings-ac-3" data-start="opacity: 0" data-_bstreetupper-2500="opacity: 0" data-_bstreetupper-3000="opacity: 1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
     <section id="thanks">
-    <div class="wrapper-large">
-            <div class="layer">
-                <span id="veronica" data-start="top: -500px" data-_bstreetlower="top: -500px" data-_bthanks-1000="top: 352px">
-                    <img src="assets/veronica-1.png" id="veronica-1" data-_bthanks-999="display: block" data-_bthanks-1000="display: none">
-                    <img src="assets/veronica-2.png" id="veronica-2" data-start="display: none" data-_bthanks-999="display: none" data-_bthanks-1000="display: block">
-                </span>
-            </div>
-            <div class="layer" id="thanks-callout" data-_bthanks-1100="opacity: 0" data-_bthanks-1200="opacity: 1">
-                <img src="assets/thanks-bubble.png" id="thanks-bubble">
-                <img src="assets/thanks-text.png" id="thanks-text">
-                <img src="assets/thanks-text-cover.png" id="thanks-text-cover" data-_bthanks-1200="width: 160px;height: 53px;margin-left: 0px" data-_bthanks-1700="width: 0px;height: 53px;margin-left: 159px" >
-            </div>
-            <div class="wrapper-small">
-                <h1>
-                    Thanks to you, we've been able to manage the load more effectively.
-                </h1>
+        <div class="panel left">
+           <h1>
+               In New York City,<br>
+               the grid load that<br>
+               is used by ACs during<br>
+               the summer months
+           </h1>
+        </div>
+        <div class="panel right">
+            <div class="circle">
+                <h1>25%</h1>
             </div>
         </div>
     </section>
@@ -280,134 +250,6 @@
             </h1>
             <h1 id="installer-text-2" data-start="opacity: 0" data-_binstaller-5400="opacity: 0" data-_binstaller-5700="opacity: 1">
                 ...and we were ready!
-            </h1>
-        </div>
-    </section>
-    <section id="apartment">
-        <div id="stars-bg" data-_bapartment-200="top:0px" data-_aapartment--1000="top:-50px"></div>
-        <div id="stars-fg" data-_bapartment-200="top:0px" data-_aapartment--1000="top:-100px"></div>
-        <div class="wrapper-small">
-            <img src="assets/building.png" id="apartment-building" data-_bapartment-200="top:72px" data-_bclock="top:-660px">
-            <h1 id="apartment-text" data-start="opacity: 0" data-_bapartment-300="opacity: 0" data-_bapartment-700="opacity: 1">
-                With the product in place,<br>we were prepared to call conservation events.
-            </h1>
-        </div>
-    </section>
-    <section id="clock">
-        <div class="wrapper-small">
-            <img src="assets/flag-left.png" id="clock-flag-left" data-_bclock-500="left: 360px" data-_bclock-650="left:182px">
-            <img src="assets/flag-right.png" id="clock-flag-right" data-_bclock-500="right: 360px" data-_bclock-650="right:182px">
-            <img src="assets/cuckoo-clock.png" id="cuckoo-clock">
-            <img src="assets/clock-door-left.png" id="clock-door-left" data-_bclock-8500="left:432px;opacity:1" data-_bclock-8900="left:420px;opacity:0">
-            <img src="assets/clock-door-right.png" id="clock-door-right" data-_bclock-8500="left:491px;opacity:1" data-_bclock-8900="left:503px;opacity:0">
-            <h1 id="clock-text-1" data-_bclock-2000="opacity: 0" data-_bclock-2300="opacity: 1" data-_bclock-6500="opacity: 1" data-_bclock-7000="opacity: 0">
-                During a conservation event, A/C temperatures are raised slightly.
-            </h1>
-            <h1 id="clock-text-2" data-start="opacity: 0" data-_bclock-7500="opacity: 0" data-_bclock-8000="opacity: 1">
-                This small change goes a long way to reduce strain on the grid.
-            </h1>
-        </div>
-    </section>
-    <section id="heatwave">
-        <div class="wrapper-small">
-            <h1 id="heatwave-text-1" data-start="opacity: 0" data-_bheatwave-300="opacity: 0" data-_bheatwave-600="opacity: 1", data-_bheatwave-2700="opacity: 1" data-_bheatwave-3200="opacity: 0">
-                Near the end of July, a heat wave hit the city.
-            </h1>
-            <h1 id="heatwave-text-2" data-start="opacity: 0" data-_bheatwave-3200="opacity: 0" data-_bheatwave-3500="opacity: 1" data-_bheatwave-7500="opacity: 1" data-_bheatwave-8000="opacity:0">
-                Temperatures were in the upper 90s and the projected grid load was above <span class="wow">96%</span> all week long.
-            </h1>
-            <div id="week">
-                <img src="assets/monday.png" id="monday" data-_bheatwave-8000="opacity:0;top:-40px" data-_bheatwave-8300="opacity:1;top:0px">
-                <img src="assets/tuesday.png" id="tuesday" data-_bheatwave-8300="opacity:0;top:-40px" data-_bheatwave-8600="opacity:1;top:0px">
-                <img src="assets/wednesday.png" id="wednesday" data-_bheatwave-8600="opacity:0;top:-40px" data-_bheatwave-8900="opacity:1;top:0px">
-                <img src="assets/thursday.png" id="thursday" data-_bheatwave-8900="opacity:0;top:-40px" data-_bheatwave-9200="opacity:1;top:0px">
-                <img src="assets/friday.png" id="friday" data-_bheatwave-9200="opacity:0;top:-40px" data-_bheatwave-9500="opacity:1;top:0px">
-            </div>
-        </div>
-    </section>
-    <section id="stats">
-        <div class="wrapper-small">
-            <div class="stats" id="stats-1">
-                <img src="assets/stats-circle.png" class="stats-circle" id="stats-circle-1" data-_bstats-8900="top:-393px;left:-33px" data-_bstats-9200="top:231px;left:-33px">
-                <div class="stats-text" data-start="opacity: 0" data-_bstats-9900="opacity: 0" data-_bstats-10200="opacity: 1">
-                    <h3>
-                        Total participants
-                    </h3>
-                    <h4>
-                        5, 205
-                    </h4>
-                </div>
-            </div>
-            <div class="stats" id="stats-2">
-                <img src="assets/stats-circle.png" class="stats-circle" id="stats-circle-2" data-_bstats-9000="top:-393px;left:-33px" data-_bstats-9300="top:231px;left:-33px">
-                <div class="stats-text" data-start="opacity: 0" data-_bstats-10000="opacity: 0"  data-_bstats-10300="opacity: 1">
-                    <h3>
-                        Best event reduction
-                    </h3>
-                    <h4>
-                        -27%
-                    </h4>
-                    <h5>
-                        * 7/16/13 Conservation Event
-                    </h5>
-                </div>
-            </div>
-            <div class="stats" id="stats-3">
-                <img src="assets/stats-circle.png" class="stats-circle" id="stats-circle-3" data-_bstats-9100="top:-393px;left:-33px" data-_bstats-9400="top:231px;left:-33px">
-                <div class="stats-text" data-start="opacity: 0"  data-_bstats-10100="opacity: 0"  data-_bstats-10400="opacity: 1">
-                    <h3>
-                        Hours of conservation
-                    </h3>
-                    <h4>
-                        30 h
-                    </h4>
-                </div>
-            </div>
-            <img src="assets/violet.png" id="violet">
-            <div id="groovy-bubble" data-start="opacity: 0" data-_bstats-10500="opacity: 0" data-_bstats-10700="opacity: 1">
-                <img src="assets/stats-bubble.png" id="stats-bubble">
-                <img src="assets/groovy.png" id="groovy">
-                <img src="assets/stats-text-cover.png" id="groovy-text-cover" data-start="width:161px;height:69px;margin-left:0px" data-_bstats-10700="width:161px;height:69px;margin-left:0px" data-_bstats-11200="width:0px;height:69px;margin-left:161px">
-            </div>
-            <h2 id="stats-text-1" data-start="opacity: 0" data-_bstats-300="opacity: 0" data-_bstats-600="opacity: 1" data-_bstats-5500="opacity: 1" data-_bstats-5800="opacity: 0">
-                With the grid under so much stress, conservation events were called five days in a row.
-            </h2>
-            <h2 id="stats-text-2" data-start="opacity: 0" data-_bstats-5800="opacity: 0"  data-_bstats-6100="opacity: 1"  data-_bstats-8400="opacity: 1"  data-_bstats-8700="opacity: 0">
-                The results were phenomenal!
-            </h2>
-        </div>
-    </section>
-    <section id="letter">
-        <div class="wrapper-small">
-            <img src="assets/confetti-1.png" id="confetti-1" data-_bletter-100="top:-1269px" data-_bphone="top:0px">
-            <img src="assets/confetti-2.png" id="confetti-2" data-_bletter-400="top:-1487px" data-_bphone="top:0px">
-            <div id="envelope">
-                <img src="assets/envelope-top-flap-up.png" id="envelope-top-up" data-start="opacity: 0" data-_bletter-300="opacity: 0" data-_bletter-350="opacity: 1">
-                <img src="assets/letter.png" id="envelope-letter" data-start="top: 10px" data-_bletter-420="top: 10px" data-_bletter-1300="top: -132px">
-                <img src="assets/envelope.png" id="envelope-front">
-                <img src="assets/envelope-bottom-flap.png" id="envelope-bottom">
-                <img src="assets/envelope-top-flap-down.png" id="envelope-top-down" data-start="opacity: 1" data-_bletter-300="opacity: 1" data-_bletter-350="opacity: 0">
-            </div>
-            <img src="assets/confetti-3.png" id="confetti-3" data-_bletter-700="top:-1302px" data-_bphone="top:0px">
-            <img src="assets/confetti-4.png" id="confetti-4" data-_bletter-1100="top:-1220px" data-_bphone="top:0px">
-        </div>
-    </section>
-    <section id="phone">
-        <div class="wrapper-small">
-            <div class="phone" id="phone-1">
-                <img src="assets/phone-1.png" data-start="top:900px" data-_bphone="top:900px" data-_bphone-600="top:212px">
-                <img src="assets/bars.png" id="bars" data-start="opacity: 0" data-_bphone-1500="opacity: 0" data-_bphone-1700="opacity: 1">
-            </div>
-            <div class="phone" id="phone-2">
-                <img src="assets/phone-1.png" data-start="top:900px" data-_bphone-300="top:900px" data-_bphone-900="top:212px">
-                <img src="assets/line.png" id="line" data-start="opacity: 0" data-_bphone-1800="opacity: 0" data-_bphone-2000="opacity: 1">
-            </div>
-            <div class="phone" id="phone-3">
-                <img src="assets/phone-3.png" data-start="top:900px" data-_bphone-600="top:900px" data-_bphone-1200="top:212px">
-                <img src="assets/switches.png" id="switches" data-start="opacity: 0" data-_bphone-2100="opacity: 0" data-_bphone-2300="opacity: 1">
-            </div>
-            <h1 data-start="opacity: 0" data-_bphone-2800="opacity: 0" data-_bphone-3100="opacity: 1">
-                We hope you liked other convenient features of the product.
             </h1>
         </div>
     </section>
