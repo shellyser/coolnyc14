@@ -182,6 +182,10 @@ $(document).ready(function(){
 	var scroll = skrollr.init({
 		// scale: 2,
 		// forceHeight: true,
+	  render: function(data) {		    
+	        //Debugging - Log the current scroll position.
+	        console.log(data.curTop);
+			    },
 	    constants: {
 	        bstreetupper: beforeStreetUpper,
 	        astreetupper: afterStreetUpper,
