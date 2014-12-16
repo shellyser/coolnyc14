@@ -9,11 +9,11 @@
 #street-content{
   position: relative;
   text-align: center;
-  height: 62%;
+  min-height: 62%;
   background-color: $black_60;
-  top: 116px; 
+  top: 15%; 
   .bottom {
-    height: 11px;
+    min-height: 1.5%;
     background-color: $white;
     top: 557px;
     @extend %verticalboxes;
@@ -21,46 +21,96 @@
   .top {
     position: absolute;
     &.left{
-      top: 43px;
+      top: 8%;
       left: 0px;
-      width: 27%;
-      height: 4px;
-      background-color: $white;
+      min-width: 22%;
+      min-height: 1.5%;
+      background-color: #fff;
     }
     &.right{
-      top: 43px;
-      width: 67%;
-      height: 4px;
-      background-color: $white;
+      top: 8%;
+      min-width: 65%;
+      min-height: 1.5%;
+      background-color: #fff;
       right: 0px;
     }
     &.asterick {
-      width: 46px;
-      top: 23px;
-      left: 464px;
+      height: 10%;
+      top: 4%;
+      left: 23.55%;
     }
+     }
+     @include break-min($main-break-xxtrlg){
+      .top{
+        &.left{
+          top: 8%;
+          left: 0px;
+          min-width: 26%;
+          height: 1.5%;
+        }
+        &.blue {
+            background-color: $color_blue;
+            z-index:2;        
+          }
+        
+        &.right{
+          top: 8%;
+          height: 1.5%;
+          right: 0px;
+          &.blue {
+            background-color: $color_blue;
+            z-index:1;
+            left: 31%;
+            width: 0%;
+          }
+        }
+        &.asterick {
+          max-height: 15%;
+          top: 4%;
+          left: 27.55%;
+       
+      }  
+     }
   }
   .street-text {
       position: absolute;
       width: 100%;
-      margin: 0;
+      margin: auto;
       top: 50%;
       left: 50%;
+      padding: 5%;
       margin-right: -50%;
       @include transform(translate(-50%, -50%));
-      @include break-min($main-break){
-        padding: 5%;
+      @include break-min($main-break){ 
         h1 {
-          font-size: 2.2em;
+          font-size: 2em;
           span {
             font-size: 3em;
           }
         }
         p {
           font-size: 1em;
-          line-height: 1.2px;
+          line-height: 1.5em;
           margin-top: 1em;
+          max-width:80%;
+          margin: 1em auto;
         }
       }
+     @include break-min($main-break-xxtrlg){
+        h1 {
+          font-size: 11.7rem;
+          span {
+          font-size: 15rem;
+          }
+        }
+        p {
+          font-size: 1.67em;
+          max-width: 56rem;
+          line-height: 2.0em;
+          margin: auto;
+          margin-top: 1%;
+        }
+      }
+     
 }
 }

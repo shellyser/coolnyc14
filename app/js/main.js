@@ -180,6 +180,10 @@ $(document).ready(function(){
 	});
 
 	var scroll = skrollr.init({
+		render: function(data) {
+		            //Debugging - Log the current scroll position.
+		            console.log(data.curTop);
+		        },
 		// scale: 2,
 		// forceHeight: true,
 	    constants: {

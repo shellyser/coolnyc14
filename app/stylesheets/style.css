@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -286,13 +286,13 @@ footer {
 #street-content {
   position: relative;
   text-align: center;
-  height: 62%;
+  min-height: 62%;
   background-color: rgba(0, 0, 0, 0.6);
-  top: 116px;
+  top: 15%;
 }
 /* line 15, ../sass/_partials/_components/_panel2.scss */
 #street-content .bottom {
-  height: 11px;
+  min-height: 1.5%;
   background-color: #fff;
   top: 557px;
 }
@@ -302,33 +302,67 @@ footer {
 }
 /* line 23, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.left {
-  top: 43px;
+  top: 8%;
   left: 0px;
-  width: 27%;
-  height: 4px;
+  min-width: 22%;
+  min-height: 1.5%;
   background-color: #fff;
 }
 /* line 30, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.right {
-  top: 43px;
-  width: 67%;
-  height: 4px;
+  top: 8%;
+  min-width: 65%;
+  min-height: 1.5%;
   background-color: #fff;
   right: 0px;
 }
 /* line 37, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.asterick {
-  width: 46px;
-  top: 23px;
-  left: 464px;
+  height: 10%;
+  top: 4%;
+  left: 23.55%;
 }
-/* line 43, ../sass/_partials/_components/_panel2.scss */
+@media screen and (min-width: 1200px) {
+  /* line 45, ../sass/_partials/_components/_panel2.scss */
+  #street-content .top.left {
+    top: 8%;
+    left: 0px;
+    min-width: 26%;
+    height: 1.5%;
+  }
+  /* line 51, ../sass/_partials/_components/_panel2.scss */
+  #street-content .top.blue {
+    background-color: #0091d9;
+    z-index: 2;
+  }
+  /* line 56, ../sass/_partials/_components/_panel2.scss */
+  #street-content .top.right {
+    top: 8%;
+    height: 1.5%;
+    right: 0px;
+  }
+  /* line 60, ../sass/_partials/_components/_panel2.scss */
+  #street-content .top.right.blue {
+    background-color: #0091d9;
+    z-index: 1;
+    left: 31%;
+    width: 0%;
+  }
+  /* line 67, ../sass/_partials/_components/_panel2.scss */
+  #street-content .top.asterick {
+    max-height: 15%;
+    top: 4%;
+    left: 27.55%;
+  }
+}
+/* line 75, ../sass/_partials/_components/_panel2.scss */
 #street-content .street-text {
   position: absolute;
   width: 100%;
-  margin: 0;
+  margin: auto;
   top: 50%;
   left: 50%;
+  padding: 5%;
   margin-right: -50%;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -336,23 +370,39 @@ footer {
   transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 400px) {
-  /* line 43, ../sass/_partials/_components/_panel2.scss */
-  #street-content .street-text {
-    padding: 5%;
-  }
-  /* line 53, ../sass/_partials/_components/_panel2.scss */
+  /* line 85, ../sass/_partials/_components/_panel2.scss */
   #street-content .street-text h1 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
-  /* line 55, ../sass/_partials/_components/_panel2.scss */
+  /* line 87, ../sass/_partials/_components/_panel2.scss */
   #street-content .street-text h1 span {
     font-size: 3em;
   }
-  /* line 59, ../sass/_partials/_components/_panel2.scss */
+  /* line 91, ../sass/_partials/_components/_panel2.scss */
   #street-content .street-text p {
     font-size: 1em;
-    line-height: 1.2px;
+    line-height: 1.5em;
     margin-top: 1em;
+    max-width: 80%;
+    margin: 1em auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 100, ../sass/_partials/_components/_panel2.scss */
+  #street-content .street-text h1 {
+    font-size: 11.7rem;
+  }
+  /* line 102, ../sass/_partials/_components/_panel2.scss */
+  #street-content .street-text h1 span {
+    font-size: 15rem;
+  }
+  /* line 106, ../sass/_partials/_components/_panel2.scss */
+  #street-content .street-text p {
+    font-size: 1.67em;
+    max-width: 56rem;
+    line-height: 2.0em;
+    margin: auto;
+    margin-top: 1%;
   }
 }
 
