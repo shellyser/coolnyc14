@@ -3,6 +3,7 @@
 @import "utils";
 @import "breakpoints";
 @import "_components/panel1";
+@import "_components/panel2";
 
 //@extend-elements
 
@@ -152,71 +153,6 @@ section {
 	margin-bottom: -16px;
 	cursor: pointer;
 }
-
-#street-upper {
-	background-image: url("../assets/bgphotos/street.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-}
-
-#street-content{
-	position: relative;
-	text-align: center;
-	height: 62%;
-	background-color: $black_60;
-	top: 116px;	
-	font-size: 20px;
-	.bottom {
-		height: 11px;
-		background-color: $white;
-		top: 557px;
-		@extend %verticalboxes;
-	}
-	.top {
-		position: absolute;
-		&.left{
-			top: 43px;
-			left: 0px;
-			width: 27%;
-			height: 4px;
-			background-color: $white;
-		}
-		&.right{
-			top: 43px;
-			width: 67%;
-			height: 4px;
-			background-color: $white;
-			right: 0px;
-		}
-		&.asterick {
-			width: 46px;
-			top: 23px;
-			left: 464px;
-		}
-	}
-	.street-text {
-			position: absolute;
-			width: 100%;
-			margin: 0;
-			top: 50%;
-			left: 50%;
-			margin-right: -50%;
-			@include transform(translate(-50%, -50%));
-			h1 {
-				font-size: 141px;
-				span {
-					font-size: 185px;
-				}
-			}
-			p {
-				line-height: 37px;
-				margin-top: 24px;
-			}
-	
-		}
-	}
 
 
 #thanks {
