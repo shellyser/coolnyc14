@@ -39,15 +39,14 @@ header {
             left: 50%;
             margin-right: -50%;
             @include transform(translate(-50%, -50%));
-            @include break-min($main-break) {
-                font-size: 2.7rem;
-        }
+            font-size: 2.7rem;
             @include break-min($main-break-lg) {
                 font-size: 3.5rem;
             }
-            @include break-min($main-break-xtrlg) {
-                font-size: 4em;
+            @include break-min($main-break-xxtrlg) {
+                font-size: 4rem;
             }
+
         }
     }   
 }
@@ -62,22 +61,23 @@ header {
         top: 50%;
         left: 50%;
         margin-right: -50%;
-        @include transform(translate(-50%, -50%));
-        @include break-min($main-break) {
-            width: 70%;
+        @include transform(translate(-50%, -50%));        
             text-align: center;
             #intro-year {
                 display: block;
-                font-size: 6.2em;
+                font-size: 5.6rem;
                 font-weight: 700;
             }
             #intro-text {
-                font-size: .9em;
-                line-height: 1.75em;
+                font-size: .9rem;
+                line-height: 1.75rem;
+                display: block;
+                margin: 5px auto;
+                width: 22rem;
             }
-        }
-        @include break-min($main-break-lg) {
-            min-width: 84%;
+      
+        @include break-min($panel1-text-break){
+            min-width: 100%;
             margin: auto;
             #intro-year {
                 font-size: 5em;
@@ -87,7 +87,7 @@ header {
             #intro-text {
                font-size: .85em;
                line-height: 1.75em;
-               max-width: 63%;
+               width: 27rem;
                text-align: left;
                margin-left: 2%;
                display: inline-block;
@@ -97,16 +97,36 @@ header {
             min-width: 100%;
             margin: auto;
               #intro-year {
-                  font-size: 7.80em;
+                  font-size: 5.2rem;
+                  margin-left: 1.5rem;
                   font-weight: 700;
                   display: inline-block;
               }
                #intro-text {
-                    font-size: 1.1em;
-                    line-height: 2em;
+                    font-size: .9rem;
+                    line-height: 1.8em;
                     text-align: left;
-                    margin-left: 2%;
+                    margin-left: 1.2rem;
                     display: inline-block;
+                    width: 29rem;
+                }
+            }   
+            @include break-min($main-break-xxtrlg) {
+            min-width: 100%;
+            margin: auto;
+              #intro-year {
+                  font-size: 7rem;
+                  font-weight: 700;
+                  display: inline-block;
+                  margin-left: 4rem;
+              }
+               #intro-text {
+                    font-size: 1em;
+                    line-height: 2rem;
+                    text-align: left;
+                    margin-left: 2.3rem;
+                    display: inline-block;
+                    width: 35rem;
                 }
             }   
         } 
@@ -118,32 +138,17 @@ footer {
     width: 100%;
     background-color: $white;
     text-align: center;
-    color: $color_cerulean_approx;
+    color: #0E9DD8;
     padding: 1%;
     font-style: italic;
     min-height: $footer_height;
-    @include break-min($main-break) {
-        font-size: 1em;
-        .fa {
-            font-size: 2.2em;
-        }
+    font-size: .8em;
+    h3{
+        display:block;
+        margin-top: .2rem;
     }
-        @include break-min($main-break-lg) {
-            font-size: 1.2em;
-            padding-top: 4%;
-            .fa {
-                font-size: 2em;
-            }
-       }
-        @include break-min($main-break-xtrlg) {
-            font-size: 1.2em;
-            padding-top: 4%;
-            .fa {
-                font-size: 2em;
-            }
-    } 
-}
-#intro-scroll {
-    display: none;
+    #intro-scroll {
+        display: none;
+    }    
 }
     

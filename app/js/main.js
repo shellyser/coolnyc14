@@ -18,9 +18,9 @@ $(document).ready(function(){
 	afterStreetUpper = beforeStreetUpper + panel,
 	beforeStreetLower = afterStreetUpper + transition,
 	afterStreetLower = beforeStreetLower + panel,
-	beforeThanks = afterStreetLower + transition,
-	afterThanks = beforeThanks + panel,
-	beforeTaxi = afterThanks + transition,
+	beforeBrick = afterStreetLower + transition,
+	afterBrick = beforeBrick + panel,
+	beforeTaxi = afterBrick + transition,
 	afterTaxi = beforeTaxi + panel,
 	beforeSkyline = afterTaxi + transition,
 	afterSkyline = beforeSkyline + panel,
@@ -79,9 +79,9 @@ $(document).ready(function(){
 	    }, scrollTime);
 	});
 
-	$("#to-thanks").click(function() {
+	$("#to-Brick").click(function() {
 	    $('body, html').animate({
-	        scrollTop: beforeThanks + 'px'
+	        scrollTop: beforeBrick + 'px'
 	    }, scrollTime);
 	});
 
@@ -187,12 +187,13 @@ $(document).ready(function(){
 		// scale: 2,
 		// forceHeight: true,
 	    constants: {
+
 	        bstreetupper: beforeStreetUpper,
 	        astreetupper: afterStreetUpper,
 	        bstreetlower: beforeStreetLower,
 	        astreetlower: afterStreetLower,
-	        bthanks: beforeThanks,
-	        athanks: afterThanks,
+	        bbrick: beforeBrick,
+	        abrick: afterBrick,
 	        btaxi: beforeTaxi,
 	        ataxi: afterTaxi,
 	        bskyline: beforeSkyline,

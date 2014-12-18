@@ -1,11 +1,17 @@
 #street-lower {
+	.wrapper-small{
+		width:49rem;
+	}
 	text-align: center;
 	background-color: $color_blue;
+	 > div {
+		position: relative;
+	}
 	#map-header{
 		background-color: $black;
 		height: 162px;
-		position: relative;
 		top: 88px;
+		z-index: 9999;
 		h1 {
 			position: absolute;
 			width: 100%;
@@ -32,11 +38,121 @@
 		}
 
 	}
-	#map{
+	#map-wrapper{
+		height: 45rem;
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		opacity: .6;
+		> img {
+			display: block;
+			position: absolute;			
+		}
+		#map {
+			opacity: 0.15;
+			width: 47.5rem;
+			overflow: hidden;
+			margin: auto;
+		}
+
+	}
+}
+
+.one 	{
+	top: 33rem;
+	left: 10rem;
+	position: absolute;
+	.circle-outter {
+			background-color: $white;
+			@include border-radius(50%);
+			position: absolute;
+			@include opacity(.3);		
+			width: 5.2rem;
+			height: 5.2rem;
+		}
+	.circle-inner {
+		@include border-radius(50%);
+		background-color: $white;
+		position: absolute;
+		@include opacity(.6);
+		left: 0.6rem;
+		top: 0.6rem;
+		width: 4rem;
+		height: 4rem;
+	}
+	h3 {
+		display: block;
+		font-size: 2.4rem;
+		color: $deep_blue;
+		position: absolute;
+		margin: auto;
+		top: 1.2rem;
+		left: 1.2rem;
+		font-weight: 700;
+	}
+	.line {
+		height: .2rem;
+		width: 10.5rem;
+		background-color: #015fd0;
+		position: absolute;
+		left: 4.9rem;
+		top: 2.6rem;
+		display: block;
+	}
+	p {
+		width: 31rem;
+		display: block;
+		position: absolute;
+		left: 7rem;
+		top: 3.2rem;
+		text-align: left;
+		line-height: 1.8rem;
+	}
+}
+.two {
+	top: 18rem;
+	right: 15rem;
+	position: absolute;
+	.circle-outter {
+		background-color: $white;
+		@include border-radius(50%);
+		position: absolute;
+		@include opacity(.3);
+		width: 12.5rem;
+		height: 12.5rem;		
+		}
+	.circle-inner {
+		@include border-radius(50%);
+		background-color: $white;
+		position: absolute;
+		@include opacity(.6);
+		left: 1.25rem;
+		top: 1.25rem;
+		width: 10.1rem;
+		height: 10.1rem;
+	}
+	h3 {
+		display: block;
+		font-size: 3.2rem;
+		color: $black;
+		position: absolute;
+		margin: auto;
+		top: 4.3rem;
+		left: 2.4rem;
+		font-weight: 700;
+	}
+	.line {
+		height: 0.2rem;
+		width: 15rem;
+		background-color: #015fd0;
+		position: absolute;
+		right: -0.5rem;
+		top: 6rem;
+	}
+	p {
+		display: block;
+		position: absolute;
+		width: 30rem;
+		right: 1rem;
+		text-align: right;
+		line-height: 1.8rem;
+		top: 6.7rem;
 	}
 }

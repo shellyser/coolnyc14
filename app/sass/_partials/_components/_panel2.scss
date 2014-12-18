@@ -4,39 +4,52 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  .bottom{
+    background-color: $white;
+    @extend %verticalboxes;
+    min-height: 0.3rem;
+    bottom: 10rem;
+  }
 }
 
 #street-content{
   position: relative;
   text-align: center;
-  min-height: 62%;
+  min-height: 25rem;
   background-color: $black_60;
   top: 15%; 
-  .bottom {
-    min-height: 1.5%;
-    background-color: $white;
-    top: 557px;
-    @extend %verticalboxes;
+    .bottom {
+      background-color: $white;
+      @extend %verticalboxes;
+      min-height: 0.6rem;    
+      top: 25rem;
   }
   .top {
     position: absolute;
     &.left{
       top: 12%;
-      left: 0px;
-      min-width: 22%;
-      min-height: 1.5%;
+      min-height: 0.3rem;
       background-color: $white;
+      width: 100rem;
+      background-color: #fff;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-111%,50%);    
       &.blue {
       background-color: $color_blue;
      }
     }
     &.right{
       top: 12%;
-      min-height: 1.5%;
-      left: 31%;
+      min-height: 0.3rem;
+      left: 50%;
+      margin-right: -50%;
+      width: 150rem;
+      transform: translate(-4%,50%);
        &.blue {
        background-color: $color_blue;
        width:0px;
+
       }
       &.white {
         background-color: $white;
@@ -44,10 +57,26 @@
       }
     }
     &.asterick {
-      height: 10%;
+      width: 2.5rem;
       top: 7.5%;
-      left: 21.55%;
+      top: 53%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-394%,-352%);
      }    
+    }
+    @include break-min($panel2-line-break){
+      .top {
+        &.left{
+          transform: translate(-122%,50%);
+        }
+        &.right {
+          transform: translate(-11%,50%);
+        }
+        &.asterick {
+          transform: translate(-823%,-352%);
+        }
+      }
     }
   }
   .street-text {
@@ -60,44 +89,30 @@
       margin-right: -50%;
       @include transform(translate(-50%, -50%));
       h1 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         span {
         font-size: 5.5rem;
         }
       }
       p {
-        font-size: 1.4rem;
-        max-width: 44rem;
-        line-height: 2.3rem;
+        font-size: 1rem;
+        width: 21.4rem;
+        line-height: 2rem;
         margin: auto;
         margin-top: 3%;
       }
-      @include break-min($main-break-lg){
-        h1 {
-          font-size: 6.5rem;
-          span {
-          font-size: 8.3rem;
-          }
-        }
-        p {
-          font-size: 1.4rem;
-          max-width: 34rem;
-          line-height: 2.6rem;
-          margin: auto;
-          margin-top: 3%;
-        }
-      }
+
       @include break-min($panel2-text-break){
         h1 {
-          font-size: 10rem;
+          font-size: 7rem;
           span {
-          font-size: 12.5rem;
+          font-size: 9.25rem;
           }
         }
         p {
-          font-size: 1.6rem;
-          max-width: 44rem;
-          line-height: 2.6rem;
+          font-size: 1rem;
+          width: 35rem;
+          line-height: 1.9rem;
           margin: auto;
           margin-top: 1%;
         }
