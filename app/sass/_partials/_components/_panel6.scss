@@ -1,0 +1,55 @@
+#skyline {
+	background-image: url("../assets/bgphotos/skyline.jpg");
+	@include background-size(cover);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	img {
+		height:23%;
+		position: absolute;
+		@include break-min($triangle-break) {
+			height: 32%;
+		}
+		@include break-min($main-break-xtrlg) {
+			height: 50%;
+		}
+	&:first-of-type{
+		top:0;
+		left:0;
+		}
+	&:last-of-type {
+		bottom: 0;
+		right: -22px;
+		}
+	}
+	#skyline-content {	
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 1.9rem;
+		h1 {
+			margin: 0;
+			display: block;
+			width: 90%;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			position: absolute;
+			@include transform(translate(-50%, -50%));
+			padding: 15% 2%;
+			@include break-min($panel3-text-break) {
+			font-size: 2.1rem;
+			line-height: 2.4rem;
+			@include text-shadow(rgba(0, 0, 0, 0.4) 6px 4px 5px); 
+		}
+		@include break-min($main-break-xtrlg) {
+			font-size: 3.08rem;
+			line-height: 3.5rem;
+		}
+		@include break-min($main-break-xxtrlg) {
+			font-size: 4.2rem;
+			line-height: 4.2rem;
+			}
+
+		}
+	}
+}

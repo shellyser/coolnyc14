@@ -1,6 +1,6 @@
 #street-upper {
   background-image: url("../assets/bgphotos/street.jpg");
-  background-size: cover;
+  @include background-size(cover);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -21,96 +21,86 @@
   .top {
     position: absolute;
     &.left{
-      top: 8%;
+      top: 12%;
       left: 0px;
       min-width: 22%;
       min-height: 1.5%;
-      background-color: #fff;
+      background-color: $white;
+      &.blue {
+      background-color: $color_blue;
+     }
     }
     &.right{
-      top: 8%;
-      min-width: 65%;
+      top: 12%;
       min-height: 1.5%;
-      background-color: #fff;
-      right: 0px;
+      left: 31%;
+       &.blue {
+       background-color: $color_blue;
+       width:0px;
+      }
+      &.white {
+        background-color: $white;
+        min-width: 69%;
+      }
     }
     &.asterick {
       height: 10%;
-      top: 4%;
-      left: 23.55%;
+      top: 7.5%;
+      left: 21.55%;
+     }    
     }
-     }
-     @include break-min($main-break-xxtrlg){
-      .top{
-        &.left{
-          top: 8%;
-          left: 0px;
-          min-width: 26%;
-          height: 1.5%;
-        }
-        &.blue {
-            background-color: $color_blue;
-            z-index:2;        
-          }
-        
-        &.right{
-          top: 8%;
-          height: 1.5%;
-          right: 0px;
-          &.blue {
-            background-color: $color_blue;
-            z-index:1;
-            left: 31%;
-            width: 0%;
-          }
-        }
-        &.asterick {
-          max-height: 15%;
-          top: 4%;
-          left: 27.55%;
-       
-      }  
-     }
   }
   .street-text {
       position: absolute;
       width: 100%;
       margin: auto;
-      top: 50%;
+      top: 55%;
       left: 50%;
       padding: 5%;
       margin-right: -50%;
       @include transform(translate(-50%, -50%));
-      @include break-min($main-break){ 
-        h1 {
-          font-size: 2em;
-          span {
-            font-size: 3em;
-          }
-        }
-        p {
-          font-size: 1em;
-          line-height: 1.5em;
-          margin-top: 1em;
-          max-width:80%;
-          margin: 1em auto;
+      h1 {
+        font-size: 4.5rem;
+        span {
+        font-size: 5.5rem;
         }
       }
-     @include break-min($main-break-xxtrlg){
+      p {
+        font-size: 1.4rem;
+        max-width: 44rem;
+        line-height: 2.3rem;
+        margin: auto;
+        margin-top: 3%;
+      }
+      @include break-min($main-break-lg){
         h1 {
-          font-size: 11.7rem;
+          font-size: 6.5rem;
           span {
-          font-size: 15rem;
+          font-size: 8.3rem;
           }
         }
         p {
-          font-size: 1.67em;
-          max-width: 56rem;
-          line-height: 2.0em;
+          font-size: 1.4rem;
+          max-width: 34rem;
+          line-height: 2.6rem;
+          margin: auto;
+          margin-top: 3%;
+        }
+      }
+      @include break-min($panel2-text-break){
+        h1 {
+          font-size: 10rem;
+          span {
+          font-size: 12.5rem;
+          }
+        }
+        p {
+          font-size: 1.6rem;
+          max-width: 44rem;
+          line-height: 2.6rem;
           margin: auto;
           margin-top: 1%;
         }
-      }
-     
-}
+      }    
+
 }

@@ -1,0 +1,37 @@
+#bridge {
+	background-image: url("../assets/bgphotos/bridge.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	#bridge-content {	
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 1.9rem;
+		h1 {
+			margin: 0;
+			display: block;
+			width: 80%;
+			background-color: rgba(0,0,0,.86);
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			position: absolute;
+			@include transform(translate(-50%, -50%));
+			padding: 15% 2%;
+			@include break-min($panel3-text-break) {
+			font-size: 2.6rem;
+			line-height: 2.9rem;
+		}
+		@include break-min($main-break-xtrlg) {
+			font-size: 3.5rem;
+			line-height: 3.5rem;
+		}
+		@include break-min($main-break-xxtrlg) {
+			font-size: 4.2rem;
+			line-height: 4.2rem;
+			}
+
+		}
+	}
+}	

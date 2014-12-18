@@ -4,6 +4,13 @@
 @import "breakpoints";
 @import "_components/panel1";
 @import "_components/panel2";
+@import "_components/panel3";
+@import "_components/panel5";
+@import "_components/panel6";
+@import "_components/panel7";
+@import "_components/panel8";
+@import "_components/panel9";
+
 
 //@extend-elements
 
@@ -50,14 +57,23 @@
 	@include box-sizing(border-box);
 }
 
-body {
+html {
 	font-family: $font_0;
-	font-size: 16px;
 	color: $white;
+	font-size: 20px;
 	 text-align: center;
 	h1 {
 		font-weight: 700;
 	}	
+	@include break-max($main-break-xxtrlg){
+		font-size: 18px;
+	}
+	@include break-max($main-break-xtrlg){
+		font-size: 16px;
+	}
+	@include break-max($main-break){
+		font-size: 14px;
+	}
 }
 
 section {
@@ -213,22 +229,7 @@ section {
 		@extend %extend_4;
 	}
 }
-#map {
-	background-color: $color_cararra_approx;
-	h1 {
-		
-		position: absolute;
-		width: 720px;
-		top: 138px;
-		margin: auto 99px;
-	}
-	#ye-olde-ie body h1 {
-		@extend %extend_4;
-	}
-	> div {
-		position: relative;
-	}
-}
+
 #boxes {
 	background-color: $color_cararra_approx;
 	background-image: url("../assets/conveyor-belt-bg.png?1378923365");
@@ -380,9 +381,6 @@ section {
 			@extend %extend_4;
 		}
 		#people h1 {
-			@extend %extend_4;
-		}
-		#map h1 {
 			@extend %extend_4;
 		}
 		#boxes h1 {
@@ -577,34 +575,7 @@ h2[class^="map-percentage-"][class*="dark"] {
   @include opacity(0.1);
 }
 
-#street-lower {
-	text-align: center;
-	background-color: $color_blue;
-	background-image: url(../assets/map.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	#map-header{
-		background-color: $black;
-		height: 162px;
-		position: relative;
-		top: 88px;
-		h1 {
-			position: absolute;
-			width: 100%;
-			font-size: 56px;
-			font-weight: 400;
-			margin: 0;
-			top: 50%;
-			left: 50%;
-			margin-right: -50%;
-			@include transform(translate(-50%, -50%));
-			span {
-				font-weight: 700;
-				color: $color_blue;
-			}
-		}
-	}
-}
+
 
 #map-staten-label {
 	bottom: 247px;
@@ -1151,9 +1122,6 @@ h2[class^="map-percentage-"][class*="dark"] {
 		padding-top: 160px;
 	}
 	#street-upper h1 {
-	}
-	#map h1 {
-		top: 350px;
 	}
 	#boxes h1 {
 		top: 300px;

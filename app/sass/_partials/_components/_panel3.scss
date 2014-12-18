@@ -1,0 +1,42 @@
+#street-lower {
+	text-align: center;
+	background-color: $color_blue;
+	#map-header{
+		background-color: $black;
+		height: 162px;
+		position: relative;
+		top: 88px;
+		h1 {
+			position: absolute;
+			width: 100%;
+			font-size: 300%;
+			font-weight: 400;
+			margin: 0;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			@include transform(translate(-50%, -50%));
+			span {
+				font-weight: 700;
+				color: $color_blue;
+				display: block;
+			}
+			@include break-min($panel2-text-break){
+				span{
+					display: initial;
+				}
+			}
+			@include break-min($panel3-text-break){
+				font-size: 390%;				
+			}
+		}
+
+	}
+	#map{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		opacity: .6;
+	}
+}
