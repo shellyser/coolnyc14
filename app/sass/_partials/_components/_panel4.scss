@@ -4,6 +4,28 @@
 	background-size: cover;
 	overflow: visible;
 	color: black;
+	font-size: 7px;
+	@include break-min($panel4-text-break4){
+		font-size: 8px;
+	}
+	@include break-min($main-break-lg){
+		font-size: 10px;
+	}
+	@include break-min($panel4-text-break3){
+		font-size: 12px;
+	}
+	@include break-min($panel4-text-break){
+		font-size: 14px;
+	}
+	@include break-min($panel4-text-break2){
+		font-size: 16px;
+	}
+	@include break-min($main-break-xxtrlg){
+		font-size: 18px;
+	}
+	@include break-min($main-break-xxxtrlg){
+		font-size: 20px;
+	}
 	.panel {
 		position: absolute;
 		width: 50%;
@@ -11,13 +33,14 @@
 		&.left {
 			left: 0;
 			background-color: $white_60;
-			text-align: left;
-			font-size: 2.5rem;
-			line-height: 3rem;			
+			text-align: left;		
 			h1 {
 				position: absolute;
-				right: 3rem;
-				margin: 0;
+				right: 5%;
+				margin: .5em;
+				width: 10em;
+				font-size: 2.5em;
+				line-height: 1.3em;
 				top: 50%;
 				@include transform(translate(0%, -50%));
 			}
@@ -25,16 +48,16 @@
 		&.right {
 			right:0;
 			.circle {
-				width: 22.5rem;
-				height: 22.5rem;
+				width: 22.5em;
+				height: 22.5em;
 				border-radius: 50%;
 				background: $white_60;
 				position: absolute;
-				top: calc(50vh - 11.25rem );
-				left: calc(25vw - 11.25rem );
+				top: calc(50vh - 11.25em );
+				left: calc(25vw - 11.25em );
 				padding: 5%;
 				h1 {
-					font-size: 8.2rem;
+					font-size: 8.2em;
 					padding: auto;
 					display: block;
 					position: absolute;

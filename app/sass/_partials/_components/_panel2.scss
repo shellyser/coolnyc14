@@ -8,15 +8,15 @@
     background-color: $white;
     @extend %verticalboxes;
     min-height: 0.3rem;
-    bottom: 10rem;
+    top: 60%;
   }
 }
 
 #street-content{
   position: relative;
   text-align: center;
-  min-height: 25rem;
-  background-color: $black_60;
+  height: 25rem;
+  background-color: $black;
   top: 15%; 
     .bottom {
       background-color: $white;

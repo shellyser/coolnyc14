@@ -40,7 +40,7 @@ $(document).ready(function(){
 	text2of2in = 1400,
 	text2of2out = 2000
 
-	streetUpperText1In = beforeStreetUpper + text1of2in,
+	streetUpperText1In = beforeStreetUpper + text1of2in;
 
 
 
@@ -181,13 +181,30 @@ $(document).ready(function(){
 
 	var scroll = skrollr.init({
 		render: function(data) {
-		            //Debugging - Log the current scroll position.
-		            console.log(data.curTop);
-		        },
+	        //Debugging - Log the current scroll position.
+		    console.log(data.curTop); 
+		       },
+		   render: function counterscroll(data){   
+		 	if((data.curTop >= 1528)){
+			$('.count').each(function () {
+			$( ".count" ).unbind('counterscroll');
+		    $(this).prop('Counter',0).animate({
+		        Counter: $(this).text()
+		    }, {
+		        duration: 500,
+		        easing: 'swing',
+		        step: function (now) {
+		            $(this).text(Math.ceil(now));
+		        }
+		    });
+		    
+		});
+		 
+		}
+		},        
 		// scale: 2,
 		// forceHeight: true,
 	    constants: {
-
 	        bstreetupper: beforeStreetUpper,
 	        astreetupper: afterStreetUpper,
 	        bstreetlower: beforeStreetLower,
@@ -211,7 +228,20 @@ $(document).ready(function(){
 	    }
 	});
 
-	$('#intro-scroll').fadeIn(2000);
+	$('#intro-scroll').delay(1000).fadeIn(2000);
+	$('#intro-year').fadeIn(500);
+	$('#intro-text').fadeIn(500);
+	$('#intro-scroll').each(function() {
+	    var elem = $(this);
+	    setInterval(function() {
+	        if (elem.css('visibility') == 'hidden') {
+	            elem.css('visibility', 'visible');
+	        } else {
+	            elem.css('visibility', 'hidden');
+	        }    
+	    }, 1000);
+	});
+
 
 });
 
