@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -281,25 +281,25 @@ footer #intro-scroll {
   top: 60%;
 }
 
-/* line 15, ../sass/_partials/_components/_panel2.scss */
+/* line 14, ../sass/_partials/_components/_panel2.scss */
 #street-content {
   position: relative;
   text-align: center;
   height: 25rem;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #000;
   top: 15%;
 }
-/* line 21, ../sass/_partials/_components/_panel2.scss */
+/* line 20, ../sass/_partials/_components/_panel2.scss */
 #street-content .bottom {
   background-color: #fff;
   min-height: 0.6rem;
   top: 25rem;
 }
-/* line 27, ../sass/_partials/_components/_panel2.scss */
+/* line 26, ../sass/_partials/_components/_panel2.scss */
 #street-content .top {
   position: absolute;
 }
-/* line 29, ../sass/_partials/_components/_panel2.scss */
+/* line 28, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.left {
   top: 12%;
   min-height: 0.3rem;
@@ -310,11 +310,11 @@ footer #intro-scroll {
   margin-right: -50%;
   transform: translate(-111%, 50%);
 }
-/* line 38, ../sass/_partials/_components/_panel2.scss */
+/* line 37, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.left.blue {
   background-color: #0091d9;
 }
-/* line 42, ../sass/_partials/_components/_panel2.scss */
+/* line 41, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.right {
   top: 12%;
   min-height: 0.3rem;
@@ -322,18 +322,14 @@ footer #intro-scroll {
   margin-right: -50%;
   width: 150rem;
   transform: translate(-4%, 50%);
-}
-/* line 49, ../sass/_partials/_components/_panel2.scss */
-#street-content .top.right.blue {
-  background-color: #0091d9;
-  width: 0px;
-}
-/* line 54, ../sass/_partials/_components/_panel2.scss */
-#street-content .top.right.white {
   background-color: #fff;
   min-width: 69%;
 }
-/* line 59, ../sass/_partials/_components/_panel2.scss */
+/* line 50, ../sass/_partials/_components/_panel2.scss */
+#street-content .top.right.blue {
+  background-color: #0091d9;
+}
+/* line 54, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.asterick {
   width: 2.5rem;
   top: 7.5%;
@@ -343,21 +339,21 @@ footer #intro-scroll {
   transform: translate(-394%, -352%);
 }
 @media screen and (min-width: 800px) {
-  /* line 70, ../sass/_partials/_components/_panel2.scss */
+  /* line 65, ../sass/_partials/_components/_panel2.scss */
   #street-content .top.left {
     transform: translate(-122%, 50%);
   }
-  /* line 73, ../sass/_partials/_components/_panel2.scss */
+  /* line 68, ../sass/_partials/_components/_panel2.scss */
   #street-content .top.right {
     transform: translate(-11%, 50%);
   }
-  /* line 76, ../sass/_partials/_components/_panel2.scss */
+  /* line 71, ../sass/_partials/_components/_panel2.scss */
   #street-content .top.asterick {
     transform: translate(-823%, -352%);
   }
 }
 
-/* line 82, ../sass/_partials/_components/_panel2.scss */
+/* line 77, ../sass/_partials/_components/_panel2.scss */
 .street-text {
   position: absolute;
   width: 100%;
@@ -371,16 +367,17 @@ footer #intro-scroll {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 91, ../sass/_partials/_components/_panel2.scss */
+/* line 86, ../sass/_partials/_components/_panel2.scss */
 .street-text h1 {
   font-size: 3.5rem;
 }
-/* line 93, ../sass/_partials/_components/_panel2.scss */
+/* line 88, ../sass/_partials/_components/_panel2.scss */
 .street-text h1 span {
   font-size: 5.5rem;
 }
-/* line 97, ../sass/_partials/_components/_panel2.scss */
+/* line 92, ../sass/_partials/_components/_panel2.scss */
 .street-text p {
+  visibility: hidden;
   font-size: 1rem;
   width: 21.4rem;
   line-height: 2rem;
@@ -388,15 +385,15 @@ footer #intro-scroll {
   margin-top: 3%;
 }
 @media screen and (min-width: 720px) {
-  /* line 106, ../sass/_partials/_components/_panel2.scss */
+  /* line 102, ../sass/_partials/_components/_panel2.scss */
   .street-text h1 {
     font-size: 7rem;
   }
-  /* line 108, ../sass/_partials/_components/_panel2.scss */
+  /* line 104, ../sass/_partials/_components/_panel2.scss */
   .street-text h1 span {
     font-size: 9.25rem;
   }
-  /* line 112, ../sass/_partials/_components/_panel2.scss */
+  /* line 108, ../sass/_partials/_components/_panel2.scss */
   .street-text p {
     font-size: 1rem;
     width: 35rem;

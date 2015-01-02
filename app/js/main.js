@@ -17,7 +17,7 @@ $(document).ready(function(){
 	beforeStreetUpper = transition,
 	afterStreetUpper = beforeStreetUpper + panel,
 	beforeStreetLower = afterStreetUpper + transition,
-	afterStreetLower = beforeStreetLower + panel,
+	afterStreetLower = beforeStreetLower + panel*2,
 	beforeBrick = afterStreetLower + transition,
 	afterBrick = beforeBrick + panel,
 	beforeTaxi = afterBrick + transition,
@@ -38,7 +38,7 @@ $(document).ready(function(){
 	text1of2in = 400,
 	text1of2out = 1000,
 	text2of2in = 1400,
-	text2of2out = 2000
+	text2of2out = 2000,	
 
 	streetUpperText1In = beforeStreetUpper + text1of2in;
 
@@ -182,26 +182,23 @@ $(document).ready(function(){
 	var scroll = skrollr.init({
 		render: function(data) {
 	        //Debugging - Log the current scroll position.
-		    console.log(data.curTop); 
-		       },
-		   render: function counterscroll(data){   
-		 	if((data.curTop >= 1528)){
-			$('.count').each(function () {
-			$( ".count" ).unbind('counterscroll');
-		    $(this).prop('Counter',0).animate({
-		        Counter: $(this).text()
-		    }, {
-		        duration: 500,
-		        easing: 'swing',
-		        step: function (now) {
-		            $(this).text(Math.ceil(now));
-		        }
-		    });
-		    
-		});
-		 
-		}
-		},        
+			console.log(data.curTop); 
+		     	if(data.curTop >= 1528){
+		    	    	$('.count').prop('Counter',0).animate({
+		    	        Counter: 2032
+		    	    }, {
+		    	        duration: 2000,
+		    	        easing: 'swing',
+		    	        step: function (now) {
+		    	            $(this).text(Math.ceil(now));
+		    	        }
+		       	 });
+		       	 $('.street-text p').css('visibility', 'visible');		    	     
+		    } else {
+		    	$('.street-text p').css('visibility', 'hidden');
+		    	console.log('Im under 1528');
+		    }
+		 },        
 		// scale: 2,
 		// forceHeight: true,
 	    constants: {

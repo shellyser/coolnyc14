@@ -11,7 +11,6 @@
     top: 60%;
   }
 }
-
 #street-content{
   position: relative;
   text-align: center;
@@ -31,7 +30,7 @@
       min-height: 0.3rem;
       background-color: $white;
       width: 100rem;
-      background-color: #fff;
+      background-color: $white;
       left: 50%;
       margin-right: -50%;
       transform: translate(-111%,50%);    
@@ -46,14 +45,10 @@
       margin-right: -50%;
       width: 150rem;
       transform: translate(-4%,50%);
+      background-color: $white;
+      min-width: 69%;
        &.blue {
        background-color: $color_blue;
-       width:0px;
-
-      }
-      &.white {
-        background-color: $white;
-        min-width: 69%;
       }
     }
     &.asterick {
@@ -95,6 +90,7 @@
         }
       }
       p {
+        visibility: hidden;
         font-size: 1rem;
         width: 21.4rem;
         line-height: 2rem;
