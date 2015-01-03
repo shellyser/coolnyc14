@@ -1,7 +1,16 @@
 #fence {
-	background-image: url("../assets/bgphotos/fence.jpg");
+	background-image: url("../assets/bgphotos/fence350.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
+	@include break-min($main-break){
+	    background-image: url("../assets/bgphotos/fence600.jpg");
+	}
+	@include break-min($main-break-lg){
+	    background-image: url("../assets/bgphotos/fence1200.jpg");
+	}
+	@include break-min($main-break-xxtrlg){
+	    background-image: url("../assets/bgphotos/fence.jpg");
+	}
 }

@@ -1,9 +1,15 @@
 #street-upper {
-  background-image: url("../assets/bgphotos/street.jpg");
+  background-image: url("../assets/bgphotos/street600.jpg");
   @include background-size(cover);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+    @include break-min($main-break-lg){
+        background-image: url("../assets/bgphotos/street1200.jpg");
+    }
+    @include break-min($main-break-xxtrlg){
+        background-image: url("../assets/bgphotos/street.jpg");
+    }
   .bottom{
     background-color: $white;
     @extend %verticalboxes;

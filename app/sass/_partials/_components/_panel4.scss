@@ -1,5 +1,5 @@
 #brick {
-	background-image: url("../assets/bgphotos/brick.jpg");
+	background-image: url("../assets/bgphotos/brick35-.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: visible;
@@ -8,7 +8,11 @@
 	@include break-min($panel4-text-break4){
 		font-size: 8px;
 	}
+	@include break-min($main-break){
+        background-image: url("../assets/bgphotos/brick600.jpg");
+    }
 	@include break-min($main-break-lg){
+		background-image: url("../assets/bgphotos/brick1200.jpg");
 		font-size: 10px;
 	}
 	@include break-min($panel4-text-break3){
@@ -21,11 +25,14 @@
 		font-size: 16px;
 	}
 	@include break-min($main-break-xxtrlg){
+		background-image: url("../assets/bgphotos/brick.jpg");
 		font-size: 18px;
 	}
 	@include break-min($main-break-xxxtrlg){
 		font-size: 20px;
 	}
+
+
 	.panel {
 		position: absolute;
 		width: 50%;

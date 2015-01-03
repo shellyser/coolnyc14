@@ -19,11 +19,18 @@ header {
 #intro-content {
     @include background-size(cover);
     background-repeat: no-repeat;
-    background-image: url("../assets/bgphotos/sky.jpg");
+    background-image: url("../assets/bgphotos/sky600.jpg");
     background-position: center center;
     background-attachment: fixed;
     height: calc(100% - #{$footer_height} - 86px);
     width: 100%;
+
+    @include break-min($main-break-lg){
+        background-image: url("../assets/bgphotos/sky1200.jpg");
+    }
+    @include break-min($main-break-xxtrlg){
+        background-image: url("../assets/bgphotos/sky.jpg");
+    }
     #intro-content-top {
         background-color: $white_50;
         height: 50%;
@@ -46,7 +53,6 @@ header {
             @include break-min($main-break-xxtrlg) {
                 font-size: 4rem;
             }
-
         }
     }   
 }

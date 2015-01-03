@@ -1,9 +1,18 @@
 #skyline {
-	background-image: url("../assets/bgphotos/skyline.jpg");
+	background-image: url("../assets/bgphotos/skyline350.jpg");
 	@include background-size(cover);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
+	@include break-min($main-break){
+	    background-image: url("../assets/bgphotos/skyline600.jpg");
+	}
+	@include break-min($main-break-lg){
+	    background-image: url("../assets/bgphotos/skyline1200.jpg");
+	}
+	@include break-min($main-break-xxtrlg){
+	    background-image: url("../assets/bgphotos/skyline.jpg");
+	}
 	img {
 		height:23%;
 		position: absolute;

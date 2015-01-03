@@ -77,18 +77,17 @@ html {
 	}
 }
 
-body {
-	
-}
-
-section {
-	display: block;
-	position: relative;
-	height: 900px;
-	width: 100%;
-	overflow: hidden;
-	&.double {
-		height: 1800px;
+html, body {
+	width:100%;
+	height:100%;
+	section {
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:transparent center no-repeat;
+		background-size:cover;
 	}
 }
 
