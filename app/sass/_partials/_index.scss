@@ -62,18 +62,21 @@
 html {
 	font-family: $font_0;
 	color: $white;
-	font-size: 20px;
+	font-size: 12px;
 	 text-align: center;
 	h1 {
 		font-weight: 700;
 	}	
-	@include break-max($main-break-xxtrlg){
+	@include break-min($main-break-xxxtrlg){
+		font-size: 20px;
+	}
+	@include break-min($main-break-xxtrlg){
 		font-size: 18px;
 	}
-	@include break-max($main-break-xtrlg){
+	@include break-min($main-break-xtrlg){
 		font-size: 16px;
 	}
-	@include break-max($main-break){
+	@include break-min($main-break){
 		font-size: 14px;
 	}
 }
