@@ -1,9 +1,8 @@
 #nycave {
-	background-image: url("../assets/bgphotos/nycave350.jpg");
-	background-size: cover;
+	background-image: url("../assets/bgphotos/nycave450.jpg");
+	@include background-size(cover);
 	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
+	background-position: top center;
 	@include break-min($main-break){
 	    background-image: url("../assets/bgphotos/nycave600.jpg");
 	}
@@ -13,12 +12,19 @@
 	@include break-min($main-break-xxtrlg){
 	    background-image: url("../assets/bgphotos/nycave.jpg");
 	}
-	#nycave-content {
+	> h1 {
 		font-size: 1.6rem;
 		font-weight: 700;
 		width: 100%;
-		margin: 22% auto;
+		display: block;
+		margin: auto;
+		position: absolute;
 		line-height: 1.9rem;
+		height: 12rem;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
 		@include text-shadow(rgba(0, 0, 0, 0.4) 6px 4px 5px); 
 		@include break-min($panel3-text-break) {
 			font-size: 2.6rem;

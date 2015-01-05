@@ -1,17 +1,23 @@
 #street-lower {
-	.wrapper-small{
-		width:49rem;
+	font-size: 8px;
+	@include break-min($main-break-lg){
+		font-size: 12px;
+	}
+	@include break-min($main-break-xtrlg){
+		font-size: 18px;
+	}
+
+	@include break-min($main-break-xxtrlg){
+		font-size: 20px;
 	}
 	text-align: center;
 	background-color: $color_blue;
-	 > div {
-		position: relative;
-	}
 	#map-header{
 		background-color: $black;
-		height: 162px;
-		top: 88px;
+		height: 8.2em;
+		top: 10%;
 		z-index: 9999;
+		position: relative;
 		h1 {
 			position: absolute;
 			width: 100%;
@@ -32,127 +38,126 @@
 					display: initial;
 				}
 			}
-			@include break-min($panel3-text-break){
-				font-size: 390%;				
-			}
 		}
 
 	}
 	#map-wrapper{
-		height: 45rem;
 		position: absolute;
-		> img {
-			display: block;
-			position: absolute;			
-		}
+		width: 49em;
+		height: 49em;
+		overflow: auto;
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 		#map {
-			opacity: 0.15;
-			width: 47.5rem;
-			overflow: hidden;
-			margin: auto;
+			@include opacity(0.15);
 		}
-
 	}
 }
-
 .one 	{
-	top: 33rem;
-	left: 10rem;
+	top: 33em;
+	left: 10em;
 	position: absolute;
 	.circle-outter {
-			background-color: $white;
+			background-color: $white_30;
 			@include border-radius(50%);
 			position: absolute;
-			@include opacity(.3);		
-			width: 5.2rem;
-			height: 5.2rem;
+			width: 5.2em;
+			height: 5.2em;
 		}
 	.circle-inner {
 		@include border-radius(50%);
-		background-color: $white;
-		position: absolute;
-		@include opacity(.6);
-		left: 0.6rem;
-		top: 0.6rem;
-		width: 4rem;
-		height: 4rem;
+		background-color: $white_60;
+		position: relative;
+		left: 0.6em;
+		top: 0.6em;
+		width: 4em;
+		height: 4em;
 	}
 	h3 {
 		display: block;
-		font-size: 2.4rem;
+		font-size: 2.4em;
+		height: 1em;
 		color: $deep_blue;
-		position: absolute;
-		margin: auto;
 		top: 1.2rem;
 		left: 1.2rem;
 		font-weight: 700;
+		position: absolute;
+		margin: auto;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
 	}
 	.line {
-		height: .2rem;
-		width: 10.5rem;
+		height: .2em;
+		width: 10.5em;
 		background-color: #015fd0;
 		position: absolute;
-		left: 4.9rem;
-		top: 2.6rem;
+		left: 4.9em;
+		top: 2.6em;
 		display: block;
 	}
 	p {
-		width: 31rem;
+		width: 31em;
 		display: block;
 		position: absolute;
-		left: 7rem;
-		top: 3.2rem;
+		left: 7em;
+		top: 3.2em;
 		text-align: left;
-		line-height: 1.8rem;
+		line-height: 1.8em;
 	}
 }
 .two {
-	top: 18rem;
-	right: 15rem;
+	top: 18em;
+	right: 15em;
 	position: absolute;
 	.circle-outter {
-		background-color: $white;
+		background-color: $white_30;
 		@include border-radius(50%);
 		position: absolute;
-		@include opacity(.3);
-		width: 12.5rem;
-		height: 12.5rem;		
+		width: 12.5em;
+		height: 12.5em;		
 		}
 	.circle-inner {
 		@include border-radius(50%);
-		background-color: $white;
-		position: absolute;
-		@include opacity(.6);
-		left: 1.25rem;
-		top: 1.25rem;
-		width: 10.1rem;
-		height: 10.1rem;
+		background-color: $white_60;
+		position: relative;
+		left: 1.25em;
+		top: 1.25em;
+		width: 10.1em;
+		height: 10.1em;
 	}
 	h3 {
 		display: block;
-		font-size: 3.2rem;
+		font-size: 3.2em;
+		font-weight: 700;
+		height: 1em;
 		color: $black;
 		position: absolute;
 		margin: auto;
-		top: 4.3rem;
-		left: 2.4rem;
-		font-weight: 700;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
 	}
 	.line {
-		height: 0.2rem;
-		width: 15rem;
+		height: 0.2em;
+		width: 15em;
 		background-color: #015fd0;
 		position: absolute;
-		right: -0.5rem;
-		top: 6rem;
+		right: -0.5em;
+		top: 6em;
 	}
 	p {
 		display: block;
 		position: absolute;
-		width: 30rem;
-		right: 1rem;
+		width: 30em;
+		right: 1em;
 		text-align: right;
-		line-height: 1.8rem;
-		top: 6.7rem;
+		line-height: 1.8em;
+		top: 6.7em;
 	}
 }

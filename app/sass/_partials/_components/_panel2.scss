@@ -3,7 +3,6 @@
   @include background-size(cover);
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
     @include break-min($main-break-lg){
         background-image: url("../assets/bgphotos/street1200.jpg");
     }
@@ -14,7 +13,7 @@
     background-color: $white;
     @extend %verticalboxes;
     min-height: 0.3rem;
-    top: 60%;
+    top: 38rem;
   }
 }
 #street-content{
@@ -22,7 +21,7 @@
   text-align: center;
   height: 25rem;
   background-color: $black;
-  top: 15%; 
+  top: 8rem; 
     .bottom {
       background-color: $white;
       @extend %verticalboxes;
@@ -39,7 +38,7 @@
       background-color: $white;
       left: 50%;
       margin-right: -50%;
-      transform: translate(-111%,50%);    
+      @include transform(translate(-111%,50%));   
       &.blue {
       background-color: $color_blue;
      }
@@ -50,7 +49,7 @@
       left: 50%;
       margin-right: -50%;
       width: 150rem;
-      transform: translate(-4%,50%);
+      @include transform(translate(-4%,50%));
       background-color: $white;
       min-width: 69%;
        &.blue {
@@ -63,19 +62,19 @@
       top: 53%;
       left: 50%;
       margin-right: -50%;
-      transform: translate(-394%,-352%);
+      @include transform(translate(-394%,-352%));
      }    
     }
     @include break-min($panel2-line-break){
       .top {
         &.left{
-          transform: translate(-122%,50%);
+          @include transform(translate(-122%,50%));
         }
         &.right {
-          transform: translate(-11%,50%);
+          width: 372rem;
         }
         &.asterick {
-          transform: translate(-823%,-352%);
+          @include transform(translate(-823%,-352%));
         }
       }
     }

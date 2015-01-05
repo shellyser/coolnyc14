@@ -1,38 +1,56 @@
 #taxi {
-	background-image: url("../assets/bgphotos/taxis350.jpg");
+	font-size: 8px;
+	background-image: url("../assets/bgphotos/taxis600.jpg");
 	@include background-size(cover);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
-	@include break-min($main-break){
-	    background-image: url("../assets/bgphotos/taxis600.jpg");
-	}
 	@include break-min($main-break-lg){
-	    background-image: url("../assets/bgphotos/taxis1200.jpg");
+	background-image: url("../assets/bgphotos/taxis1200.jpg");
+	font-size: 10px;
+	}
+	@include break-min($panel4-text-break3){
+		font-size: 12px;
+	}
+	@include break-min($panel4-text-break){
+		font-size: 14px;
+	}
+	@include break-min($panel4-text-break2){
+		font-size: 16px;
 	}
 	@include break-min($main-break-xxtrlg){
-	    background-image: url("../assets/bgphotos/taxis.jpg");
+		background-image: url("../assets/bgphotos/taxis.jpg");
+		font-size: 18px;
+	}
+	@include break-min($main-break-xxxtrlg){
+		font-size: 20px;
 	}
 	#circle-wrapper {
-		width: 100%;
-		height: 100%;
-		padding: 0px 3%;
-		position: relative;
+		width: 90%;
+		height: 20em;
+		position: absolute;
+		margin: auto;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
 		#circles {
 			width: 100%;
 			height: 100%;
-			display: table;
 			text-align: center;
+			transition: all .4s cubic-bezier(0, 1.8, 1, 1.8);
 			.circle {
-				display: table-cell;
 				vertical-align: middle;
 				text-align: center;
-				div {
+				display: inline-block;
+				> div {
 					background-color: $black_60;
 					@include border-radius(50%);
-					width: 25vw;
-					height: 25vw;
-					margin: auto;
+					width: 18em;
+					height: 18em;
+					margin: auto 1.5em;
+					h1 {
+
+					}
 				}
 			}
 		}

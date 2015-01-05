@@ -71,7 +71,7 @@
 			render: function(data) {
 		        //Debugging - Log the current scroll position.
 				console.log(data.curTop); 
-			     	if(data.curTop >= 1528){
+			     	if(data.curTop >= 2700){
 			    	    	$('.count').prop('Counter',0).animate({
 			    	        Counter: 2032
 			    	    }, {
@@ -125,18 +125,19 @@
 		scroll.refresh();
 
 		$('#intro-scroll').delay(1000).fadeIn(2000);
-		$('#intro-year').fadeIn(500);
-		$('#intro-text').fadeIn(500);
-		$('#intro-scroll').each(function() {
-		    var elem = $(this);
-		    setInterval(function() {
-		        if (elem.css('visibility') == 'hidden') {
-		            elem.css('visibility', 'visible');
-		        } else {
-		            elem.css('visibility', 'hidden');
-		        }    
-		    }, 1000);
-		});
+		$('#intro-title').delay(500).fadeIn(2000);
+		// $('#intro-year').fadeIn(500);
+		// $('#intro-text').fadeIn(500);
+		// $('#intro-scroll').each(function() {
+		//     var elem = $(this);
+		//     setInterval(function() {
+		//         if (elem.css('visibility') == 'hidden') {
+		//             elem.css('visibility', 'visible');
+		//         } else {
+		//             elem.css('visibility', 'hidden');
+		//         }    
+		//     }, 1000);
+		// });
 		
 	// }
 // 	adjustWindow();

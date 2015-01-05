@@ -1,21 +1,27 @@
 #skyline {
-	background-image: url("../assets/bgphotos/skyline350.jpg");
+	background-image: url("../assets/bgphotos/skyline600.jpg");
 	@include background-size(cover);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
-	@include break-min($main-break){
-	    background-image: url("../assets/bgphotos/skyline600.jpg");
-	}
 	@include break-min($main-break-lg){
 	    background-image: url("../assets/bgphotos/skyline1200.jpg");
 	}
 	@include break-min($main-break-xxtrlg){
 	    background-image: url("../assets/bgphotos/skyline.jpg");
 	}
-	img {
-		height:23%;
+	.triangle {
+		top:0;
+		left:0;
+		bottom: 0;
+		right: 0;
+		width:0;
+		height: 0;
+		font-size: 0;
+		line-height: 0;
+		margin:auto;
+		overflow: auto;
 		position: absolute;
+		z-index: 2;
 		@include break-min($triangle-break) {
 			height: 32%;
 		}
@@ -23,15 +29,23 @@
 			height: 50%;
 		}
 	&:first-of-type{
-		top:0;
-		left:0;
+		border-left: 0rem solid transparent;
+		border-right: 50rem solid transparent;
+		border-top: 24rem solid $black;
 		}
-	&:last-of-type {
-		bottom: 0;
-		right: -22px;
+	&:nth-of-type(2n){
+		border-left: 50rem solid transparent;  
+		border-right: 0rem solid transparent; 
+		border-bottom: 24rem solid $black; 
 		}
 	}
-	#skyline-content {	
+	.skyline-container{
+		background-color:  $black_50;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	.skyline-content {	
 		font-size: 1.6rem;
 		font-weight: 700;
 		line-height: 1.9rem;

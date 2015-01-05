@@ -46,3 +46,40 @@ $dim: false !default;
     }
   }
 }
+
+// provides fallback px notation for stylesheets for browsers that don't recognize rems
+$base-font-size: false !default;
+ 
+@function rem($val){
+  @if $base-font-size == false{
+    @return $val + rem;
+  }
+  @else{
+    @return $val*$base-font-size + px;
+  }
+}
+
+// cross-browser-compatible pseudo-elements (ieb/iea are designed to be used with https://github.com/kevindees/ie7_pseudo_elements to generate pseudo pseudo-elements for IE7)
+@mixin before{
+  &::before{
+    @content
+  }
+  &:before{
+    @content
+  }
+  > ieb{
+    @content
+  }
+}
+ 
+@mixin after{
+  &::after{
+    @content
+  }
+  &:after{
+    @content
+  }
+  > iea{
+    @content
+  }
+}

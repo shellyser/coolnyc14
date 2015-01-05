@@ -1,16 +1,13 @@
 #brick {
-	background-image: url("../assets/bgphotos/brick35-.jpg");
+	background-image: url("../assets/bgphotos/brick600.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	@include background-size(cover);
 	overflow: visible;
 	color: black;
 	font-size: 7px;
 	@include break-min($panel4-text-break4){
 		font-size: 8px;
 	}
-	@include break-min($main-break){
-        background-image: url("../assets/bgphotos/brick600.jpg");
-    }
 	@include break-min($main-break-lg){
 		background-image: url("../assets/bgphotos/brick1200.jpg");
 		font-size: 10px;
@@ -31,46 +28,70 @@
 	@include break-min($main-break-xxxtrlg){
 		font-size: 20px;
 	}
-
-
 	.panel {
-		position: absolute;
 		width: 50%;
 		height: 100%;
-		&.left {
-			left: 0;
-			background-color: $white_60;
-			text-align: left;		
+		left: 0;
+		background-color: $white_60;
+		text-align: left;		
+	}
+	#brick-content {
+		width: 90%;
+		  height: 80%;
+		  margin: auto;
+		  position: absolute;
+		  top:0;
+		  bottom:0;
+		  right:0;
+		  left:0;
+		 > div{
+			width: 50%;
+			 position: relative;
+			 top:0;
+			 height:100%;
+			 &:first-of-type{
 			h1 {
 				position: absolute;
-				right: 5%;
-				margin: .5em;
+				right: 1em;
 				width: 10em;
 				font-size: 2.5em;
 				line-height: 1.3em;
-				top: 50%;
-				@include transform(translate(0%, -50%));
+				text-align: left;
+				margin: auto;
+				top: 0;
+				bottom: 0;
+				height: 5em;
+				display: block;
+				}
 			}
-		}
-		&.right {
-			right:0;
-			.circle {
-				width: 22.5em;
-				height: 22.5em;
-				border-radius: 50%;
-				background: $white_60;
-				position: absolute;
-				top: calc(50vh - 11.25em );
-				left: calc(25vw - 11.25em );
-				padding: 5%;
-				h1 {
-					font-size: 8.2em;
-					padding: auto;
-					display: block;
+			&:nth-of-type(2n) {
+				 right: 0;
+				 position: absolute;
+				.circle {
+					transition: all .5s ease-out;
+					width: 22.5em;
+					height: 22.5em;
+					border-radius: 50%;
+					background: $white_60;
 					position: absolute;
-					right: 50%;
-					top: 50%;
-					transform: translate(50%,-50%);
+					right: 0;
+					  margin: auto;
+					  left:0;
+					  top:0;
+					  bottom:0;
+					padding: 5%;
+					h1 {
+						font-size: 8.2em;
+						padding: auto;
+						display: block;
+						position: absolute;
+						right: 0;
+						margin: auto;
+						left: 0;
+						top: 0;
+						bottom: 0;
+						height: 1em;
+					}
 				}
 			}
 		}

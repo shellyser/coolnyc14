@@ -13,37 +13,37 @@
 
     <!-- build:css({app,.tmp}) /css/main.css -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
     <!-- endbuild -->
-
     <!-- build:js(app) /js/head-scripts.js -->
     <!-- Replace with a custom modernizer build for production -->
     <script src="/_bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-
   </head>
   <body>
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="skrollr-body">
-    <section id="intro" data-0="transform:translate(0,0%);" data-_bstreetupper--500="">
+    <section id="intro" data-_bstreetupper--500="transform:translate(0,0%);" data-_bstreetupper="transform:translate(0,-100%);">
         <header>
             <a href="http://coolnycprogram.com">
                 <img src="assets/coolnyc-logo-blue.svg" alt="coolNYC">
             </a>
             <h2 id="tagline">A Con Edison program in partnership with ThinkEco</h2>
         </header>
-        <div id="intro-content" data-start="background-position:center" data-_bstreetupper--500="background-position:center" data-_bstreetupper--500="background-position:-10%">
-          <div id="intro-content-top">
+        <div id="intro-sky-bg" data-start="background-position: 50% 0%; background-position-x: 50%;" data-_bstreetupper="background-position: 0% 0%; background-position-x: 0%"></div>
+        <div id="intro-content-bg" data-start="height:100%;" data-_bstreetupper--1050="height:50%;"></div>
+        <div id="intro-content">
+            <div class="box" data-start="opacity:0;" data-_bstreetupper--1000="opacity:0" data-_bstreetupper--950="opacity:1;"><div class="asterick"><img src="../assets/asterick_black.svg"></div></div>
+          <div id="intro-content-top" data-start="height:100%;" data-_bstreetupper--1050="height:50%;">
                 <h1 id="intro-title">It's been another great year!</h1>
           </div>
           <div id="intro-content-bottom">
                 <div id="intro-section">    
-                    <span id="intro-year" data-target:"opacity:0" data-start--200="opacity:0" data-start:"opacity:1">2014</span>
-                    <span id="intro-text">
+                    <span id="intro-year" data-start="opacity:0" data-_bstreetupper--1000="opacity:0" data-_bstreetupper--900="opacity:1">2014</span>
+                    <span id="intro-text" data-start="opacity:0" data-_bstreetupper--850="opacity:0" data-_bstreetupper--750="opacity:1">
                         Now in it’s 5th year Lorem ipsum dolor sit amet, consectetur adipisng eit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
                         ad minim veniam, quis nostrud exercitation.
                     </span>
@@ -52,43 +52,47 @@
         </div>
         <footer>
           <div class="wrapper-large">
-            <span><img src="../assets/dropdown-arrow.png" alt="slidedown arrow"><br><h3 id="intro-scroll">Scroll Down</h3></span>
+            <span id="intro-scroll"><img src="../assets/dropdown-arrow.png" alt="slidedown arrow"><br><h3>Scroll Down</h3></span>
           </div>
         </footer>
     </section>
-    <section id="street-upper" data-_bstreetupper--500="transform:translate(0,100%);" data-_bstreetupper="transform:translate(0,0%);">
-                <div id="street-content" data-start="height: 0rem; background-color: rgba(0,0,0,1)" data-_bstreetupper--238="height: 0rem; background-color: rgba(0,0,0,1)"  data-_bstreetupper-820="height: 25rem; background-color: rgba(0,0,0,.6)">
+    <section id="street-upper" data-_bstreetupper--500="transform:translate(0,100%);" data-_bstreetupper="transform:translate(0,0%);" data-_astreetupper="transform:translate(0,0%);" data-_bstreetlower="transform:translate(0,-100%);">
+                <div id="street-content" data-start="height: 0rem; background-color: rgba(0,0,0,1)" data-_bstreetupper-208="height: 0rem; background-color: rgba(0,0,0,1)"  data-_bstreetupper-820="height: 25rem; background-color: rgba(0,0,0,.6)">
                         <div class="street-text" >
-                            <h1 data-start="opacity: 0" data-_bstreetupper-1438="opacity: 0"  data-_bstreetupper-1500="opacity: 1"><span class="count">2032</span> units</h1>
-                            <p>Set up in the first lorem ipsum dolor sit amet, consectetur adipisng eit,
+                            <h1 data-start="opacity: 0" data-_bstreetupper-1600="opacity: 0"  data-_bstreetupper-1700="opacity: 1"><span class="count">2032</span> units</h1>
+                            <p data-start="opacity: 0" data-_bstreetupper-1700="opacity: 0"  data-_bstreetupper-1800="opacity: 1">Set up in the first lorem ipsum dolor sit amet, consectetur adipisng eit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Enim ad minim veniam, quis nostrud exercitation.</p>              
                         </div>
-                <div class="top left white" data-_bstreetupper--500="display:none" data-_bstreetupper--500="display:none" data-_bstreetupper--210="display:block"></div>
-                <div class="top right white" data-_bstreetupper--500="display:none" data-_bstreetupper--500="display:none" data-_bstreetupper--210="display:block"></div>
+                <div class="top left white" data-start="display:none" data-_bstreetupper-1000="display:block; left: 0%" data-_bstreetupper-1300="left: 50%"></div>
+                <div class="top right white" data-start="display:none" data-_bstreetupper-1000="display:block; transform:translate(15%,50%);" data-_bstreetupper-1500="transform: translate(-4%,50%)"></div>
                 <div class="bottom" data-start="display:none" data-_bstreetupper="display:none" data-_bstreetupper-820="display:block"></div>
-                <div class="top left blue" data-start="left: 15%" data-_bstreetupper-1500="left: 15%" data-_bstreetupper-1600="left: 50%"></div>
-                <div class="top right blue" data-start="left: 150%" data-_bstreetupper-1500="left: 150%" data-_bstreetupper-1700="left: 50%"></div>
+                <div class="top left blue" data-start="left: 15%" data-_bstreetupper-1900="left: 15%" data-_bstreetupper-2000="left: 50%"></div>
+                <div class="top right blue" data-start="left: 150%" data-_bstreetupper-1900="left: 150%" data-_bstreetupper-2100="left: 50%"></div>
                 <!-- <img src="assets/asterick_white.svg" class="top asterick" > -->
-                <img src="assets/asterick_blue.svg" class="top asterick" data-_bstreetupper-1700="opacity: 0" data-_bstreetupper-1900="opacity: 1">
+                <img src="../assets/asterick_blue.svg" class="top asterick" data-_bstreetupper-2100="opacity: 0" data-_bstreetupper-2200="opacity: 1">
             </div>
-            <div class="bottom" data-start="top: 0%; " data-_bstreetupper--500="top: 0%" data-_bstreetupper-1000="top: 80.35%"></div>
+            <div class="bottom" data-start="top: -1rem; " data-_bstreetupper="top: 0rem" data-_bstreetupper-1000="top: 38rem;"></div>
     </section>
-    <!-- <section id="street-lower" >
-            <div class="wrapper-small">
-                <div id="map-wrapper"><img src="../assets/map.svg" id="map"></div>
+     <section id="street-lower"  data-_astreetupper="transform:translate(0,100%);" data-_bstreetlower="transform:translate(0,0%);" data-_astreetlower="transform:translate(0,0%);" data-_bbrick="transform:translate(0,-100%)">
+            <div id="map-wrapper">
+                <img src="../assets/map.svg" id="map">
                 <div class="layer one">
-                    <div class="circle-outter" data-start="opacity:0" data-_bstreetlower-1000="opacity:0" data-_bstreetlower-1500="opacity:.3" data-start="opacity:.3" data-_bstreetlower-2800="opacity:.3" data-_bstreetlower-3100="opacity:0"></div>
-                    <div class="circle-inner" data-start="opacity:0" data-_bstreetlower-1200="opacity:0" data-_bstreetlower-1500="opacity:.6" data-start="opacity:.6" data-_bstreetlower-2800="opacity:.6" data-_bstreetlower-3100="opacity:0"></div>
-                    <h3 data-start="visibility:hidden" data-_bstreetlower-1300="visibility:hidden" data-_bstreetlower-1500="visibility:visible" data-start="visibility:visible" data-_bstreetlower-2700="visibility:visible" data-_bstreetlower-2800="visibility:hidden">32</h3>
+                    <div class="circle-outter" data-start="background-color: rgba(255,255,255,0)" data-_bstreetlower-1000="background-color: rgba(255,255,255,0)" data-_bstreetlower-1500="background-color: rgba(255,255,255,0.3)" data-start="background-color: rgba(255,255,255,0.3)" data-_bstreetlower-2800="background-color: rgba(255,255,255,0.3)" data-_bstreetlower-3100="background-color: rgba(255,255,255,0)">
+                        <div class="circle-inner" data-start="background-color: rgba(255,255,255,0)" data-_bstreetlower-1200="background-color: rgba(255,255,255,0)" data-_bstreetlower-1500="background-color: rgba(255,255,255,0.6)" data-start="background-color: rgba(255,255,255,0.6)" data-_bstreetlower-2800="background-color: rgba(255,255,255,0.6)" data-_bstreetlower-3100="background-color: rgba(255,255,255,0)">
+                            <h3 data-start="visibility:hidden" data-_bstreetlower-1300="visibility:hidden" data-_bstreetlower-1500="visibility:visible" data-start="visibility:visible" data-_bstreetlower-2700="visibility:visible" data-_bstreetlower-2800="visibility:hidden">32</h3>
+                        </div>
+                    </div>
                     <div class="line" data-start="width:0rem" data-_bstreetlower-1500="width:0rem" data-_bstreetlower-1700="width:10.5rem" data-start="width:10.5rem" data-_bstreetlower-2500="width:10.5rem" data-_bstreetlower-2700="width:0rem"></div>
                     <p data-start="opacity:0" data-_bstreetlower-1700="opacity:0" data-_bstreetlower-1900="opacity:1" data-start="opacity:1" data-_bstreetlower-2300="opacity:1" data-_bstreetlower-2500="opacity:0">Most area appointments lorem ipsum dolores arripit segun
 amis avis puella est.</p>
                 </div>
                 <div class="layer two">
-                    <div class="circle-outter" data-start="opacity:0" data-_bstreetlower-2700="opacity:0" data-_bstreetlower-3200="opacity:.3" data-start="opacity:.3" data-_bstreetlower-4600="opacity:.3" data-_bstreetlower-4900="opacity:0"></div>
-                    <div class="circle-inner" data-start="opacity:0" data-_bstreetlower-3000="opacity:0" data-_bstreetlower-3200="opacity:.6" data-start="opacity:.6" data-_bstreetlower-4600="opacity:.6" data-_bstreetlower-4800="opacity:0"></div>
-                    <h3 data-start="visibility:hidden" data-_bstreetlower-3200="visibility:hidden" data-_bstreetlower-3300="visibility:visible" data-start="visibility:visible" data-_bstreetlower-4500="visibility:visible" data-_bstreetlower-4600="visibility:hidden">1,043</h3>
+                    <div class="circle-outter" data-start="background-color: rgba(255,255,255,0)" data-_bstreetlower-2700="background-color: rgba(255,255,255,0)" data-_bstreetlower-3200="background-color: rgba(255,255,255,0.3)" data-start="opacity:.3" data-_bstreetlower-4600="background-color: rgba(255,255,255,0.3)" data-_bstreetlower-4900="background-color: rgba(255,255,255,0)">
+                        <div class="circle-inner" data-start="background-color: rgba(255,255,255,0)" data-_bstreetlower-3000="background-color: rgba(255,255,255,0)" data-_bstreetlower-3200="background-color: rgba(255,255,255,0.6)" data-start="background-color: rgba(255,255,255,0.6)" data-_bstreetlower-4600="background-color: rgba(255,255,255,0.6)" data-_bstreetlower-4800="background-color: rgba(255,255,255,0)">
+                            <h3 data-start="visibility:hidden" data-_bstreetlower-3200="visibility:hidden" data-_bstreetlower-3300="visibility:visible" data-start="visibility:visible" data-_bstreetlower-4500="visibility:visible" data-_bstreetlower-4600="visibility:hidden">1,043</h3>
+                        </div>
+                    </div>
                     <div class="line" data-start="width:0rem" data-_bstreetlower-3300="width:0rem" data-_bstreetlower-3500="width:10.5rem" data-start="width:10.5rem" data-_bstreetlower-4300="width:10.5rem" data-_bstreetlower-4500="width:0rem"></div>
                     <p data-start="opacity:0" data-_bstreetlower-3500="opacity:0" data-_bstreetlower-3700="opacity:1" data-start="opacity:1" data-_bstreetlower-4100="opacity:1" data-_bstreetlower-4300="opacity:0">Most installs orem ipsum dolor sit amet, consectetur adipis
 sed do eiusmod tempor incididunt.</p>
@@ -98,8 +102,17 @@ sed do eiusmod tempor incididunt.</p>
                 <h1 data-target="#map-header h1" data-_bstreetlower="left: -50%" data-_bstreetlower-800="left:50%">Here is an <span>area breakdown</span></h1>
             </div>
     </section>
-    <section id="brick" >
-        <div class="panel left">
+    <section id="brick" data-_astreetlower="transform:translate(0,100%);" data-_bbrick="transform:translate(0,0%);" data-_abrick="transform:translate(0,0%);" data-_btaxi="transform:translate(0,-100%)">
+        <div class="panel" data-_astreetlower="width:100%;" data-_bbrick="" data-_bbrick-500="width:50%"> </div>
+        <div id="brick-content">
+            <svg version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                 x="0px" y="0px" width="835px" height="61px" viewBox="0 0 835 61" overflow="visible" enable-background="new 0 0 835 61"
+                 xml:space="preserve" data-_bbrick-500="stroke-dashoffset: 0;" data-_bbrick-600="stroke-dashoffset: 1000;">
+            <polygon class="path"  stroke="#000000" stroke-miterlimit="10" points="834.008,2.828 831.887,0.707 774.625,57.969 0.5,57.969 0.5,60.969 
+                775.5,60.969 775.5,60.202 776.067,60.769 "/>
+            </svg>
+            <div>
            <h1>
                In New York City,
                the grid load that
@@ -107,51 +120,56 @@ sed do eiusmod tempor incididunt.</p>
                the summer months
            </h1>
         </div>
-        <div class="panel right">
-            <div class="circle">
+        <div>
+            <div class="circle" data-_bbrick-500="transform: scale(0,0); opacity: 0;" data-_bbrick-600="transform: scale(1,1); opacity: 1;">
                 <h1>25%</h1>
             </div>
         </div>
     </section>
-    <section id="taxi" >
+   <section id="taxi" data-_abrick="transform:translate(0,100%);" data-_btaxi="transform:translate(0,0%);" data-_ataxi="transform:translate(0,0%);" data-_bskyline="transform:translate(0,-100%)" >
         <div id="circle-wrapper">
             <div id="circles">
-              <span class="circle"><div></div></span>
+              <span class="circle" >
+                <div>
+                    <h1>23%</h1>
+                </div>
+            </span>
               <span class="circle"><div></div></span>
               <span class="circle"><div></div></span>
             </div>
-        </div>
-        
+        </div>   
     </section>
-    <section id="skyline" >
-       <div class="triangles">
-        <img src="../assets/triangle-top.svg">
-        <img src="../assets/triangle-bottom.svg">
+    <section id="skyline" data-_ataxi="transform:translate(0,100%);" data-_bskyline="transform:translate(0,0%);" data-_askyline="transform:translate(0,0%);" data-_bfence="transform:translate(0,-100%)" >
+            <div class="triangle" data-_bskyline="bottom:0%; right:0% " data-_bskyline-500="bottom:50%; right:50%;"></div>
+            <div class="triangle" data-_bskyline="top:0%; left:0% " data-_bskyline-500="top:50%; left:50%;"></div>
+       <div class="skyline-container" data-_bskyline-500="transform:translate(0,0%);" data-_bskyline-1500="transform:translate(0,-100%)">
+            <div class="skyline-content" >
+               <h1>90% of users controlled<br>
+                  their ACs with their phones</h1>
+           </div>
        </div>
-     <div id="skyline-content" >
-       <h1>90% of users controlled<br>
-          their ACs with their phones</h1>
+       <div class="skyline-container" data-_bskyline-1500="transform:translate(0,0%);" data-_bskyline-2500="transform:translate(0,-100%)">
+            <div class="skyline-content" >
+               <h1>90% of users controlled<br>
+                  their ACs with their phones</h1>
+           </div>
        </div>
-       
     </section>
-    <section id="fence" >
-        
+    <section id="fence" data-_askyline="transform:translate(0,100%);" data-_bfence="transform:translate(0,0%);" data-_afence="transform:translate(0,0%);" data-_bbridge="transform:translate(0,-100%)" >    
     </section>
-   <section id="bridge" >
+  <section id="bridge" data-_afence="transform:translate(0,100%);" data-_bbridge="transform:translate(0,0%);" data-_abridge="transform:translate(0,0%);" data-_bnycave="transform:translate(0,-100%)" >
            <div id="bridge-content">
              <h1>90% of users controlled<br>
                 their ACs with their phones</h1>
      </div>
        </section>
-    <section id="nycave" >
-        <div class="wrapper-large">
-          <div class="wrapper-small">
-            <div id="nycave-content">90% of users controlled<br>
-                their ACs with their phones</div>  
-            </div>
-          </div>
+    <section id="nycave" data-_abridge="transform:translate(0,100%);" data-_bnycave="transform:translate(0,0%); background-position:50% 0%;" data-_anycave="background-position:50% 100%">
+            <h1 data-_start="opacity:1;" data-_bnycave-800="opacity:1;" data-_bnycave-1000="opacity:0;">90% of users controlled<br>
+                their ACs with their phones</h1>  
+                <h1 data-_bnycave-1200="opacity:0;" data-_bnycave-1500="opacity:1;">90% of users controlled<br>
+                    their ACs with their phones</h1>  
     </section>
-    <section id="balloons" >
+<!--     <section id="balloons" >
         <div class="wrapper-large">
             <div id="clouds-bg" class="wrapper-small">
                 <img src="assets/balloon-cloud-small.png" id="balloon-cloud-small" data-_bballoons="left:335px" data-_aballoons="left:345px">
@@ -197,7 +215,7 @@ sed do eiusmod tempor incididunt.</p>
                 <h3 data-start="opacity: 0" data-_boutro-6000="opacity: 0" data-_boutro-6400="opacity: 1">
                     Share the love:
                 </h3>
-                <div id="outro-social-media" data-start="opacity: 0" data-_boutro-6000="opacity: 0" data-_boutro-6400="opacity: 1">
+                <div id="outro-social-media" data-start="opacity: 0" data-_boutro-6000="opacity: 0" data-_boutro-6400="opacity: 1"> -->
                 <!-- AddThis Button BEGIN -->
              <!--    <div class="addthis_toolbox">
                 <a class="addthis_button_facebook" id="fb"></a>
@@ -223,7 +241,7 @@ sed do eiusmod tempor incididunt.</p>
                 </span>
             </div>
         </div>
-    </section> --> --> 
+    </section> --> 
 </div>
 
 
