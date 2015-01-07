@@ -154,8 +154,8 @@ $(document).ready(function () {
 		$('#intro-title').delay(500).fadeIn(2000);
 
 		//size background-box in slide 8
-		$('#bridge-content').css({"width": winW - (winW * 0.2) + 'px'});
-		$('#bridge-content').css({"height": winH - (winH * 0.2) + 'px'});
+		$('#fence-content').css({"width": winW - (winW * 0.2) + 'px'});
+		$('#fence-content').css({"height": winH - (winH * 0.2) + 'px'});
 		
 
 });
@@ -179,7 +179,7 @@ $(window).resize(function () {
     $(".triangle-2").css({"border-bottom": winHR + 'px solid rgba(0, 0, 0, 1)'});
     $(".triangle-2").css({"border-left": winWR + 'px solid transparent'});
 
-    $('#bridge-content').css({"width": winWR - (winWR * 0.2) + 'px'});
-    $('#bridge-content').css({"height": winHR - (winHR * 0.2) + 'px'});
+    $('#fence-content').css({"width": winWR - (winWR * 0.2) + 'px'});
+    $('#fence-content').css({"height": winHR - (winHR * 0.2) + 'px'});
 });
 

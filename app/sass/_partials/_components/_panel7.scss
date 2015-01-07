@@ -11,23 +11,51 @@
 	}
 	@include break-min($main-break-xxtrlg){
 	    background-image: url("../assets/bgphotos/fence.jpg");
-	}
-	#diamond {
-		width: 0;
-		height: 0;
-		border: 50px solid transparent;
-		border-bottom: 70px solid $white;
-		position: relative;
-		background-color: transparent;
-		top: -50px;
-	}
-	#diamond:after {
-		content: '';
+	 }
+	#fence-content {	
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 2rem;
+		background-color: rgba(0,0,0,.86);
+		width: 85%;
+		height: 80%;
 		position: absolute;
-		left: -50px; top: 70px;
-		width: 0;
-		height: 0;
-		border: 50px solid transparent;
-		border-top: 70px solid $white;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		h1 {
+			margin: 0;
+			display: block;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			position: absolute;
+			@include transform(translate(-50%, -50%));
+			@include break-min($panel3-text-break) {
+				font-size: 2rem;
+				line-height: 2.8rem;
+				padding: 1%;
+			}
+			@include break-min ($panel8-text-break) {
+				font-size: 2.6rem;
+				line-height: 3rem;
+				padding: 1%;
+			}
+			@include break-between($panel2-line-break, $panel4-text-break2){
+				font-size: 3.2rem;
+				line-height: 3.2rem;
+			}
+			@include break-between($panel4-text-break2, $main-break-xxtrlg){
+				font-size: 3.5rem;
+				line-height: 3.5rem;
+			}
+			@include break-min($main-break-xxtrlg) {
+				font-size: 3.8rem;
+				line-height: 3.8rem;
+			}
+
+		}
 	}
 }

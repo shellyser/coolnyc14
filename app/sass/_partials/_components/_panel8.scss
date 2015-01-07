@@ -9,11 +9,15 @@
 	@include break-min($main-break-xxtrlg){
 	    background-image: url("../assets/bgphotos/bridge.jpg");
 	}
+	#bridge-overlay{
+		background-color: $blue_90;
+		width: 100%;
+		height: 100%;
+	}
 	#bridge-content {	
 		font-size: 1.6rem;
 		font-weight: 700;
 		line-height: 2rem;
-		background-color: rgba(0,0,0,.86);
 		width: 85%;
 		height: 80%;
 		position: absolute;
@@ -53,6 +57,71 @@
 				line-height: 3.8rem;
 			}
 
+		}
+		.table {
+			width: 100%;
+			height: 28rem;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			@include break-min($panel2-line-break){
+				width: 48rem;
+			}
+			.row {
+				width: 100%;
+				height: 8rem;
+				clear: both;
+				border-bottom: .3rem $deep_blue dotted;
+				&:first-of-type{
+					font-size: .85rem;
+					vertical-align: bottom;
+					height: 3rem;
+					border-bottom: .3rem $white solid;
+					@include break-min($panel3-text-break) {
+			    		font-size: 1.2rem;
+			    	}
+			    	.col{
+			    		margin-top: .3rem;
+				    	&:last-of-type{
+				    		color: $deep_blue;
+			    		}
+			    	}
+				}
+				.col{
+				    display:block;
+				    width: 9rem;
+				    height: 100%;
+		    		@include break-min($panel3-text-break) {
+		        		width: 14rem;
+		        	}
+				    h2{
+				    	font-size: 4rem;
+				    	display: block;
+				    	margin-top: 1em;
+				    	@include break-min($panel3-text-break) {
+				    		font-size: 6rem;
+				    		margin-top: 2.8rem;
+				    	}
+				    	@include break-between($panel2-line-break, $panel4-text-break2){
+				    		font-size: 7.2rem;
+				    		margin-top: 2.7rem
+				    	}
+
+				    }
+				    &:first-of-type{
+				      float:left;
+				      text-align: left;
+				    }
+				    &:last-of-type{
+				      float:right;
+				      text-align: right;
+				      color: $black;
+				    }
+			 	}
+			}
 		}
 	}
 }	

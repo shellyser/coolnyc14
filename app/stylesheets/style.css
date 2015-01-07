@@ -1261,25 +1261,69 @@ footer #intro-scroll {
   }
 }
 /* line 15, ../sass/_partials/_components/_panel7.scss */
-#fence #diamond {
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-bottom: 70px solid #fff;
-  position: relative;
-  background-color: transparent;
-  top: -50px;
-}
-/* line 24, ../sass/_partials/_components/_panel7.scss */
-#fence #diamond:after {
-  content: '';
+#fence #fence-content {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2rem;
+  background-color: rgba(0, 0, 0, 0.86);
+  width: 85%;
+  height: 80%;
   position: absolute;
-  left: -50px;
-  top: 70px;
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-top: 70px solid #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* line 28, ../sass/_partials/_components/_panel7.scss */
+#fence #fence-content h1 {
+  margin: 0;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  position: absolute;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 550px) {
+  /* line 28, ../sass/_partials/_components/_panel7.scss */
+  #fence #fence-content h1 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    padding: 1%;
+  }
+}
+@media screen and (min-width: 680px) {
+  /* line 28, ../sass/_partials/_components/_panel7.scss */
+  #fence #fence-content h1 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    padding: 1%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  /* line 28, ../sass/_partials/_components/_panel7.scss */
+  #fence #fence-content h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  /* line 28, ../sass/_partials/_components/_panel7.scss */
+  #fence #fence-content h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 28, ../sass/_partials/_components/_panel7.scss */
+  #fence #fence-content h1 {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+  }
 }
 
 /* line 1, ../sass/_partials/_components/_panel8.scss */
@@ -1305,11 +1349,16 @@ footer #intro-scroll {
   }
 }
 /* line 12, ../sass/_partials/_components/_panel8.scss */
+#bridge #bridge-overlay {
+  background-color: rgba(0, 145, 217, 0.9);
+  width: 100%;
+  height: 100%;
+}
+/* line 17, ../sass/_partials/_components/_panel8.scss */
 #bridge #bridge-content {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2rem;
-  background-color: rgba(0, 0, 0, 0.86);
   width: 85%;
   height: 80%;
   position: absolute;
@@ -1319,7 +1368,7 @@ footer #intro-scroll {
   bottom: 0;
   margin: auto;
 }
-/* line 25, ../sass/_partials/_components/_panel8.scss */
+/* line 29, ../sass/_partials/_components/_panel8.scss */
 #bridge #bridge-content h1 {
   margin: 0;
   display: block;
@@ -1333,7 +1382,7 @@ footer #intro-scroll {
   transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 550px) {
-  /* line 25, ../sass/_partials/_components/_panel8.scss */
+  /* line 29, ../sass/_partials/_components/_panel8.scss */
   #bridge #bridge-content h1 {
     font-size: 2rem;
     line-height: 2.8rem;
@@ -1341,7 +1390,7 @@ footer #intro-scroll {
   }
 }
 @media screen and (min-width: 680px) {
-  /* line 25, ../sass/_partials/_components/_panel8.scss */
+  /* line 29, ../sass/_partials/_components/_panel8.scss */
   #bridge #bridge-content h1 {
     font-size: 2.6rem;
     line-height: 3rem;
@@ -1349,25 +1398,113 @@ footer #intro-scroll {
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  /* line 25, ../sass/_partials/_components/_panel8.scss */
+  /* line 29, ../sass/_partials/_components/_panel8.scss */
   #bridge #bridge-content h1 {
     font-size: 3.2rem;
     line-height: 3.2rem;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  /* line 25, ../sass/_partials/_components/_panel8.scss */
+  /* line 29, ../sass/_partials/_components/_panel8.scss */
   #bridge #bridge-content h1 {
     font-size: 3.5rem;
     line-height: 3.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 25, ../sass/_partials/_components/_panel8.scss */
+  /* line 29, ../sass/_partials/_components/_panel8.scss */
   #bridge #bridge-content h1 {
     font-size: 3.8rem;
     line-height: 3.8rem;
   }
+}
+/* line 61, ../sass/_partials/_components/_panel8.scss */
+#bridge #bridge-content .table {
+  width: 100%;
+  height: 28rem;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 800px) {
+  /* line 61, ../sass/_partials/_components/_panel8.scss */
+  #bridge #bridge-content .table {
+    width: 48rem;
+  }
+}
+/* line 73, ../sass/_partials/_components/_panel8.scss */
+#bridge #bridge-content .table .row {
+  width: 100%;
+  height: 8rem;
+  clear: both;
+  border-bottom: 0.3rem #015fd0 dotted;
+}
+/* line 78, ../sass/_partials/_components/_panel8.scss */
+#bridge #bridge-content .table .row:first-of-type {
+  font-size: .85rem;
+  vertical-align: bottom;
+  height: 3rem;
+  border-bottom: 0.3rem #fff solid;
+}
+@media screen and (min-width: 550px) {
+  /* line 78, ../sass/_partials/_components/_panel8.scss */
+  #bridge #bridge-content .table .row:first-of-type {
+    font-size: 1.2rem;
+  }
+}
+/* line 86, ../sass/_partials/_components/_panel8.scss */
+#bridge #bridge-content .table .row:first-of-type .col {
+  margin-top: .3rem;
+}
+/* line 88, ../sass/_partials/_components/_panel8.scss */
+#bridge #bridge-content .table .row:first-of-type .col:last-of-type {
+  color: #015fd0;
+}
+/* line 93, ../sass/_partials/_components/_panel8.scss */
+#bridge #bridge-content .table .row .col {
+  display: block;
+  width: 9rem;
+  height: 100%;
+}
+@media screen and (min-width: 550px) {
+  /* line 93, ../sass/_partials/_components/_panel8.scss */
+  #bridge #bridge-content .table .row .col {
+    width: 14rem;
+  }
+}
+/* line 100, ../sass/_partials/_components/_panel8.scss */
+#bridge #bridge-content .table .row .col h2 {
+  font-size: 4rem;
+  display: block;
+  margin-top: 1em;
+}
+@media screen and (min-width: 550px) {
+  /* line 100, ../sass/_partials/_components/_panel8.scss */
+  #bridge #bridge-content .table .row .col h2 {
+    font-size: 6rem;
+    margin-top: 2.8rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  /* line 100, ../sass/_partials/_components/_panel8.scss */
+  #bridge #bridge-content .table .row .col h2 {
+    font-size: 7.2rem;
+    margin-top: 2.7rem;
+  }
+}
+/* line 114, ../sass/_partials/_components/_panel8.scss */
+#bridge #bridge-content .table .row .col:first-of-type {
+  float: left;
+  text-align: left;
+}
+/* line 118, ../sass/_partials/_components/_panel8.scss */
+#bridge #bridge-content .table .row .col:last-of-type {
+  float: right;
+  text-align: right;
+  color: #000;
 }
 
 /* line 1, ../sass/_partials/_components/_panel9.scss */
