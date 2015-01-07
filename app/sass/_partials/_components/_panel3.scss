@@ -45,7 +45,6 @@
 		position: absolute;
 		width: 49em;
 		height: 49em;
-		overflow: auto;
 		margin: auto;
 		top: 0;
 		left: 0;
@@ -54,12 +53,20 @@
 		#map {
 			@include opacity(0.15);
 		}
+		@include break-max($main-break){
+			width: 36em;
+			height: 36em;
+		}
 	}
 }
 .one 	{
 	top: 33em;
 	left: 10em;
 	position: absolute;
+	@include break-max($main-break){
+		top: 24em;
+		left: 6em;
+	}
 	.circle-outter {
 			background-color: $white_30;
 			@include border-radius(50%);
@@ -108,12 +115,34 @@
 		top: 3.2em;
 		text-align: left;
 		line-height: 1.8em;
+		@include break-max($main-break){
+			width: 14em;
+			left: 4em;
+			top: 2.2em;
+			font-size: 1.6em;
+		}
+		@include break-between($main-break, $main-break-lg){
+			width: 15em;
+			left: 3em;
+			top: 2.2em;
+			font-size: 2em;
+		}
+		@include break-between($main-break-lg, $main-break-xtrlg){
+			width: 27em;
+			left: 5em;
+			top: 2.8em;
+			font-size: 1.4em;
+		}
 	}
 }
 .two {
 	top: 18em;
 	right: 15em;
 	position: absolute;
+	@include break-max($main-break){
+		top: 11em;
+		right: 13em;
+	}
 	.circle-outter {
 		background-color: $white_30;
 		@include border-radius(50%);
@@ -159,5 +188,22 @@
 		text-align: right;
 		line-height: 1.8em;
 		top: 6.7em;
+		@include break-max($main-break){
+			width: 14em;
+			right: 1em;
+			top: 4.5em;
+			font-size: 1.6em;
+		}
+		@include break-between($main-break, $main-break-lg){
+			width: 15em;
+			right: 1em;
+			top: 3.7em;
+			font-size: 2em;
+		}
+		@include break-between($main-break-lg, $main-break-xtrlg){
+			width: 28em;
+			top: 5.2em;
+			font-size: 1.4em;
+		}
 	}
 }

@@ -63,6 +63,7 @@
       left: 50%;
       margin-right: -50%;
       @include transform(translate(-394%,-352%));
+      transform-origin: 50% 50%;
      }    
     }
     @include break-min($panel2-line-break){
@@ -71,10 +72,10 @@
           @include transform(translate(-122%,50%));
         }
         &.right {
-          width: 372rem;
+          width: 409rem;
         }
         &.asterick {
-          @include transform(translate(-823%,-352%));
+          @include transform(translate(-814%, -359%));
         }
       }
     }

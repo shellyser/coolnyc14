@@ -12,4 +12,22 @@
 	@include break-min($main-break-xxtrlg){
 	    background-image: url("../assets/bgphotos/fence.jpg");
 	}
+	#diamond {
+		width: 0;
+		height: 0;
+		border: 50px solid transparent;
+		border-bottom: 70px solid $white;
+		position: relative;
+		background-color: transparent;
+		top: -50px;
+	}
+	#diamond:after {
+		content: '';
+		position: absolute;
+		left: -50px; top: 70px;
+		width: 0;
+		height: 0;
+		border: 50px solid transparent;
+		border-top: 70px solid $white;
+	}
 }

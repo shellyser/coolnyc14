@@ -9,35 +9,24 @@
 	@include break-min($main-break-xxtrlg){
 	    background-image: url("../assets/bgphotos/skyline.jpg");
 	}
-	.triangle {
-		top:0;
-		left:0;
-		bottom: 0;
-		right: 0;
+	[class^="triangle-"]{
 		width:0;
 		height: 0;
 		font-size: 0;
 		line-height: 0;
-		margin:auto;
-		overflow: auto;
 		position: absolute;
 		z-index: 2;
-		@include break-min($triangle-break) {
-			height: 32%;
+		@include transition-property(scale);
+		@include transition-duration(2s);
+		@include transition-timing-function(ease-in);
+	}
+	.triangle-1{
+		left: 0;
+		transform-origin: 0% 0%;
 		}
-		@include break-min($main-break-xtrlg) {
-			height: 50%;
-		}
-	&:first-of-type{
-		border-left: 0rem solid transparent;
-		border-right: 50rem solid transparent;
-		border-top: 24rem solid $black;
-		}
-	&:nth-of-type(2n){
-		border-left: 50rem solid transparent;  
-		border-right: 0rem solid transparent; 
-		border-bottom: 24rem solid $black; 
-		}
+	.triangle-2{
+		right: 0;
+		transform-origin: 100% 100%;
 	}
 	.skyline-container{
 		background-color:  $black_50;
@@ -62,7 +51,7 @@
 			@include break-min($panel3-text-break) {
 			font-size: 2.1rem;
 			line-height: 2.4rem;
-			@include text-shadow(rgba(0, 0, 0, 0.4) 6px 4px 5px); 
+			@include text-shadow($black_15 6px 4px 5px); 
 		}
 		@include break-min($main-break-xtrlg) {
 			font-size: 3.08rem;

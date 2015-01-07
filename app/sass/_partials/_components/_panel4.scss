@@ -37,19 +37,47 @@
 	}
 	#brick-content {
 		width: 90%;
-		  height: 80%;
-		  margin: auto;
-		  position: absolute;
-		  top:0;
-		  bottom:0;
-		  right:0;
-		  left:0;
-		 > div{
-			width: 50%;
-			 position: relative;
-			 top:0;
-			 height:100%;
-			 &:first-of-type{
+		height: 34em; 
+        margin: auto;
+	    position: absolute;
+	    top:0;
+	    bottom:0;
+	    right:0;
+	    left:0;
+	    @include break-max($main-break){
+	    	width: 95%;
+	    }
+	    @include break-min($main-break-xxxtrlg){
+	    	width: 68em;
+	    }
+	    img {
+	    	position: absolute;
+	    	top: 22em;
+	    	left: 3%;
+	    	width: 67%;
+	    	z-index: 1;
+	    	@include break-between($panel4-text-break6, $panel4-text-break5){
+	    		left: 8%;
+	    		width: 61%;
+	    	}
+	    	@include break-between($panel4-text-break5, $main-break-xxxtrlg){
+	    		left: 9%;
+	    		width: 60%;
+	    	}
+	    	@include break-min($main-break-xxxtrlg){
+	    		left: 7%;
+	    		width: 63%;
+	    	}
+	    }
+		> div{
+			width: 41%;
+			position: relative;
+			top:0;
+			height:100%;
+			@include break-max($main-break){
+				width: 50%;
+			}
+			&:first-of-type{
 			h1 {
 				position: absolute;
 				right: 1em;
@@ -57,16 +85,23 @@
 				font-size: 2.5em;
 				line-height: 1.3em;
 				text-align: left;
-				margin: auto;
-				top: 0;
-				bottom: 0;
-				height: 5em;
 				display: block;
-				}
-			}
+				margin: 0;
+				top: 50%;
+				left: 61%;
+				margin-right: -50%;
+				@include transform(translate(-50%, -50%));
+		    	@include break-max($main-break){
+			    		max-width: 16em;
+			    		font-size: 2em;
+			    		left: 52%;
+			    	}
+			    	
+		    	}
+		    }
 			&:nth-of-type(2n) {
-				 right: 0;
-				 position: absolute;
+				right: 0;
+				position: absolute;
 				.circle {
 					transition: all .5s ease-out;
 					width: 22.5em;
@@ -75,11 +110,15 @@
 					background: $white_60;
 					position: absolute;
 					right: 0;
-					  margin: auto;
-					  left:0;
-					  top:0;
-					  bottom:0;
+					margin: auto;
+					left:0;
+					top:0;
+					bottom:0;
 					padding: 5%;
+					@include break-max($main-break) {
+						width: 18.5em;
+						height: 18.5em;
+					}
 					h1 {
 						font-size: 8.2em;
 						padding: auto;

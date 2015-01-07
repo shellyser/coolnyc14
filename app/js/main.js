@@ -1,7 +1,7 @@
 /*! viewportSize | Author: Tyson Matanich, 2013 | License: MIT */
 (function(n){n.viewportSize={},n.viewportSize.getHeight=function(){return t("Height")},n.viewportSize.getWidth=function(){return t("Width")};var t=function(t){var f,o=t.toLowerCase(),e=n.document,i=e.documentElement,r,u;return n["inner"+t]===undefined?f=i["client"+t]:n["inner"+t]!=i["client"+t]?(r=e.createElement("body"),r.id="vpw-test-b",r.style.cssText="overflow:scroll",u=e.createElement("div"),u.id="vpw-test-d",u.style.cssText="position:absolute;top:-1000px",u.innerHTML="<style>@media("+o+":"+i["client"+t]+"px){body#vpw-test-b div#vpw-test-d{"+o+":7px!important}}<\/style>",r.appendChild(u),i.insertBefore(r,e.head),f=u["offset"+t]==7?i["client"+t]:n["inner"+t],i.removeChild(r)):f=n["inner"+t],f}})(this);
 
-( function( $ ) {
+$(document).ready(function () {
 
 // snippet from http://justinhileman.info/article/a-jquery-widont-snippet/
 // for preventing widowed words.
@@ -33,10 +33,6 @@
 	afterBridge = beforeBridge + panel,
 	beforeNycave = afterBridge + transition,
 	afterNycave = beforeNycave + panel,
-	beforeBalloons = afterNycave + transition,
-	afterBalloons =  beforeBalloons + panel,
-	beforeOutro = afterBalloons + transition,
-	afterOutro = beforeOutro + panel,
 
 	text1of2in = 400,
 	text1of2out = 1000,
@@ -71,21 +67,39 @@
 			render: function(data) {
 		        //Debugging - Log the current scroll position.
 				console.log(data.curTop); 
-			     	if(data.curTop >= 2700){
-			    	    	$('.count').prop('Counter',0).animate({
-			    	        Counter: 2032
-			    	    }, {
+			     	if(data.curTop >= 15544){
+			    	    	$('#circles .circle-1 h1 span').first().prop('Counter',0).animate({
+			    	        Counter: 45
+			    	    	}, {
 			    	        duration: 2000,
 			    	        easing: 'swing',
 			    	        step: function (now) {
 			    	            $(this).text(Math.ceil(now));
 			    	        }
-			       	 });
-			       	 $('.street-text p').css('visibility', 'visible');		    	     
-			    } else {
-			    	$('.street-text p').css('visibility', 'hidden');
-			    	console.log('Im under 1528');
-			    }
+			       	 })
+			    	};
+			    	if(data.curTop >= 16506){
+			    		$('#circles .circle-2 h1').prop('Counter',0).animate({
+			    	        Counter: 2578
+			    	    	}, {
+			    	        duration: 2000,
+			    	        easing: 'swing',
+			    	        step: function (now) {
+			    	            $(this).text(Math.ceil(now));
+			    	        }
+			       	 });			       	 
+			    };
+		    		if(data.curTop >= 17500){
+		    			$('#circles .circle-3 h1 span').prop('Counter',0).animate({
+		    		        Counter: 67
+		    		    	}, {
+		    		        duration: 2000,
+		    		        easing: 'swing',
+		    		        step: function (now) {
+		    		            $(this).text(Math.ceil(now));
+		    		        }
+		    	   	 });			       	 
+		    	}
 			 },        
 		    constants: {
 		        bstreetupper: beforeStreetUpper,
@@ -103,46 +117,69 @@
 		        bbridge: beforeBridge,
 		        abridge: afterBridge,
 		        bnycave: beforeNycave,
-		        anycave: afterNycave,
-		        bballoons: beforeBalloons,
-		        aballoons: afterBalloons,
-		        boutro: beforeOutro,
-		        aoutro: afterOutro
+		        anycave: afterNycave
 		       }
 		});
 
 		
 		// get window size
-		winW = $window.width();
-		winH = $window.height();
+		var winW = 0, winH = 0;
+		  if( typeof( window.innerWidth ) == 'number' ) {
+		    //Non-IE
+		    winW = window.innerWidth;
+		    winH = window.innerHeight;
+		  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+		    //IE 6+ in 'standards compliant mode'
+		    winW = document.documentElement.clientWidth;
+		    winH = document.documentElement.clientHeight;
+		  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+		    //IE 4 compatible
+		    winW = document.body.clientWidth;
+		    winH = document.body.clientHeight;
+		  }
 
-		slideH = winH;
-
-		if(slideH <= 450) {
-			slideH = 450;
+		if(winH <= 450) {
+			winH = 450;
 		} 
 
-		scroll.refresh();
+		// size triangles
+		$(".triangle-1").css({"border-top": winH + 'px solid rgba(0, 0, 0, 1)'});
+		$(".triangle-1").css({"border-right": winW + 'px solid transparent'});
+		$(".triangle-2").css({"border-bottom": winH + 'px solid rgba(0, 0, 0, 1)'});
+		$(".triangle-2").css({"border-left": winW + 'px solid transparent'});
 
+		
+		//intro fadeIn effects on first slide
 		$('#intro-scroll').delay(1000).fadeIn(2000);
 		$('#intro-title').delay(500).fadeIn(2000);
-		// $('#intro-year').fadeIn(500);
-		// $('#intro-text').fadeIn(500);
-		// $('#intro-scroll').each(function() {
-		//     var elem = $(this);
-		//     setInterval(function() {
-		//         if (elem.css('visibility') == 'hidden') {
-		//             elem.css('visibility', 'visible');
-		//         } else {
-		//             elem.css('visibility', 'hidden');
-		//         }    
-		//     }, 1000);
-		// });
-		
-	// }
-// 	adjustWindow();
 
-// $(window).resize(function() {   
-//     adjustWindow();
-// });
-} )( jQuery );
+		//size background-box in slide 8
+		$('#bridge-content').css({"width": winW - (winW * 0.2) + 'px'});
+		$('#bridge-content').css({"height": winH - (winH * 0.2) + 'px'});
+		
+
+});
+$(window).resize(function () {
+    var winWR = 0, winHR = 0;
+	if( typeof( window.innerWidth ) == 'number' ) {
+	//Non-IE
+	winWR = window.innerWidth;
+	winHR = window.innerHeight;
+	} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+	//IE 6+ in 'standards compliant mode'
+	winWR = document.documentElement.clientWidth;
+	winHR = document.documentElement.clientHeight;
+	} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+	//IE 4 compatible
+	winWR = document.body.clientWidth;
+	winHR = document.body.clientHeight;
+	}
+    $(".triangle-1").css({"border-top": winHR + 'px solid rgba(0, 0, 0, 1)'});
+    $(".triangle-1").css({"border-right": winWR + 'px solid transparent'});
+    $(".triangle-2").css({"border-bottom": winHR + 'px solid rgba(0, 0, 0, 1)'});
+    $(".triangle-2").css({"border-left": winWR + 'px solid transparent'});
+
+    $('#bridge-content').css({"width": winWR - (winWR * 0.2) + 'px'});
+    $('#bridge-content').css({"height": winHR - (winHR * 0.2) + 'px'});
+});
+
