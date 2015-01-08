@@ -30,3 +30,5 @@ markdown: redcarpet
 pygments: false
 
 encoding: utf-8
+
+baseurl: coolnyc14

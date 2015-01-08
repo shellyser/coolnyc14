@@ -91,33 +91,37 @@
       @include transform(translate(-50%, -50%));
       h1 {
         font-size: 3.5rem;
-        span {
-        font-size: 5.5rem;
-        }
       }
       p {
-        visibility: hidden;
         font-size: 1rem;
         width: 21.4rem;
-        line-height: 2rem;
+        line-height: 1.8rem;
         margin: auto;
         margin-top: 3%;
       }
-
-      @include break-min($panel2-text-break){
+      @include break-between($panel3-text-break, $panel2-text-break3){
+        h1{
+          font-size: 5.3rem;
+        }
+        p{
+          font-size: 1rem;
+          width: 35rem;
+        }
+      }
+      @include break-min($panel2-text-break3){
         h1 {
-          font-size: 7rem;
-          span {
-          font-size: 9.25rem;
-          }
+          font-size: 8rem;
         }
         p {
           font-size: 1rem;
-          width: 35rem;
+          width: 49rem;
           line-height: 1.9rem;
-          margin: auto;
           margin-top: 1%;
         }
       }    
-
+      @include break-min($main-break-xxtrlg){
+        h1 {
+          font-size: 9rem;
+        }
+      }
 }

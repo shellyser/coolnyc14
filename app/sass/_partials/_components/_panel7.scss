@@ -12,50 +12,108 @@
 	@include break-min($main-break-xxtrlg){
 	    background-image: url("../assets/bgphotos/fence.jpg");
 	 }
+	 #fence-header{
+	 	width: 100%;
+	 	height: 8rem;
+	 	background-color: $black_60;
+	 	text-align: center;
+	 	h1{
+	 		font-weight: 700;
+	 		font-size: 2rem;
+	 		padding-top: 4rem;
+	 	}
+	 }
 	#fence-content {	
-		font-size: 1.6rem;
-		font-weight: 700;
-		line-height: 2rem;
-		background-color: rgba(0,0,0,.86);
-		width: 85%;
-		height: 80%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		margin: auto;
-		h1 {
-			margin: 0;
-			display: block;
-			top: 50%;
-			left: 50%;
-			margin-right: -50%;
+		width: 100%;
+		@include calc(height, "100% - 8rem");
+		position: relative;
+		overflow: hidden;
+		.circles{
+			width: 27rem;
+			height: 16rem;
 			position: absolute;
-			@include transform(translate(-50%, -50%));
-			@include break-min($panel3-text-break) {
-				font-size: 2rem;
-				line-height: 2.8rem;
-				padding: 1%;
+			margin: auto;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			@include transition(transform 0.5s ease-in);
+			.circle {
+				display: inline-block;
+				background-color: $white_90;
+				@include border-radius(50%);
+				width: 7rem;
+				height: 7rem;
+				margin: .5rem;
+				background-position: center center;
+				width: 7rem;
+				background-repeat: no-repeat;
+				@include background-size(60%);
+				&:hover{
+					background-color: $color_blue;
+				}
+				&#abc{
+					background-image: url("../assets/logo_abc.svg");
+					&:hover{
+						background-image: url("../assets/logo_abc_white.svg");
+					}
+				}
+				&#fox{
+					background-image: url("../assets/logo_fox.svg");
+					&:hover{
+						background-image: url("../assets/logo_fox_white.svg");
+					}
+				}
+				&#abcnews{
+					background-image: url("../assets/logo_abcnews.png");
+					background-position: center 55%;
+					@include background-size(47%);
+					&:hover{
+						background-image: url("../assets/logo_abcnews_white.png");
+					}
+				}
+				&#cnbc{
+					background-image: url("../assets/logo_cnbc.png");
+					background-position: center 55%;
+					@include background-size(57%);
+					&:hover{
+						background-image: url("../assets/logo_cnbc_white.png");
+					}
+				}
+				&#wired{
+					background-image: url("../assets/logo_wired.svg");
+					&:hover{
+						background-image: url("../assets/logo_wired_white.svg");
+					}
+				}
+				&#dna{
+					background-image: url("../assets/logo_dna.svg");
+					@include background-size(46%);
+					&:hover{
+						background-image: url("../assets/logo_dna_white.svg");
+					}
+				}
 			}
-			@include break-min ($panel8-text-break) {
-				font-size: 2.6rem;
-				line-height: 3rem;
-				padding: 1%;
+			@include break-min($panel3-text-break){
+				width: 34rem;
+				height: 23rem;
+				.circle{
+					width: 10rem;
+					height: 10rem;
+				}
 			}
-			@include break-between($panel2-line-break, $panel4-text-break2){
-				font-size: 3.2rem;
-				line-height: 3.2rem;
+			@include break-min($panel2-line-break){
+				width: 54rem;
+				height: 32rem;
+				.circle{
+					width: 15rem;
+					height: 15rem;
+					margin: .9rem;
+				}
 			}
-			@include break-between($panel4-text-break2, $main-break-xxtrlg){
-				font-size: 3.5rem;
-				line-height: 3.5rem;
-			}
-			@include break-min($main-break-xxtrlg) {
-				font-size: 3.8rem;
-				line-height: 3.8rem;
-			}
-
+			
 		}
 	}
 }
+

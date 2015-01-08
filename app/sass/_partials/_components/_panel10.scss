@@ -1,0 +1,180 @@
+#outro {
+	background-color: $color_blue;
+	font-weight: 700;
+	.wrapper {
+		width: 23rem;
+		position: relative;
+		margin: auto;
+		height: 100%;
+		@include break-min($main-break-lg){
+			width: 32rem;
+		}
+		@include break-min($panel2-line-break){
+			width: 50rem;
+		}	
+		&:first-of-type{
+			@include calc(height, "100% - 100px");
+		}
+		.outro-content {
+			width: 100%;
+			height: 20rem;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			position: absolute;
+			#outro-text {
+				height: 50%;
+				width: 100%;
+				h2 {
+					text-align: center;
+					font-size: 2.5rem;
+					line-height: 3.2rem;
+					margin: 0;
+					font-weight: 700;
+					@include break-min($panel2-line-break){
+						font-size: 4.1rem;
+						line-height: 4.2rem;
+					}
+				}
+				h1 {
+					font-size: 5.1rem;
+					padding-top: 3rem;
+					@include break-min($panel2-line-break){
+						font-size: 7.1rem;
+						padding-top: 1rem;
+					}	
+				}
+			}
+			#social-media{
+				border-top: .3rem $white solid;
+				height: 50%;
+				width: 100%;
+				#outro-social-media{
+					margin: 1rem auto;
+					div>a {
+						display: inline-block;
+						width: 3rem;
+						height: 3rem;
+						@include border-radius(50%);
+						background-color: white;
+						margin: .2rem;
+						position: relative;
+						@include break-min($panel2-line-break){
+							width: 4rem;
+							height: 4rem;
+							margin: .7rem;
+						}	
+						&:hover {
+							background-color: $deep_blue;
+						}
+						&:focus {
+							outline: none;
+						}
+						.fa {
+							font-size: 2rem;
+							position: absolute;
+							margin: auto;
+							left: 0;
+							color: #0091d9;
+							bottom: 0;
+							right: 0;
+							@include break-min($panel2-line-break){
+								font-size: 2.2rem;
+							}
+						}
+						&#linkedin .fa{
+							top: 15%;
+							@include break-min($panel2-line-break){
+								top: 20%;
+							}
+						}
+						&#facebook .fa{
+							top: 15%;
+							@include break-min($panel2-line-break){
+								top: 20%;
+							}
+						}
+						&#twitter .fa{
+							top: 19%;
+							@include break-min($panel2-line-break){
+								top: 23%;
+							}
+						}
+						&#googleplus .fa{
+							top: 25%;
+							@include break-min($panel2-line-break){
+								top: 28%;
+							}
+						}
+						&#pinterest{
+							background-image: url('../assets/logo_pinterest.png');
+							background-repeat: no-repeat;
+							@include background-size(45%);
+							background-position: center center;
+							
+						}
+						&#email .fa{
+							font-size: 1.8rem;
+							top: 17%;
+							@include break-min($panel2-line-break){
+								font-size: 2rem;
+								top: 23%;
+							}
+						}
+					}
+				}
+			}
+			h3 {
+				color: $deep_blue;
+				font-weight: 600;
+				font-size: 1.3rem;
+				@include break-min($panel2-line-break){
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+
+	#closing {
+		padding-top: .5rem;
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		bottom: 0px;
+		background-color: $white;
+		p {
+			text-align: center;
+			font-size: 1rem;
+			display: block;
+			margin: 0;
+			line-height: 1.5rem;
+			color: $color_blue;
+			font-weight: 600;
+			padding: .4rem;
+			@include break-min($panel2-line-break){
+				position: absolute;
+				text-align: left;
+			}
+			>a {
+				color: $deep_blue;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		#logos {
+			margin:auto;
+			> a:last-of-type {
+				margin-left: 20px;
+			}
+			@include break-min($panel2-line-break){
+				position: absolute;
+				right:0;
+			}
+		}
+	}
+
+}

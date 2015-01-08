@@ -20,19 +20,21 @@ $(document).ready(function () {
 	beforeStreetUpper = transition + panel/3,
 	afterStreetUpper = beforeStreetUpper + panel,
 	beforeStreetLower = afterStreetUpper + transition,
-	afterStreetLower = beforeStreetLower + panel*2,
+	afterStreetLower = beforeStreetLower + panel*1.75,
 	beforeBrick = afterStreetLower + transition,
-	afterBrick = beforeBrick + panel,
+	afterBrick = beforeBrick + panel * 0.65,
 	beforeTaxi = afterBrick + transition,
 	afterTaxi = beforeTaxi + panel,
 	beforeSkyline = afterTaxi + transition,
 	afterSkyline = beforeSkyline + panel,
 	beforeFence = afterSkyline + transition,
-	afterFence = beforeFence + panel,
+	afterFence = beforeFence + panel/2,
 	beforeBridge = afterFence + transition,
 	afterBridge = beforeBridge + panel,
 	beforeNycave = afterBridge + transition,
 	afterNycave = beforeNycave + panel,
+	beforeOutro = afterNycave + transition,
+	afterOutro = beforeOutro + panel
 
 	text1of2in = 400,
 	text1of2out = 1000,
@@ -67,9 +69,9 @@ $(document).ready(function () {
 			render: function(data) {
 		        //Debugging - Log the current scroll position.
 				console.log(data.curTop); 
-			     	if(data.curTop >= 15544){
-			    	    	$('#circles .circle-1 h1 span').first().prop('Counter',0).animate({
-			    	        Counter: 45
+			     	if(data.curTop >= 13570){
+			    	    	$('#circles .circle-1 h1').prop('Counter',0).animate({
+			    	        Counter: 2578
 			    	    	}, {
 			    	        duration: 2000,
 			    	        easing: 'swing',
@@ -78,9 +80,9 @@ $(document).ready(function () {
 			    	        }
 			       	 })
 			    	};
-			    	if(data.curTop >= 16506){
-			    		$('#circles .circle-2 h1').prop('Counter',0).animate({
-			    	        Counter: 2578
+			    	if(data.curTop >= 14670){
+			    		$('#circles .circle-2 h1 span').prop('Counter',0).animate({
+			    	        Counter: 67
 			    	    	}, {
 			    	        duration: 2000,
 			    	        easing: 'swing',
@@ -89,9 +91,9 @@ $(document).ready(function () {
 			    	        }
 			       	 });			       	 
 			    };
-		    		if(data.curTop >= 17500){
+		    		if(data.curTop >= 15664){
 		    			$('#circles .circle-3 h1 span').prop('Counter',0).animate({
-		    		        Counter: 67
+		    		        Counter: 45
 		    		    	}, {
 		    		        duration: 2000,
 		    		        easing: 'swing',
@@ -117,7 +119,9 @@ $(document).ready(function () {
 		        bbridge: beforeBridge,
 		        abridge: afterBridge,
 		        bnycave: beforeNycave,
-		        anycave: afterNycave
+		        anycave: afterNycave,
+		        boutro: beforeOutro,
+		        aoutro: afterOutro
 		       }
 		});
 
@@ -154,8 +158,8 @@ $(document).ready(function () {
 		$('#intro-title').delay(500).fadeIn(2000);
 
 		//size background-box in slide 8
-		$('#fence-content').css({"width": winW - (winW * 0.2) + 'px'});
-		$('#fence-content').css({"height": winH - (winH * 0.2) + 'px'});
+		// $('#fence-content').css({"width": winW - (winW * 0.2) + 'px'});
+		// $('#fence-content').css({"height": winH - (winH * 0.2) + 'px'});
 		
 
 });
@@ -179,7 +183,7 @@ $(window).resize(function () {
     $(".triangle-2").css({"border-bottom": winHR + 'px solid rgba(0, 0, 0, 1)'});
     $(".triangle-2").css({"border-left": winWR + 'px solid transparent'});
 
-    $('#fence-content').css({"width": winWR - (winWR * 0.2) + 'px'});
-    $('#fence-content').css({"height": winHR - (winHR * 0.2) + 'px'});
+    // $('#fence-content').css({"width": winWR - (winWR * 0.2) + 'px'});
+    // $('#fence-content').css({"height": winHR - (winHR * 0.2) + 'px'});
 });
 
