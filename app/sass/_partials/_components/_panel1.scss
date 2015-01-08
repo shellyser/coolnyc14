@@ -26,7 +26,7 @@ $footer_height: 11%;
      }
 }
 header {
-    min-height: 86px;
+    height: 86px;
     background-color: $white;
     img {
         margin-top: 9px;
@@ -42,7 +42,7 @@ header {
 }
 
 #intro-content {
-    width: 28rem;
+    width: 26rem;
     position: relative;
     margin: auto;
     @include calc(height, "100% - #{$footer_height} - 86px");
@@ -141,13 +141,17 @@ header {
                 font-weight: 700;
             }
             #intro-text {
-                font-size: .9rem;
-                line-height: 1.75rem;
+                font-size: 1rem;
+                line-height: 1.3rem;
                 display: block;
                 margin: 5px auto;
-                width: 22rem;
+                width: 24rem;
             }
-      
+        @include break-max($main-break){
+            #intro-year{
+                font-size: 5rem;
+            }
+        }
         @include break-min($panel4-text-break3){
             min-width: 100%;
             margin: auto;
@@ -214,7 +218,7 @@ footer {
     color: #0E9DD8;
     padding: 1%;
     font-style: italic;
-    min-height: $footer_height;
+    height: $footer_height;
     font-size: .8em;
     h3{
         display:block;

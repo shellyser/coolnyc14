@@ -1,6 +1,6 @@
 #street-lower {
 	font-size: 8px;
-	@include break-min($panel3-text-break){
+	@include break-between($panel3-text-break, $panel1-text-break){
 		font-size: 10px;
 	}
 	@include break-min($panel1-text-break){
@@ -50,154 +50,241 @@
 			height: 36em;
 		}
 	}
-}
-.one 	{
-	top: 33em;
-	left: 10em;
-	position: absolute;
-	@include break-max($main-break){
-		top: 24em;
-		left: 6em;
-	}
-	.circle-outter {
+	[class^="layer-"] {
+		position: absolute;
+		.circle-outter {
 			background-color: $white_30;
 			@include border-radius(50%);
 			position: absolute;
-			width: 5.2em;
-			height: 5.2em;
+			width: 5.7em;
+			height: 5.7em;
 		}
-	.circle-inner {
-		@include border-radius(50%);
-		background-color: $white_60;
-		position: relative;
-		left: 0.6em;
-		top: 0.6em;
-		width: 4em;
-		height: 4em;
+		.circle-inner {
+			@include border-radius(50%);
+			background-color: $white_60;
+			position: relative;
+			width: 4.5em;
+			height: 4.5em;
+			left: 0.6em;
+			top: 0.6em;
+		}
+		h3 {
+			display: block;
+			font-size: 2.2em;
+			height: 1em;
+			color: $deep_blue;
+			top: 1.2rem;
+			left: 1.2rem;
+			font-weight: 700;
+			position: absolute;
+			margin: auto;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+		.line {
+			height: .2em;
+			width: 11em;
+			background-color: #015fd0;
+			position: absolute;
+			display: block;
+		}
+		p {
+			width: 31em;
+			display: block;
+			position: absolute;
+			text-align: left;
+			line-height: 1.8em;
+			@include break-max($main-break){
+				width: 14em;
+				left: 4em;
+				top: 2.2em;
+				font-size: 1.6em;
+			}
+			@include break-between($main-break, $main-break-lg){
+				width: 15em;
+				font-size: 2em;
+			}
+			@include break-between($main-break-lg, $main-break-xtrlg){
+				width: 27em;
+				font-size: 1.4em;
+			}
+		}
 	}
-	h3 {
-		display: block;
-		font-size: 2.2em;
-		height: 1em;
-		color: $deep_blue;
-		top: 1.2rem;
-		left: 1.2rem;
-		font-weight: 700;
-		position: absolute;
-		margin: auto;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-	}
-	.line {
-		height: .2em;
-		width: 11em;
-		background-color: #015fd0;
-		position: absolute;
-		left: 4.9em;
-		top: 2.6em;
-		display: block;
-	}
-	p {
-		width: 31em;
-		display: block;
-		position: absolute;
-		left: 7em;
-		top: 3.2em;
-		text-align: left;
-		line-height: 1.8em;
+	.layer-1{
+		top: 33em;
+		left: 10em;
 		@include break-max($main-break){
-			width: 14em;
-			left: 4em;
-			top: 2.2em;
-			font-size: 1.6em;
+			top: 24em;
+			left: 6em;
 		}
-		@include break-between($main-break, $main-break-lg){
-			width: 15em;
-			left: 3em;
-			top: 2.2em;
-			font-size: 2em;
+		.line {
+			left: 4.9em;
+			top: 2.6em;
 		}
-		@include break-between($main-break-lg, $main-break-xtrlg){
-			width: 27em;
-			left: 5em;
+		p{
+			left: 7em;
+			top: 3.2em;
+			@include break-max($main-break){
+				left: 4em;
+				top: 2.3em;
+			}
+			@include break-between($main-break, $main-break-lg){
+				left: 3em;
+				top: 2.2em;
+			}
+			@include break-between($main-break-lg, $main-break-xtrlg){
+				left: 5em;
+				top: 2.8em;
+			}
+		}
+	}
+	.layer-2{
+		top: 20em;
+		right: 12em;
+		@include break-max($main-break){
+			top: 14em;
+			left: 27em;
+		}
+		.line {
+			right: -0.5em;
 			top: 2.8em;
-			font-size: 1.4em;
+		}
+		p{
+			left: -23em;
+			top: 3.8em;
+
+			@include break-max($main-break){
+				left: -13em;
+				top: 2.4em;
+			}
+			@include break-between($main-break, $main-break-lg){
+				left: -13em;
+				top: 1.8em;
+			}
+			@include break-between($main-break-lg, $main-break-xtrlg){
+				left: -23em;
+				top: 2.8em;
+			}
 		}
 	}
-}
-.two {
-	top: 18em;
-	right: 15em;
-	position: absolute;
-	@include break-max($main-break){
-		top: 11em;
-		right: 13em;
-	}
-	.circle-outter {
-		background-color: $white_30;
-		@include border-radius(50%);
-		position: absolute;
-		width: 12.5em;
-		height: 12.5em;		
-		}
-	.circle-inner {
-		@include border-radius(50%);
-		background-color: $white_60;
-		position: relative;
-		left: 1.25em;
-		top: 1.25em;
-		width: 10.1em;
-		height: 10.1em;
-	}
-	h3 {
-		display: block;
-		font-size: 4em;
-		font-weight: 700;
-		height: 1em;
-		color: $black;
-		position: absolute;
-		margin: auto;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-	}
-	.line {
-		height: 0.2em;
-		width: 11em;
-		background-color: #015fd0;
-		position: absolute;
-		right: -0.5em;
-		top: 6em;
-		@include break-min($panel1-text-break){
-			height: 0.15em;
-		}
-	}
-	p {
-		display: block;
-		position: absolute;
-		width: 25em;
-		right: 1em;
-		text-align: right;
-		line-height: 1.8em;
-		top: 6.7em;
+	.layer-3{
+		top: 15em;
+		left: 16em;
 		@include break-max($main-break){
-			width: 14em;
-			right: 1em;
+			top: 10em;
+			left: 11em;
+		}
+		@include break-min($main-break-lg){
+			top: 15em;
+			left: 20em;
+		}
+		.line {
+			top: 3.5em;
+			left: 5.5em;
+		}
+		p{
 			top: 4.5em;
-			font-size: 1.6em;
-		}
-		@include break-between($main-break, $main-break-xtrlg){
-			width: 21em;
-			top: 5em;
-			font-size: 1.4em;
-		}
-		@include break-min($main-break-xtrlg){
-			width: 25em;
-			top: 6.8em;
-			font-size: 1em;
+			left: 6em;
+			@include break-max($main-break){
+				width: 13em;
+				left: 3.5em;
+				top: 2.2em;
+			}
+			@include break-between($main-break, $main-break-lg){
+				top: 1.8em;
+				left: 2.7em;
+			}
+			@include break-between($main-break-lg, $main-break-xtrlg){
+				left: 5em;
+				top: 2.8em;
+				width: 18em;
+			}
 		}
 	}
+	.layer-4{
+		top: 6em;
+		left: 31em;
+		@include break-max($main-break){
+			top: 3em;
+			left: 24em;
+		}
+		.line {
+			top: 3em;
+			right: -.8em;
+		}
+		p{
+			top: 3.8em;
+			left: -22em;
+			@include break-max($main-break){
+				top: 2.8em;
+				left: -12em;
+			}
+			@include break-between($main-break, $main-break-lg){
+				top: 2.2em;
+				left: -11.5em;
+			}
+			@include break-between($main-break-lg, $main-break-xtrlg){
+				top: 2.9em;
+				right: -5.2em;
+			}
+			@include break-min($main-break-xtrlg){
+				top: 3.8em;
+				right: -9em;
+			}
+		}
+	}
+	.layer-5 {
+		top: 26em;
+		right: 23em;
+		@include break-max($main-break){
+			top: 11em;
+			right: 13em;
+		}
+		.circle-outter {
+			width: 12.5em;
+			height: 12.5em;		
+			}
+		.circle-inner {
+			left: 1.25em;
+			top: 1.25em;
+			width: 10.1em;
+			height: 10.1em;
+		}
+		h3 {
+			font-size: 4em;
+			height: 1em;
+			color: $black;
+		}
+		.line {
+			right: -0.5em;
+			top: 6em;
+			@include break-min($panel1-text-break){
+				height: 0.15em;
+			}
+		}
+		p {
+			width: 25em;
+			right: 1em;
+			text-align: right;
+			top: 6.7em;
+			@include break-max($main-break){
+				width: 12em;
+				left: -13em;
+				top: 4.5em;
+			}
+			@include break-between($main-break, $main-break-xtrlg){
+				width: 16em;
+				top: 5em;
+			}
+			@include break-min($main-break-xtrlg){
+				width: 25em;
+				top: 6.8em;
+			}
+		
+		
+		}	
+	}
+
 }

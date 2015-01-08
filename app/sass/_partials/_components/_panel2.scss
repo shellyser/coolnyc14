@@ -63,7 +63,7 @@
       left: 50%;
       margin-right: -50%;
       @include transform(translate(-394%,-352%));
-      transform-origin: 50% 50%;
+      @include transform-origin(50%, 50%);
      }    
     }
     @include break-min($panel2-line-break){

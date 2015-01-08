@@ -2,7 +2,7 @@
 	background-color: $color_blue;
 	font-weight: 700;
 	.wrapper {
-		width: 23rem;
+		width: 25rem;
 		position: relative;
 		margin: auto;
 		height: 100%;
@@ -167,7 +167,7 @@
 		}
 		#logos {
 			margin:auto;
-			> a:last-of-type {
+			#thinkeco-logo {
 				margin-left: 20px;
 			}
 			@include break-min($panel2-line-break){

@@ -1,0 +1,59 @@
+.shorty{
+	#intro{
+		header{
+			height: 50px;
+			img{
+				margin-top: 4px;
+				width: 125px;
+			}
+			h2{
+				margin-top: 0px;
+			}
+		}
+		#intro-content{
+			@include calc(height, "100% - 30px - 50px");
+		}
+		#intro-content-bottom #intro-section #intro-text{
+
+		}
+		footer{
+			height: 30px;
+			img{
+				width: 25px;
+			}
+			h3 {
+				display: none;
+			}
+		}
+	}
+	#fence{
+		#fence-header{
+			height: 6rem;
+			h1{
+				padding-top: 3rem;
+			}
+		}
+	}
+	#outro{
+		wrapper:first-of-type{
+			@include calc(height, "100% - 53px");
+		}
+		#closing{
+			height: 53px;
+			padding-top: 0.2rem;
+			p{
+				font-size: .9rem;
+				padding: .3rem;
+				line-height: 0rem;
+			}
+			#logos {
+				img {
+					width: 90px;
+				}
+				#thinkeco-logo{
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}

@@ -25,7 +25,7 @@ module.exports = function (grunt) {
           livereload: true,
       },
       sass: {
-          files: ['<%= yeoman.app %>/_sass/**/*.{scss,sass}'],
+          files: ['<%= yeoman.app %>/sass/**/*.{scss,sass}'],
           tasks: ['compass:server', 'autoprefixer:server'],
           options: {
               livereload: false
@@ -133,7 +133,7 @@ module.exports = function (grunt) {
         // If you're using global Sass gems, require them here.
         // require: ['singularity', 'jacket'],
         bundleExec: true,
-        sassDir: '<%= yeoman.app %>/_scss',
+        sassDir: '<%= yeoman.app %>/sass',
         cssDir: '.tmp/css',
         imagesDir: '<%= yeoman.app %>/img',
         javascriptsDir: '<%= yeoman.app %>/js',
@@ -264,6 +264,7 @@ module.exports = function (grunt) {
       }
     },
     copy: {
+
       dist: {
         files: [{
           expand: true,
@@ -273,12 +274,17 @@ module.exports = function (grunt) {
             // Jekyll processes and moves HTML and text files.
             // Usemin moves CSS and javascript inside of Usemin blocks.
             // Copy moves asset files and directories.
-            'img/**/*',
+            'assets/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
             '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            '_bower_components/jquery/jquery.js',
+            'bower_components/jquery/jquery.js',
+            'bower_components/bower-skrollr/skrollr.min.js',
+            'bower_components/normalize-css/normalize.js',
+            'js/main.js',
+            'js/plugins.js',
+            'js/skrollr.ie.js',
             'favicon.ico',
             'apple-touch*.png'
           ],
@@ -353,7 +359,13 @@ module.exports = function (grunt) {
         'compass:dist',
         'copy:dist'
       ]
-    }
+    },
+    'gh-pages': {
+        options: {
+          base: 'app/_site'
+        },
+        src: ['**']
+      }
   });
 
   // Define Tasks
@@ -424,5 +436,6 @@ module.exports = function (grunt) {
 grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-gh-pages');
   
 };
