@@ -17,144 +17,148 @@ $(document).ready(function () {
 	var panel = 3000,
 	transition = 500,
 
-	beforeStreetUpper = transition + panel/2,
+	beforeStreetUpper = transition + panel,
 	afterStreetUpper = beforeStreetUpper + panel,
-	beforeStreetLower = afterStreetUpper + transition,
-	afterStreetLower = beforeStreetLower + panel*2.75,
-	beforeBrick = afterStreetLower + transition,
-	afterBrick = beforeBrick + panel * 0.65,
-	beforeTaxi = afterBrick + transition,
-	afterTaxi = beforeTaxi + panel,
-	beforeSkyline = afterTaxi + transition,
-	afterSkyline = beforeSkyline + panel,
-	beforeFence = afterSkyline + transition,
-	afterFence = beforeFence + panel/2,
+	beforeSkyline = afterStreetUpper + transition,
+	afterSkyline = beforeSkyline + panel/0.6,
+	beforeBrick = afterSkyline + transition,
+	afterBrick = beforeBrick + panel * 0.85,
+	beforeNycave = afterBrick + transition,
+	afterNycave = beforeNycave + panel/0.75,
+	beforeStreetLower = afterNycave + transition,
+	afterStreetLower = beforeStreetLower + panel*2.9,
+	beforeTaxi = afterStreetLower + transition,
+	afterTaxi = beforeTaxi + panel/0.65,
+	beforeFence = afterTaxi + transition,
+	afterFence = beforeFence + panel,
 	beforeBridge = afterFence + transition,
-	afterBridge = beforeBridge + panel/0.9,
-	beforeNycave = afterBridge + transition,
-	afterNycave = beforeNycave + panel,
-	beforeOutro = afterNycave + transition,
+	afterBridge = beforeBridge + panel/0.75,
+	beforeOutro = afterBridge + transition,
 	afterOutro = beforeOutro + panel,
+	
+	 scroll = skrollr.init({
+		// scale: 2,
+		// forceHeight: true,
+		render: function(data) {
+	        //Debugging - Log the current scroll position.
+			console.log(data.curTop); 
+	     	if(data.curTop >= 20200){
+	    	    	$('#circles .circle-1 h1').prop('Counter',0).animate({
+	    	        Counter: 2578
+	    	    	}, {
+	    	        duration: 2000,
+	    	        easing: 'swing',
+	    	        step: function (now) {
+	    	            $(this).text(Math.ceil(now));
+	    	        }
+	       	 	});
+	    	}
+	    	if(data.curTop >= 21200){
+	    		$('#circles .circle-2 h1 span').prop('Counter',0).animate({
+	    	        Counter: 67
+	    	    	}, {
+	    	        duration: 2000,
+	    	        easing: 'swing',
+	    	        step: function (now) {
+	    	            $(this).text(Math.ceil(now));
+	    	        }
+	       	 });			       	 
+	    }
+    		if(data.curTop >= 22140){
+    			$('#circles .circle-3 h1 span').prop('Counter',0).animate({
+    		        Counter: 45
+    		    	}, {
+    		        duration: 2000,
+    		        easing: 'swing',
+    		        step: function (now) {
+    		            $(this).text(Math.ceil(now));
+    		        }
+    	   		});			       	 
+    		}
+		},        
+	    constants: {
+	        bstreetupper: beforeStreetUpper,
+	        astreetupper: afterStreetUpper,
+	        bstreetlower: beforeStreetLower,
+	        astreetlower: afterStreetLower,
+	        bbrick: beforeBrick,
+	        abrick: afterBrick,
+	        btaxi: beforeTaxi,
+	        ataxi: afterTaxi,
+	        bskyline: beforeSkyline,
+	        askyline: afterSkyline,
+	        bfence: beforeFence,
+	        afence: afterFence,
+	        bbridge: beforeBridge,
+	        abridge: afterBridge,
+	        bnycave: beforeNycave,
+	        anycave: afterNycave,
+	        boutro: beforeOutro,
+	        aoutro: afterOutro
+	       }
+	});
+
+	
+	// get window size
+	var winW = 0, winH = 0;
+	  if( typeof( window.innerWidth ) === 'number' ) {
+	    //Non-IE
+	    winW = window.innerWidth;
+	    winH = window.innerHeight;
+	  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+	    //IE 6+ in 'standards compliant mode'
+	    winW = document.documentElement.clientWidth;
+	    winH = document.documentElement.clientHeight;
+	  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+	    //IE 4 compatible
+	    winW = document.body.clientWidth;
+	    winH = document.body.clientHeight;
+	  };
+
+	  //adds a loading id until the page is loaded
+	  function onReady(callback) {
+	      var intervalID = window.setInterval(checkReady, 1000);
+
+	      function checkReady() {
+	          if (document.getElementsByTagName('body')[0] !== undefined) {
+	              window.clearInterval(intervalID);
+	              callback.call(this);
+	          }
+	      }
+	  }
+
+	  function show(id, value) {
+	      document.getElementById(id).style.display = value ? 'block' : 'none';
+	  }
+
+	  onReady(function () {
+	      show('page', true);
+	      show('loading', false);
+	  });
+
+    //set html with class shorty if window height is smaller than 800px
+	if (winH < 600){
+		$('html').addClass('shorty');
+	}
+	else{
+		$('html').removeClass('shorty');
+	}
 
 
-	$window = $(window),
-	$body = $('body');
-	// windowHeight = $(window).height();
+	// size triangles
+	$('.triangle-1').css({'border-top': winH + 'px solid rgba(0, 0, 0, 1)'});
+	$('.triangle-1').css({'border-right': winW + 'px solid transparent'});
+	$('.triangle-2').css({'border-bottom': winH + 'px solid rgba(0, 0, 0, 1)'});
+	$('.triangle-2').css({'border-left': winW + 'px solid transparent'});
 
-	// if (windowHeight < 800){
-	// 	$('html').addClass('shorty');
-	// }
-	// else{
-	// 	$('html').removeClass('shorty');
-	// }
+	
+	//intro fadeIn effects on first slide
+	$('#intro-scroll').delay(1000).fadeIn(2000);
+	$('#intro-title').delay(500).fadeIn(2000);
 
-	// $('#intro').height(windowHeight);
-	// $('section').height(windowHeight);
-
-	// function adjustWindow(){
-
-		var scroll = skrollr.init({
-			// scale: 2,
-			// forceHeight: true,
-			render: function(data) {
-		        //Debugging - Log the current scroll position.
-				console.log(data.curTop); 
-		     	if(data.curTop >= 13570){
-		    	    	$('#circles .circle-1 h1').prop('Counter',0).animate({
-		    	        Counter: 2578
-		    	    	}, {
-		    	        duration: 2000,
-		    	        easing: 'swing',
-		    	        step: function (now) {
-		    	            $(this).text(Math.ceil(now));
-		    	        }
-		       	 	});
-		    	}
-		    	if(data.curTop >= 14670){
-		    		$('#circles .circle-2 h1 span').prop('Counter',0).animate({
-		    	        Counter: 67
-		    	    	}, {
-		    	        duration: 2000,
-		    	        easing: 'swing',
-		    	        step: function (now) {
-		    	            $(this).text(Math.ceil(now));
-		    	        }
-		       	 });			       	 
-		    }
-	    		if(data.curTop >= 15664){
-	    			$('#circles .circle-3 h1 span').prop('Counter',0).animate({
-	    		        Counter: 45
-	    		    	}, {
-	    		        duration: 2000,
-	    		        easing: 'swing',
-	    		        step: function (now) {
-	    		            $(this).text(Math.ceil(now));
-	    		        }
-	    	   		});			       	 
-	    		}
-			},        
-		    constants: {
-		        bstreetupper: beforeStreetUpper,
-		        astreetupper: afterStreetUpper,
-		        bstreetlower: beforeStreetLower,
-		        astreetlower: afterStreetLower,
-		        bbrick: beforeBrick,
-		        abrick: afterBrick,
-		        btaxi: beforeTaxi,
-		        ataxi: afterTaxi,
-		        bskyline: beforeSkyline,
-		        askyline: afterSkyline,
-		        bfence: beforeFence,
-		        afence: afterFence,
-		        bbridge: beforeBridge,
-		        abridge: afterBridge,
-		        bnycave: beforeNycave,
-		        anycave: afterNycave,
-		        boutro: beforeOutro,
-		        aoutro: afterOutro
-		       }
-		});
-
-		
-		// get window size
-		var winW = 0, winH = 0;
-		  if( typeof( window.innerWidth ) === 'number' ) {
-		    //Non-IE
-		    winW = window.innerWidth;
-		    winH = window.innerHeight;
-		  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
-		    //IE 6+ in 'standards compliant mode'
-		    winW = document.documentElement.clientWidth;
-		    winH = document.documentElement.clientHeight;
-		  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
-		    //IE 4 compatible
-		    winW = document.body.clientWidth;
-		    winH = document.body.clientHeight;
-		  };
-
-	    //set html with class shorty if window height is smaller than 800px
-		if (winH < 800){
-			$('html').addClass('shorty');
-		}
-		else{
-			$('html').removeClass('shorty');
-		}
-
-
-		// size triangles
-		$('.triangle-1').css({'border-top': winH + 'px solid rgba(0, 0, 0, 1)'});
-		$('.triangle-1').css({'border-right': winW + 'px solid transparent'});
-		$('.triangle-2').css({'border-bottom': winH + 'px solid rgba(0, 0, 0, 1)'});
-		$('.triangle-2').css({'border-left': winW + 'px solid transparent'});
-
-		
-		//intro fadeIn effects on first slide
-		$('#intro-scroll').delay(1000).fadeIn(2000);
-		$('#intro-title').delay(500).fadeIn(2000);
-
-		//size background-box in slide 8
-		// $('#fence-content').css({"width": winW - (winW * 0.2) + 'px'});
-		// $('#fence-content').css({"height": winH - (winH * 0.2) + 'px'});
+	//size background-box in slide 8
+	// $('#fence-content').css({"width": winW - (winW * 0.2) + 'px'});
+	// $('#fence-content').css({"height": winH - (winH * 0.2) + 'px'});
 		
 
 });
@@ -180,5 +184,11 @@ $(window).resize(function () {
 
     // $('#fence-content').css({"width": winWR - (winWR * 0.2) + 'px'});
     // $('#fence-content').css({"height": winHR - (winHR * 0.2) + 'px'});
+    if (winHR < 600){
+    	$('html').addClass('shorty');
+    }
+    else{
+    	$('html').removeClass('shorty');
+    }
 });
 

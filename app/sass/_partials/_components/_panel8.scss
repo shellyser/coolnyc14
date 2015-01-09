@@ -1,139 +1,115 @@
-#bridge {
-	background-image: url("../assets/bgphotos/bridge600.jpg");
+#fence {
+	background-image: url("../assets/bgphotos/fence600.jpg");
 	@include background-size(cover);
 	background-repeat: no-repeat;
 	background-position: center center;
 	@include break-min($main-break-lg){
-	    background-image: url("../assets/bgphotos/bridge1200.jpg");
+	    background-image: url("../assets/bgphotos/fence1200.jpg");
 	}
 	@include break-min($main-break-xxtrlg){
-	    background-image: url("../assets/bgphotos/bridge.jpg");
-	}
-	#bridge-overlay{
-		background-color: $blue_90;
+	    background-image: url("../assets/bgphotos/fence.jpg");
+	 }
+	 #fence-header{
+	 	width: 100%;
+	 	height: 8rem;
+	 	background-color: $black_60;
+	 	text-align: center;
+	 	h1{
+	 		font-weight: 700;
+	 		font-size: 2rem;
+	 		padding-top: 4rem;
+	 	}
+	 }
+	#fence-content {	
 		width: 100%;
-		height: 100%;
-	}
-	#bridge-content {	
-		font-size: 1.6rem;
-		font-weight: 700;
-		line-height: 2rem;
-		width: 85%;
-		height: 80%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		margin: auto;
-		h1 {
-			margin: 0;
-			display: block;
-			top: 50%;
-			left: 50%;
-			margin-right: -50%;
+		@include calc(height, "100% - 8rem");
+		position: relative;
+		.circles{
+			width: 27rem;
+			height: 16rem;
 			position: absolute;
-			@include transform(translate(-50%, -50%));
-			@include break-min($panel3-text-break) {
-				font-size: 2rem;
-				line-height: 2.8rem;
-				padding: 1%;
-			}
-			@include break-min ($panel8-text-break) {
-				font-size: 2.6rem;
-				line-height: 3rem;
-				padding: 1%;
-			}
-			@include break-between($panel2-line-break, $panel4-text-break2){
-				font-size: 3.2rem;
-				line-height: 3.2rem;
-			}
-			@include break-between($panel4-text-break2, $main-break-xxtrlg){
-				font-size: 3.5rem;
-				line-height: 3.5rem;
-			}
-			@include break-min($main-break-xxtrlg) {
-				font-size: 3.8rem;
-				line-height: 3.8rem;
-			}
-
-		}
-		.table {
-			width: 100%;
-			height: 28rem;
 			margin: auto;
-			position: absolute;
 			top: 0;
 			left: 0;
 			right: 0;
 			bottom: 0;
-			@include break-min($panel2-line-break){
-				width: 47rem;
-			}
-			.row {
-				width: 100%;
-				height: 8rem;
-				clear: both;
-				&:first-of-type{
-					font-size: .85rem;
-					vertical-align: bottom;
-					height: 3rem;
-					@include break-min($panel3-text-break) {
-			    		font-size: 1.2rem;
-			    	}
-			    	.col{
-			    		margin-top: .3rem;
-				    	&:last-of-type{
-				    		color: $deep_blue;
-			    		}
-			    	}
+			margin: auto;
+			@include transition(transform 0.5s ease-in);
+			.circle {
+				display: inline-block;
+				background-color: $white_90;
+				@include border-radius(50%);
+				width: 7rem;
+				height: 7rem;
+				margin: .5rem;
+				background-position: center center;
+				width: 7rem;
+				background-repeat: no-repeat;
+				@include background-size(60%);
+				&:hover{
+					background-color: $color_blue;
 				}
-				&.small{
-					background-image: url('../assets/dotted_line.png');
-					background-repeat: no-repeat;
-					height: 1rem;
-				}
-				&.line{
-					height:.3rem;
-					background-color: $white;
-					.blue-line {
-						background-color: $deep_blue;
-						width:100%;
-						height:100%;
+				&#abc{
+					background-image: url("../assets/logo_abc.svg");
+					&:hover{
+						background-image: url("../assets/logo_abc_white.svg");
 					}
 				}
-				.col{
-				    display:block;
-				    width: 9rem;
-				    height: 100%;
-		    		@include break-min($panel3-text-break) {
-		        		width: 14rem;
-		        	}
-				    h2{
-				    	font-size: 4rem;
-				    	display: block;
-				    	margin-top: 1em;
-				    	@include break-min($panel3-text-break) {
-				    		font-size: 6rem;
-				    		margin-top: 2.8rem;
-				    	}
-				    	@include break-between($panel2-line-break, $panel4-text-break2){
-				    		font-size: 7.2rem;
-				    		margin-top: 2.7rem
-				    	}
-
-				    }
-				    &:first-of-type{
-				      float:left;
-				      text-align: left;
-				    }
-				    &:last-of-type{
-				      float:right;
-				      text-align: right;
-				      color: $black;
-				    }
-			 	}
+				&#fox{
+					background-image: url("../assets/logo_fox.svg");
+					&:hover{
+						background-image: url("../assets/logo_fox_white.svg");
+					}
+				}
+				&#abcnews{
+					background-image: url("../assets/logo_abcnews.png");
+					background-position: center 55%;
+					@include background-size(47%);
+					&:hover{
+						background-image: url("../assets/logo_abcnews_white.png");
+					}
+				}
+				&#cnbc{
+					background-image: url("../assets/logo_cnbc.png");
+					background-position: center 55%;
+					@include background-size(57%);
+					&:hover{
+						background-image: url("../assets/logo_cnbc_white.png");
+					}
+				}
+				&#wired{
+					background-image: url("../assets/logo_wired.svg");
+					&:hover{
+						background-image: url("../assets/logo_wired_white.svg");
+					}
+				}
+				&#dna{
+					background-image: url("../assets/logo_dna.svg");
+					@include background-size(46%);
+					&:hover{
+						background-image: url("../assets/logo_dna_white.svg");
+					}
+				}
 			}
+			@include break-min($panel3-text-break){
+				width: 34rem;
+				height: 23rem;
+				.circle{
+					width: 10rem;
+					height: 10rem;
+				}
+			}
+			@include break-min($panel2-line-break){
+				width: 54rem;
+				height: 34rem;
+				.circle{
+					width: 15rem;
+					height: 15rem;
+					margin: .9rem;
+				}
+			}
+			
 		}
 	}
-}	
+}
+

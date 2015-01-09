@@ -1,42 +1,140 @@
-#nycave {
-	background-image: url("../assets/bgphotos/nycave450.jpg");
+
+#bridge {
+	background-image: url("../assets/bgphotos/bridge600.jpg");
 	@include background-size(cover);
 	background-repeat: no-repeat;
-	background-position: top center;
-	@include break-min($main-break){
-	    background-image: url("../assets/bgphotos/nycave600.jpg");
-	}
+	background-position: center center;
 	@include break-min($main-break-lg){
-	    background-image: url("../assets/bgphotos/nycave1200.jpg");
+	    background-image: url("../assets/bgphotos/bridge1200.jpg");
 	}
 	@include break-min($main-break-xxtrlg){
-	    background-image: url("../assets/bgphotos/nycave.jpg");
+	    background-image: url("../assets/bgphotos/bridge.jpg");
 	}
-	> h1 {
+	#bridge-overlay{
+		background-color: $blue_90;
+		width: 100%;
+		height: 100%;
+	}
+	#bridge-content {	
 		font-size: 1.6rem;
 		font-weight: 700;
-		width: 100%;
-		display: block;
-		margin: auto;
+		line-height: 2rem;
+		width: 85%;
+		height: 80%;
 		position: absolute;
-		line-height: 1.9rem;
-		height: 12rem;
 		top: 0;
-		bottom: 0;
 		left: 0;
 		right: 0;
-		@include text-shadow(rgba(0, 0, 0, 0.15) 4px 4px 5px); 
-		@include break-min($panel3-text-break) {
-			font-size: 2.6rem;
-			line-height: 2.9rem;
+		bottom: 0;
+		margin: auto;
+		h1 {
+			margin: 0;
+			display: block;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			position: absolute;
+			@include transform(translate(-50%, -50%));
+			@include break-min($panel3-text-break) {
+				font-size: 2rem;
+				line-height: 2.8rem;
+				padding: 1%;
+			}
+			@include break-min ($panel8-text-break) {
+				font-size: 2.6rem;
+				line-height: 3rem;
+				padding: 1%;
+			}
+			@include break-between($panel2-line-break, $panel4-text-break2){
+				font-size: 3.2rem;
+				line-height: 3.2rem;
+			}
+			@include break-between($panel4-text-break2, $main-break-xxtrlg){
+				font-size: 3.5rem;
+				line-height: 3.5rem;
+			}
+			@include break-min($main-break-xxtrlg) {
+				font-size: 3.8rem;
+				line-height: 3.8rem;
+			}
+
 		}
-		@include break-min($main-break-xtrlg) {
-			font-size: 3.5rem;
-			line-height: 3.5rem;
-		}
-		@include break-min($main-break-xxtrlg) {
-			font-size: 4.2rem;
-			line-height: 4.2rem;
+		.table {
+			width: 100%;
+			height: 28rem;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			@include break-min($panel2-line-break){
+				width: 47rem;
+			}
+			.row {
+				width: 100%;
+				height: 8rem;
+				clear: both;
+				&:first-of-type{
+					font-size: .85rem;
+					vertical-align: bottom;
+					height: 3rem;
+					@include break-min($panel3-text-break) {
+			    		font-size: 1.2rem;
+			    	}
+			    	.col{
+			    		margin-top: .3rem;
+				    	&:last-of-type{
+				    		color: $deep_blue;
+			    		}
+			    	}
+				}
+				&.small{
+					background-image: url('../assets/dotted_line.png');
+					background-repeat: no-repeat;
+					height: 1rem;
+				}
+				&.line{
+					height:.3rem;
+					background-color: $white;
+					.blue-line {
+						background-color: $deep_blue;
+						width:100%;
+						height:100%;
+					}
+				}
+				.col{
+				    display:block;
+				    width: 9rem;
+				    height: 100%;
+		    		@include break-min($panel3-text-break) {
+		        		width: 14rem;
+		        	}
+				    h2{
+				    	font-size: 4rem;
+				    	display: block;
+				    	margin-top: 1em;
+				    	@include break-min($panel3-text-break) {
+				    		font-size: 6rem;
+				    		margin-top: 2.8rem;
+				    	}
+				    	@include break-between($panel2-line-break, $panel4-text-break2){
+				    		font-size: 7.2rem;
+				    		margin-top: 2.7rem
+				    	}
+
+				    }
+				    &:first-of-type{
+				      float:left;
+				      text-align: left;
+				    }
+				    &:last-of-type{
+				      float:right;
+				      text-align: right;
+				      color: $black;
+				    }
+			 	}
+			}
 		}
 	}
-}
+}	

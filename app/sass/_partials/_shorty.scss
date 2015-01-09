@@ -1,7 +1,7 @@
 .shorty{
 	#intro{
 		header{
-			height: 50px;
+			height: 60px;
 			img{
 				margin-top: 4px;
 				width: 125px;
@@ -11,15 +11,13 @@
 			}
 		}
 		#intro-content{
-			@include calc(height, "100% - 30px - 50px");
-		}
-		#intro-content-bottom #intro-section #intro-text{
-
+			@include calc(height, "100% - 60px - 46px");
 		}
 		footer{
-			height: 30px;
+			height: 46px;
+			padding: .3rem;
 			img{
-				width: 25px;
+				width: 33px;
 			}
 			h3 {
 				display: none;
@@ -33,17 +31,20 @@
 				padding-top: 3rem;
 			}
 		}
+		#fence-content{
+			@include calc(height, "100% - 6rem");
+		}
 	}
 	#outro{
 		wrapper:first-of-type{
 			@include calc(height, "100% - 53px");
 		}
 		#closing{
-			height: 53px;
-			padding-top: 0.2rem;
+			height: 56px;
+			padding-top: 0.7rem;
 			p{
 				font-size: .9rem;
-				padding: .3rem;
+				padding-bottom: .6rem;
 				line-height: 0rem;
 			}
 			#logos {

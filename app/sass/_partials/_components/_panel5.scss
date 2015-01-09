@@ -1,94 +1,42 @@
-#taxi {
-	background-image: url("../assets/bgphotos/taxis600.jpg");
+#nycave {
+	background-image: url("../assets/bgphotos/nycave450.jpg");
 	@include background-size(cover);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: top center;
+	@include break-min($main-break){
+	    background-image: url("../assets/bgphotos/nycave600.jpg");
+	}
 	@include break-min($main-break-lg){
-	background-image: url("../assets/bgphotos/taxis1200.jpg");
-	}
-	@include break-min($panel4-text-break3){
-		font-size: 18px;
-	}
-	@include break-min($panel4-text-break2){
-		font-size: 23px;
+	    background-image: url("../assets/bgphotos/nycave1200.jpg");
 	}
 	@include break-min($main-break-xxtrlg){
-		background-image: url("../assets/bgphotos/taxis.jpg");
-		font-size: 28px;
+	    background-image: url("../assets/bgphotos/nycave.jpg");
 	}
-	@include break-min($main-break-xxxtrlg){
-		font-size: 34px;
-	}
-	#taxi-header {
-		height: 3.2em;
-		top: 9%;
-		z-index: 9999;
-		position: relative;
+	> h1 {
+		font-size: 1.6rem;
+		font-weight: 700;
 		width: 100%;
-		text-align: center;
-		h1 {
-			font-size: 220%;
-			@include text-shadow(rgba(0, 0, 0, 0.15) 4px 4px 5px); 			
-		}
-	}
-	#circle-wrapper {
-		width: 90%;
-		height: 34em;
-		position: absolute;
+		display: block;
 		margin: auto;
-		bottom: 0;
+		position: absolute;
+		line-height: 1.9rem;
+		height: 12rem;
 		top: 0;
+		bottom: 0;
 		left: 0;
 		right: 0;
+		@include text-shadow(rgba(0, 0, 0, 0.15) 4px 4px 5px); 
 		@include break-min($panel3-text-break) {
-			height: 11em;
-			width: 91%;
+			font-size: 2.6rem;
+			line-height: 2.9rem;
 		}
-		#circles {
-			width: 100%;
-			height: 100%;
-			text-align: center;
-			@include transition(transform 0.5s ease-in);
-			[class^="circle-"] {
-				vertical-align: middle;
-				text-align: center;
-				display: block;
-				background-color: $black_60;
-				@include border-radius(50%);
-				width: 11em;
-				height: 11em;
-				margin: 1% auto;
-				position: relative;
-				@include break-min($panel3-text-break) {
-					display: inline-block;
-				}
-				@include break-min($main-break-lg){
-					margin: auto 2%;
-				}
-				> div {
-					letter-spacing: .01em;
-					max-width: 85%;
-					max-height: 60%;
-					margin: auto;
-					position: absolute;
-					bottom: 0;
-					top: 0;
-					left: 0;
-					right: 0;
-					h1 {
-						 font-size: 4.2em;
-						 border-bottom: #0091d9 0.05em solid;
-						 margin-bottom: 0.08em;
-						 padding-bottom: .08em;
-					}
-					p{
-						line-height: 1.4em;
-						font-size: .6em;
-						width: 80%;
-						margin: auto;
-					}
-				}
-			}
+		@include break-min($main-break-xtrlg) {
+			font-size: 3.5rem;
+			line-height: 3.5rem;
+		}
+		@include break-min($main-break-xxtrlg) {
+			font-size: 4.2rem;
+			line-height: 4.2rem;
 		}
 	}
 }
