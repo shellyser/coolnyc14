@@ -42,20 +42,20 @@ $(document).ready(function () {
 		render: function(data) {
 	        //Debugging - Log the current scroll position.
 			console.log(data.curTop); 
-	     	if(data.curTop >= 20200){
-	    	    	$('#circles .circle-1 h1').prop('Counter',0).animate({
-	    	        Counter: 2578
-	    	    	}, {
-	    	        duration: 2000,
-	    	        easing: 'swing',
-	    	        step: function (now) {
-	    	            $(this).text(Math.ceil(now));
-	    	        }
-	       	 	});
-	    	}
-	    	if(data.curTop >= 21200){
+	     	// if(data.curTop >= 30290){
+	    	 //    	$('#circles .circle-1 h1 span').prop('Counter',0).animate({
+	    	 //        Counter: 6.5
+	    	 //    	}, {
+	    	 //        duration: 2000,
+	    	 //        easing: 'swing',
+	    	 //        step: function (now) {
+	    	 //            $(this).text(Math.ceil(now));
+	    	 //        }
+	      //  	 	});
+	    	// }
+	    	if(data.curTop >= 31000){
 	    		$('#circles .circle-2 h1 span').prop('Counter',0).animate({
-	    	        Counter: 67
+	    	        Counter: 25
 	    	    	}, {
 	    	        duration: 2000,
 	    	        easing: 'swing',
@@ -64,9 +64,9 @@ $(document).ready(function () {
 	    	        }
 	       	 });			       	 
 	    }
-    		if(data.curTop >= 22140){
+    		if(data.curTop >= 32200){
     			$('#circles .circle-3 h1 span').prop('Counter',0).animate({
-    		        Counter: 45
+    		        Counter: 1
     		    	}, {
     		        duration: 2000,
     		        easing: 'swing',

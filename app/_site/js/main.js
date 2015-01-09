@@ -42,7 +42,7 @@ $(document).ready(function () {
 		render: function(data) {
 	        //Debugging - Log the current scroll position.
 			console.log(data.curTop); 
-	     	if(data.curTop >= 20200){
+	     	if(data.curTop >= 30290){
 	    	    	$('#circles .circle-1 h1').prop('Counter',0).animate({
 	    	        Counter: 2578
 	    	    	}, {
@@ -53,7 +53,7 @@ $(document).ready(function () {
 	    	        }
 	       	 	});
 	    	}
-	    	if(data.curTop >= 21200){
+	    	if(data.curTop >= 31000){
 	    		$('#circles .circle-2 h1 span').prop('Counter',0).animate({
 	    	        Counter: 67
 	    	    	}, {
@@ -64,7 +64,7 @@ $(document).ready(function () {
 	    	        }
 	       	 });			       	 
 	    }
-    		if(data.curTop >= 22140){
+    		if(data.curTop >= 32200){
     			$('#circles .circle-3 h1 span').prop('Counter',0).animate({
     		        Counter: 45
     		    	}, {

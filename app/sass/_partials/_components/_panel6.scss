@@ -17,6 +17,34 @@
 	}
 	text-align: center;
 	background-color: $color_blue;
+	#map-header{
+		background-color: $black;
+		height: 8.2em;
+		top: 10%;
+		z-index: 9999;
+		position: relative;
+		h1 {
+			position: absolute;
+			width: 100%;
+			font-size: 300%;
+			font-weight: 400;
+			margin: 0;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			@include transform(translate(-50%, -50%));
+			span {
+				font-weight: 700;
+				color: $color_blue;
+				display: block;
+			}
+			@include break-min($panel2-text-break){
+				span{
+					display: initial;
+				}
+			}
+		}
+	}
 	#map-wrapper{
 		position: absolute;
 		width: 49em;
@@ -251,6 +279,10 @@
 			right: 1em;
 			text-align: right;
 			top: 6.7em;
+			em {
+				color: $black;
+				font-weight: 700;
+			}
 			@include break-max($main-break){
 				width: 12em;
 				left: -13em;
@@ -264,7 +296,7 @@
 				width: 25em;
 				top: 6.8em;
 			}
-		
+			
 		
 		}	
 	}

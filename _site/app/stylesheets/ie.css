@@ -220,33 +220,30 @@ header #tagline {
   left: -1rem;
   top: -1rem;
   position: absolute;
-  background-image: url("/assets/asterick_black.png");
-  background-repeat: no-repeat;
 }
-/* line 63, ../sass/_partials/_components/_panel1.scss */
+/* line 61, ../sass/_partials/_components/_panel1.scss */
 #intro-content .box {
   min-height: 38%;
   width: 6rem;
-  left: 4rem;
+  left: 6rem;
 }
-/* line 71, ../sass/_partials/_components/_panel1.scss */
+/* line 69, ../sass/_partials/_components/_panel1.scss */
 #intro-content .box {
   min-height: 53%;
   width: 14rem;
   top: 35%;
-  left: 4rem;
 }
-/* line 80, ../sass/_partials/_components/_panel1.scss */
+/* line 77, ../sass/_partials/_components/_panel1.scss */
 #intro-content .box {
   left: 1.5rem;
   min-height: 54%;
 }
-/* line 87, ../sass/_partials/_components/_panel1.scss */
+/* line 84, ../sass/_partials/_components/_panel1.scss */
 #intro-content .box {
   top: 37%;
   left: 1.5rem;
 }
-/* line 92, ../sass/_partials/_components/_panel1.scss */
+/* line 89, ../sass/_partials/_components/_panel1.scss */
 #intro-content #intro-content-top {
   height: 50%;
   width: 100%;
@@ -254,7 +251,7 @@ header #tagline {
   color: #0091d9;
   position: absolute;
 }
-/* line 98, ../sass/_partials/_components/_panel1.scss */
+/* line 95, ../sass/_partials/_components/_panel1.scss */
 #intro-content #intro-content-top #intro-title {
   display: none;
   padding: 2%;
@@ -274,7 +271,7 @@ header #tagline {
   font-size: 4.7rem;
 }
 
-/* line 122, ../sass/_partials/_components/_panel1.scss */
+/* line 119, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom {
   display: block;
   position: relative;
@@ -282,7 +279,7 @@ header #tagline {
   padding: 2%;
   top: 50%;
 }
-/* line 128, ../sass/_partials/_components/_panel1.scss */
+/* line 125, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section {
   position: absolute;
   top: 50%;
@@ -301,13 +298,13 @@ header #tagline {
   min-width: 100%;
   margin: auto;
 }
-/* line 136, ../sass/_partials/_components/_panel1.scss */
+/* line 133, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-year {
   display: block;
   font-size: 5.6rem;
   font-weight: 700;
 }
-/* line 141, ../sass/_partials/_components/_panel1.scss */
+/* line 138, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-text {
   font-size: 1rem;
   line-height: 1.3rem;
@@ -315,13 +312,13 @@ header #tagline {
   margin: 5px auto;
   width: 24rem;
 }
-/* line 156, ../sass/_partials/_components/_panel1.scss */
+/* line 153, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-year {
   font-size: 7rem;
   font-weight: 700;
   display: inline-block;
 }
-/* line 161, ../sass/_partials/_components/_panel1.scss */
+/* line 158, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-text {
   font-size: .9rem;
   line-height: 1.75rem;
@@ -330,14 +327,14 @@ header #tagline {
   margin-left: 2%;
   display: inline-block;
 }
-/* line 173, ../sass/_partials/_components/_panel1.scss */
+/* line 170, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-year {
   font-size: 8.3rem;
   margin-left: 1.5rem;
   font-weight: 700;
   display: inline-block;
 }
-/* line 179, ../sass/_partials/_components/_panel1.scss */
+/* line 176, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-text {
   font-size: 1rem;
   line-height: 1.8em;
@@ -346,14 +343,14 @@ header #tagline {
   display: inline-block;
   width: 30rem;
 }
-/* line 191, ../sass/_partials/_components/_panel1.scss */
+/* line 188, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-year {
   font-size: 9rem;
   font-weight: 700;
   display: inline-block;
   margin-left: 3rem;
 }
-/* line 197, ../sass/_partials/_components/_panel1.scss */
+/* line 194, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-text {
   font-size: 1.1rem;
   line-height: 2rem;
@@ -363,7 +360,7 @@ header #tagline {
   width: 37rem;
 }
 
-/* line 210, ../sass/_partials/_components/_panel1.scss */
+/* line 207, ../sass/_partials/_components/_panel1.scss */
 footer {
   position: absolute;
   bottom: 0;
@@ -376,12 +373,12 @@ footer {
   height: 11%;
   font-size: .8em;
 }
-/* line 221, ../sass/_partials/_components/_panel1.scss */
+/* line 218, ../sass/_partials/_components/_panel1.scss */
 footer h3 {
   display: block;
   margin-top: .2rem;
 }
-/* line 225, ../sass/_partials/_components/_panel1.scss */
+/* line 222, ../sass/_partials/_components/_panel1.scss */
 footer #intro-scroll {
   display: none;
 }
@@ -923,11 +920,6 @@ footer #intro-scroll {
   top: 6.7em;
   width: 25em;
   top: 6.8em;
-}
-/* line 254, ../sass/_partials/_components/_panel6.scss */
-#street-lower .layer-5 p em {
-  color: #000;
-  font-weight: 700;
 }
 
 /* line 1, ../sass/_partials/_components/_panel7.scss */

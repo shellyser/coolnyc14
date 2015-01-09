@@ -55,13 +55,15 @@ header {
         left: rem(-1);
         top: rem(-1); 
         position: absolute;
+        background-image: url("/assets/asterick_black.png");
+        background-repeat: no-repeat;
     }
     @include break-min($main-break-lg){
          width: rem(35);
          .box {
             min-height: 38%;
             width: rem(6);
-            left: rem(6);
+            left: rem(4);
          }
     }
     @include break-min($panel4-text-break3){
@@ -70,6 +72,7 @@ header {
            min-height: 53%;
            width: rem(14);
            top: 35%;
+           left: 4rem;
         }
     }
     @include break-min($panel1-text-break2){

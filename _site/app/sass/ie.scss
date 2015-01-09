@@ -1,0 +1,15 @@
+$dim: 1200px;
+
+$archaic: true;
+$modern: false;
+
+@import "style";
+
+.backgroundimage{
+	-ms-behavior: url(/JS/polyfills/backgroundsize.min.htc);
+}
+
+[class^="circle"] {
+	-ms-behavior: url(/polyfills/PIE.htc);
+}
+
