@@ -1,8 +1,6 @@
 #skyline {
 	background-image: url("../assets/bgphotos/skyline600.jpg");
-	@include background-size(cover);
-	background-repeat: no-repeat;
-	background-position: center center;
+	@extend .backgroundimage;       
 	@include break-min($main-break-lg){
 	    background-image: url("../assets/bgphotos/skyline1200.jpg");
 	}

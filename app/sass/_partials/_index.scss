@@ -18,9 +18,15 @@
 
 //@extend-elements
 
-%verticalboxes {
+.verticalboxes {
 	position: absolute;
 	width: 100%;
+}
+
+.backgroundimage {
+	@include background-size(cover);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 //global selectors

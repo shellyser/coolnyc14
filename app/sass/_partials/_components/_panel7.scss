@@ -1,8 +1,6 @@
 #taxi {
 	background-image: url("../assets/bgphotos/taxis600.jpg");
-	@include background-size(cover);
-	background-repeat: no-repeat;
-	background-position: center center;
+	@extend .backgroundimage;
 	@include break-min($main-break-lg){
 	background-image: url("../assets/bgphotos/taxis1200.jpg");
 	}

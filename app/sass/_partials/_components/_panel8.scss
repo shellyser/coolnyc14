@@ -1,14 +1,12 @@
 #fence {
-	background-image: url("../assets/bgphotos/fence600.jpg");
-	@include background-size(cover);
-	background-repeat: no-repeat;
-	background-position: center center;
+	background-image: url("../assets/bgphotos/fence600.jpg");   
 	@include break-min($main-break-lg){
 	    background-image: url("../assets/bgphotos/fence1200.jpg");
 	}
 	@include break-min($main-break-xxtrlg){
 	    background-image: url("../assets/bgphotos/fence.jpg");
 	 }
+	 @extend .backgroundimage;  
 	 #fence-header{
 	 	width: 100%;
 	 	height: 8rem;

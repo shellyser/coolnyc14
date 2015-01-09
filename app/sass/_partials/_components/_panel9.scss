@@ -1,9 +1,7 @@
 
 #bridge {
 	background-image: url("../assets/bgphotos/bridge600.jpg");
-	@include background-size(cover);
-	background-repeat: no-repeat;
-	background-position: center center;
+    @extend .backgroundimage;       
 	@include break-min($main-break-lg){
 	    background-image: url("../assets/bgphotos/bridge1200.jpg");
 	}

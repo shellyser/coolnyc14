@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!--[if lte IE 8]><html id="ye-olde-ie" class="no-js" lang="en"><![endif]-->
-<!--[if gt IE 8]><html id="ie" class="no-js"  lang="en"><![endif]-->
-<!--[if !IE ]><!--><html lang="en" class="no-js" ><!--<![endif]-->
+<html lang="en" class="no-js" >
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,12 +13,18 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">    
     <link rel="stylesheet" href="/stylesheets/normalize.css">
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <!--[if gte IE 9]><link href="/css/main.css" rel="stylesheet" type="text/css"><![endif]-->
+    <!--[if !IE]> --><link href="/stylesheets/style.css" rel="stylesheet" type="text/css"><!-- <![endif]-->
     <!-- endbuild -->
     <!-- build:js(app) /js/head-scripts.js -->
     <!-- Replace with a custom modernizer build for production -->
     <script src="/js/modernizr.js"></script>
     <!-- endbuild -->
+    <!--[if lt IE 9]>
+        <link href="/stylesheets/ie.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="/js/html5shiv.js"></script>
+        <script type="text/javascript" src="/js/selectivizr-min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <!--[if lt IE 8]>

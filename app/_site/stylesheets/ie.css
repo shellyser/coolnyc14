@@ -101,11 +101,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .shorty #intro footer h3 {
   display: none;
 }
-@media screen and (min-width: 900px) {
-  /* line 29, ../sass/_partials/_shorty.scss */
-  .shorty #street-lower #map-wrapper {
-    font-size: 13px;
-  }
+/* line 29, ../sass/_partials/_shorty.scss */
+.shorty #street-lower #map-wrapper {
+  font-size: 13px;
 }
 /* line 35, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header {
@@ -120,18 +118,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: -webkit-calc(100% - 6rem);
   height: calc(100% - 6rem);
 }
-@media screen and (min-width: 800px) {
-  /* line 44, ../sass/_partials/_shorty.scss */
-  .shorty #fence #fence-content .circles {
-    width: 40rem;
-    height: 20rem;
-  }
-  /* line 47, ../sass/_partials/_shorty.scss */
-  .shorty #fence #fence-content .circles .circle {
-    width: 11rem;
-    height: 11rem;
-    margin: .3rem;
-  }
+/* line 44, ../sass/_partials/_shorty.scss */
+.shorty #fence #fence-content .circles {
+  width: 40rem;
+  height: 20rem;
+}
+/* line 47, ../sass/_partials/_shorty.scss */
+.shorty #fence #fence-content .circles .circle {
+  width: 11rem;
+  height: 11rem;
+  margin: .3rem;
 }
 /* line 57, ../sass/_partials/_shorty.scss */
 .shorty #outro wrapper:first-of-type {
@@ -174,12 +170,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   z-index: -2;
   background-image: url("../assets/bgphotos/sky600.jpg");
-}
-@media screen and (min-width: 600px) {
-  /* line 11, ../sass/_partials/_components/_panel1.scss */
-  #intro #intro-sky-bg {
-    background-image: url("../assets/bgphotos/sky.jpg");
-  }
+  background-image: url("../assets/bgphotos/sky.jpg");
 }
 
 /* line 23, ../sass/_partials/_components/_panel1.scss */
@@ -208,6 +199,10 @@ header #tagline {
   margin: auto;
   height: -webkit-calc(100% - 11% - 86px);
   height: calc(100% - 11% - 86px);
+  width: 35rem;
+  width: 53rem;
+  width: 57rem;
+  width: 65rem;
 }
 /* line 44, ../sass/_partials/_components/_panel1.scss */
 #intro-content .box {
@@ -226,51 +221,27 @@ header #tagline {
   top: -1rem;
   position: absolute;
 }
-@media screen and (min-width: 600px) {
-  /* line 39, ../sass/_partials/_components/_panel1.scss */
-  #intro-content {
-    width: 35rem;
-  }
-  /* line 61, ../sass/_partials/_components/_panel1.scss */
-  #intro-content .box {
-    min-height: 38%;
-    width: 6rem;
-    left: 6rem;
-  }
+/* line 61, ../sass/_partials/_components/_panel1.scss */
+#intro-content .box {
+  min-height: 38%;
+  width: 6rem;
+  left: 6rem;
 }
-@media screen and (min-width: 750px) {
-  /* line 39, ../sass/_partials/_components/_panel1.scss */
-  #intro-content {
-    width: 53rem;
-  }
-  /* line 69, ../sass/_partials/_components/_panel1.scss */
-  #intro-content .box {
-    min-height: 53%;
-    width: 14rem;
-    top: 35%;
-  }
+/* line 69, ../sass/_partials/_components/_panel1.scss */
+#intro-content .box {
+  min-height: 53%;
+  width: 14rem;
+  top: 35%;
 }
-@media screen and (min-width: 950px) {
-  /* line 39, ../sass/_partials/_components/_panel1.scss */
-  #intro-content {
-    width: 57rem;
-  }
-  /* line 77, ../sass/_partials/_components/_panel1.scss */
-  #intro-content .box {
-    left: 1.5rem;
-    min-height: 54%;
-  }
+/* line 77, ../sass/_partials/_components/_panel1.scss */
+#intro-content .box {
+  left: 1.5rem;
+  min-height: 54%;
 }
-@media screen and (min-width: 1200px) {
-  /* line 39, ../sass/_partials/_components/_panel1.scss */
-  #intro-content {
-    width: 65rem;
-  }
-  /* line 84, ../sass/_partials/_components/_panel1.scss */
-  #intro-content .box {
-    top: 37%;
-    left: 1.5rem;
-  }
+/* line 84, ../sass/_partials/_components/_panel1.scss */
+#intro-content .box {
+  top: 37%;
+  left: 1.5rem;
 }
 /* line 89, ../sass/_partials/_components/_panel1.scss */
 #intro-content #intro-content-top {
@@ -295,24 +266,9 @@ header #tagline {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 2.7rem;
-}
-@media screen and (min-width: 600px) {
-  /* line 95, ../sass/_partials/_components/_panel1.scss */
-  #intro-content #intro-content-top #intro-title {
-    font-size: 3.5rem;
-  }
-}
-@media screen and (min-width: 950px) {
-  /* line 95, ../sass/_partials/_components/_panel1.scss */
-  #intro-content #intro-content-top #intro-title {
-    font-size: 4.1rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 95, ../sass/_partials/_components/_panel1.scss */
-  #intro-content #intro-content-top #intro-title {
-    font-size: 4.7rem;
-  }
+  font-size: 3.5rem;
+  font-size: 4.1rem;
+  font-size: 4.7rem;
 }
 
 /* line 119, ../sass/_partials/_components/_panel1.scss */
@@ -335,6 +291,12 @@ header #tagline {
   transform: translate(-50%, -50%);
   text-shadow: rgba(0, 0, 0, 0.15) 2px 1px 5px;
   text-align: center;
+  min-width: 100%;
+  margin: auto;
+  min-width: 100%;
+  margin: auto;
+  min-width: 100%;
+  margin: auto;
 }
 /* line 133, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-year {
@@ -350,79 +312,52 @@ header #tagline {
   margin: 5px auto;
   width: 24rem;
 }
-@media screen and (max-width: 399px) {
-  /* line 146, ../sass/_partials/_components/_panel1.scss */
-  #intro-content-bottom #intro-section #intro-year {
-    font-size: 5rem;
-  }
+/* line 153, ../sass/_partials/_components/_panel1.scss */
+#intro-content-bottom #intro-section #intro-year {
+  font-size: 7rem;
+  font-weight: 700;
+  display: inline-block;
 }
-@media screen and (min-width: 750px) {
-  /* line 125, ../sass/_partials/_components/_panel1.scss */
-  #intro-content-bottom #intro-section {
-    min-width: 100%;
-    margin: auto;
-  }
-  /* line 153, ../sass/_partials/_components/_panel1.scss */
-  #intro-content-bottom #intro-section #intro-year {
-    font-size: 7rem;
-    font-weight: 700;
-    display: inline-block;
-  }
-  /* line 158, ../sass/_partials/_components/_panel1.scss */
-  #intro-content-bottom #intro-section #intro-text {
-    font-size: .9rem;
-    line-height: 1.75rem;
-    width: 27rem;
-    text-align: left;
-    margin-left: 2%;
-    display: inline-block;
-  }
+/* line 158, ../sass/_partials/_components/_panel1.scss */
+#intro-content-bottom #intro-section #intro-text {
+  font-size: .9rem;
+  line-height: 1.75rem;
+  width: 27rem;
+  text-align: left;
+  margin-left: 2%;
+  display: inline-block;
 }
-@media screen and (min-width: 950px) {
-  /* line 125, ../sass/_partials/_components/_panel1.scss */
-  #intro-content-bottom #intro-section {
-    min-width: 100%;
-    margin: auto;
-  }
-  /* line 170, ../sass/_partials/_components/_panel1.scss */
-  #intro-content-bottom #intro-section #intro-year {
-    font-size: 8.3rem;
-    margin-left: 1.5rem;
-    font-weight: 700;
-    display: inline-block;
-  }
-  /* line 176, ../sass/_partials/_components/_panel1.scss */
-  #intro-content-bottom #intro-section #intro-text {
-    font-size: 1rem;
-    line-height: 1.8em;
-    text-align: left;
-    margin-left: 1.2rem;
-    display: inline-block;
-    width: 30rem;
-  }
+/* line 170, ../sass/_partials/_components/_panel1.scss */
+#intro-content-bottom #intro-section #intro-year {
+  font-size: 8.3rem;
+  margin-left: 1.5rem;
+  font-weight: 700;
+  display: inline-block;
 }
-@media screen and (min-width: 1200px) {
-  /* line 125, ../sass/_partials/_components/_panel1.scss */
-  #intro-content-bottom #intro-section {
-    min-width: 100%;
-    margin: auto;
-  }
-  /* line 188, ../sass/_partials/_components/_panel1.scss */
-  #intro-content-bottom #intro-section #intro-year {
-    font-size: 9rem;
-    font-weight: 700;
-    display: inline-block;
-    margin-left: 3rem;
-  }
-  /* line 194, ../sass/_partials/_components/_panel1.scss */
-  #intro-content-bottom #intro-section #intro-text {
-    font-size: 1.1rem;
-    line-height: 2rem;
-    text-align: left;
-    margin-left: 2.3rem;
-    display: inline-block;
-    width: 37rem;
-  }
+/* line 176, ../sass/_partials/_components/_panel1.scss */
+#intro-content-bottom #intro-section #intro-text {
+  font-size: 1rem;
+  line-height: 1.8em;
+  text-align: left;
+  margin-left: 1.2rem;
+  display: inline-block;
+  width: 30rem;
+}
+/* line 188, ../sass/_partials/_components/_panel1.scss */
+#intro-content-bottom #intro-section #intro-year {
+  font-size: 9rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 3rem;
+}
+/* line 194, ../sass/_partials/_components/_panel1.scss */
+#intro-content-bottom #intro-section #intro-text {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  text-align: left;
+  margin-left: 2.3rem;
+  display: inline-block;
+  width: 37rem;
 }
 
 /* line 207, ../sass/_partials/_components/_panel1.scss */
@@ -451,18 +386,8 @@ footer #intro-scroll {
 /* line 1, ../sass/_partials/_components/_panel2.scss */
 #street-upper {
   background-image: url("../assets/bgphotos/street600.jpg");
-}
-@media screen and (min-width: 600px) {
-  /* line 1, ../sass/_partials/_components/_panel2.scss */
-  #street-upper {
-    background-image: url("../assets/bgphotos/street1200.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 1, ../sass/_partials/_components/_panel2.scss */
-  #street-upper {
-    background-image: url("../assets/bgphotos/street.jpg");
-  }
+  background-image: url("../assets/bgphotos/street1200.jpg");
+  background-image: url("../assets/bgphotos/street.jpg");
 }
 /* line 10, ../sass/_partials/_components/_panel2.scss */
 #street-upper .bottom {
@@ -541,25 +466,23 @@ footer #intro-scroll {
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
-@media screen and (min-width: 800px) {
-  /* line 69, ../sass/_partials/_components/_panel2.scss */
-  #street-content .top.left {
-    -moz-transform: translate(-122%, 50%);
-    -ms-transform: translate(-122%, 50%);
-    -webkit-transform: translate(-122%, 50%);
-    transform: translate(-122%, 50%);
-  }
-  /* line 72, ../sass/_partials/_components/_panel2.scss */
-  #street-content .top.right {
-    width: 409rem;
-  }
-  /* line 75, ../sass/_partials/_components/_panel2.scss */
-  #street-content .top.asterick {
-    -moz-transform: translate(-814%, -359%);
-    -ms-transform: translate(-814%, -359%);
-    -webkit-transform: translate(-814%, -359%);
-    transform: translate(-814%, -359%);
-  }
+/* line 69, ../sass/_partials/_components/_panel2.scss */
+#street-content .top.left {
+  -moz-transform: translate(-122%, 50%);
+  -ms-transform: translate(-122%, 50%);
+  -webkit-transform: translate(-122%, 50%);
+  transform: translate(-122%, 50%);
+}
+/* line 72, ../sass/_partials/_components/_panel2.scss */
+#street-content .top.right {
+  width: 409rem;
+}
+/* line 75, ../sass/_partials/_components/_panel2.scss */
+#street-content .top.asterick {
+  -moz-transform: translate(-814%, -359%);
+  -ms-transform: translate(-814%, -359%);
+  -webkit-transform: translate(-814%, -359%);
+  transform: translate(-814%, -359%);
 }
 
 /* line 81, ../sass/_partials/_components/_panel2.scss */
@@ -588,52 +511,27 @@ footer #intro-scroll {
   margin: auto;
   margin-top: 3%;
 }
-@media screen and (min-width: 550px) and (max-width: 780px) {
-  /* line 101, ../sass/_partials/_components/_panel2.scss */
-  .street-text h1 {
-    font-size: 5.3rem;
-  }
-  /* line 104, ../sass/_partials/_components/_panel2.scss */
-  .street-text p {
-    font-size: 1rem;
-    width: 35rem;
-  }
+/* line 110, ../sass/_partials/_components/_panel2.scss */
+.street-text h1 {
+  font-size: 8rem;
 }
-@media screen and (min-width: 780px) {
-  /* line 110, ../sass/_partials/_components/_panel2.scss */
-  .street-text h1 {
-    font-size: 8rem;
-  }
-  /* line 113, ../sass/_partials/_components/_panel2.scss */
-  .street-text p {
-    font-size: 1rem;
-    width: 49rem;
-    line-height: 1.9rem;
-    margin-top: 1%;
-  }
+/* line 113, ../sass/_partials/_components/_panel2.scss */
+.street-text p {
+  font-size: 1rem;
+  width: 49rem;
+  line-height: 1.9rem;
+  margin-top: 1%;
 }
-@media screen and (min-width: 1200px) {
-  /* line 121, ../sass/_partials/_components/_panel2.scss */
-  .street-text h1 {
-    font-size: 9rem;
-  }
+/* line 121, ../sass/_partials/_components/_panel2.scss */
+.street-text h1 {
+  font-size: 9rem;
 }
 
 /* line 1, ../sass/_partials/_components/_panel3.scss */
 #skyline {
   background-image: url("../assets/bgphotos/skyline600.jpg");
-}
-@media screen and (min-width: 600px) {
-  /* line 1, ../sass/_partials/_components/_panel3.scss */
-  #skyline {
-    background-image: url("../assets/bgphotos/skyline1200.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 1, ../sass/_partials/_components/_panel3.scss */
-  #skyline {
-    background-image: url("../assets/bgphotos/skyline.jpg");
-  }
+  background-image: url("../assets/bgphotos/skyline1200.jpg");
+  background-image: url("../assets/bgphotos/skyline.jpg");
 }
 /* line 10, ../sass/_partials/_components/_panel3.scss */
 #skyline [class^="triangle-"] {
@@ -699,28 +597,13 @@ footer #intro-scroll {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding: 15% 2%;
-}
-@media screen and (min-width: 550px) {
-  /* line 39, ../sass/_partials/_components/_panel3.scss */
-  #skyline .skyline-content h1 {
-    font-size: 2.1rem;
-    line-height: 2.4rem;
-    text-shadow: rgba(0, 0, 0, 0.15) 6px 4px 5px;
-  }
-}
-@media screen and (min-width: 900px) {
-  /* line 39, ../sass/_partials/_components/_panel3.scss */
-  #skyline .skyline-content h1 {
-    font-size: 3.08rem;
-    line-height: 3.5rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 39, ../sass/_partials/_components/_panel3.scss */
-  #skyline .skyline-content h1 {
-    font-size: 4.2rem;
-    line-height: 4.2rem;
-  }
+  font-size: 2.1rem;
+  line-height: 2.4rem;
+  text-shadow: rgba(0, 0, 0, 0.15) 6px 4px 5px;
+  font-size: 3.08rem;
+  line-height: 3.5rem;
+  font-size: 4.2rem;
+  line-height: 4.2rem;
 }
 
 /* line 1, ../sass/_partials/_components/_panel4.scss */
@@ -729,50 +612,14 @@ footer #intro-scroll {
   overflow: visible;
   color: black;
   font-size: 7px;
-}
-@media screen and (min-width: 500px) {
-  /* line 1, ../sass/_partials/_components/_panel4.scss */
-  #brick {
-    font-size: 8px;
-  }
-}
-@media screen and (min-width: 600px) {
-  /* line 1, ../sass/_partials/_components/_panel4.scss */
-  #brick {
-    background-image: url("../assets/bgphotos/brick1200.jpg");
-    font-size: 10px;
-  }
-}
-@media screen and (min-width: 750px) {
-  /* line 1, ../sass/_partials/_components/_panel4.scss */
-  #brick {
-    font-size: 12px;
-  }
-}
-@media screen and (min-width: 850px) {
-  /* line 1, ../sass/_partials/_components/_panel4.scss */
-  #brick {
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  /* line 1, ../sass/_partials/_components/_panel4.scss */
-  #brick {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 1, ../sass/_partials/_components/_panel4.scss */
-  #brick {
-    background-image: url("../assets/bgphotos/brick.jpg");
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 1, ../sass/_partials/_components/_panel4.scss */
-  #brick {
-    font-size: 20px;
-  }
+  font-size: 8px;
+  background-image: url("../assets/bgphotos/brick1200.jpg");
+  font-size: 10px;
+  font-size: 12px;
+  font-size: 14px;
+  font-size: 16px;
+  background-image: url("../assets/bgphotos/brick.jpg");
+  font-size: 18px;
 }
 /* line 30, ../sass/_partials/_components/_panel4.scss */
 #brick .panel {
@@ -793,18 +640,6 @@ footer #intro-scroll {
   right: 0;
   left: 0;
 }
-@media screen and (max-width: 399px) {
-  /* line 37, ../sass/_partials/_components/_panel4.scss */
-  #brick #brick-content {
-    width: 95%;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 37, ../sass/_partials/_components/_panel4.scss */
-  #brick #brick-content {
-    width: 68em;
-  }
-}
 /* line 52, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content img {
   position: absolute;
@@ -813,39 +648,12 @@ footer #intro-scroll {
   width: 67%;
   z-index: 1;
 }
-@media screen and (min-width: 1400px) and (max-width: 1500px) {
-  /* line 52, ../sass/_partials/_components/_panel4.scss */
-  #brick #brick-content img {
-    left: 8%;
-    width: 61%;
-  }
-}
-@media screen and (min-width: 1500px) and (max-width: 1600px) {
-  /* line 52, ../sass/_partials/_components/_panel4.scss */
-  #brick #brick-content img {
-    left: 9%;
-    width: 60%;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 52, ../sass/_partials/_components/_panel4.scss */
-  #brick #brick-content img {
-    left: 7%;
-    width: 63%;
-  }
-}
 /* line 71, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div {
   width: 41%;
   position: relative;
   top: 0;
   height: 100%;
-}
-@media screen and (max-width: 399px) {
-  /* line 71, ../sass/_partials/_components/_panel4.scss */
-  #brick #brick-content > div {
-    width: 50%;
-  }
 }
 /* line 80, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:first-of-type h1 {
@@ -864,14 +672,6 @@ footer #intro-scroll {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-@media screen and (max-width: 399px) {
-  /* line 80, ../sass/_partials/_components/_panel4.scss */
-  #brick #brick-content > div:first-of-type h1 {
-    max-width: 16em;
-    font-size: 2em;
-    left: 52%;
-  }
 }
 /* line 101, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:nth-of-type(2n) {
@@ -893,13 +693,6 @@ footer #intro-scroll {
   bottom: 0;
   padding: 5%;
 }
-@media screen and (max-width: 399px) {
-  /* line 104, ../sass/_partials/_components/_panel4.scss */
-  #brick #brick-content > div:nth-of-type(2n) .circle {
-    width: 18.5em;
-    height: 18.5em;
-  }
-}
 /* line 121, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:nth-of-type(2n) .circle h1 {
   font-size: 7.2em;
@@ -917,24 +710,9 @@ footer #intro-scroll {
 /* line 1, ../sass/_partials/_components/_panel5.scss */
 #nycave {
   background-image: url("../assets/bgphotos/nycave450.jpg");
-}
-@media screen and (min-width: 400px) {
-  /* line 1, ../sass/_partials/_components/_panel5.scss */
-  #nycave {
-    background-image: url("../assets/bgphotos/nycave600.jpg");
-  }
-}
-@media screen and (min-width: 600px) {
-  /* line 1, ../sass/_partials/_components/_panel5.scss */
-  #nycave {
-    background-image: url("../assets/bgphotos/nycave1200.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 1, ../sass/_partials/_components/_panel5.scss */
-  #nycave {
-    background-image: url("../assets/bgphotos/nycave.jpg");
-  }
+  background-image: url("../assets/bgphotos/nycave600.jpg");
+  background-image: url("../assets/bgphotos/nycave1200.jpg");
+  background-image: url("../assets/bgphotos/nycave.jpg");
 }
 /* line 13, ../sass/_partials/_components/_panel5.scss */
 #nycave > h1 {
@@ -951,63 +729,21 @@ footer #intro-scroll {
   left: 0;
   right: 0;
   text-shadow: rgba(0, 0, 0, 0.15) 4px 4px 5px;
-}
-@media screen and (min-width: 550px) {
-  /* line 13, ../sass/_partials/_components/_panel5.scss */
-  #nycave > h1 {
-    font-size: 2.6rem;
-    line-height: 2.9rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  /* line 13, ../sass/_partials/_components/_panel5.scss */
-  #nycave > h1 {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 13, ../sass/_partials/_components/_panel5.scss */
-  #nycave > h1 {
-    font-size: 4.2rem;
-    line-height: 4.2rem;
-  }
+  font-size: 2.6rem;
+  line-height: 2.9rem;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 4.2rem;
+  line-height: 4.2rem;
 }
 
 /* line 1, ../sass/_partials/_components/_panel6.scss */
 #street-lower {
+  font-size: 12px;
+  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   background-color: #0091d9;
-}
-@media screen and (max-width: 549px) {
-  /* line 1, ../sass/_partials/_components/_panel6.scss */
-  #street-lower {
-    font-size: 8px;
-  }
-}
-@media screen and (min-width: 550px) and (max-width: 700px) {
-  /* line 1, ../sass/_partials/_components/_panel6.scss */
-  #street-lower {
-    font-size: 10px;
-  }
-}
-@media screen and (min-width: 700px) {
-  /* line 1, ../sass/_partials/_components/_panel6.scss */
-  #street-lower {
-    font-size: 12px;
-  }
-}
-@media screen and (min-width: 900px) {
-  /* line 1, ../sass/_partials/_components/_panel6.scss */
-  #street-lower {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 1, ../sass/_partials/_components/_panel6.scss */
-  #street-lower {
-    font-size: 20px;
-  }
 }
 /* line 20, ../sass/_partials/_components/_panel6.scss */
 #street-lower #map-wrapper {
@@ -1025,13 +761,6 @@ footer #intro-scroll {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
   width: 100%;
-}
-@media screen and (max-width: 399px) {
-  /* line 20, ../sass/_partials/_components/_panel6.scss */
-  #street-lower #map-wrapper {
-    width: 36em;
-    height: 36em;
-  }
 }
 /* line 38, ../sass/_partials/_components/_panel6.scss */
 #street-lower [class^="layer-"] {
@@ -1091,40 +820,10 @@ footer #intro-scroll {
   text-align: left;
   line-height: 1.8em;
 }
-@media screen and (max-width: 399px) {
-  /* line 78, ../sass/_partials/_components/_panel6.scss */
-  #street-lower [class^="layer-"] p {
-    width: 14em;
-    left: 4em;
-    top: 2.2em;
-    font-size: 1.6em;
-  }
-}
-@media screen and (min-width: 400px) and (max-width: 600px) {
-  /* line 78, ../sass/_partials/_components/_panel6.scss */
-  #street-lower [class^="layer-"] p {
-    width: 15em;
-    font-size: 2em;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  /* line 78, ../sass/_partials/_components/_panel6.scss */
-  #street-lower [class^="layer-"] p {
-    width: 27em;
-    font-size: 1.4em;
-  }
-}
 /* line 100, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-1 {
   top: 33em;
   left: 10em;
-}
-@media screen and (max-width: 399px) {
-  /* line 100, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-1 {
-    top: 24em;
-    left: 6em;
-  }
 }
 /* line 107, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-1 .line {
@@ -1136,38 +835,10 @@ footer #intro-scroll {
   left: 7em;
   top: 3.2em;
 }
-@media screen and (max-width: 399px) {
-  /* line 111, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-1 p {
-    left: 4em;
-    top: 2.3em;
-  }
-}
-@media screen and (min-width: 400px) and (max-width: 600px) {
-  /* line 111, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-1 p {
-    left: 3em;
-    top: 2.2em;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  /* line 111, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-1 p {
-    left: 5em;
-    top: 2.8em;
-  }
-}
 /* line 128, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-2 {
   top: 20em;
   right: 12em;
-}
-@media screen and (max-width: 399px) {
-  /* line 128, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-2 {
-    top: 14em;
-    left: 27em;
-  }
 }
 /* line 135, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-2 .line {
@@ -1179,45 +850,12 @@ footer #intro-scroll {
   left: -23em;
   top: 3.8em;
 }
-@media screen and (max-width: 399px) {
-  /* line 139, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-2 p {
-    left: -13em;
-    top: 2.4em;
-  }
-}
-@media screen and (min-width: 400px) and (max-width: 600px) {
-  /* line 139, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-2 p {
-    left: -13em;
-    top: 1.8em;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  /* line 139, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-2 p {
-    left: -23em;
-    top: 2.8em;
-  }
-}
 /* line 157, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-3 {
   top: 15em;
   left: 16em;
-}
-@media screen and (max-width: 399px) {
-  /* line 157, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-3 {
-    top: 10em;
-    left: 11em;
-  }
-}
-@media screen and (min-width: 600px) {
-  /* line 157, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-3 {
-    top: 15em;
-    left: 20em;
-  }
+  top: 15em;
+  left: 20em;
 }
 /* line 168, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-3 .line {
@@ -1229,40 +867,10 @@ footer #intro-scroll {
   top: 4.5em;
   left: 6em;
 }
-@media screen and (max-width: 399px) {
-  /* line 172, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-3 p {
-    width: 13em;
-    left: 3.5em;
-    top: 2.2em;
-  }
-}
-@media screen and (min-width: 400px) and (max-width: 600px) {
-  /* line 172, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-3 p {
-    top: 1.8em;
-    left: 2.7em;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  /* line 172, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-3 p {
-    left: 5em;
-    top: 2.8em;
-    width: 18em;
-  }
-}
 /* line 191, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-4 {
   top: 6em;
   left: 31em;
-}
-@media screen and (max-width: 399px) {
-  /* line 191, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-4 {
-    top: 3em;
-    left: 24em;
-  }
 }
 /* line 198, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-4 .line {
@@ -1273,46 +881,13 @@ footer #intro-scroll {
 #street-lower .layer-4 p {
   top: 3.8em;
   left: -22em;
-}
-@media screen and (max-width: 399px) {
-  /* line 202, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-4 p {
-    top: 2.8em;
-    left: -12em;
-  }
-}
-@media screen and (min-width: 400px) and (max-width: 600px) {
-  /* line 202, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-4 p {
-    top: 2.2em;
-    left: -11.5em;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  /* line 202, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-4 p {
-    top: 2.9em;
-    right: -5.2em;
-  }
-}
-@media screen and (min-width: 900px) {
-  /* line 202, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-4 p {
-    top: 3.8em;
-    right: -9em;
-  }
+  top: 3.8em;
+  right: -9em;
 }
 /* line 223, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 {
   top: 26em;
   right: 23em;
-}
-@media screen and (max-width: 399px) {
-  /* line 223, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-5 {
-    top: 11em;
-    right: 13em;
-  }
 }
 /* line 230, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 .circle-outter {
@@ -1343,64 +918,18 @@ footer #intro-scroll {
   right: 1em;
   text-align: right;
   top: 6.7em;
-}
-@media screen and (max-width: 399px) {
-  /* line 249, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-5 p {
-    width: 12em;
-    left: -13em;
-    top: 4.5em;
-  }
-}
-@media screen and (min-width: 400px) and (max-width: 900px) {
-  /* line 249, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-5 p {
-    width: 12em;
-    top: 5em;
-  }
-}
-@media screen and (min-width: 900px) {
-  /* line 249, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-5 p {
-    width: 25em;
-    top: 6.8em;
-  }
+  width: 25em;
+  top: 6.8em;
 }
 
 /* line 1, ../sass/_partials/_components/_panel7.scss */
 #taxi {
   background-image: url("../assets/bgphotos/taxis600.jpg");
-}
-@media screen and (min-width: 600px) {
-  /* line 1, ../sass/_partials/_components/_panel7.scss */
-  #taxi {
-    background-image: url("../assets/bgphotos/taxis1200.jpg");
-  }
-}
-@media screen and (min-width: 750px) {
-  /* line 1, ../sass/_partials/_components/_panel7.scss */
-  #taxi {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  /* line 1, ../sass/_partials/_components/_panel7.scss */
-  #taxi {
-    font-size: 23px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 1, ../sass/_partials/_components/_panel7.scss */
-  #taxi {
-    background-image: url("../assets/bgphotos/taxis.jpg");
-    font-size: 28px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 1, ../sass/_partials/_components/_panel7.scss */
-  #taxi {
-    font-size: 34px;
-  }
+  background-image: url("../assets/bgphotos/taxis1200.jpg");
+  font-size: 18px;
+  font-size: 23px;
+  background-image: url("../assets/bgphotos/taxis.jpg");
+  font-size: 28px;
 }
 /* line 20, ../sass/_partials/_components/_panel7.scss */
 #taxi #taxi-header {
@@ -1426,13 +955,8 @@ footer #intro-scroll {
   top: 0;
   left: 0;
   right: 0;
-}
-@media screen and (min-width: 550px) {
-  /* line 32, ../sass/_partials/_components/_panel7.scss */
-  #taxi #circle-wrapper {
-    height: 11em;
-    width: 91%;
-  }
+  height: 11em;
+  width: 91%;
 }
 /* line 45, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles {
@@ -1457,18 +981,8 @@ footer #intro-scroll {
   height: 11em;
   margin: 1% auto;
   position: relative;
-}
-@media screen and (min-width: 550px) {
-  /* line 50, ../sass/_partials/_components/_panel7.scss */
-  #taxi #circle-wrapper #circles [class^="circle-"] {
-    display: inline-block;
-  }
-}
-@media screen and (min-width: 600px) {
-  /* line 50, ../sass/_partials/_components/_panel7.scss */
-  #taxi #circle-wrapper #circles [class^="circle-"] {
-    margin: auto 2%;
-  }
+  display: inline-block;
+  margin: auto 2%;
 }
 /* line 66, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles [class^="circle-"] > div {
@@ -1500,18 +1014,8 @@ footer #intro-scroll {
 /* line 1, ../sass/_partials/_components/_panel8.scss */
 #fence {
   background-image: url("../assets/bgphotos/fence600.jpg");
-}
-@media screen and (min-width: 600px) {
-  /* line 1, ../sass/_partials/_components/_panel8.scss */
-  #fence {
-    background-image: url("../assets/bgphotos/fence1200.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 1, ../sass/_partials/_components/_panel8.scss */
-  #fence {
-    background-image: url("../assets/bgphotos/fence.jpg");
-  }
+  background-image: url("../assets/bgphotos/fence1200.jpg");
+  background-image: url("../assets/bgphotos/fence.jpg");
 }
 /* line 10, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-header {
@@ -1548,6 +1052,10 @@ footer #intro-scroll {
   -o-transition: -o-transform 0.5s ease-in;
   -webkit-transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
+  width: 34rem;
+  height: 23rem;
+  width: 54rem;
+  height: 34rem;
 }
 /* line 36, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle {
@@ -1633,47 +1141,23 @@ footer #intro-scroll {
 #fence #fence-content .circles .circle#dna:hover {
   background-image: url("../assets/logo_dna_white.svg");
 }
-@media screen and (min-width: 550px) {
-  /* line 25, ../sass/_partials/_components/_panel8.scss */
-  #fence #fence-content .circles {
-    width: 34rem;
-    height: 23rem;
-  }
-  /* line 95, ../sass/_partials/_components/_panel8.scss */
-  #fence #fence-content .circles .circle {
-    width: 10rem;
-    height: 10rem;
-  }
+/* line 95, ../sass/_partials/_components/_panel8.scss */
+#fence #fence-content .circles .circle {
+  width: 10rem;
+  height: 10rem;
 }
-@media screen and (min-width: 800px) {
-  /* line 25, ../sass/_partials/_components/_panel8.scss */
-  #fence #fence-content .circles {
-    width: 54rem;
-    height: 34rem;
-  }
-  /* line 103, ../sass/_partials/_components/_panel8.scss */
-  #fence #fence-content .circles .circle {
-    width: 15rem;
-    height: 15rem;
-    margin: .9rem;
-  }
+/* line 103, ../sass/_partials/_components/_panel8.scss */
+#fence #fence-content .circles .circle {
+  width: 15rem;
+  height: 15rem;
+  margin: .9rem;
 }
 
 /* line 2, ../sass/_partials/_components/_panel9.scss */
 #bridge {
   background-image: url("../assets/bgphotos/bridge600.jpg");
-}
-@media screen and (min-width: 600px) {
-  /* line 2, ../sass/_partials/_components/_panel9.scss */
-  #bridge {
-    background-image: url("../assets/bgphotos/bridge1200.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 2, ../sass/_partials/_components/_panel9.scss */
-  #bridge {
-    background-image: url("../assets/bgphotos/bridge.jpg");
-  }
+  background-image: url("../assets/bgphotos/bridge1200.jpg");
+  background-image: url("../assets/bgphotos/bridge.jpg");
 }
 /* line 11, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-overlay {
@@ -1707,43 +1191,14 @@ footer #intro-scroll {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-@media screen and (min-width: 550px) {
-  /* line 28, ../sass/_partials/_components/_panel9.scss */
-  #bridge #bridge-content h1 {
-    font-size: 2rem;
-    line-height: 2.8rem;
-    padding: 1%;
-  }
-}
-@media screen and (min-width: 680px) {
-  /* line 28, ../sass/_partials/_components/_panel9.scss */
-  #bridge #bridge-content h1 {
-    font-size: 2.6rem;
-    line-height: 3rem;
-    padding: 1%;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  /* line 28, ../sass/_partials/_components/_panel9.scss */
-  #bridge #bridge-content h1 {
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  /* line 28, ../sass/_partials/_components/_panel9.scss */
-  #bridge #bridge-content h1 {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 28, ../sass/_partials/_components/_panel9.scss */
-  #bridge #bridge-content h1 {
-    font-size: 3.8rem;
-    line-height: 3.8rem;
-  }
+  font-size: 2rem;
+  line-height: 2.8rem;
+  padding: 1%;
+  font-size: 2.6rem;
+  line-height: 3rem;
+  padding: 1%;
+  font-size: 3.8rem;
+  line-height: 3.8rem;
 }
 /* line 60, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table {
@@ -1755,12 +1210,7 @@ footer #intro-scroll {
   left: 0;
   right: 0;
   bottom: 0;
-}
-@media screen and (min-width: 800px) {
-  /* line 60, ../sass/_partials/_components/_panel9.scss */
-  #bridge #bridge-content .table {
-    width: 47rem;
-  }
+  width: 47rem;
 }
 /* line 72, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row {
@@ -1773,12 +1223,7 @@ footer #intro-scroll {
   font-size: .85rem;
   vertical-align: bottom;
   height: 3rem;
-}
-@media screen and (min-width: 550px) {
-  /* line 76, ../sass/_partials/_components/_panel9.scss */
-  #bridge #bridge-content .table .row:first-of-type {
-    font-size: 1.2rem;
-  }
+  font-size: 1.2rem;
 }
 /* line 83, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row:first-of-type .col {
@@ -1810,32 +1255,15 @@ footer #intro-scroll {
   display: block;
   width: 9rem;
   height: 100%;
-}
-@media screen and (min-width: 550px) {
-  /* line 104, ../sass/_partials/_components/_panel9.scss */
-  #bridge #bridge-content .table .row .col {
-    width: 14rem;
-  }
+  width: 14rem;
 }
 /* line 111, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col h2 {
   font-size: 4rem;
   display: block;
   margin-top: 1em;
-}
-@media screen and (min-width: 550px) {
-  /* line 111, ../sass/_partials/_components/_panel9.scss */
-  #bridge #bridge-content .table .row .col h2 {
-    font-size: 6rem;
-    margin-top: 2.8rem;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  /* line 111, ../sass/_partials/_components/_panel9.scss */
-  #bridge #bridge-content .table .row .col h2 {
-    font-size: 7.2rem;
-    margin-top: 2.7rem;
-  }
+  font-size: 6rem;
+  margin-top: 2.8rem;
 }
 /* line 125, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:first-of-type {
@@ -1860,18 +1288,8 @@ footer #intro-scroll {
   position: relative;
   margin: auto;
   height: 100%;
-}
-@media screen and (min-width: 600px) {
-  /* line 5, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper {
-    width: 32rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  /* line 5, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper {
-    width: 50rem;
-  }
+  width: 32rem;
+  width: 50rem;
 }
 /* line 16, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper:first-of-type {
@@ -1901,25 +1319,15 @@ footer #intro-scroll {
   line-height: 3.2rem;
   margin: 0;
   font-weight: 700;
-}
-@media screen and (min-width: 800px) {
-  /* line 31, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper .outro-content #outro-text h2 {
-    font-size: 4.1rem;
-    line-height: 4.2rem;
-  }
+  font-size: 4.1rem;
+  line-height: 4.2rem;
 }
 /* line 42, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #outro-text h1 {
   font-size: 5.1rem;
   padding-top: 3rem;
-}
-@media screen and (min-width: 800px) {
-  /* line 42, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper .outro-content #outro-text h1 {
-    font-size: 7.1rem;
-    padding-top: 1rem;
-  }
+  font-size: 7.1rem;
+  padding-top: 1rem;
 }
 /* line 51, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media {
@@ -1942,14 +1350,9 @@ footer #intro-scroll {
   background-color: white;
   margin: .2rem;
   position: relative;
-}
-@media screen and (min-width: 800px) {
-  /* line 57, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper .outro-content #social-media #outro-social-media div > a {
-    width: 4rem;
-    height: 4rem;
-    margin: .7rem;
-  }
+  width: 4rem;
+  height: 4rem;
+  margin: .7rem;
 }
 /* line 70, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a:hover {
@@ -1968,52 +1371,27 @@ footer #intro-scroll {
   color: #0091d9;
   bottom: 0;
   right: 0;
-}
-@media screen and (min-width: 800px) {
-  /* line 76, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper .outro-content #social-media #outro-social-media div > a .fa {
-    font-size: 2.2rem;
-  }
+  font-size: 2.2rem;
 }
 /* line 88, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#linkedin .fa {
   top: 15%;
-}
-@media screen and (min-width: 800px) {
-  /* line 88, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper .outro-content #social-media #outro-social-media div > a#linkedin .fa {
-    top: 20%;
-  }
+  top: 20%;
 }
 /* line 94, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#facebook .fa {
   top: 15%;
-}
-@media screen and (min-width: 800px) {
-  /* line 94, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper .outro-content #social-media #outro-social-media div > a#facebook .fa {
-    top: 20%;
-  }
+  top: 20%;
 }
 /* line 100, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#twitter .fa {
   top: 19%;
-}
-@media screen and (min-width: 800px) {
-  /* line 100, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper .outro-content #social-media #outro-social-media div > a#twitter .fa {
-    top: 23%;
-  }
+  top: 23%;
 }
 /* line 106, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#googleplus .fa {
   top: 25%;
-}
-@media screen and (min-width: 800px) {
-  /* line 106, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper .outro-content #social-media #outro-social-media div > a#googleplus .fa {
-    top: 28%;
-  }
+  top: 28%;
 }
 /* line 112, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#pinterest {
@@ -2029,25 +1407,15 @@ footer #intro-scroll {
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#email .fa {
   font-size: 1.8rem;
   top: 17%;
-}
-@media screen and (min-width: 800px) {
-  /* line 119, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper .outro-content #social-media #outro-social-media div > a#email .fa {
-    font-size: 2rem;
-    top: 23%;
-  }
+  font-size: 2rem;
+  top: 23%;
 }
 /* line 130, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content h3 {
   color: #015fd0;
   font-weight: 600;
   font-size: 1.3rem;
-}
-@media screen and (min-width: 800px) {
-  /* line 130, ../sass/_partials/_components/_panel10.scss */
-  #outro .wrapper .outro-content h3 {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
 }
 /* line 141, ../sass/_partials/_components/_panel10.scss */
 #outro #closing {
@@ -2068,13 +1436,8 @@ footer #intro-scroll {
   color: #0091d9;
   font-weight: 600;
   padding: .4rem;
-}
-@media screen and (min-width: 800px) {
-  /* line 148, ../sass/_partials/_components/_panel10.scss */
-  #outro #closing p {
-    position: absolute;
-    text-align: left;
-  }
+  position: absolute;
+  text-align: left;
 }
 /* line 161, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p > a {
@@ -2088,17 +1451,12 @@ footer #intro-scroll {
 /* line 169, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos {
   margin: auto;
+  position: absolute;
+  right: 0;
 }
 /* line 171, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos #thinkeco-logo {
   margin-left: 20px;
-}
-@media screen and (min-width: 800px) {
-  /* line 169, ../sass/_partials/_components/_panel10.scss */
-  #outro #closing #logos {
-    position: absolute;
-    right: 0;
-  }
 }
 
 /* line 21, ../sass/_partials/_index.scss */
@@ -2133,34 +1491,13 @@ html {
   color: #fff;
   font-size: 12px;
   text-align: center;
+  font-size: 14px;
+  font-size: 16px;
+  font-size: 18px;
 }
 /* line 43, ../sass/_partials/_index.scss */
 html h1 {
   font-weight: 700;
-}
-@media screen and (min-width: 400px) {
-  /* line 38, ../sass/_partials/_index.scss */
-  html {
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 900px) {
-  /* line 38, ../sass/_partials/_index.scss */
-  html {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 38, ../sass/_partials/_index.scss */
-  html {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 38, ../sass/_partials/_index.scss */
-  html {
-    font-size: 20px;
-  }
 }
 
 /* line 60, ../sass/_partials/_index.scss */
@@ -2305,6 +1642,16 @@ html section, body section {
 }
 
 /* line 12, ../sass/_partials/_ye-olde-ie.scss */
+[class^="circle"] {
+  -ms-behavior: url(/polyfills/PIE.htc);
+}
+
+/* line 8, ../sass/ie.scss */
+.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #bridge {
+  -ms-behavior: url(/JS/polyfills/backgroundsize.min.htc);
+}
+
+/* line 12, ../sass/ie.scss */
 [class^="circle"] {
   -ms-behavior: url(/polyfills/PIE.htc);
 }

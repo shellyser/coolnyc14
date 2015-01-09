@@ -13,17 +13,11 @@ $footer_height: 11%;
         height: 100%;
         position: absolute;
         z-index:-2;
-        @include background-size(cover);
-        -ms-behavior: url('/js/polyfills/backgroundsize.min.htc');
-        background-repeat: no-repeat;
-        background-image: url("../assets/bgphotos/sky600.jpg");
-        background-position: center center;
+        background-image: url("../assets/bgphotos/sky600.jpg");  
         @include break-min($main-break-lg){
-            background-image: url("../assets/bgphotos/sky1200.jpg");
-        }
-        @include break-min($main-break-xxtrlg){
             background-image: url("../assets/bgphotos/sky.jpg");
         }
+        @extend .backgroundimage;    
      }
 }
 header {
@@ -49,37 +43,37 @@ header {
     @include calc(height, "100% - #{$footer_height} - 86px");
     .box {
         min-height: 38%;
-        width: 3rem;
+        width: rem(3);
         position: absolute;
-        border-left: #68d0ef .4rem solid;
-        border-bottom: #68d0ef .4rem solid;
-        left: 3.4rem;
+        border-left: #68d0ef rem(.3) solid;
+        border-bottom: #68d0ef rem(.4) solid;
+        left: rem(3.4);
         top: 33%;
     }
     .asterick{
-        width: 1.6rem;
-        left: -1rem;
-        top: -1rem; 
+        width: rem(1.6);
+        left: rem(-1);
+        top: rem(-1); 
         position: absolute;
     }
     @include break-min($main-break-lg){
-         width: 35rem;
+         width: rem(35);
          .box {
             min-height: 38%;
-            width: 6rem;
-            left: 3.8rem;
+            width: rem(6);
+            left: rem(6);
          }
     }
     @include break-min($panel4-text-break3){
-        width: 53rem;
+        width: rem(53);
         .box {
            min-height: 53%;
-           width: 14rem;
+           width: rem(14);
            top: 35%;
         }
     }
     @include break-min($panel1-text-break2){
-        width: 57rem;
+        width: rem(57);
         .box {
             left: 1.5rem;
             min-height: 54%;

@@ -1,8 +1,6 @@
 #nycave {
-	background-image: url("../assets/bgphotos/nycave450.jpg");
-	@include background-size(cover);
-	background-repeat: no-repeat;
-	background-position: top center;
+	background-image: url("../assets/bgphotos/nycave450.jpg");  
+	@extend .backgroundimage;     
 	@include break-min($main-break){
 	    background-image: url("../assets/bgphotos/nycave600.jpg");
 	}

@@ -24,6 +24,13 @@
 			}
 		}
 	}
+	#street-lower{
+		@include break-min($main-break-xtrlg){
+			#map-wrapper{
+				font-size: 13px;
+			}
+		}
+	}
 	#fence{
 		#fence-header{
 			height: 6rem;
@@ -33,6 +40,17 @@
 		}
 		#fence-content{
 			@include calc(height, "100% - 6rem");
+			@include break-min($panel2-line-break){
+				.circles{
+					width: 40rem;
+					height: 20rem;
+					.circle{
+						width: 11rem;
+						height: 11rem;
+						margin: .3rem;
+					}
+				}
+			}
 		}
 	}
 	#outro{

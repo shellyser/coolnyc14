@@ -22,3 +22,6 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+
+//svg fallback plugin
+svgeezy.init('false', 'png');

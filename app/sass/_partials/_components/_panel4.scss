@@ -1,7 +1,6 @@
 #brick {
 	background-image: url("../assets/bgphotos/brick600.jpg");
-	background-repeat: no-repeat;
-	@include background-size(cover);
+	@extend .backgroundimage;       
 	overflow: visible;
 	color: black;
 	font-size: 7px;

@@ -3,7 +3,7 @@ $dim: 1200px;
 $archaic: true;
 $modern: false;
 
-@import "index";
+@import "style";
 
 .backgroundimage{
 	-ms-behavior: url(/JS/polyfills/backgroundsize.min.htc);
