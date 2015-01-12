@@ -3,4 +3,18 @@
   #{$property}: calc(#{$expression}); 
 }
 
+@mixin radius($value){
+      -webkit-border-radius: $value;
+      -moz-border-radius: $value;
+      border-radius: $value;
+      behavior: url('/js/polyfills/PIE.htc');
+}
+
+@mixin background-size($value){
+      -webkit-background-size: $value;
+       -moz-background-size: $value;
+      -o-background-size: $value;
+       background-size:   $value;
+       -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+}
  

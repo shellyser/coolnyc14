@@ -1,7 +1,10 @@
 
 #bridge {
 	background-image: url("../assets/bgphotos/bridge600.jpg");
-    @extend .backgroundimage;       
+	@include retina{
+            background-image: url("../assets/bgphotos/bridge600@2x.jpg");
+        }
+    	@extend .backgroundimage;       
 	@include break-min($main-break-lg){
 	    background-image: url("../assets/bgphotos/bridge1200.jpg");
 	}
@@ -14,9 +17,9 @@
 		height: 100%;
 	}
 	#bridge-content {	
-		font-size: 1.6rem;
+		font-size: rem(1.6);
 		font-weight: 700;
-		line-height: 2rem;
+		line-height: rem(2);
 		width: 85%;
 		height: 80%;
 		position: absolute;
@@ -34,32 +37,32 @@
 			position: absolute;
 			@include transform(translate(-50%, -50%));
 			@include break-min($panel3-text-break) {
-				font-size: 2rem;
-				line-height: 2.8rem;
+				font-size: rem(2);
+				line-height: rem(2.8);
 				padding: 1%;
 			}
 			@include break-min ($panel8-text-break) {
-				font-size: 2.6rem;
-				line-height: 3rem;
+				font-size: rem(2.6);
+				line-height: rem(3);
 				padding: 1%;
 			}
 			@include break-between($panel2-line-break, $panel4-text-break2){
-				font-size: 3.2rem;
-				line-height: 3.2rem;
+				font-size: rem(3.2);
+				line-height: rem(3.2);
 			}
 			@include break-between($panel4-text-break2, $main-break-xxtrlg){
-				font-size: 3.5rem;
-				line-height: 3.5rem;
+				font-size: rem(3.5);
+				line-height: rem(3.5);
 			}
 			@include break-min($main-break-xxtrlg) {
-				font-size: 3.8rem;
-				line-height: 3.8rem;
+				font-size: rem(3.8);
+				line-height: rem(3.8);
 			}
 
 		}
 		.table {
 			width: 100%;
-			height: 28rem;
+			height: rem(28);
 			margin: auto;
 			position: absolute;
 			top: 0;
@@ -67,25 +70,25 @@
 			right: 0;
 			bottom: 0;
 			@include break-min($panel2-line-break){
-				width: 47rem;
+				width: rem(47);
 			}
 			.row {
 				width: 100%;
-				height: 8rem;
+				height: rem(8);
 				clear: both;
 				&:first-of-type{
-					font-size: .85rem;
+					font-size: rem(.85);
 					vertical-align: bottom;
-					height: 3rem;
+					height: rem(3);
 					@include break-min($panel3-text-break) {
-			    		font-size: 1.2rem;
-			    	}
-			    	.col{
-			    		margin-top: .3rem;
-				    	&:last-of-type{
-				    		color: $deep_blue;
+			    			font-size: rem(1.2);
+				    	}
+				    	.col{
+				    		margin-top: rem(.3);
+					    	&:last-of-type{
+					    		color: $deep_blue;
+				    		}
 			    		}
-			    	}
 				}
 				&.small{
 					background-image: url('../assets/dotted_line.png');
@@ -93,7 +96,7 @@
 					height: 1rem;
 				}
 				&.line{
-					height:.3rem;
+					height:rem(.3);
 					background-color: $white;
 					.blue-line {
 						background-color: $deep_blue;
@@ -103,22 +106,22 @@
 				}
 				.col{
 				    display:block;
-				    width: 9rem;
+				    width: rem(9);
 				    height: 100%;
 		    		@include break-min($panel3-text-break) {
-		        		width: 14rem;
+		        		width: rem(14);
 		        	}
 				    h2{
-				    	font-size: 4rem;
+				    	font-size: rem(4);
 				    	display: block;
-				    	margin-top: 1em;
+				    	margin-top: em(1);
 				    	@include break-min($panel3-text-break) {
-				    		font-size: 6rem;
-				    		margin-top: 2.8rem;
+				    		font-size: rem(6);
+				    		margin-top: rem(2.8);
 				    	}
 				    	@include break-between($panel2-line-break, $panel4-text-break2){
-				    		font-size: 7.2rem;
-				    		margin-top: 2.7rem
+				    		font-size: rem(7.2);
+				    		margin-top: rem(7.2);
 				    	}
 
 				    }

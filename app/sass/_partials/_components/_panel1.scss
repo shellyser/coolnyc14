@@ -14,6 +14,9 @@ $footer_height: 11%;
         position: absolute;
         z-index:-2;
         background-image: url("../assets/bgphotos/sky600.jpg");  
+        @include retina{
+            background-image: url("../assets/bgphotos/sky600@2x.jpg");
+        }
         @include break-min($main-break-lg){
             background-image: url("../assets/bgphotos/sky.jpg");
         }
@@ -26,6 +29,7 @@ header {
     img {
         margin-top: 9px;
         width: 159px;
+        height: 42;
     }
     #tagline {
         color: $cerulean;
@@ -37,7 +41,7 @@ header {
 }
 
 #intro-content {
-    width: 26rem;
+    width: rem(26);
     position: relative;
     margin: auto;
     @include calc(height, "100% - #{$footer_height} - 86px");
@@ -72,21 +76,21 @@ header {
            min-height: 53%;
            width: rem(14);
            top: 35%;
-           left: 4rem;
+           left: rem(4);
         }
     }
     @include break-min($panel1-text-break2){
         width: rem(57);
         .box {
-            left: 1.5rem;
+            left: rem(1.5);
             min-height: 54%;
         }
     }
     @include break-min($main-break-xxtrlg){
-         width: 65rem;
+         width: rem(65);
           .box {
              top: 37%;
-             left: 1.5rem;
+             left: rem(1.5);
           }
     }
     #intro-content-top {
@@ -105,15 +109,15 @@ header {
             left: 50%;
             margin-right: -50%;
             @include transform(translate(-50%, -50%));
-            font-size: 2.7rem;
+            font-size: rem(2.7);
             @include break-min($main-break-lg) {
-                font-size: 3.5rem;
+                font-size: rem(3.5);
             }
             @include break-min($panel1-text-break2) {
-                font-size: 4.1rem;
+                font-size: rem(4.1);
             }
             @include break-min($main-break-xxtrlg) {
-                font-size: 4.7rem;
+                font-size: rem(4.7);
             }
         }
     }   
@@ -135,7 +139,7 @@ header {
             text-align: center;
             #intro-year {
                 display: block;
-                font-size: 5.6rem;
+                font-size: rem(5.6);
                 font-weight: 700;
             }
             #intro-text {
@@ -147,21 +151,21 @@ header {
             }
         @include break-max($main-break){
             #intro-year{
-                font-size: 5rem;
+                font-size: rem(5);
             }
         }
         @include break-min($panel4-text-break3){
             min-width: 100%;
             margin: auto;
             #intro-year {
-                font-size: 7rem;
+                font-size: rem(7);
                 font-weight: 700;
                 display: inline-block;
             }
             #intro-text {
-               font-size: .9rem;
-               line-height: 1.75rem;
-               width: 27rem;
+               font-size: rem(0.9);
+               line-height: rem(1.75);
+               width: rem(27);
                text-align: left;
                margin-left: 2%;
                display: inline-block;
@@ -171,36 +175,36 @@ header {
             min-width: 100%;
             margin: auto;
               #intro-year {
-                  font-size: 8.3rem;
-                  margin-left: 1.5rem;
+                  font-size: rem(8.3);
+                  margin-left: rem(1.5);
                   font-weight: 700;
                   display: inline-block;
               }
                #intro-text {
-                    font-size: 1rem;
-                    line-height: 1.8em;
+                    font-size: rem(1);
+                    line-height: em(1.8);
                     text-align: left;
-                    margin-left: 1.2rem;
+                    margin-left: rem(1.2);
                     display: inline-block;
-                    width: 30rem;
+                    width: rem(30);
                 }
             }   
             @include break-min($main-break-xxtrlg) {
             min-width: 100%;
             margin: auto;
               #intro-year {
-                  font-size: 9rem;
+                  font-size: rem(9);
                   font-weight: 700;
                   display: inline-block;
-                  margin-left: 3rem;
+                  margin-left: rem(3);
               }
                #intro-text {
-                    font-size: 1.1rem;
-                    line-height: 2rem;
+                    font-size: rem(1.1);
+                    line-height: rem(2);
                     text-align: left;
-                    margin-left: 2.3rem;
+                    margin-left: rem(2.3);
                     display: inline-block;
-                    width: 37rem;
+                    width: rem(34);
                 }
             }   
 
@@ -220,7 +224,7 @@ footer {
     font-size: .8em;
     h3{
         display:block;
-        margin-top: .2rem;
+        margin-top: rem(0.2);
     }
     #intro-scroll {
         display: none;

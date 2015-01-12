@@ -5,6 +5,7 @@
 			img{
 				margin-top: 4px;
 				width: 125px;
+				height: 33px;
 			}
 			h2{
 				margin-top: 0px;
@@ -15,7 +16,7 @@
 		}
 		footer{
 			height: 46px;
-			padding: .3rem;
+			padding: rem(0.3);
 			img{
 				width: 33px;
 			}
@@ -33,21 +34,21 @@
 	}
 	#fence{
 		#fence-header{
-			height: 6rem;
+			height: rem(6);
 			h1{
 				padding-top: 3rem;
 			}
 		}
 		#fence-content{
-			@include calc(height, "100% - 6rem");
+			@include calc(height, "100% - rem(6)");
 			@include break-min($panel2-line-break){
 				.circles{
-					width: 40rem;
-					height: 20rem;
+					width: rem(40);
+					height: rem(20);
 					.circle{
-						width: 11rem;
-						height: 11rem;
-						margin: .3rem;
+						width: rem(11);
+						height: rem(11);
+						margin: rem(.3);
 					}
 				}
 			}

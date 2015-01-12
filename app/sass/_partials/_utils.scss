@@ -47,6 +47,22 @@ $dim: false !default;
   }
 }
 
+// easier than writing out the pixel ratio media queries manually
+// use this to serve retina-friendly images
+@mixin retina{
+  @if $dim == false{
+    @media (-webkit-min-device-pixel-ratio: 2){
+      @content
+    }
+    @media (min--moz-device-pixel-ratio: 2){
+      @content
+    }
+    @media (-o-min-device-pixel-ratio: 2){
+      @content
+    }
+  }
+}
+
 // provides fallback px notation for stylesheets for browsers that don't recognize rems
 $base-font-size: false !default;
  

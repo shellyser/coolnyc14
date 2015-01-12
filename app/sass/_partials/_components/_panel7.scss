@@ -1,6 +1,9 @@
 #taxi {
 	background-image: url("../assets/bgphotos/taxis600.jpg");
 	@extend .backgroundimage;
+	 @include retina{
+            background-image: url("../assets/bgphotos/taxis600@2x.jpg");
+        }
 	@include break-min($main-break-lg){
 	background-image: url("../assets/bgphotos/taxis1200.jpg");
 	}
@@ -47,7 +50,7 @@
 			height: 100%;
 			text-align: center;
 			@include transition(transform 0.5s ease-in);
-			[class^="circle-"] {
+			[id^="circle-"] {
 				vertical-align: middle;
 				text-align: center;
 				display: block;
@@ -65,8 +68,8 @@
 				}
 				> div {
 					letter-spacing: .01em;
-					max-width: 85%;
-					max-height: 60%;
+					width: 85%;
+					max-height: 55%;
 					margin: auto;
 					position: absolute;
 					bottom: 0;
@@ -74,7 +77,7 @@
 					left: 0;
 					right: 0;
 					h1 {
-						 font-size: 4.2em;
+						 font-size: 3.5em;
 						 border-bottom: #0091d9 0.05em solid;
 						 margin-bottom: 0.08em;
 						 padding-bottom: .08em;

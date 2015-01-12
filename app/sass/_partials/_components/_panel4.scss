@@ -1,8 +1,10 @@
 #brick {
 	background-image: url("../assets/bgphotos/brick600.jpg");
-	@extend .backgroundimage;       
-	overflow: visible;
-	color: black;
+	@extend .backgroundimage;      
+	 @include retina{
+            background-image: url("../assets/bgphotos/brick600@2x.jpg");
+        } 
+	color: $black;
 	font-size: 7px;
 	@include break-min($panel4-text-break4){
 		font-size: 8px;
@@ -37,7 +39,7 @@
 	#brick-content {
 		width: 90%;
 		height: 34em; 
-        margin: auto;
+        	margin: auto;
 	    position: absolute;
 	    top:0;
 	    bottom:0;
@@ -69,7 +71,7 @@
 	    	}
 	    }
 		> div{
-			width: 41%;
+			width: 42%;
 			position: relative;
 			top:0;
 			height:100%;
@@ -80,8 +82,8 @@
 			h1 {
 				position: absolute;
 				right: 1em;
-				width: 10em;
-				font-size: 2.5em;
+				width: 12em;
+				font-size: 2.3em;
 				line-height: 1.3em;
 				text-align: left;
 				display: block;
@@ -102,11 +104,10 @@
 				right: 0;
 				position: absolute;
 				.circle {
-					transition: all .5s ease-out;
 					width: 22.5em;
 					height: 22.5em;
-					border-radius: 50%;
-					background: $white_60;
+					@include border-radius(50%);
+					background-color: $white_60;
 					position: absolute;
 					right: 0;
 					margin: auto;

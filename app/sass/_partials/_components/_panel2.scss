@@ -1,6 +1,9 @@
 #street-upper {
     background-image: url("../assets/bgphotos/street600.jpg");
-    @extend .backgroundimage;       
+    @extend .backgroundimage;    
+    @include retina{
+        background-image: url("../assets/bgphotos/street600@2x.jpg");
+    }   
     @include break-min($main-break-lg){
         background-image: url("../assets/bgphotos/street1200.jpg");
     }
@@ -10,29 +13,29 @@
   .bottom{
     background-color: $white;
     @extend .verticalboxes;
-    min-height: 0.3rem;
-    top: 38rem;
+    min-height: rem(0.3);
+    top: rem(38);
   }
 }
 #street-content{
   position: relative;
   text-align: center;
-  height: 25rem;
+  height: rem(25);
   background-color: $black;
-  top: 5rem; 
+  top: rem(5); 
     .bottom {
       background-color: $white;
       @extend .verticalboxes;
-      min-height: 0.6rem;    
-      top: 25rem;
+      min-height: rem(0.6);    
+      top: rem(25);
   }
   .top {
     position: absolute;
     &.left{
       top: 12%;
-      min-height: 0.3rem;
+      min-height: rem(0.3);
       background-color: $white;
-      width: 100rem;
+      width: rem(100);
       background-color: $white;
       left: 50%;
       margin-right: -50%;
@@ -43,10 +46,10 @@
     }
     &.right{
       top: 12%;
-      min-height: 0.3rem;
+      min-height: rem(0.3);
       left: 50%;
       margin-right: -50%;
-      width: 150rem;
+      width: rem(150);
       @include transform(translate(-4%,50%));
       background-color: $white;
       min-width: 69%;
@@ -55,7 +58,7 @@
       }
     }
     &.asterick {
-      width: 2.5rem;
+      width: rem(2.5);
       top: 7.5%;
       top: 53%;
       left: 50%;
@@ -70,7 +73,7 @@
           @include transform(translate(-122%,50%));
         }
         &.right {
-          width: 409rem;
+          width: rem(409);
         }
         &.asterick {
           @include transform(translate(-814%, -359%));
@@ -88,38 +91,38 @@
       margin-right: -50%;
       @include transform(translate(-50%, -50%));
       h1 {
-        font-size: 3.5rem;
+        font-size: rem(3.5);
       }
       p {
-        font-size: 1rem;
-        width: 21.4rem;
-        line-height: 1.8rem;
+        font-size: rem(1);
+        width: rem(21.4);
+        line-height: rem(1.8);
         margin: auto;
         margin-top: 3%;
       }
       @include break-between($panel3-text-break, $panel2-text-break3){
         h1{
-          font-size: 5.3rem;
+          font-size: rem(5.3);
         }
         p{
-          font-size: 1rem;
-          width: 35rem;
+          font-size: rem(1);
+          width: rem(35);
         }
       }
       @include break-min($panel2-text-break3){
         h1 {
-          font-size: 8rem;
+          font-size: rem(8);
         }
         p {
-          font-size: 1rem;
-          width: 49rem;
-          line-height: 1.9rem;
+          font-size: rem(1);
+          width: rem(49);
+          line-height: rem(1.9);
           margin-top: 1%;
         }
       }    
       @include break-min($main-break-xxtrlg){
         h1 {
-          font-size: 9rem;
+          font-size: rem(9);
         }
       }
 }

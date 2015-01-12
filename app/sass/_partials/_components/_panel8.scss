@@ -1,5 +1,8 @@
 #fence {
 	background-image: url("../assets/bgphotos/fence600.jpg");   
+	@include retina{
+            background-image: url("../assets/bgphotos/fence600@2x.jpg");
+        }
 	@include break-min($main-break-lg){
 	    background-image: url("../assets/bgphotos/fence1200.jpg");
 	}
@@ -9,13 +12,13 @@
 	 @extend .backgroundimage;  
 	 #fence-header{
 	 	width: 100%;
-	 	height: 8rem;
+	 	height: rem(8);
 	 	background-color: $black_60;
 	 	text-align: center;
 	 	h1{
 	 		font-weight: 700;
-	 		font-size: 2rem;
-	 		padding-top: 4rem;
+	 		font-size: rem(2);
+	 		padding-top: rem(4);
 	 	}
 	 }
 	#fence-content {	
@@ -23,8 +26,8 @@
 		@include calc(height, "100% - 8rem");
 		position: relative;
 		.circles{
-			width: 27rem;
-			height: 16rem;
+			width: rem(27);
+			height: rem(16);
 			position: absolute;
 			margin: auto;
 			top: 0;
@@ -37,11 +40,10 @@
 				display: inline-block;
 				background-color: $white_90;
 				@include border-radius(50%);
-				width: 7rem;
-				height: 7rem;
-				margin: .5rem;
+				width: rem(7);
+				height: rem(7);
+				margin: rem(.5);
 				background-position: center center;
-				width: 7rem;
 				background-repeat: no-repeat;
 				@include background-size(60%);
 				&:hover{
@@ -61,7 +63,7 @@
 				}
 				&#abcnews{
 					background-image: url("../assets/logo_abcnews.png");
-					background-position: center 55%;
+					background-position: 50% 55%;
 					@include background-size(47%);
 					&:hover{
 						background-image: url("../assets/logo_abcnews_white.png");
@@ -69,7 +71,7 @@
 				}
 				&#cnbc{
 					background-image: url("../assets/logo_cnbc.png");
-					background-position: center 55%;
+					background-position: 50% 55%;
 					@include background-size(57%);
 					&:hover{
 						background-image: url("../assets/logo_cnbc_white.png");
@@ -90,20 +92,20 @@
 				}
 			}
 			@include break-min($panel3-text-break){
-				width: 34rem;
-				height: 23rem;
+				width: rem(34);
+				height: rem(23);
 				.circle{
-					width: 10rem;
-					height: 10rem;
+					width: rem(10);
+					height: rem(10);
 				}
 			}
 			@include break-min($panel2-line-break){
-				width: 54rem;
-				height: 34rem;
+				width: rem(54);
+				height: rem(34);
 				.circle{
-					width: 15rem;
-					height: 15rem;
-					margin: .9rem;
+					width: rem(15);
+					height: rem(15);
+					margin: rem(.9);
 				}
 			}
 			

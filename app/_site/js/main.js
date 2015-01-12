@@ -27,35 +27,35 @@ $(document).ready(function () {
 	afterNycave = beforeNycave + panel/0.75,
 	beforeStreetLower = afterNycave + transition,
 	afterStreetLower = beforeStreetLower + panel*2.9,
-	beforeTaxi = afterStreetLower + transition,
-	afterTaxi = beforeTaxi + panel/0.65,
-	beforeFence = afterTaxi + transition,
+	beforeFence = afterStreetLower + transition,
 	afterFence = beforeFence + panel,
-	beforeBridge = afterFence + transition,
+	beforeTaxi = afterFence + transition,
+	afterTaxi = beforeTaxi + panel/0.65,
+	beforeBridge = afterTaxi + transition,
 	afterBridge = beforeBridge + panel/0.75,
 	beforeOutro = afterBridge + transition,
 	afterOutro = beforeOutro + panel,
 	
 	 scroll = skrollr.init({
 		// scale: 2,
-		// forceHeight: true,
+		// forceHeight: false,
 		render: function(data) {
 	        //Debugging - Log the current scroll position.
 			console.log(data.curTop); 
-	     	if(data.curTop >= 30290){
-	    	    	$('#circles .circle-1 h1').prop('Counter',0).animate({
-	    	        Counter: 2578
+	     	if(data.curTop >= 33700){
+	    	    	$('#circles #circle-1 h1 span').prop('Counter',0).animate({
+	    	        Counter: 6.5
 	    	    	}, {
 	    	        duration: 2000,
 	    	        easing: 'swing',
-	    	        step: function (now) {
-	    	            $(this).text(Math.ceil(now));
-	    	        }
+	    	        progress: function(now) {
+	    	            $(this).text(Math.ceil(this.Counter*10)/10);
+	    	          }
 	       	 	});
 	    	}
-	    	if(data.curTop >= 31000){
-	    		$('#circles .circle-2 h1 span').prop('Counter',0).animate({
-	    	        Counter: 67
+	    	if(data.curTop >= 34700){
+	    		$('#circles #circle-2 h1 span').prop('Counter',0).animate({
+	    	        Counter: 25
 	    	    	}, {
 	    	        duration: 2000,
 	    	        easing: 'swing',
@@ -64,9 +64,9 @@ $(document).ready(function () {
 	    	        }
 	       	 });			       	 
 	    }
-    		if(data.curTop >= 32200){
-    			$('#circles .circle-3 h1 span').prop('Counter',0).animate({
-    		        Counter: 45
+    		if(data.curTop >= 35700){
+    			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
+    		        Counter: 1
     		    	}, {
     		        duration: 2000,
     		        easing: 'swing',
@@ -115,6 +115,8 @@ $(document).ready(function () {
 	    winH = document.body.clientHeight;
 	  };
 
+	  
+	  
 	  //adds a loading id until the page is loaded
 	  function onReady(callback) {
 	      var intervalID = window.setInterval(checkReady, 1000);
@@ -143,8 +145,16 @@ $(document).ready(function () {
 	else{
 		$('html').removeClass('shorty');
 	}
-
-
+	//calc in intro section
+	$('#intro-content').css({'height': winH - (winH * (11 / 100)) - 86 + 'px'});
+	$('.shorty #intro-content').css({'height': winH - (winH * (11 / 100)) - 86 + 'px'});
+	//ie replacement for calc in intro section
+	$('#ie #intro-content').css({'height': winH - (50 - 86) + 'px'});
+	//// calc in intro section
+	$('#fence-content').css({'height': winH - 126 + 'px'});	
+	////ie replacement for calc in intro section
+	$('#ie #fence-content').css({'height': winH - 112 + 'px'});	
+								
 	// size triangles
 	$('.triangle-1').css({'border-top': winH + 'px solid rgba(0, 0, 0, 1)'});
 	$('.triangle-1').css({'border-right': winW + 'px solid transparent'});
@@ -190,5 +200,15 @@ $(window).resize(function () {
     else{
     	$('html').removeClass('shorty');
     }
+
+    ///calc in intro section
+	$('#intro-content').css({'height': winHR - (winH * (11 / 100)) - 86 + 'px'});
+	$('.shorty #intro-content').css({'height': winHR - (winH * (11 / 100)) - 86 + 'px'});
+	//ie replacement for calc in intro section
+	$('#ie #intro-content').css({'height': winHR - (50 - 86) + 'px'});
+	//// calc in intro section
+	$('#fence-content').css({'height': winHR - 126 + 'px'});	
+	////ie replacement for calc in intro section
+	$('#ie #fence-content').css({'height': winHR - 112 + 'px'});		
 });
 
