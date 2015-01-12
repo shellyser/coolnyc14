@@ -2,9 +2,7 @@
     <div class="skrollr-body" id="page">
     <section id="intro">
         <header>
-            <a href="http://coolnycprogram.com">
-                <img src="assets/coolnyc-logo-blue.svg" alt="coolNYC">
-            </a>
+            <img src="assets/coolnyc-logo-blue.svg" alt="coolNYC">
             <h2 id="tagline">A Con Edison program in partnership with ThinkEco</h2>
         </header>
         <div id="intro-sky-bg" data-start="background-position: 50% 0%; background-position-x: 50%;" data-_bstreetupper="background-position: 0% 0%; background-position-x: 0%"></div>
@@ -163,8 +161,8 @@ number of subscribers with 41%!</p>
             <div class="circles">
               <a href="http://abcnews.go.com/blogs/lifestyle/2014/06/gadgets-to-help-you-keep-your-ac-use-under-control/" target="_blank"><span class="circle" id="abc" data-start="transform: translate(-63.63%,-134.835%); opacity: 0;  display:none;" data-_bfence--200="transform: translate(-63.63%,-134.835%); opacity: 0;  display:inline-block;" data-_bfence-1000="transform: translate(0%,0%); opacity: 1; "></span></a>
               <a href="http://video.foxnews.com/v/3631008161001/summer-savings-slash-your-energy-bill-with-simple-fixes/?playlist_id=930909787001#sp=show-clips" target="_blank"><span class="circle" id="fox" data-start="transform: translate(0%,-134.835%); opacity: 0;  display:none;" data-_bfence--200="transform: translate(0%,-134.835%); opacity: 0; display:inline-block;" data-_bfence-1000="transform: translate(0%,0%); opacity: 1; "></span></a>
-              <a href="http://abcnews.go.com/WNT/video/real-money-cool-cash-save-hundreds-staying-cool-241107357" target="_blank"><span class="circle" id="abcnews" data-start="transform: translate(63.63%,-134.835%); opacity: 0; display:none;" data-_bfence--200="transform: translate(63.63%,-134.835%); opacity: 0; display:inline-block;" data-_bfence-1000="transform: translate(0%,0%); opacity: 1;"></span></a>
-              <a href="http://video.cnbc.com/gallery/?video=3000267937" target="_blank"><span class="circle" id="cnbc" data-start="transform: translate(-63.63%,134.835%); opacity: 0; display:none;" data-_bfence--200="transform: translate(-63.63%,134.835%); opacity: 0;  display:inline-block;" data-_bfence-1000="transform: translate(0%,0%); opacity: 1; "></span></a>
+              <a href="http://gothamist.com/2014/05/08/this_summer_control_your_ac_from_an.php" target="_blank"><span class="circle" id="gothamist" data-start="transform: translate(63.63%,-134.835%); opacity: 0; display:none;" data-_bfence--200="transform: translate(63.63%,-134.835%); opacity: 0; display:inline-block;" data-_bfence-1000="transform: translate(0%,0%); opacity: 1;"></span></a>
+              <a href="http://www.ny1.com/content/news/143427/ny1-exclusive--con-ed-command-post-plans-for-heat-wave" target="_blank"><span class="circle" id="nyc1" data-start="transform: translate(-63.63%,134.835%); opacity: 0; display:none;" data-_bfence--200="transform: translate(-63.63%,134.835%); opacity: 0;  display:inline-block;" data-_bfence-1000="transform: translate(0%,0%); opacity: 1; "></span></a>
               <a href="http://wiredinsider.tumblr.com/post/91167261391/the-cool-app-for-the-hot-city" target="_blank"><span class="circle" id="wired" data-start="transform: translate(0%,134.835%); opacity: 0;  display:none;" data-_bfence--200="transform: translate(0%,134.835%); opacity: 0 ; display:inline-block;" data-_bfence-1000="transform: translate(0%,0%); opacity: 1; "></span></a>
               <a href="http://www.dnainfo.com/new-york/20140707/east-village/how-keep-energy-costs-down-all-summer" target="_blank"><span class="circle" id="dna" data-start="transform: translate(63.63%,134.835%); opacity: 0;  display:none;" data-_bfence--200="transform: translate(63.63%,134.835%); opacity: 0;  display:inline-block;" data-_bfence-1000="transform: translate(0%,0%); opacity: 1; "></span></a>
             </div>
@@ -191,7 +189,8 @@ number of subscribers with 41%!</p>
                <span id="circle-3" >
                  <div>
                      <h1><span>0</span>kW</h1>
-                     <p>Amount each A/C contributes to peak load</p>
+                     <p>Amount each A/C contributes to<br>
+                       peak load</p>
                </div></span>
              </div>
          </div>   
@@ -246,7 +245,6 @@ number of subscribers with 41%!</p>
                             <a class="addthis_button_facebook" id="facebook"><i class="fa fa-facebook"></i></a>
                             <a class="addthis_button_twitter" id="twitter"><i class="fa fa-twitter"></i></a>
                             <a class="addthis_button_linkedin" id="linkedin"><i class="fa fa-linkedin"></i></a>
-                            <a class="addthis_button_pinterest_share" id="pinterest"><i></i></a>
                             <a class="addthis_button_google_plusone_share" id="googleplus"><i class="fa fa-google-plus"></i></a>
                             <a class="addthis_button_email" id="email"><i class="fa fa-envelope"></i></a>
                         </div>
@@ -276,5 +274,8 @@ number of subscribers with 41%!</p>
             </div>
     </section> 
 </div>
-<div id="loading"></div>
+<div id="loading">
+  <span class="fa fa-circle-o-notch fa-spin loading-icon"></span>
+  <h1 class="loading-title">Loading</h1>
+</div>
 {% include footer.html %}

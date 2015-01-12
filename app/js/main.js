@@ -64,7 +64,7 @@ $(document).ready(function () {
 	    	        }
 	       	 });			       	 
 	    }
-    		if(data.curTop >= 35700){
+    		if(data.curTop >= 35750){
     			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
     		        Counter: 1
     		    	}, {
@@ -202,8 +202,8 @@ $(window).resize(function () {
     }
 
     ///calc in intro section
-	$('#intro-content').css({'height': winHR - (winH * (11 / 100)) - 86 + 'px'});
-	$('.shorty #intro-content').css({'height': winHR - (winH * (11 / 100)) - 86 + 'px'});
+	$('#intro-content').css({'height': winHR - (winHR * (11 / 100)) - 86 + 'px'});
+	$('.shorty #intro-content').css({'height': winHR - (winHR * (11 / 100)) - 86 + 'px'});
 	//ie replacement for calc in intro section
 	$('#ie #intro-content').css({'height': winHR - (50 - 86) + 'px'});
 	//// calc in intro section

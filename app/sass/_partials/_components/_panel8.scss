@@ -61,20 +61,20 @@
 						background-image: url("../assets/logo_fox_white.svg");
 					}
 				}
-				&#abcnews{
-					background-image: url("../assets/logo_abcnews.png");
-					background-position: 50% 55%;
-					@include background-size(47%);
+				&#gothamist{
+					background-image: url("../assets/logo_gothamist.svg");
+					background-position: 50% 52%;
+					@include background-size(53%);
 					&:hover{
-						background-image: url("../assets/logo_abcnews_white.png");
+						background-image: url("../assets/logo_gothamist_white.svg");
 					}
 				}
-				&#cnbc{
-					background-image: url("../assets/logo_cnbc.png");
-					background-position: 50% 55%;
-					@include background-size(57%);
+				&#nyc1{
+					background-image: url("../assets/logo_nyc1.svg");
+					background-position: 50% 61%;
+					@include background-size(45%);
 					&:hover{
-						background-image: url("../assets/logo_cnbc_white.png");
+						background-image: url("../assets/logo_nyc1_white.svg");
 					}
 				}
 				&#wired{

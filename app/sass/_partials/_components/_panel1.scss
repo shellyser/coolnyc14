@@ -134,13 +134,13 @@ header {
         top: 50%;
         left: 50%;
         margin-right: -50%;
-        @include transform(translate(-50%, -50%)); 
-        @include text-shadow(rgba(0, 0, 0, 0.15) 2px 1px 5px);       
+        @include transform(translate(-50%, -50%));     
             text-align: center;
             #intro-year {
                 display: block;
                 font-size: rem(5.6);
                 font-weight: 700;
+                @include text-shadow(rgba(0, 0, 0, 0.15) 2px 1px 5px);   
             }
             #intro-text {
                 font-size: 1rem;
@@ -148,6 +148,7 @@ header {
                 display: block;
                 margin: 5px auto;
                 width: 24rem;
+                @include text-shadow(rgba(0, 0, 0, 0.6) 2px 0px 2px);   
             }
         @include break-max($main-break){
             #intro-year{

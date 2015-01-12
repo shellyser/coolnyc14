@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -301,29 +301,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @-skrollr-keyframes skylineanim2 {
-  _bskyline-500 {
+  _bskyline-800 {
     transform: translate(0, 0%);
   }
-  _bskyline-1500 {
+  _bskyline-1400 {
     transform: translate(0, -100%);
   }
 }
 @-skrollr-keyframes skylineanim3 {
-  _bskyline-1500 {
+  _bskyline-1800 {
     transform: translate(0%, 0%);
   }
-  _bskyline-2500 {
+  _bskyline-2400 {
     transform: translate(0%, -100%);
   }
-  _bskyline-2500 {
+  _bskyline-3100 {
     transform: translate(0%, -100%);
   }
-  _bskyline-3500 {
+  _bskyline-3600 {
     transform: translate(0%, -200%);
   }
 }
 @-skrollr-keyframes skylineanim4 {
-  _bskyline-3500 {
+  _bskyline-3600 {
     transform: translate(0, -100%);
   }
   _bskyline-4500 {
@@ -637,11 +637,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @-skrollr-keyframes skylineanim2ie {
-  _bskyline-500 {
+  _bskyline-800 {
     top: 0%;
     display: block;
   }
-  _bskyline-1500 {
+  _bskyline-1400 {
     top: -100%;
     display: none;
   }
@@ -650,18 +650,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _bskyline-1500 {
+  _bskyline-1800 {
     top: 0%;
     display: block;
   }
-  _bskyline-2500 {
+  _bskyline-2400 {
     top: -100%;
   }
-  _bskyline-2500 {
+  _bskyline-3100 {
     top: -100%;
     display: block;
   }
-  _bskyline-3500 {
+  _bskyline-3600 {
     top: -200%;
     display: none;
   }
@@ -670,7 +670,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _bskyline-3500 {
+  _bskyline-3600 {
     top: -100%;
     display: block;
   }
@@ -1068,14 +1068,14 @@ header #tagline {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-shadow: rgba(0, 0, 0, 0.15) 2px 1px 5px;
   text-align: center;
 }
-/* line 140, ../sass/_partials/_components/_panel1.scss */
+/* line 139, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-year {
   display: block;
   font-size: 5.6rem;
   font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.15) 2px 1px 5px;
 }
 /* line 145, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-text {
@@ -1084,9 +1084,10 @@ header #tagline {
   display: block;
   margin: 5px auto;
   width: 24rem;
+  text-shadow: rgba(0, 0, 0, 0.6) 2px 0px 2px;
 }
 @media screen and (max-width: 399px) {
-  /* line 153, ../sass/_partials/_components/_panel1.scss */
+  /* line 154, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-year {
     font-size: 5rem;
   }
@@ -1097,13 +1098,13 @@ header #tagline {
     min-width: 100%;
     margin: auto;
   }
-  /* line 160, ../sass/_partials/_components/_panel1.scss */
+  /* line 161, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-year {
     font-size: 7rem;
     font-weight: 700;
     display: inline-block;
   }
-  /* line 165, ../sass/_partials/_components/_panel1.scss */
+  /* line 166, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-text {
     font-size: 0.9rem;
     line-height: 1.75rem;
@@ -1119,14 +1120,14 @@ header #tagline {
     min-width: 100%;
     margin: auto;
   }
-  /* line 177, ../sass/_partials/_components/_panel1.scss */
+  /* line 178, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-year {
     font-size: 8.3rem;
     margin-left: 1.5rem;
     font-weight: 700;
     display: inline-block;
   }
-  /* line 183, ../sass/_partials/_components/_panel1.scss */
+  /* line 184, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-text {
     font-size: 1rem;
     line-height: em(1.8);
@@ -1142,14 +1143,14 @@ header #tagline {
     min-width: 100%;
     margin: auto;
   }
-  /* line 195, ../sass/_partials/_components/_panel1.scss */
+  /* line 196, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-year {
     font-size: 9rem;
     font-weight: 700;
     display: inline-block;
     margin-left: 3rem;
   }
-  /* line 201, ../sass/_partials/_components/_panel1.scss */
+  /* line 202, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-text {
     font-size: 1.1rem;
     line-height: 2rem;
@@ -1160,7 +1161,7 @@ header #tagline {
   }
 }
 
-/* line 214, ../sass/_partials/_components/_panel1.scss */
+/* line 215, ../sass/_partials/_components/_panel1.scss */
 footer {
   position: absolute;
   bottom: 0;
@@ -1173,12 +1174,12 @@ footer {
   height: 11%;
   font-size: .8em;
 }
-/* line 225, ../sass/_partials/_components/_panel1.scss */
+/* line 226, ../sass/_partials/_components/_panel1.scss */
 footer h3 {
   display: block;
   margin-top: 0.2rem;
 }
-/* line 229, ../sass/_partials/_components/_panel1.scss */
+/* line 230, ../sass/_partials/_components/_panel1.scss */
 footer #intro-scroll {
   display: none;
 }
@@ -2357,7 +2358,7 @@ footer #intro-scroll {
 /* line 85, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] > div p {
   line-height: 1.4em;
-  font-size: .6em;
+  font-size: .7em;
   width: 80%;
   margin: auto;
 }
@@ -2471,32 +2472,32 @@ footer #intro-scroll {
   background-image: url("../assets/logo_fox_white.svg");
 }
 /* line 64, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle#abcnews {
-  background-image: url("../assets/logo_abcnews.png");
-  background-position: 50% 55%;
-  -webkit-background-size: 47%;
-  -moz-background-size: 47%;
-  -o-background-size: 47%;
-  background-size: 47%;
+#fence #fence-content .circles .circle#gothamist {
+  background-image: url("../assets/logo_gothamist.svg");
+  background-position: 50% 52%;
+  -webkit-background-size: 53%;
+  -moz-background-size: 53%;
+  -o-background-size: 53%;
+  background-size: 53%;
   -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
 /* line 68, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle#abcnews:hover {
-  background-image: url("../assets/logo_abcnews_white.png");
+#fence #fence-content .circles .circle#gothamist:hover {
+  background-image: url("../assets/logo_gothamist_white.svg");
 }
 /* line 72, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle#cnbc {
-  background-image: url("../assets/logo_cnbc.png");
-  background-position: 50% 55%;
-  -webkit-background-size: 57%;
-  -moz-background-size: 57%;
-  -o-background-size: 57%;
-  background-size: 57%;
+#fence #fence-content .circles .circle#nyc1 {
+  background-image: url("../assets/logo_nyc1.svg");
+  background-position: 50% 61%;
+  -webkit-background-size: 45%;
+  -moz-background-size: 45%;
+  -o-background-size: 45%;
+  background-size: 45%;
   -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
 /* line 76, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle#cnbc:hover {
-  background-image: url("../assets/logo_cnbc_white.png");
+#fence #fence-content .circles .circle#nyc1:hover {
+  background-image: url("../assets/logo_nyc1_white.svg");
 }
 /* line 80, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#wired {
@@ -3090,38 +3091,36 @@ html section, body section {
 
 /* line 77, ../sass/_partials/_index.scss */
 #loading {
-  display: block;
-  position: relative;
+  z-index: 1;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
   width: 100%;
   height: 100%;
+  color: #0091d9;
   background-color: #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  text-align: center;
+  padding-top: 12rem;
+}
+/* line 89, ../sass/_partials/_index.scss */
+#loading .loading-icon {
+  font-size: 4rem;
+  display: block;
+}
+/* line 93, ../sass/_partials/_index.scss */
+#loading .loading-title {
+  font-size: 4rem;
+  line-height: 1em;
+  margin: .25em;
+}
+/* line 98, ../sass/_partials/_index.scss */
+#loading a {
   color: #0091d9;
 }
-/* line 87, ../sass/_partials/_index.scss */
-#loading .fa {
-  font-size: 10rem;
-  height: 1rem;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  -moz-transform-origin: center center;
-  -ms-transform-origin: center center;
-  -webkit-transform-origin: center center;
-  transform-origin: center center;
-}
 
-/* line 8, ../sass/_partials/_ye-olde-ie.scss */
-.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #bridge {
-  -ms-behavior: url(/JS/polyfills/backgroundsize.min.htc);
-}
-
-/* line 12, ../sass/_partials/_ye-olde-ie.scss */
-[class^="circle"] {
-  -ms-behavior: url(/polyfills/PIE.htc);
+/* line 104, ../sass/_partials/_index.scss */
+.no-cssanimations #loading .loading-icon {
+  display: none;
 }

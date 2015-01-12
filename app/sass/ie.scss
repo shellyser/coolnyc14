@@ -224,6 +224,18 @@ $modern: false;
 						background-image: url("../assets/logo_fox_white.png");
 					}
 				}
+				&#gothamist{
+					background-image: url("../assets/logo_gothamist.png");
+					&:hover{
+						background-image: url("../assets/logo_gothamist_white.png");
+					}
+				}
+				&#nyc1{
+					background-image: url("../assets/logo_nyc1.png");
+					&:hover{
+						background-image: url("../assets/logo_nyc1_white.png");
+					}
+				}
 				&#wired{
 					background-image: url("../assets/logo_wired.png");
 					&:hover{
@@ -280,3 +292,4 @@ $modern: false;
 		}
 	}
 }
+

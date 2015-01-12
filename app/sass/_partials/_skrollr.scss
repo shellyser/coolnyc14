@@ -105,32 +105,32 @@
 }
 
 @-skrollr-keyframes skylineanim2{
-	_bskyline-500{
+	_bskyline-800{
 		transform:translate(0,0%);
 	}
-	_bskyline-1500{
+	_bskyline-1400{
 		transform:translate(0,-100%);
 	}
 }
 
 
  @-skrollr-keyframes skylineanim3{
- 	_bskyline-1500{ 
+ 	_bskyline-1800{ 
  		transform:translate(0%,0%); 
  	}
- 	_bskyline-2500{
+ 	_bskyline-2400{
  		transform:translate(0%,-100%); 
  	}
- 	_bskyline-2500{
+ 	_bskyline-3100{
  		transform:translate(0%,-100%); 
  	}
- 	_bskyline-3500{
+ 	_bskyline-3600{
  		transform:translate(0%,-200%); 
  	}
  }	
 
 @-skrollr-keyframes skylineanim4{
-  	_bskyline-3500{
+  	_bskyline-3600{
     		transform:translate(0,-100%);
     	}
     	_bskyline-4500{
@@ -428,32 +428,32 @@
     }
 
     @-skrollr-keyframes skylineanim2ie{
-	 _bskyline-500{
-	    	top: 0%;
-	    	display: block;
-	 }
-    	_bskyline-1500{
-    		top: -100%;
-    		display:none;
-    	}
+		 _bskyline-800{
+		    	top: 0%;
+		    	display: block;
+		 }
+	    	_bskyline-1400{
+	    		top: -100%;
+	    		display:none;
+	    	}
     }
 
     @-skrollr-keyframes skylineanim3ie{
     	skrollr-0{
     		display: none;
     	}
-    	_bskyline-1500{ 
+    	_bskyline-1800{ 
     		top: 0%; 
     		display: block;
     	}
-    	_bskyline-2500{
+    	_bskyline-2400{
     		top: -100%; 
     	}
-    	_bskyline-2500{
+    	_bskyline-3100{
     		top: -100%; 
     		display: block;
     	}
-    	_bskyline-3500{
+    	_bskyline-3600{
     		top: -200%; 
     		display: none;
     	}
@@ -463,38 +463,38 @@
     	skrollr-0{
     		display: none;
     	}
-    	_bskyline-3500{
+    	_bskyline-3600{
     		top: -100%;
     		display: block;
     	}
     	_bskyline-4500{
     		top:-200%;
     	}
-}
-
-#brick {
-	 -skrollr-animation-name: brickanim1ie;
-}
-@-skrollr-keyframes brickanim1ie{
-	skrollr-0{
-		display: none;
 	}
-	 _askyline{
-	 	top: 100%;
-	 	display: block;
-	 }
-	 _bbrick{
-	  	top: 0%;
-	  }
-	 _abrick{
-	 	top: 0%; 
-	 	display: block;
-	 }
-	 _bnycave{
-	 	top: -100%; 
-	 	display: none;
-	 }
-}
+
+	#brick {
+		 -skrollr-animation-name: brickanim1ie;
+	}
+	@-skrollr-keyframes brickanim1ie{
+		skrollr-0{
+			display: none;
+		}
+		 _askyline{
+		 	top: 100%;
+		 	display: block;
+		 }
+		 _bbrick{
+		  	top: 0%;
+		  }
+		 _abrick{
+		 	top: 0%; 
+		 	display: block;
+		 }
+		 _bnycave{
+		 	top: -100%; 
+		 	display: none;
+		 }
+	}
 
 	#nycave {
 		 -skrollr-animation-name: nycaveanim1ie;
