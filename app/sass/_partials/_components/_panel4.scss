@@ -39,7 +39,7 @@
 	#brick-content {
 		width: 90%;
 		height: 34em; 
-        	margin: auto;
+        margin: auto;
 	    position: absolute;
 	    top:0;
 	    bottom:0;
@@ -83,21 +83,25 @@
 				position: absolute;
 				right: 1em;
 				width: 12em;
-				font-size: 2.3em;
+				font-size: 2.2em;
 				line-height: 1.3em;
 				text-align: left;
 				display: block;
 				margin: 0;
-				top: 50%;
+				top: 45%;
 				left: 61%;
 				margin-right: -50%;
 				@include transform(translate(-50%, -50%));
 		    	@include break-max($main-break){
-			    		max-width: 16em;
-			    		font-size: 2em;
-			    		left: 52%;
-			    	}
-			    	
+		    		max-width: 16em;
+		    		font-size: 2em;
+		    		left: 52%;
+		    		}
+			    @include break-min($main-break-xxtrlg){
+			    	width: 13em;
+			    	top: 50%;
+			    	}	
+
 		    	}
 		    }
 			&:nth-of-type(2n) {

@@ -174,9 +174,11 @@
 	 	transform:translate(0,0%); 
 	 	background-position:50% 0%;
 	 }
+	 _bnycave-1200{
+		background-position:50% 100%;	 
+	}
 	 _anycave{
 	 	transform:translate(0,0%); 
-	 	background-position:50% 100%;
 	 }
 	 _bstreetlower{
 	 	transform:translate(0,-100%);
@@ -225,7 +227,7 @@
 	 skrollr-0{
 	 	display: none;
 	 }
-	 _afence{
+	 _abridge{
 	 	transform:translate(0,100%); 
 	 	display: block;
  	}
@@ -237,7 +239,7 @@
  		transform:translate(0,0%);
  		display: block;
  	}
- 	 _bbridge{
+ 	 _boutro{
  	 	transform:translate(0,-100%); 
  	 	display: none;
  	 } 
@@ -293,7 +295,7 @@
 	transform:translate(0,0%); 
 	display: block;
 	} 
-	_btaxi{
+	_bbridge{
 	transform:translate(0,-100%); 
 	display: none;
 	} 
@@ -307,7 +309,7 @@
 	 skrollr-0{
 	 	display: none;
  	} 
-	 _ataxi{
+	 _afence{
 	 	transform:translate(0,100%); 
 	 	display: block;
  	} 
@@ -318,7 +320,7 @@
 	 	transform:translate(0,0%); 
 	 	display: block;
  	} 
-	 _boutro{
+	 _btaxi{
 	 	transform:translate(0,-100%); 
 	 	display: none;
  	}  
@@ -332,7 +334,7 @@
 	 skrollr-0{
 	 	display: none
 	 } 
-	 _abridge{
+	 _ataxi{
 	 	transform:translate(0,100%); 
 	 	display: block;
  	} 
@@ -504,13 +506,15 @@
 		_abrick{
 			top: 100%;
 		}
-		 _bnycave{
+		_bnycave{
 		 	top: 0%; 
 		 	background-position:50% 0%;
-		 }
+		}
+		_bnycave-1200{
+			background-position:50% 100%;	 
+		}
 		 _anycave{
 		 	top: 0%; 
-		 	background-position:50% 100%;
 		 }
 		 _bstreetlower{
 		 	top: -100%;
@@ -559,7 +563,7 @@
 		 skrollr-0{
 		 	display: none;
 		 }
-		 _afence{
+		 _abridge{
 		 	top: 100%; 
 		 	display: block;
 	 	}
@@ -570,7 +574,7 @@
 	 		top: 0%;
 	 		display: block;
 	 	}
-	 	 _bbridge{
+	 	 _boutro{
 	 	 	top: -100%; 
 	 	 	display: none;
 	 	 } 
@@ -620,7 +624,7 @@
 		top: 0%; 
 		display: block;
 		} 
-		_btaxi{
+		_bbridge{
 		top: -100%; 
 		display: none;
 		} 
@@ -633,7 +637,7 @@
 		 skrollr-0{
 		 	display: none;
 	 	} 
-		 _ataxi{
+		 _afence{
 		 	top: 100%; 
 		 	display: block;
 	 	} 
@@ -644,7 +648,7 @@
 		 	top: 0%; 
 		 	display: block;
 	 	} 
-		 _boutro{
+		 _btaxi{
 		 	top: -100%; 
 		 	display: none;
 	 	}  
@@ -658,7 +662,7 @@
 		 skrollr-0{
 		 	display: none;
 		 }
-		 _abridge{
+		 _ataxi{
 		 	top: 100%; 
 		 	display: block;
 	 	} 

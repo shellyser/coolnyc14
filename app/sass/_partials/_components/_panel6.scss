@@ -1,9 +1,10 @@
 #street-lower {
-	@include break-max($panel3-text-break){
+	font-size: 6px;
+	@include break-between($panel3-text-break, $main-break-lg){
 		font-size: 8px;
 	}
-	@include break-between($panel3-text-break, $panel1-text-break){
-		font-size: 10px;
+	@include break-min($main-break-lg){
+		font-size: 11px;
 	}
 	@include break-min($panel1-text-break){
 		font-size: 12px;
@@ -126,19 +127,20 @@
 		}
 	}
 	.layer-1{
-		top: 33em;
-		left: 10em;
+		top: 34em;
+		left: 3em;
 		@include break-max($main-break){
 			top: 24em;
 			left: 6em;
 		}
 		.line {
-			left: 4.9em;
-			top: 2.6em;
+			left: 5.4em;
+			top: 2.8em;
 		}
 		p{
-			left: 7em;
+			left: 6em;
 			top: 3.2em;
+			width:13em;
 			@include break-max($main-break){
 				left: 4em;
 				top: 2.3em;
@@ -154,106 +156,117 @@
 		}
 	}
 	.layer-2{
-		top: 20em;
-		right: 12em;
+		top: 17em;
+		right: 20em;
 		@include break-max($main-break){
 			top: 14em;
 			left: 27em;
 		}
+		@include break-min($main-break-xxxtrlg){
+			top:19em;
+			right: 15em;
+		}
 		.line {
-			right: -0.5em;
+			right: -16.5em;
 			top: 2.8em;
 		}
 		p{
-			left: -23em;
-			top: 3.8em;
+			left: 2.5em;
+			top: 1.8em;
 
 			@include break-max($main-break){
 				left: -13em;
 				top: 2.4em;
 			}
-			@include break-between($main-break, $main-break-lg){
-				left: -13em;
-				top: 1.8em;
+			@include break-min($main-break-lg){
+				left: 4.3em;
+				top: 2.5em;
+				width: 14em;
 			}
-			@include break-between($main-break-lg, $main-break-xtrlg){
-				left: -23em;
-				top: 2.8em;
+			@include break-min($main-break-xtrlg){
+				left: 6.3em;
+				top: 3.5em;
+			}
+			@include break-min($panel4-text-break6){
+				width: 23em;
 			}
 		}
 	}
 	.layer-3{
-		top: 15em;
-		left: 16em;
-		@include break-max($main-break){
-			top: 10em;
-			left: 11em;
-		}
-		@include break-min($main-break-lg){
-			top: 15em;
-			left: 20em;
-		}
+		top: 10em;
+		left: 23em;
 		.line {
 			top: 3em;
-			left: 5.5em;
+			left: -10.8em;
 		}
 		p{
-			top: 4.5em;
-			left: 6em;
+			top: 2.2em;
+			left: -13.3em;
+			width: 13em;
+			text-align: right;
 			@include break-max($main-break){
-				width: 13em;
 				left: 3.5em;
 				top: 2.2em;
 			}
-			@include break-between($main-break, $main-break-lg){
-				top: 1.8em;
-				left: 2.7em;
+			@include break-min($main-break-lg){
+				top: 2.7em;
 			}
-			@include break-between($main-break-lg, $main-break-xtrlg){
-				left: 5em;
-				top: 2.8em;
-				width: 18em;
+			@include break-min($main-break-xtrlg){
+				top: 3.7em;
+				font-size: 1em;
+			}
+			@include break-min($panel1-text-break2){
+				width: 25em;
+				left: -25.3em;
 			}
 		}
 	}
 	.layer-4{
 		top: 6em;
-		left: 31em;
+		left: 28em;
 		@include break-max($main-break){
 			top: 3em;
 			left: 24em;
 		}
+		@include break-min($main-break-xtrlg){
+			left: 30em;
+		}
 		.line {
 			top: 3em;
-			right: -.8em;
+			right: -16.4em;		
 		}
 		p{
-			top: 3.8em;
-			left: -22em;
+			top: 2.2em;
+			left: 3em;
 			@include break-max($main-break){
 				top: 2.8em;
 				left: -12em;
 			}
-			@include break-between($main-break, $main-break-lg){
-				top: 2.2em;
-				left: -11.5em;
-			}
-			@include break-between($main-break-lg, $main-break-xtrlg){
-				top: 2.9em;
-				right: -5.2em;
+			@include break-min($main-break-lg){
+				top: 2.8em;
+				left: 4.5em;
+				width: 12em;
 			}
 			@include break-min($main-break-xtrlg){
 				top: 3.8em;
-				right: -9em;
+				left: 6.5em;
+				width: 12em;
+			}
+			@include break-min($panel4-text-break6){
+				width: 22em;
 			}
 		}
 	}
 	.layer-5 {
-		top: 26em;
-		right: 23em;
+		top: 28em;
+		right:32.3em;
 		@include break-max($main-break){
 			top: 11em;
 			right: 13em;
+		}
+		@include break-min($main-break-xxtrlg){
+			top: 29em;
+			right: 30.3em;
 		}
 		.circle-outter {
 			width: 12.5em;
@@ -271,32 +284,37 @@
 			color: $black;
 		}
 		.line {
-			right: -0.5em;
+			right: -22.7em;
 			top: 6em;
 		}
 		p {
-			width: 25em;
-			right: 1em;
-			text-align: right;
-			top: 6.7em;
+			width: 12em;
+			top: 4em;
+			text-align: left;
+			left: 6.1em;
 			em {
 				color: $black;
 				font-weight: 700;
 			}
 			@include break-max($main-break){
-				width: 12em;
-				left: -13em;
-				top: 4.5em;
+				width: 11em;
+				left: 6.1em;
+				top: 4em;
 			}
-			@include break-between($main-break, $main-break-xtrlg){
-				width: 12em;
-				top: 5em;
+
+			@include break-min($main-break-lg){
+				width: 16em;
+				top: 5.5em;
+				left: 9.5em;
 			}
 			@include break-min($main-break-xtrlg){
-				width: 25em;
-				top: 6.8em;
+				width: 16em;
+				top: 7em;
+				left: 13.5em;
 			}
-			
+			@include break-min($main-break-xxtrlg){
+				width: 21em;
+			}
 		
 		}	
 	}

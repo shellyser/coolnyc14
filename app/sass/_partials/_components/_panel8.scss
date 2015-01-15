@@ -12,13 +12,17 @@
 	 @extend .backgroundimage;  
 	 #fence-header{
 	 	width: 100%;
-	 	height: rem(8);
+	 	height: rem(9);
 	 	background-color: $black_60;
 	 	text-align: center;
 	 	h1{
 	 		font-weight: 700;
+	 		font-size: rem(1.6);
+	 		line-height: rem(1.9);
+	 		padding-top: rem(3);
+	 	}
+	 	@include break-min($panel8-text-break){
 	 		font-size: rem(2);
-	 		padding-top: rem(4);
 	 	}
 	 }
 	#fence-content {	
@@ -50,9 +54,11 @@
 					background-color: $color_blue;
 				}
 				&#abc{
-					background-image: url("../assets/logo_abc.svg");
+					background-image: url("../assets/logo_abcnews.png");
+					background-position: 50% 51%;
+					@include background-size(52%);
 					&:hover{
-						background-image: url("../assets/logo_abc_white.svg");
+						background-image: url("../assets/logo_abcnews_white.png");
 					}
 				}
 				&#fox{

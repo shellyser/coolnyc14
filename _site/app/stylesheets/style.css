@@ -95,66 +95,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0.3rem;
 }
 /* line 20, ../sass/_partials/_shorty.scss */
+.shorty #intro footer #footer-content {
+  height: 3.5em;
+}
+/* line 23, ../sass/_partials/_shorty.scss */
 .shorty #intro footer img {
   width: 33px;
 }
-/* line 23, ../sass/_partials/_shorty.scss */
+/* line 26, ../sass/_partials/_shorty.scss */
 .shorty #intro footer h3 {
   display: none;
 }
 @media screen and (min-width: 900px) {
-  /* line 30, ../sass/_partials/_shorty.scss */
+  /* line 33, ../sass/_partials/_shorty.scss */
   .shorty #street-lower #map-wrapper {
     font-size: 13px;
   }
 }
-/* line 36, ../sass/_partials/_shorty.scss */
+/* line 39, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header {
   height: 6rem;
 }
-/* line 38, ../sass/_partials/_shorty.scss */
+/* line 41, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header h1 {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
-/* line 42, ../sass/_partials/_shorty.scss */
+/* line 45, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-content {
   height: -webkit-calc(100% - rem(6));
   height: calc(100% - rem(6));
 }
 @media screen and (min-width: 800px) {
-  /* line 45, ../sass/_partials/_shorty.scss */
+  /* line 48, ../sass/_partials/_shorty.scss */
   .shorty #fence #fence-content .circles {
     width: 40rem;
     height: 20rem;
   }
-  /* line 48, ../sass/_partials/_shorty.scss */
+  /* line 51, ../sass/_partials/_shorty.scss */
   .shorty #fence #fence-content .circles .circle {
     width: 11rem;
     height: 11rem;
     margin: 0.3rem;
   }
 }
-/* line 58, ../sass/_partials/_shorty.scss */
+/* line 61, ../sass/_partials/_shorty.scss */
 .shorty #outro wrapper:first-of-type {
   height: -webkit-calc(100% - 53px);
   height: calc(100% - 53px);
 }
-/* line 61, ../sass/_partials/_shorty.scss */
+/* line 64, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing {
   height: 56px;
   padding-top: 0.7rem;
 }
-/* line 64, ../sass/_partials/_shorty.scss */
+/* line 67, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing p {
   font-size: .9rem;
   padding-bottom: .6rem;
   line-height: 0rem;
 }
-/* line 70, ../sass/_partials/_shorty.scss */
+/* line 73, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing #logos img {
   width: 90px;
 }
-/* line 73, ../sass/_partials/_shorty.scss */
+/* line 76, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing #logos #thinkeco-logo {
   margin-left: 10px;
 }
@@ -323,7 +327,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @-skrollr-keyframes skylineanim4 {
-  _bskyline-3500 {
+  _bskyline-3600 {
     transform: translate(0, -100%);
   }
   _bskyline-4500 {
@@ -380,15 +384,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: translate(0, 0%);
     background-position: 50% 0%;
   }
+  _bnycave-1200 {
+    background-position: 50% 100%;
+  }
   _anycave {
     transform: translate(0, 0%);
-    background-position: 50% 100%;
   }
   _bstreetlower {
     transform: translate(0, -100%);
   }
 }
-/* line 186, ../sass/_partials/_skrollr.scss */
+/* line 188, ../sass/_partials/_skrollr.scss */
 #street-lower {
   -skrollr-animation-name: streetloweranim1;
 }
@@ -413,22 +419,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-/* line 211, ../sass/_partials/_skrollr.scss */
+/* line 213, ../sass/_partials/_skrollr.scss */
 #taxi {
   -skrollr-animation-name: taxianim1;
 }
 
-/* line 214, ../sass/_partials/_skrollr.scss */
+/* line 216, ../sass/_partials/_skrollr.scss */
 #circle-1 {
   -skrollr-animation-name: circle1anim2;
 }
 
-/* line 217, ../sass/_partials/_skrollr.scss */
+/* line 219, ../sass/_partials/_skrollr.scss */
 #circle-2 {
   -skrollr-animation-name: circle2anim3;
 }
 
-/* line 220, ../sass/_partials/_skrollr.scss */
+/* line 222, ../sass/_partials/_skrollr.scss */
 #circle-3 {
   -skrollr-animation-name: circle3anim4;
 }
@@ -437,7 +443,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _afence {
+  _abridge {
     transform: translate(0, 100%);
     display: block;
   }
@@ -449,7 +455,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: translate(0, 0%);
     display: block;
   }
-  _bbridge {
+  _boutro {
     transform: translate(0, -100%);
     display: none;
   }
@@ -484,7 +490,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     opacity: 1;
   }
 }
-/* line 277, ../sass/_partials/_skrollr.scss */
+/* line 279, ../sass/_partials/_skrollr.scss */
 #fence {
   -skrollr-animation-name: fenceanim1;
 }
@@ -504,12 +510,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: translate(0, 0%);
     display: block;
   }
-  _btaxi {
+  _bbridge {
     transform: translate(0, -100%);
     display: none;
   }
 }
-/* line 302, ../sass/_partials/_skrollr.scss */
+/* line 304, ../sass/_partials/_skrollr.scss */
 #bridge {
   -skrollr-animation-name: bridgeanim1;
 }
@@ -518,7 +524,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _ataxi {
+  _afence {
     transform: translate(0, 100%);
     display: block;
   }
@@ -529,12 +535,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: translate(0, 0%);
     display: block;
   }
-  _boutro {
+  _btaxi {
     transform: translate(0, -100%);
     display: none;
   }
 }
-/* line 327, ../sass/_partials/_skrollr.scss */
+/* line 329, ../sass/_partials/_skrollr.scss */
 #outro {
   -skrollr-animation-name: outroanim1;
 }
@@ -543,7 +549,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _abridge {
+  _ataxi {
     transform: translate(0, 100%);
     display: block;
   }
@@ -552,15 +558,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
   }
 }
-/* line 346, ../sass/_partials/_skrollr.scss */
+/* line 348, ../sass/_partials/_skrollr.scss */
 #ie #intro {
   -skrollr-animation-name: introanim1ie;
 }
-/* line 349, ../sass/_partials/_skrollr.scss */
+/* line 351, ../sass/_partials/_skrollr.scss */
 #ie #intro-year {
   -skrollr-animation-name: introyear1ie;
 }
-/* line 352, ../sass/_partials/_skrollr.scss */
+/* line 354, ../sass/_partials/_skrollr.scss */
 #ie #intro-text {
   -skrollr-animation-name: introtext1ie;
 }
@@ -588,7 +594,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -100%;
   }
 }
-/* line 383, ../sass/_partials/_skrollr.scss */
+/* line 385, ../sass/_partials/_skrollr.scss */
 #ie #street-upper {
   -skrollr-animation-name: streetupperanim1ie;
 }
@@ -606,19 +612,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -100%;
   }
 }
-/* line 402, ../sass/_partials/_skrollr.scss */
+/* line 404, ../sass/_partials/_skrollr.scss */
 #ie #skyline {
   -skrollr-animation-name: skylineanim1ie;
 }
-/* line 405, ../sass/_partials/_skrollr.scss */
+/* line 407, ../sass/_partials/_skrollr.scss */
 #ie #one {
   -skrollr-animation-name: skylineanim2ie;
 }
-/* line 408, ../sass/_partials/_skrollr.scss */
+/* line 410, ../sass/_partials/_skrollr.scss */
 #ie #two {
   -skrollr-animation-name: skylineanim3ie;
 }
-/* line 411, ../sass/_partials/_skrollr.scss */
+/* line 413, ../sass/_partials/_skrollr.scss */
 #ie #three {
   -skrollr-animation-name: skylineanim4ie;
 }
@@ -637,11 +643,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @-skrollr-keyframes skylineanim2ie {
-  _bskyline-500 {
+  _bskyline-800 {
     top: 0%;
     display: block;
   }
-  _bskyline-1500 {
+  _bskyline-1400 {
     top: -100%;
     display: none;
   }
@@ -650,18 +656,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _bskyline-1500 {
+  _bskyline-1800 {
     top: 0%;
     display: block;
   }
-  _bskyline-2500 {
+  _bskyline-2400 {
     top: -100%;
   }
-  _bskyline-2500 {
+  _bskyline-3100 {
     top: -100%;
     display: block;
   }
-  _bskyline-3500 {
+  _bskyline-3600 {
     top: -200%;
     display: none;
   }
@@ -670,7 +676,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _bskyline-3500 {
+  _bskyline-3600 {
     top: -100%;
     display: block;
   }
@@ -678,7 +684,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -200%;
   }
 }
-/* line 475, ../sass/_partials/_skrollr.scss */
+/* line 477, ../sass/_partials/_skrollr.scss */
 #ie #brick {
   -skrollr-animation-name: brickanim1ie;
 }
@@ -702,7 +708,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-/* line 499, ../sass/_partials/_skrollr.scss */
+/* line 501, ../sass/_partials/_skrollr.scss */
 #ie #nycave {
   -skrollr-animation-name: nycaveanim1ie;
 }
@@ -714,15 +720,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: 0%;
     background-position: 50% 0%;
   }
+  _bnycave-1200 {
+    background-position: 50% 100%;
+  }
   _anycave {
     top: 0%;
-    background-position: 50% 100%;
   }
   _bstreetlower {
     top: -100%;
   }
 }
-/* line 520, ../sass/_partials/_skrollr.scss */
+/* line 524, ../sass/_partials/_skrollr.scss */
 #ie #street-lower {
   -skrollr-animation-name: streetloweranim1ie;
 }
@@ -746,19 +754,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-/* line 545, ../sass/_partials/_skrollr.scss */
+/* line 549, ../sass/_partials/_skrollr.scss */
 #ie #taxi {
   -skrollr-animation-name: taxianim1ie;
 }
-/* line 548, ../sass/_partials/_skrollr.scss */
+/* line 552, ../sass/_partials/_skrollr.scss */
 #ie #circle-1 {
   -skrollr-animation-name: circle1anim2ie;
 }
-/* line 551, ../sass/_partials/_skrollr.scss */
+/* line 555, ../sass/_partials/_skrollr.scss */
 #ie #circle-2 {
   -skrollr-animation-name: circle2anim3ie;
 }
-/* line 554, ../sass/_partials/_skrollr.scss */
+/* line 558, ../sass/_partials/_skrollr.scss */
 #ie #circle-3 {
   -skrollr-animation-name: circle3anim4ie;
 }
@@ -766,7 +774,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _afence {
+  _abridge {
     top: 100%;
     display: block;
   }
@@ -777,7 +785,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: 0%;
     display: block;
   }
-  _bbridge {
+  _boutro {
     top: -100%;
     display: none;
   }
@@ -806,7 +814,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     visibility: visible;
   }
 }
-/* line 604, ../sass/_partials/_skrollr.scss */
+/* line 608, ../sass/_partials/_skrollr.scss */
 #ie #fence {
   -skrollr-animation-name: fenceanim1ie;
 }
@@ -825,12 +833,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: 0%;
     display: block;
   }
-  _btaxi {
+  _bbridge {
     top: -100%;
     display: none;
   }
 }
-/* line 628, ../sass/_partials/_skrollr.scss */
+/* line 632, ../sass/_partials/_skrollr.scss */
 #ie #bridge {
   -skrollr-animation-name: bridgeanim1ie;
 }
@@ -838,7 +846,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _ataxi {
+  _afence {
     top: 100%;
     display: block;
   }
@@ -849,12 +857,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: 0%;
     display: block;
   }
-  _boutro {
+  _btaxi {
     top: -100%;
     display: none;
   }
 }
-/* line 653, ../sass/_partials/_skrollr.scss */
+/* line 657, ../sass/_partials/_skrollr.scss */
 #ie #outro {
   -skrollr-animation-name: outroanim1ie;
 }
@@ -862,7 +870,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _abridge {
+  _ataxi {
     top: 100%;
     display: block;
   }
@@ -982,7 +990,7 @@ header #tagline {
     min-height: 53%;
     width: 14rem;
     top: 35%;
-    left: 4rem;
+    left: 3.5rem;
   }
 }
 @media screen and (min-width: 950px) {
@@ -1068,25 +1076,26 @@ header #tagline {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-shadow: rgba(0, 0, 0, 0.15) 2px 1px 5px;
   text-align: center;
 }
-/* line 140, ../sass/_partials/_components/_panel1.scss */
+/* line 139, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-year {
   display: block;
   font-size: 5.6rem;
   font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.15) 2px 1px 5px;
 }
 /* line 145, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-text {
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   display: block;
   margin: 5px auto;
   width: 24rem;
+  text-shadow: rgba(0, 0, 0, 0.6) 2px 0px 2px;
 }
 @media screen and (max-width: 399px) {
-  /* line 153, ../sass/_partials/_components/_panel1.scss */
+  /* line 154, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-year {
     font-size: 5rem;
   }
@@ -1097,17 +1106,17 @@ header #tagline {
     min-width: 100%;
     margin: auto;
   }
-  /* line 160, ../sass/_partials/_components/_panel1.scss */
+  /* line 161, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-year {
     font-size: 7rem;
     font-weight: 700;
     display: inline-block;
   }
-  /* line 165, ../sass/_partials/_components/_panel1.scss */
+  /* line 166, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-text {
     font-size: 0.9rem;
     line-height: 1.75rem;
-    width: 27rem;
+    width: 28rem;
     text-align: left;
     margin-left: 2%;
     display: inline-block;
@@ -1119,21 +1128,21 @@ header #tagline {
     min-width: 100%;
     margin: auto;
   }
-  /* line 177, ../sass/_partials/_components/_panel1.scss */
+  /* line 178, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-year {
     font-size: 8.3rem;
     margin-left: 1.5rem;
     font-weight: 700;
     display: inline-block;
   }
-  /* line 183, ../sass/_partials/_components/_panel1.scss */
+  /* line 184, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-text {
     font-size: 1rem;
     line-height: em(1.8);
     text-align: left;
     margin-left: 1.2rem;
     display: inline-block;
-    width: 30rem;
+    width: 31rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1142,14 +1151,14 @@ header #tagline {
     min-width: 100%;
     margin: auto;
   }
-  /* line 195, ../sass/_partials/_components/_panel1.scss */
+  /* line 196, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-year {
     font-size: 9rem;
     font-weight: 700;
     display: inline-block;
     margin-left: 3rem;
   }
-  /* line 201, ../sass/_partials/_components/_panel1.scss */
+  /* line 202, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-text {
     font-size: 1.1rem;
     line-height: 2rem;
@@ -1160,7 +1169,7 @@ header #tagline {
   }
 }
 
-/* line 214, ../sass/_partials/_components/_panel1.scss */
+/* line 215, ../sass/_partials/_components/_panel1.scss */
 footer {
   position: absolute;
   bottom: 0;
@@ -1168,19 +1177,38 @@ footer {
   background-color: #fff;
   text-align: center;
   color: #0E9DD8;
-  padding: 1%;
   font-style: italic;
   height: 11%;
   font-size: .8em;
 }
 /* line 225, ../sass/_partials/_components/_panel1.scss */
-footer h3 {
+footer #footer-content {
+  height: 5em;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 1600px) {
+  /* line 225, ../sass/_partials/_components/_panel1.scss */
+  footer #footer-content {
+    height: 4em;
+  }
+}
+/* line 236, ../sass/_partials/_components/_panel1.scss */
+footer #footer-content h3 {
   display: block;
   margin-top: 0.2rem;
 }
-/* line 229, ../sass/_partials/_components/_panel1.scss */
-footer #intro-scroll {
+/* line 240, ../sass/_partials/_components/_panel1.scss */
+footer #footer-content #intro-scroll {
   display: none;
+}
+/* line 243, ../sass/_partials/_components/_panel1.scss */
+footer #footer-content #intro-scroll:hover {
+  cursor: pointer;
 }
 
 /* line 1, ../sass/_partials/_components/_panel2.scss */
@@ -1336,7 +1364,7 @@ footer #intro-scroll {
 /* line 96, ../sass/_partials/_components/_panel2.scss */
 .street-text p {
   font-size: 1rem;
-  width: 21.4rem;
+  width: 21.6rem;
   line-height: 1.8rem;
   margin: auto;
   margin-top: 3%;
@@ -1360,7 +1388,7 @@ footer #intro-scroll {
   /* line 116, ../sass/_partials/_components/_panel2.scss */
   .street-text p {
     font-size: 1rem;
-    width: 49rem;
+    width: 51rem;
     line-height: 1.9rem;
     margin-top: 1%;
   }
@@ -1460,7 +1488,7 @@ footer #intro-scroll {
 #skyline .skyline-content h1 {
   margin: 0;
   display: block;
-  width: 90%;
+  width: 87%;
   top: 50%;
   left: 50%;
   margin-right: -50%;
@@ -1489,8 +1517,9 @@ footer #intro-scroll {
 @media screen and (min-width: 1200px) {
   /* line 42, ../sass/_partials/_components/_panel3.scss */
   #skyline .skyline-content h1 {
-    font-size: 4.2rem;
+    font-size: 3.5rem;
     line-height: 4.2rem;
+    width: 75%;
   }
 }
 
@@ -1640,12 +1669,12 @@ footer #intro-scroll {
   position: absolute;
   right: 1em;
   width: 12em;
-  font-size: 2.3em;
+  font-size: 2.2em;
   line-height: 1.3em;
   text-align: left;
   display: block;
   margin: 0;
-  top: 50%;
+  top: 45%;
   left: 61%;
   margin-right: -50%;
   -moz-transform: translate(-50%, -50%);
@@ -1661,12 +1690,19 @@ footer #intro-scroll {
     left: 52%;
   }
 }
-/* line 103, ../sass/_partials/_components/_panel4.scss */
+@media screen and (min-width: 1200px) {
+  /* line 82, ../sass/_partials/_components/_panel4.scss */
+  #brick #brick-content > div:first-of-type h1 {
+    width: 13em;
+    top: 50%;
+  }
+}
+/* line 107, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:nth-of-type(2n) {
   right: 0;
   position: absolute;
 }
-/* line 106, ../sass/_partials/_components/_panel4.scss */
+/* line 110, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:nth-of-type(2n) .circle {
   width: 22.5em;
   height: 22.5em;
@@ -1683,13 +1719,13 @@ footer #intro-scroll {
   padding: 5%;
 }
 @media screen and (max-width: 399px) {
-  /* line 106, ../sass/_partials/_components/_panel4.scss */
+  /* line 110, ../sass/_partials/_components/_panel4.scss */
   #brick #brick-content > div:nth-of-type(2n) .circle {
     width: 18.5em;
     height: 18.5em;
   }
 }
-/* line 122, ../sass/_partials/_components/_panel4.scss */
+/* line 126, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:nth-of-type(2n) .circle h1 {
   font-size: 7.2em;
   padding: auto;
@@ -2279,9 +2315,12 @@ footer #intro-scroll {
 /* line 30, ../sass/_partials/_components/_panel7.scss */
 #taxi #taxi-header h1 {
   font-size: 220%;
+  line-height: 110%;
   text-shadow: rgba(0, 0, 0, 0.15) 4px 4px 5px;
+  width: 75%;
+  margin: auto;
 }
-/* line 35, ../sass/_partials/_components/_panel7.scss */
+/* line 38, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper {
   width: 90%;
   height: 34em;
@@ -2293,13 +2332,13 @@ footer #intro-scroll {
   right: 0;
 }
 @media screen and (min-width: 550px) {
-  /* line 35, ../sass/_partials/_components/_panel7.scss */
+  /* line 38, ../sass/_partials/_components/_panel7.scss */
   #taxi #circle-wrapper {
     height: 11em;
     width: 91%;
   }
 }
-/* line 48, ../sass/_partials/_components/_panel7.scss */
+/* line 51, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles {
   width: 100%;
   height: 100%;
@@ -2309,7 +2348,7 @@ footer #intro-scroll {
   -webkit-transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
 }
-/* line 53, ../sass/_partials/_components/_panel7.scss */
+/* line 56, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] {
   vertical-align: middle;
   text-align: center;
@@ -2324,18 +2363,18 @@ footer #intro-scroll {
   position: relative;
 }
 @media screen and (min-width: 550px) {
-  /* line 53, ../sass/_partials/_components/_panel7.scss */
+  /* line 56, ../sass/_partials/_components/_panel7.scss */
   #taxi #circle-wrapper #circles [id^="circle-"] {
     display: inline-block;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 53, ../sass/_partials/_components/_panel7.scss */
+  /* line 56, ../sass/_partials/_components/_panel7.scss */
   #taxi #circle-wrapper #circles [id^="circle-"] {
     margin: auto 2%;
   }
 }
-/* line 69, ../sass/_partials/_components/_panel7.scss */
+/* line 72, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] > div {
   letter-spacing: .01em;
   width: 85%;
@@ -2347,14 +2386,14 @@ footer #intro-scroll {
   left: 0;
   right: 0;
 }
-/* line 79, ../sass/_partials/_components/_panel7.scss */
+/* line 82, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] > div h1 {
   font-size: 3.5em;
   border-bottom: #0091d9 0.05em solid;
   margin-bottom: 0.08em;
   padding-bottom: .08em;
 }
-/* line 85, ../sass/_partials/_components/_panel7.scss */
+/* line 88, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] > div p {
   line-height: 1.4em;
   font-size: .7em;
@@ -2399,24 +2438,31 @@ footer #intro-scroll {
 /* line 13, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-header {
   width: 100%;
-  height: 8rem;
+  height: 9rem;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
 }
 /* line 18, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-header h1 {
   font-weight: 700;
-  font-size: 2rem;
-  padding-top: 4rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  padding-top: 3rem;
 }
-/* line 24, ../sass/_partials/_components/_panel8.scss */
+@media screen and (min-width: 680px) {
+  /* line 13, ../sass/_partials/_components/_panel8.scss */
+  #fence #fence-header {
+    font-size: 2rem;
+  }
+}
+/* line 28, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content {
   width: 100%;
   height: -webkit-calc(100% - 8rem);
   height: calc(100% - 8rem);
   position: relative;
 }
-/* line 28, ../sass/_partials/_components/_panel8.scss */
+/* line 32, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles {
   width: 27rem;
   height: 16rem;
@@ -2432,7 +2478,7 @@ footer #intro-scroll {
   -webkit-transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
 }
-/* line 39, ../sass/_partials/_components/_panel8.scss */
+/* line 43, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.9);
@@ -2450,27 +2496,27 @@ footer #intro-scroll {
   background-size: 60%;
   -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-/* line 49, ../sass/_partials/_components/_panel8.scss */
+/* line 53, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle:hover {
   background-color: #0091d9;
 }
-/* line 52, ../sass/_partials/_components/_panel8.scss */
+/* line 56, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#abc {
-  background-image: url("../assets/logo_abc.svg");
-}
-/* line 54, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle#abc:hover {
-  background-image: url("../assets/logo_abc_white.svg");
+  background-image: url("../assets/logo_abcnews.svg");
 }
 /* line 58, ../sass/_partials/_components/_panel8.scss */
+#fence #fence-content .circles .circle#abc:hover {
+  background-image: url("../assets/logo_abc_whitenews.svg");
+}
+/* line 62, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#fox {
   background-image: url("../assets/logo_fox.svg");
 }
-/* line 60, ../sass/_partials/_components/_panel8.scss */
+/* line 64, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#fox:hover {
   background-image: url("../assets/logo_fox_white.svg");
 }
-/* line 64, ../sass/_partials/_components/_panel8.scss */
+/* line 68, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#gothamist {
   background-image: url("../assets/logo_gothamist.svg");
   background-position: 50% 52%;
@@ -2480,11 +2526,11 @@ footer #intro-scroll {
   background-size: 53%;
   -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-/* line 68, ../sass/_partials/_components/_panel8.scss */
+/* line 72, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#gothamist:hover {
   background-image: url("../assets/logo_gothamist_white.svg");
 }
-/* line 72, ../sass/_partials/_components/_panel8.scss */
+/* line 76, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#nyc1 {
   background-image: url("../assets/logo_nyc1.svg");
   background-position: 50% 61%;
@@ -2494,19 +2540,19 @@ footer #intro-scroll {
   background-size: 45%;
   -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-/* line 76, ../sass/_partials/_components/_panel8.scss */
+/* line 80, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#nyc1:hover {
   background-image: url("../assets/logo_nyc1_white.svg");
 }
-/* line 80, ../sass/_partials/_components/_panel8.scss */
+/* line 84, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#wired {
   background-image: url("../assets/logo_wired.svg");
 }
-/* line 82, ../sass/_partials/_components/_panel8.scss */
+/* line 86, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#wired:hover {
   background-image: url("../assets/logo_wired_white.svg");
 }
-/* line 86, ../sass/_partials/_components/_panel8.scss */
+/* line 90, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#dna {
   background-image: url("../assets/logo_dna.svg");
   -webkit-background-size: 46%;
@@ -2515,29 +2561,29 @@ footer #intro-scroll {
   background-size: 46%;
   -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-/* line 89, ../sass/_partials/_components/_panel8.scss */
+/* line 93, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#dna:hover {
   background-image: url("../assets/logo_dna_white.svg");
 }
 @media screen and (min-width: 550px) {
-  /* line 28, ../sass/_partials/_components/_panel8.scss */
+  /* line 32, ../sass/_partials/_components/_panel8.scss */
   #fence #fence-content .circles {
     width: 34rem;
     height: 23rem;
   }
-  /* line 97, ../sass/_partials/_components/_panel8.scss */
+  /* line 101, ../sass/_partials/_components/_panel8.scss */
   #fence #fence-content .circles .circle {
     width: 10rem;
     height: 10rem;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 28, ../sass/_partials/_components/_panel8.scss */
+  /* line 32, ../sass/_partials/_components/_panel8.scss */
   #fence #fence-content .circles {
     width: 54rem;
     height: 34rem;
   }
-  /* line 105, ../sass/_partials/_components/_panel8.scss */
+  /* line 109, ../sass/_partials/_components/_panel8.scss */
   #fence #fence-content .circles .circle {
     width: 15rem;
     height: 15rem;
@@ -2589,8 +2635,8 @@ footer #intro-scroll {
 #bridge #bridge-content {
   font-size: 1.6rem;
   font-weight: 700;
-  line-height: 2rem;
-  width: 85%;
+  line-height: 2.2rem;
+  width: 88%;
   height: 80%;
   position: absolute;
   top: 0;
@@ -2639,7 +2685,7 @@ footer #intro-scroll {
   /* line 31, ../sass/_partials/_components/_panel9.scss */
   #bridge #bridge-content h1 {
     font-size: 3.5rem;
-    line-height: 3.5rem;
+    line-height: 3.7rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2690,7 +2736,7 @@ footer #intro-scroll {
 }
 /* line 88, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row:first-of-type .col:last-of-type {
-  color: #015fd0;
+  color: #fff;
 }
 /* line 93, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row.small {
@@ -2725,7 +2771,7 @@ footer #intro-scroll {
 #bridge #bridge-content .table .row .col h2 {
   font-size: 4rem;
   display: block;
-  margin-top: em(1);
+  margin-top: 3rem;
 }
 @media screen and (min-width: 550px) {
   /* line 114, ../sass/_partials/_components/_panel9.scss */
@@ -2738,15 +2784,14 @@ footer #intro-scroll {
   /* line 114, ../sass/_partials/_components/_panel9.scss */
   #bridge #bridge-content .table .row .col h2 {
     font-size: 7.2rem;
-    margin-top: 7.2rem;
   }
 }
-/* line 128, ../sass/_partials/_components/_panel9.scss */
+/* line 127, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:first-of-type {
   float: left;
   text-align: left;
 }
-/* line 132, ../sass/_partials/_components/_panel9.scss */
+/* line 131, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:last-of-type {
   float: right;
   text-align: right;
@@ -2838,21 +2883,21 @@ footer #intro-scroll {
 /* line 56, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a {
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
+  width: 3.3rem;
+  height: 3.3rem;
   background-color: #fff;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  margin: 0.2rem;
+  margin: 0.3rem;
   position: relative;
 }
 @media screen and (min-width: 800px) {
   /* line 56, ../sass/_partials/_components/_panel10.scss */
   #outro .wrapper .outro-content #social-media #outro-social-media div > a {
-    width: 4rem;
-    height: 4rem;
-    margin: 0.7rem;
+    width: 4.7rem;
+    height: 4.7rem;
+    margin: 0.6rem;
   }
 }
 /* line 69, ../sass/_partials/_components/_panel10.scss */
@@ -2876,7 +2921,7 @@ footer #intro-scroll {
 @media screen and (min-width: 800px) {
   /* line 75, ../sass/_partials/_components/_panel10.scss */
   #outro .wrapper .outro-content #social-media #outro-social-media div > a .fa {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
 }
 /* line 87, ../sass/_partials/_components/_panel10.scss */
@@ -2896,7 +2941,7 @@ footer #intro-scroll {
 @media screen and (min-width: 800px) {
   /* line 93, ../sass/_partials/_components/_panel10.scss */
   #outro .wrapper .outro-content #social-media #outro-social-media div > a#facebook .fa {
-    top: 20%;
+    top: 23%;
   }
 }
 /* line 99, ../sass/_partials/_components/_panel10.scss */
@@ -2920,41 +2965,30 @@ footer #intro-scroll {
   }
 }
 /* line 111, ../sass/_partials/_components/_panel10.scss */
-#outro .wrapper .outro-content #social-media #outro-social-media div > a#pinterest {
-  background-image: url("../assets/logo_pinterest.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: 45%;
-  -moz-background-size: 45%;
-  -o-background-size: 45%;
-  background-size: 45%;
-  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
-}
-/* line 117, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#email .fa {
   font-size: 1.8rem;
   top: 17%;
 }
 @media screen and (min-width: 800px) {
-  /* line 117, ../sass/_partials/_components/_panel10.scss */
+  /* line 111, ../sass/_partials/_components/_panel10.scss */
   #outro .wrapper .outro-content #social-media #outro-social-media div > a#email .fa {
-    font-size: 2rem;
+    font-size: 2.3rem;
     top: 23%;
   }
 }
-/* line 128, ../sass/_partials/_components/_panel10.scss */
+/* line 122, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content h3 {
   color: #015fd0;
   font-weight: 600;
   font-size: 1.3rem;
 }
 @media screen and (min-width: 800px) {
-  /* line 128, ../sass/_partials/_components/_panel10.scss */
+  /* line 122, ../sass/_partials/_components/_panel10.scss */
   #outro .wrapper .outro-content h3 {
     font-size: 1rem;
   }
 }
-/* line 139, ../sass/_partials/_components/_panel10.scss */
+/* line 133, ../sass/_partials/_components/_panel10.scss */
 #outro #closing {
   padding-top: 0.5rem;
   width: 100%;
@@ -2963,7 +2997,7 @@ footer #intro-scroll {
   bottom: 0px;
   background-color: #fff;
 }
-/* line 146, ../sass/_partials/_components/_panel10.scss */
+/* line 140, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p {
   text-align: center;
   font-size: 1rem;
@@ -2975,31 +3009,31 @@ footer #intro-scroll {
   padding: 0.4rem;
 }
 @media screen and (min-width: 800px) {
-  /* line 146, ../sass/_partials/_components/_panel10.scss */
+  /* line 140, ../sass/_partials/_components/_panel10.scss */
   #outro #closing p {
     position: absolute;
     text-align: left;
   }
 }
-/* line 159, ../sass/_partials/_components/_panel10.scss */
+/* line 153, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p > a {
   color: #015fd0;
   text-decoration: none;
 }
-/* line 162, ../sass/_partials/_components/_panel10.scss */
+/* line 156, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p > a:hover {
   text-decoration: underline;
 }
-/* line 167, ../sass/_partials/_components/_panel10.scss */
+/* line 161, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos {
   margin: auto;
 }
-/* line 169, ../sass/_partials/_components/_panel10.scss */
+/* line 163, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos #thinkeco-logo {
   margin-left: 20px;
 }
 @media screen and (min-width: 800px) {
-  /* line 167, ../sass/_partials/_components/_panel10.scss */
+  /* line 161, ../sass/_partials/_components/_panel10.scss */
   #outro #closing #logos {
     position: absolute;
     right: 0;

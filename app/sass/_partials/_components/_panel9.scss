@@ -19,8 +19,8 @@
 	#bridge-content {	
 		font-size: rem(1.6);
 		font-weight: 700;
-		line-height: rem(2);
-		width: 85%;
+		line-height: rem(2.2);
+		width: 88%;
 		height: 80%;
 		position: absolute;
 		top: 0;
@@ -52,7 +52,7 @@
 			}
 			@include break-between($panel4-text-break2, $main-break-xxtrlg){
 				font-size: rem(3.5);
-				line-height: rem(3.5);
+				line-height: rem(3.7);
 			}
 			@include break-min($main-break-xxtrlg) {
 				font-size: rem(3.8);
@@ -86,7 +86,7 @@
 				    	.col{
 				    		margin-top: rem(.3);
 					    	&:last-of-type{
-					    		color: $deep_blue;
+					    		color: $white;
 				    		}
 			    		}
 				}

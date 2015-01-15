@@ -24,16 +24,16 @@ $(document).ready(function () {
 	beforeBrick = afterSkyline + transition,
 	afterBrick = beforeBrick + panel * 0.85,
 	beforeNycave = afterBrick + transition,
-	afterNycave = beforeNycave + panel/0.75,
+	afterNycave = beforeNycave + panel,
 	beforeStreetLower = afterNycave + transition,
 	afterStreetLower = beforeStreetLower + panel*2.9,
 	beforeFence = afterStreetLower + transition,
 	afterFence = beforeFence + panel,
-	beforeTaxi = afterFence + transition,
-	afterTaxi = beforeTaxi + panel/0.65,
-	beforeBridge = afterTaxi + transition,
+	beforeBridge = afterFence + transition,
 	afterBridge = beforeBridge + panel/0.75,
-	beforeOutro = afterBridge + transition,
+	beforeTaxi = afterBridge + transition,
+	afterTaxi = beforeTaxi + panel/0.65,
+	beforeOutro = afterTaxi + transition,
 	afterOutro = beforeOutro + panel,
 
 	scrollTime = 3500;
@@ -44,13 +44,13 @@ $(document).ready(function () {
 	    }, scrollTime);
 	});
 	
-	 scroll = skrollr.init({
+	var scroll = skrollr.init({
 		// scale: 2,
 		// forceHeight: false,
 		render: function(data) {
 	        //Debugging - Log the current scroll position.
 			console.log(data.curTop); 
-	     	if(data.curTop >= 33700){
+	     	if(data.curTop >= 37300){
 	    	    	$('#circles #circle-1 h1 span').prop('Counter',0).animate({
 	    	        Counter: 6.5
 	    	    	}, {
@@ -61,26 +61,26 @@ $(document).ready(function () {
 	    	          }
 	       	 	});
 	    	}
-	    	if(data.curTop >= 34700){
+	    	if(data.curTop >= 38300){
 	    		$('#circles #circle-2 h1 span').prop('Counter',0).animate({
-	    	        Counter: 25
-	    	    	}, {
-	    	        duration: 2000,
-	    	        easing: 'swing',
-	    	        step: function (now) {
-	    	            $(this).text(Math.ceil(now));
-	    	        }
+	    	          Counter: 1
+	    	      		}, {
+	    	          duration: 2000,
+	    	          easing: 'swing',
+	    	          step: function (now) {
+	    	              $(this).text(Math.ceil(now));
+	    	          }
 	       	 });			       	 
 	    }
-    		if(data.curTop >= 35750){
+    		if(data.curTop >= 39200){
     			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
-    		        Counter: 1
-    		    	}, {
-    		        duration: 2000,
-    		        easing: 'swing',
-    		        step: function (now) {
-    		            $(this).text(Math.ceil(now));
-    		        }
+		           Counter: 25
+		      	 	}, {
+		           duration: 2000,
+		           easing: 'swing',
+		           step: function (now) {
+		               $(this).text(Math.ceil(now));
+		           }
     	   		});			       	 
     		}
 		},        

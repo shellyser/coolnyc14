@@ -42,7 +42,7 @@
 		h1 {
 			margin: 0;
 			display: block;
-			width: 90%;
+			width: 87%;
 			top: 50%;
 			left: 50%;
 			margin-right: -50%;
@@ -59,8 +59,9 @@
 			line-height: rem(3.5);
 		}
 		@include break-min($main-break-xxtrlg) {
-			font-size: rem(4.2);
+			font-size: rem(3.5);
 			line-height: rem(4.2);
+			width: 75%;
 			}
 
 		}
