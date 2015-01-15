@@ -35,6 +35,14 @@ $(document).ready(function () {
 	afterBridge = beforeBridge + panel/0.75,
 	beforeOutro = afterBridge + transition,
 	afterOutro = beforeOutro + panel,
+
+	scrollTime = 3500;
+
+	$("#intro-scroll").click(function() {
+	    $('body, html').animate({
+	        scrollTop: beforeStreetUpper + 1064 + 'px'
+	    }, scrollTime);
+	});
 	
 	 scroll = skrollr.init({
 		// scale: 2,

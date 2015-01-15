@@ -95,66 +95,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0.3rem;
 }
 /* line 20, ../sass/_partials/_shorty.scss */
+.shorty #intro footer #footer-content {
+  height: 3.5em;
+}
+/* line 23, ../sass/_partials/_shorty.scss */
 .shorty #intro footer img {
   width: 33px;
 }
-/* line 23, ../sass/_partials/_shorty.scss */
+/* line 26, ../sass/_partials/_shorty.scss */
 .shorty #intro footer h3 {
   display: none;
 }
 @media screen and (min-width: 900px) {
-  /* line 30, ../sass/_partials/_shorty.scss */
+  /* line 33, ../sass/_partials/_shorty.scss */
   .shorty #street-lower #map-wrapper {
     font-size: 13px;
   }
 }
-/* line 36, ../sass/_partials/_shorty.scss */
+/* line 39, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header {
   height: 6rem;
 }
-/* line 38, ../sass/_partials/_shorty.scss */
+/* line 41, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header h1 {
   padding-top: 3rem;
 }
-/* line 42, ../sass/_partials/_shorty.scss */
+/* line 45, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-content {
   height: -webkit-calc(100% - rem(6));
   height: calc(100% - rem(6));
 }
 @media screen and (min-width: 800px) {
-  /* line 45, ../sass/_partials/_shorty.scss */
+  /* line 48, ../sass/_partials/_shorty.scss */
   .shorty #fence #fence-content .circles {
     width: 40rem;
     height: 20rem;
   }
-  /* line 48, ../sass/_partials/_shorty.scss */
+  /* line 51, ../sass/_partials/_shorty.scss */
   .shorty #fence #fence-content .circles .circle {
     width: 11rem;
     height: 11rem;
     margin: 0.3rem;
   }
 }
-/* line 58, ../sass/_partials/_shorty.scss */
+/* line 61, ../sass/_partials/_shorty.scss */
 .shorty #outro wrapper:first-of-type {
   height: -webkit-calc(100% - 53px);
   height: calc(100% - 53px);
 }
-/* line 61, ../sass/_partials/_shorty.scss */
+/* line 64, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing {
   height: 56px;
   padding-top: 0.7rem;
 }
-/* line 64, ../sass/_partials/_shorty.scss */
+/* line 67, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing p {
   font-size: .9rem;
   padding-bottom: .6rem;
   line-height: 0rem;
 }
-/* line 70, ../sass/_partials/_shorty.scss */
+/* line 73, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing #logos img {
   width: 90px;
 }
-/* line 73, ../sass/_partials/_shorty.scss */
+/* line 76, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing #logos #thinkeco-logo {
   margin-left: 10px;
 }
@@ -1169,19 +1173,38 @@ footer {
   background-color: #fff;
   text-align: center;
   color: #0E9DD8;
-  padding: 1%;
   font-style: italic;
   height: 11%;
   font-size: .8em;
 }
-/* line 226, ../sass/_partials/_components/_panel1.scss */
-footer h3 {
+/* line 225, ../sass/_partials/_components/_panel1.scss */
+footer #footer-content {
+  height: 5em;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 1600px) {
+  /* line 225, ../sass/_partials/_components/_panel1.scss */
+  footer #footer-content {
+    height: 4em;
+  }
+}
+/* line 236, ../sass/_partials/_components/_panel1.scss */
+footer #footer-content h3 {
   display: block;
   margin-top: 0.2rem;
 }
-/* line 230, ../sass/_partials/_components/_panel1.scss */
-footer #intro-scroll {
+/* line 240, ../sass/_partials/_components/_panel1.scss */
+footer #footer-content #intro-scroll {
   display: none;
+}
+/* line 243, ../sass/_partials/_components/_panel1.scss */
+footer #footer-content #intro-scroll:hover {
+  cursor: pointer;
 }
 
 /* line 1, ../sass/_partials/_components/_panel2.scss */
@@ -2726,7 +2749,7 @@ footer #intro-scroll {
 #bridge #bridge-content .table .row .col h2 {
   font-size: 4rem;
   display: block;
-  margin-top: em(1);
+  margin-top: 3rem;
 }
 @media screen and (min-width: 550px) {
   /* line 114, ../sass/_partials/_components/_panel9.scss */
@@ -2739,15 +2762,14 @@ footer #intro-scroll {
   /* line 114, ../sass/_partials/_components/_panel9.scss */
   #bridge #bridge-content .table .row .col h2 {
     font-size: 7.2rem;
-    margin-top: 7.2rem;
   }
 }
-/* line 128, ../sass/_partials/_components/_panel9.scss */
+/* line 127, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:first-of-type {
   float: left;
   text-align: left;
 }
-/* line 132, ../sass/_partials/_components/_panel9.scss */
+/* line 131, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:last-of-type {
   float: right;
   text-align: right;
@@ -2839,21 +2861,21 @@ footer #intro-scroll {
 /* line 56, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a {
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
+  width: 3.3rem;
+  height: 3.3rem;
   background-color: #fff;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  margin: 0.2rem;
+  margin: 0.3rem;
   position: relative;
 }
 @media screen and (min-width: 800px) {
   /* line 56, ../sass/_partials/_components/_panel10.scss */
   #outro .wrapper .outro-content #social-media #outro-social-media div > a {
-    width: 4rem;
-    height: 4rem;
-    margin: 0.7rem;
+    width: 4.7rem;
+    height: 4.7rem;
+    margin: 0.6rem;
   }
 }
 /* line 69, ../sass/_partials/_components/_panel10.scss */
@@ -2877,7 +2899,7 @@ footer #intro-scroll {
 @media screen and (min-width: 800px) {
   /* line 75, ../sass/_partials/_components/_panel10.scss */
   #outro .wrapper .outro-content #social-media #outro-social-media div > a .fa {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
 }
 /* line 87, ../sass/_partials/_components/_panel10.scss */
@@ -2897,7 +2919,7 @@ footer #intro-scroll {
 @media screen and (min-width: 800px) {
   /* line 93, ../sass/_partials/_components/_panel10.scss */
   #outro .wrapper .outro-content #social-media #outro-social-media div > a#facebook .fa {
-    top: 20%;
+    top: 23%;
   }
 }
 /* line 99, ../sass/_partials/_components/_panel10.scss */
@@ -2921,41 +2943,30 @@ footer #intro-scroll {
   }
 }
 /* line 111, ../sass/_partials/_components/_panel10.scss */
-#outro .wrapper .outro-content #social-media #outro-social-media div > a#pinterest {
-  background-image: url("../assets/logo_pinterest.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: 45%;
-  -moz-background-size: 45%;
-  -o-background-size: 45%;
-  background-size: 45%;
-  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
-}
-/* line 117, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#email .fa {
   font-size: 1.8rem;
   top: 17%;
 }
 @media screen and (min-width: 800px) {
-  /* line 117, ../sass/_partials/_components/_panel10.scss */
+  /* line 111, ../sass/_partials/_components/_panel10.scss */
   #outro .wrapper .outro-content #social-media #outro-social-media div > a#email .fa {
-    font-size: 2rem;
+    font-size: 2.3rem;
     top: 23%;
   }
 }
-/* line 128, ../sass/_partials/_components/_panel10.scss */
+/* line 122, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content h3 {
   color: #015fd0;
   font-weight: 600;
   font-size: 1.3rem;
 }
 @media screen and (min-width: 800px) {
-  /* line 128, ../sass/_partials/_components/_panel10.scss */
+  /* line 122, ../sass/_partials/_components/_panel10.scss */
   #outro .wrapper .outro-content h3 {
     font-size: 1rem;
   }
 }
-/* line 139, ../sass/_partials/_components/_panel10.scss */
+/* line 133, ../sass/_partials/_components/_panel10.scss */
 #outro #closing {
   padding-top: 0.5rem;
   width: 100%;
@@ -2964,7 +2975,7 @@ footer #intro-scroll {
   bottom: 0px;
   background-color: #fff;
 }
-/* line 146, ../sass/_partials/_components/_panel10.scss */
+/* line 140, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p {
   text-align: center;
   font-size: 1rem;
@@ -2976,31 +2987,31 @@ footer #intro-scroll {
   padding: 0.4rem;
 }
 @media screen and (min-width: 800px) {
-  /* line 146, ../sass/_partials/_components/_panel10.scss */
+  /* line 140, ../sass/_partials/_components/_panel10.scss */
   #outro #closing p {
     position: absolute;
     text-align: left;
   }
 }
-/* line 159, ../sass/_partials/_components/_panel10.scss */
+/* line 153, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p > a {
   color: #015fd0;
   text-decoration: none;
 }
-/* line 162, ../sass/_partials/_components/_panel10.scss */
+/* line 156, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p > a:hover {
   text-decoration: underline;
 }
-/* line 167, ../sass/_partials/_components/_panel10.scss */
+/* line 161, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos {
   margin: auto;
 }
-/* line 169, ../sass/_partials/_components/_panel10.scss */
+/* line 163, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos #thinkeco-logo {
   margin-left: 20px;
 }
 @media screen and (min-width: 800px) {
-  /* line 167, ../sass/_partials/_components/_panel10.scss */
+  /* line 161, ../sass/_partials/_components/_panel10.scss */
   #outro #closing #logos {
     position: absolute;
     right: 0;

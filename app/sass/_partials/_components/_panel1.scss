@@ -219,16 +219,30 @@ footer {
     background-color: $white;
     text-align: center;
     color: #0E9DD8;
-    padding: 1%;
     font-style: italic;
     height: $footer_height;
     font-size: .8em;
-    h3{
-        display:block;
-        margin-top: rem(0.2);
-    }
-    #intro-scroll {
-        display: none;
-    }    
+    #footer-content {
+        height: 5em;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @include break-min($main-break-xxxtrlg){
+            height: 4em;
+        }   
+        h3{
+            display:block;
+            margin-top: rem(0.2);
+        }
+        #intro-scroll {
+            display: none;
+        } 
+        #intro-scroll:hover {
+            cursor: pointer;
+        } 
+    }   
 }
     
