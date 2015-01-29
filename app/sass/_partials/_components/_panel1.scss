@@ -157,7 +157,7 @@ header {
         }
         @include break-min($panel4-text-break3){
             min-width: 100%;
-            margin: auto;
+            margin: auto 2%;
             #intro-year {
                 font-size: rem(7);
                 font-weight: 700;
@@ -166,7 +166,7 @@ header {
             #intro-text {
                font-size: rem(0.9);
                line-height: rem(1.75);
-               width: rem(28);
+               width: rem(30);
                text-align: left;
                margin-left: 2%;
                display: inline-block;
@@ -183,11 +183,11 @@ header {
               }
                #intro-text {
                     font-size: rem(1);
-                    line-height: em(1.8);
+                    line-height: rem(1.8);
                     text-align: left;
                     margin-left: rem(1.2);
                     display: inline-block;
-                    width: rem(31);
+                    width: rem(33);
                 }
             }   
             @include break-min($main-break-xxtrlg) {
@@ -205,7 +205,7 @@ header {
                     text-align: left;
                     margin-left: rem(2.3);
                     display: inline-block;
-                    width: rem(34);
+                    width: rem(36);
                 }
             }   
 

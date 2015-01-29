@@ -1104,7 +1104,7 @@ header #tagline {
   /* line 132, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section {
     min-width: 100%;
-    margin: auto;
+    margin: auto 2%;
   }
   /* line 161, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-year {
@@ -1116,7 +1116,7 @@ header #tagline {
   #intro-content-bottom #intro-section #intro-text {
     font-size: 0.9rem;
     line-height: 1.75rem;
-    width: 28rem;
+    width: 30rem;
     text-align: left;
     margin-left: 2%;
     display: inline-block;
@@ -1138,11 +1138,11 @@ header #tagline {
   /* line 184, ../sass/_partials/_components/_panel1.scss */
   #intro-content-bottom #intro-section #intro-text {
     font-size: 1rem;
-    line-height: em(1.8);
+    line-height: 1.8rem;
     text-align: left;
     margin-left: 1.2rem;
     display: inline-block;
-    width: 31rem;
+    width: 33rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1165,7 +1165,7 @@ header #tagline {
     text-align: left;
     margin-left: 2.3rem;
     display: inline-block;
-    width: 34rem;
+    width: 36rem;
   }
 }
 
@@ -1364,7 +1364,7 @@ footer #footer-content #intro-scroll:hover {
 /* line 96, ../sass/_partials/_components/_panel2.scss */
 .street-text p {
   font-size: 1rem;
-  width: 21.6rem;
+  width: 22.6rem;
   line-height: 1.8rem;
   margin: auto;
   margin-top: 3%;
@@ -1377,7 +1377,7 @@ footer #footer-content #intro-scroll:hover {
   /* line 107, ../sass/_partials/_components/_panel2.scss */
   .street-text p {
     font-size: 1rem;
-    width: 35rem;
+    width: 36rem;
   }
 }
 @media screen and (min-width: 780px) {
@@ -1388,7 +1388,7 @@ footer #footer-content #intro-scroll:hover {
   /* line 116, ../sass/_partials/_components/_panel2.scss */
   .street-text p {
     font-size: 1rem;
-    width: 51rem;
+    width: 51.5rem;
     line-height: 1.9rem;
     margin-top: 1%;
   }
@@ -1488,7 +1488,7 @@ footer #footer-content #intro-scroll:hover {
 #skyline .skyline-content h1 {
   margin: 0;
   display: block;
-  width: 87%;
+  width: 93%;
   top: 50%;
   left: 50%;
   margin-right: -50%;
@@ -1507,6 +1507,12 @@ footer #footer-content #intro-scroll:hover {
     text-shadow: rgba(0, 0, 0, 0.15) 6px 4px 5px;
   }
 }
+@media screen and (max-width: 399px) {
+  /* line 42, ../sass/_partials/_components/_panel3.scss */
+  #skyline .skyline-content h1 {
+    width: 73%;
+  }
+}
 @media screen and (min-width: 900px) {
   /* line 42, ../sass/_partials/_components/_panel3.scss */
   #skyline .skyline-content h1 {
@@ -1519,7 +1525,7 @@ footer #footer-content #intro-scroll:hover {
   #skyline .skyline-content h1 {
     font-size: 3.5rem;
     line-height: 4.2rem;
-    width: 75%;
+    width: 92%;
   }
 }
 
@@ -1625,7 +1631,7 @@ footer #footer-content #intro-scroll:hover {
 /* line 54, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content img {
   position: absolute;
-  top: 22em;
+  top: 23em;
   left: 3%;
   width: 67%;
   z-index: 1;
@@ -1647,8 +1653,8 @@ footer #footer-content #intro-scroll:hover {
 @media screen and (min-width: 1600px) {
   /* line 54, ../sass/_partials/_components/_panel4.scss */
   #brick #brick-content img {
-    left: 7%;
-    width: 63%;
+    left: 4.8%;
+    width: 72%;
   }
 }
 /* line 73, ../sass/_partials/_components/_panel4.scss */
@@ -1727,7 +1733,8 @@ footer #footer-content #intro-scroll:hover {
 }
 /* line 126, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:nth-of-type(2n) .circle h1 {
-  font-size: 7.2em;
+  font-size: 7em;
+  line-height: .5em;
   padding: auto;
   display: block;
   position: absolute;
@@ -1736,7 +1743,11 @@ footer #footer-content #intro-scroll:hover {
   left: 0;
   top: 0;
   bottom: 0;
-  height: 1em;
+  height: 1.1em;
+}
+/* line 138, ../sass/_partials/_components/_panel4.scss */
+#brick #brick-content > div:nth-of-type(2n) .circle h1 em {
+  font-size: .45em;
 }
 
 /* line 1, ../sass/_partials/_components/_panel5.scss */
@@ -2524,7 +2535,7 @@ footer #footer-content #intro-scroll:hover {
   -moz-background-size: 60%;
   -o-background-size: 60%;
   background-size: 60%;
-  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
 }
 /* line 53, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle:hover {
@@ -2538,7 +2549,7 @@ footer #footer-content #intro-scroll:hover {
   -moz-background-size: 52%;
   -o-background-size: 52%;
   background-size: 52%;
-  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
 }
 /* line 60, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#abc:hover {
@@ -2560,7 +2571,7 @@ footer #footer-content #intro-scroll:hover {
   -moz-background-size: 53%;
   -o-background-size: 53%;
   background-size: 53%;
-  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
 }
 /* line 74, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#gothamist:hover {
@@ -2574,7 +2585,7 @@ footer #footer-content #intro-scroll:hover {
   -moz-background-size: 45%;
   -o-background-size: 45%;
   background-size: 45%;
-  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
 }
 /* line 82, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#nyc1:hover {
@@ -2595,7 +2606,7 @@ footer #footer-content #intro-scroll:hover {
   -moz-background-size: 46%;
   -o-background-size: 46%;
   background-size: 46%;
-  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
 }
 /* line 95, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#dna:hover {
@@ -2734,7 +2745,7 @@ footer #footer-content #intro-scroll:hover {
 /* line 63, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table {
   width: 100%;
-  height: 28rem;
+  height: 33rem;
   margin: auto;
   position: absolute;
   top: 0;
@@ -2758,7 +2769,7 @@ footer #footer-content #intro-scroll:hover {
 #bridge #bridge-content .table .row:first-of-type {
   font-size: 0.85rem;
   vertical-align: bottom;
-  height: 3rem;
+  height: 4rem;
 }
 @media screen and (min-width: 550px) {
   /* line 79, ../sass/_partials/_components/_panel9.scss */
@@ -2771,63 +2782,69 @@ footer #footer-content #intro-scroll:hover {
   margin-top: 0.3rem;
 }
 /* line 88, ../sass/_partials/_components/_panel9.scss */
+#bridge #bridge-content .table .row:first-of-type .col:first-of-type {
+  padding-top: 1.2rem;
+}
+/* line 91, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row:first-of-type .col:last-of-type {
   color: #fff;
+  width: 50%;
+  line-height: 1.5rem;
 }
-/* line 93, ../sass/_partials/_components/_panel9.scss */
+/* line 98, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row.small {
   background-image: url("../assets/dotted_line.png");
   background-repeat: no-repeat;
   height: 1rem;
 }
-/* line 98, ../sass/_partials/_components/_panel9.scss */
+/* line 103, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row.line {
   height: 0.3rem;
   background-color: #fff;
 }
-/* line 101, ../sass/_partials/_components/_panel9.scss */
+/* line 106, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row.line .blue-line {
   background-color: #015fd0;
   width: 100%;
   height: 100%;
 }
-/* line 107, ../sass/_partials/_components/_panel9.scss */
+/* line 112, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col {
   display: block;
   width: 9rem;
   height: 100%;
 }
 @media screen and (min-width: 550px) {
-  /* line 107, ../sass/_partials/_components/_panel9.scss */
+  /* line 112, ../sass/_partials/_components/_panel9.scss */
   #bridge #bridge-content .table .row .col {
     width: 14rem;
   }
 }
-/* line 114, ../sass/_partials/_components/_panel9.scss */
+/* line 119, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col h2 {
   font-size: 4rem;
   display: block;
   margin-top: 3rem;
 }
 @media screen and (min-width: 550px) {
-  /* line 114, ../sass/_partials/_components/_panel9.scss */
+  /* line 119, ../sass/_partials/_components/_panel9.scss */
   #bridge #bridge-content .table .row .col h2 {
     font-size: 6rem;
     margin-top: 2.8rem;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  /* line 114, ../sass/_partials/_components/_panel9.scss */
+  /* line 119, ../sass/_partials/_components/_panel9.scss */
   #bridge #bridge-content .table .row .col h2 {
     font-size: 7.2rem;
   }
 }
-/* line 127, ../sass/_partials/_components/_panel9.scss */
+/* line 132, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:first-of-type {
   float: left;
   text-align: left;
 }
-/* line 131, ../sass/_partials/_components/_panel9.scss */
+/* line 136, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:last-of-type {
   float: right;
   text-align: right;
@@ -3088,7 +3105,7 @@ footer #footer-content #intro-scroll:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
   background-repeat: no-repeat;
   background-position: center center;
 }

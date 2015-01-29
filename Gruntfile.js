@@ -5,7 +5,7 @@
 //   css: stylesheet
 //   compass: _scss
 //   javascript: js
-//   images: img
+//   images: assets
 //   fonts: fonts
 
 module.exports = function (grunt) {
@@ -21,59 +21,60 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
     watch: {
-      options: {
-          livereload: true,
-      },
-      sass: {
-          files: ['<%= yeoman.app %>/sass/**/*.{scss,sass}'],
-          tasks: ['compass:server', 'autoprefixer:server'],
-          options: {
-              livereload: false
-          }
-      },
-      css: {
-          files: ['<%= yeoman.app %>/stylesheet.css'],
-          options: {
-              // livereload: 35729,
-              nospawn: true
-          }
-      },
-      html: {
-          files: ['<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
-          '!<%= yeoman.app %>/_bower_components/**/*'],
-          options: {
-              nospawn: true,
-           },
-          tasks: ['jekyll:server']
-            }
+      // options: {
+      //     livereload: true,
+      // },
+      // sass: {
+      //     files: ['<%= yeoman.app %>/sass/**/*.{scss,sass}'],
+      //     tasks: ['compass:server', 'autoprefixer:server'],
+      //     options: {
+      //         livereload: false
+      //     }
+      // },
+      // css: {
+      //     files: ['<%= yeoman.app %>/stylesheet.css'],
+      //     options: {
+      //         // livereload: 35729,
+      //         nospawn: true
+      //     }
+      // },
+      // html: {
+      //     files: ['<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
+      //     '!<%= yeoman.app %>/_bower_components/**/*'],
+      //     options: {
+      //         nospawn: true,
+      //      },
+      //     tasks: ['jekyll:server']
+      //       }
 
-      // compass: {
-      //   files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
-      //   tasks: ['compass:server', 'autoprefixer:server']
-      // },
-      // autoprefixer: {
-      //   files: ['<%= yeoman.app %>/css/**/*.css'],
-      //   tasks: ['copy:stageCss', 'autoprefixer:server']
-      // },
-      // jekyll: {
-      //   files: [
-      //     '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
-      //     '!<%= yeoman.app %>/_bower_components/**/*'
-      //   ],
-      //   tasks: ['jekyll:server']
-      // },
-      // livereload: {
-      //   options: {
-      //     livereload: '<%= connect.options.livereload %>'
-      //   },
-      //   files: [
-      //     '.jekyll/**/*.html',
-      //     '{.tmp/css/**/*.css}/<%= stylesheet %>/**/*.css',
-      //     '{.tmp,<%= yeoman.app %>}/<%= js %>/**/*.js',
-      //     '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
-      //   ]
-      // }
+      compass: {
+        files: ['<%= yeoman.app %>/sass/**/*.{scss,sass}'],
+        tasks: ['compass:server', 'autoprefixer:server']
+      },
+      autoprefixer: {
+        files: ['<%= yeoman.app %>/stylesheet/**/*.css'],
+        tasks: ['copy:stageCss', 'autoprefixer:server']
+      },
+      jekyll: {
+        files: [
+          '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
+          '!<%= yeoman.app %>/_bower_components/**/*'
+        ],
+        tasks: ['jekyll:server']
+      },
+      livereload: {
+        options: {
+          livereload: '<%= connect.options.livereload %>'
+        },
+        files: [
+          '.jekyll/**/*.html',
+          '{.tmp/css/**/*.css}/<%= stylesheet %>/**/*.css',
+          '{.tmp,<%= yeoman.app %>}/<%= js %>/**/*.js',
+          '<%= yeoman.app %>/assets/**/*.{gif,jpg,jpeg,png,svg,webp}'
+        ]
+      }
     },
+
     connect: {
       options: {
         port: 9000,
@@ -135,23 +136,23 @@ module.exports = function (grunt) {
         bundleExec: true,
         sassDir: '<%= yeoman.app %>/sass',
         cssDir: '.tmp/css',
-        imagesDir: '<%= yeoman.app %>/img',
+        imagesDir: '<%= yeoman.app %>/assets',
         javascriptsDir: '<%= yeoman.app %>/js',
         relativeAssets: false,
-        httpImagesPath: '/img',
-        httpGeneratedImagesPath: '/img/generated',
+        httpImagesPath: '/assets',
+        httpGeneratedImagesPath: '/assets/generated',
         outputStyle: 'expanded',
         raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
       },
       dist: {
         options: {
-          generatedImagesDir: '<%= yeoman.dist %>/img/generated'
+          generatedImagesDir: '<%= yeoman.dist %>/assets/generated'
         }
       },
       server: {
         options: {
           debugInfo: true,
-          generatedImagesDir: '.tmp/img/generated'
+          generatedImagesDir: '.tmp/assets/generated'
         }
       }
     },
@@ -311,7 +312,7 @@ module.exports = function (grunt) {
           src: [
             '<%= yeoman.dist %>/js/**/*.js',
             '<%= yeoman.dist %>/css/**/*.css',
-            '<%= yeoman.dist %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
+            '<%= yeoman.dist %>/assets/**/*.{gif,jpg,jpeg,png,svg,webp}',
             '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
           ]
         }]

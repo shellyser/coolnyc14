@@ -74,7 +74,7 @@ $(document).ready(function () {
 	    }
     		if(data.curTop >= 39200){
     			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
-		           Counter: 25
+		           Counter: 20
 		      	 	}, {
 		           duration: 2000,
 		           easing: 'swing',
@@ -147,7 +147,7 @@ $(document).ready(function () {
 	  });
 
     //set html with class shorty if window height is smaller than 800px
-	if (winH < 600){
+	if (winH < 800){
 		$('html').addClass('shorty');
 	}
 	else{
@@ -202,7 +202,7 @@ $(window).resize(function () {
 
     // $('#fence-content').css({"width": winWR - (winWR * 0.2) + 'px'});
     // $('#fence-content').css({"height": winHR - (winHR * 0.2) + 'px'});
-    if (winHR < 600){
+    if (winHR < 800){
     	$('html').addClass('shorty');
     }
     else{

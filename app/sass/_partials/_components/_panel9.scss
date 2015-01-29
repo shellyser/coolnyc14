@@ -62,7 +62,7 @@
 		}
 		.table {
 			width: 100%;
-			height: rem(28);
+			height: rem(33);
 			margin: auto;
 			position: absolute;
 			top: 0;
@@ -79,14 +79,19 @@
 				&:first-of-type{
 					font-size: rem(.85);
 					vertical-align: bottom;
-					height: rem(3);
+					height: rem(4);
 					@include break-min($panel3-text-break) {
 			    			font-size: rem(1.2);
 				    	}
 				    	.col{
 				    		margin-top: rem(.3);
+				    		&:first-of-type{
+				    			padding-top: 1.2rem;
+				    		}
 					    	&:last-of-type{
 					    		color: $white;
+					    		width: 50%;
+					    		line-height: 1.5rem;	
 				    		}
 			    		}
 				}

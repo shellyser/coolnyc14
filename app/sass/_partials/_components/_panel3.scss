@@ -42,7 +42,7 @@
 		h1 {
 			margin: 0;
 			display: block;
-			width: 87%;
+			width: 93%;
 			top: 50%;
 			left: 50%;
 			margin-right: -50%;
@@ -54,6 +54,9 @@
 			line-height: rem(2.4);
 			@include text-shadow($black_15 6px 4px 5px); 
 		}
+		@include break-max($main-break){
+			width: 73%;
+		}
 		@include break-min($main-break-xtrlg) {
 			font-size: rem(3.08);
 			line-height: rem(3.5);
@@ -61,7 +64,7 @@
 		@include break-min($main-break-xxtrlg) {
 			font-size: rem(3.5);
 			line-height: rem(4.2);
-			width: 75%;
+			width: 92%;
 			}
 
 		}

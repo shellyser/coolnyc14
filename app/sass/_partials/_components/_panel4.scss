@@ -53,7 +53,7 @@
 	    }
 	    img {
 	    	position: absolute;
-	    	top: 22em;
+	    	top: 23em;
 	    	left: 3%;
 	    	width: 67%;
 	    	z-index: 1;
@@ -66,8 +66,8 @@
 	    		width: 60%;
 	    	}
 	    	@include break-min($main-break-xxxtrlg){
-	    		left: 7%;
-	    		width: 63%;
+	    		left: 4.8%;
+	    		width: 72%;
 	    	}
 	    }
 		> div{
@@ -124,7 +124,8 @@
 						height: 18.5em;
 					}
 					h1 {
-						font-size: 7.2em;
+						font-size: 7em;
+						line-height: .5em;
 						padding: auto;
 						display: block;
 						position: absolute;
@@ -133,7 +134,10 @@
 						left: 0;
 						top: 0;
 						bottom: 0;
-						height: 1em;
+						height: 1.1em;
+						em{
+							font-size: .45em;
+						}
 					}
 				}
 			}
