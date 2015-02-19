@@ -242,6 +242,7 @@ $modern: false;
 				}
 				&#wired{
 					background-image: url("../assets/logo_wired.png");
+					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 					&:hover{
 						background-image: url("../assets/logo_wired_white.png");
 					}
@@ -249,6 +250,7 @@ $modern: false;
 				&#dna{
 					background-image: url("../assets/logo_dna.png");
 					@include background-size(46%);
+					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 					&:hover{
 						background-image: url("../assets/logo_dna_white.png");
 					}

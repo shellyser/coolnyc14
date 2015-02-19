@@ -50,7 +50,7 @@
 
 @-skrollr-keyframes streetupperanim1 {
     skrollr-0 {
-        display: block;
+        display: none;
     }
     _bstreetupper--500 {
         @include transform(translate(0, 100%));
@@ -58,6 +58,7 @@
     }
     _bstreetupper {
         @include transform(translate(0, 0%));
+        display: block;
     }
     _astreetupper {
         @include transform(translate(0, 0%));

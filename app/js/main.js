@@ -34,14 +34,15 @@ $(document).ready(function () {
 	beforeTaxi = afterBridge + transition,
 	afterTaxi = beforeTaxi + panel/0.65,
 	beforeOutro = afterTaxi + transition,
-	afterOutro = beforeOutro + panel,
-
-	scrollTime = 3500;
+	afterOutro = beforeOutro + panel;
 
 	$("#intro-scroll").click(function() {
 	    $('body, html').animate({
-	        scrollTop: beforeStreetUpper + 1064 + 'px'
-	    }, scrollTime);
+	        scrollTop: beforeStreetUpper + 2200 + 'px'
+	    }, {
+		    duration: 12000,
+		    easing: 'swing'
+	    });
 	});
 	
 	var scroll = skrollr.init({
@@ -52,13 +53,13 @@ $(document).ready(function () {
 			console.log(data.curTop); 
 	     	if(data.curTop >= 37300){
 	    	    	$('#circles #circle-1 h1 span').prop('Counter',0).animate({
-	    	        Counter: 6.5
+	    	        Counter: 6
 	    	    	}, {
 	    	        duration: 2000,
 	    	        easing: 'swing',
-	    	        progress: function(now) {
-	    	            $(this).text(Math.ceil(this.Counter*10)/10);
-	    	          }
+	    	        step: function (now) {
+						$(this).text(Math.ceil(now));
+    	          	}
 	       	 	});
 	    	}
 	    	if(data.curTop >= 38300){
@@ -173,10 +174,6 @@ $(document).ready(function () {
 	//intro fadeIn effects on first slide
 	$('#intro-scroll').delay(1000).fadeIn(2000);
 	$('#intro-title').delay(500).fadeIn(2000);
-
-	//size background-box in slide 8
-	// $('#fence-content').css({"width": winW - (winW * 0.2) + 'px'});
-	// $('#fence-content').css({"height": winH - (winH * 0.2) + 'px'});
 		
 
 });
