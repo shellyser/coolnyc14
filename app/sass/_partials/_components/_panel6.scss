@@ -265,7 +265,7 @@
 	}
 	.layer-5 {
 		top: 28em;
-		right:32.3em;
+		right:32.5em;
 		@include break-max($main-break){
 			top: 17em;
 			right: 24em;
@@ -316,10 +316,10 @@
 			@include break-min($main-break-xtrlg){
 				width: 16em;
 				top: 7em;
-				left: 13.5em;
+				left: 13em;
 			}
 			@include break-min($main-break-xxtrlg){
-				width: 21em;
+				width: 24em;
 			}
 		
 		}	

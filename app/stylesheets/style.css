@@ -2206,7 +2206,7 @@ footer #footer-content #intro-scroll:hover {
 /* line 266, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 {
   top: 28em;
-  right: 32.3em;
+  right: 32.5em;
 }
 @media screen and (max-width: 399px) {
   /* line 266, ../sass/_partials/_components/_panel6.scss */
@@ -2278,13 +2278,13 @@ footer #footer-content #intro-scroll:hover {
   #street-lower .layer-5 p {
     width: 16em;
     top: 7em;
-    left: 13.5em;
+    left: 13em;
   }
 }
 @media screen and (min-width: 1200px) {
   /* line 296, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 p {
-    width: 21em;
+    width: 24em;
   }
 }
 
