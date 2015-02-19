@@ -36,14 +36,22 @@ $(document).ready(function () {
 	beforeOutro = afterTaxi + transition,
 	afterOutro = beforeOutro + panel;
 
-	$("#intro-scroll").click(function() {
-	    $('body, html').animate({
-	        scrollTop: beforeStreetUpper + 2200 + 'px'
-	    }, {
-		    duration: 12000,
-		    easing: 'swing'
-	    });
+
+	$("#intro-scroll").click(function () {
+	    var delay = 2000,
+	        selectors = [ 3000 , 5700 ];
+
+	    (function scrollPage() {
+	        var el = selectors.shift();
+	     	
+	        //animate
+	        $("html,body").animate({ scrollTop: el + 'px' }, 2000, function () {
+	            setTimeout(scrollPage, delay);
+	        });
+	    })();
+
 	});
+
 	
 	var scroll = skrollr.init({
 		// scale: 2,
