@@ -210,7 +210,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @-skrollr-keyframes streetupperanim1 {
   skrollr-0 {
-    display: block;
+    display: none;
   }
   _bstreetupper--500 {
     -webkit-transform: translate(0, 100%);
@@ -220,6 +220,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   _bstreetupper {
     -webkit-transform: translate(0, 0%);
     transform: translate(0, 0%);
+    display: block;
   }
   _astreetupper {
     -webkit-transform: translate(0, 0%);
@@ -232,17 +233,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\0000373}}
 #skyline {
   -skrollr-animation-name: skylineanim1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\0000376}}
 #one {
   -skrollr-animation-name: skylineanim2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\0000379}}
 #two {
   -skrollr-animation-name: skylineanim3;
 }
@@ -300,7 +301,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             transform: translate(0%, -200%);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003133}}
 #brick {
   -skrollr-animation-name: brickanim1;
 }
@@ -329,7 +330,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003157}}
 #nycave {
   -skrollr-animation-name: nycaveanim1;
 }
@@ -356,7 +357,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             transform: translate(0, -100%);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003180}}
 #street-lower {
   -skrollr-animation-name: streetloweranim1;
 }
@@ -385,22 +386,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003204}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003205}}
 #taxi {
   -skrollr-animation-name: taxianim1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003208}}
 #circle-1 {
   -skrollr-animation-name: circle1anim2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003211}}
 #circle-2 {
   -skrollr-animation-name: circle2anim3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003214}}
 #circle-3 {
   -skrollr-animation-name: circle3anim4;
 }
@@ -466,7 +467,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     opacity: 1;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003270}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003271}}
 #fence {
   -skrollr-animation-name: fenceanim1;
 }
@@ -495,7 +496,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003296}}
 #bridge {
   -skrollr-animation-name: bridgeanim1;
 }
@@ -524,7 +525,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003321}}
 #outro {
   -skrollr-animation-name: outroanim1;
 }
@@ -544,15 +545,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003340}}
 #ie #intro {
   -skrollr-animation-name: introanim1ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003343}}
 #ie #intro-year {
   -skrollr-animation-name: introyear1ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003346}}
 #ie #intro-text {
   -skrollr-animation-name: introtext1ie;
 }
@@ -580,7 +581,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -100%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003377}}
 #ie #street-upper {
   -skrollr-animation-name: streetupperanim1ie;
 }
@@ -598,15 +599,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -100%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003396}}
 #ie #skyline {
   -skrollr-animation-name: skylineanim1ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003399}}
 #ie #one {
   -skrollr-animation-name: skylineanim2ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003401}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003402}}
 #ie #two {
   -skrollr-animation-name: skylineanim3ie;
 }
@@ -654,7 +655,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003453}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003454}}
 #ie #brick {
   -skrollr-animation-name: brickanim1ie;
 }
@@ -678,7 +679,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003477}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003478}}
 #ie #nycave {
   -skrollr-animation-name: nycaveanim1ie;
 }
@@ -700,7 +701,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -100%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003500}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003501}}
 #ie #street-lower {
   -skrollr-animation-name: streetloweranim1ie;
 }
@@ -724,19 +725,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003525}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003526}}
 #ie #taxi {
   -skrollr-animation-name: taxianim1ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003528}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003529}}
 #ie #circle-1 {
   -skrollr-animation-name: circle1anim2ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003531}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003532}}
 #ie #circle-2 {
   -skrollr-animation-name: circle2anim3ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003534}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003535}}
 #ie #circle-3 {
   -skrollr-animation-name: circle3anim4ie;
 }
@@ -784,7 +785,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     visibility: visible;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003584}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003585}}
 #ie #fence {
   -skrollr-animation-name: fenceanim1ie;
 }
@@ -808,7 +809,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003608}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003609}}
 #ie #bridge {
   -skrollr-animation-name: bridgeanim1ie;
 }
@@ -832,7 +833,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003633}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003634}}
 #ie #outro {
   -skrollr-animation-name: outroanim1ie;
 }
@@ -2473,29 +2474,31 @@ html section, body section {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003243}}
 #fence #fence-content .circles .circle#wired {
   background-image: url("../assets/logo_wired.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003246}}
 #fence #fence-content .circles .circle#wired:hover {
   background-image: url("../assets/logo_wired_white.png");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003249}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003250}}
 #fence #fence-content .circles .circle#dna {
   background-image: url("../assets/logo_dna.png");
   background-size: 46%;
   -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003252}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003254}}
 #fence #fence-content .circles .circle#dna:hover {
   background-image: url("../assets/logo_dna_white.png");
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003262}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003264}}
 #bridge #bridge-overlay {
   background-color: #0091d9;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003269}}
 #bridge #bridge-content h1 {
   top: 0;
   bottom: 0;
@@ -2504,28 +2507,28 @@ html section, body section {
   margin: auto;
   height: 24px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003278}}
 #bridge #bridge-content .table .row.first {
   vertical-align: bottom;
   height: 36px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003280}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003282}}
 #bridge #bridge-content .table .row.first .col:right {
   color: #015fd0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003286}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003288}}
 #bridge #bridge-content .table .row .col.left {
   float: left;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003292}}
 #bridge #bridge-content .table .row .col.right {
   float: right;
   text-align: right;
   color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003306}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003308}}
 #outro .wrapper .outro-content #social-media #outro-social-media .addthis_toolbox a {
   -ms-behavior: url(/js/polyfills/PIE.htc);
 }
