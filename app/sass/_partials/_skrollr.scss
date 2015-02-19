@@ -78,9 +78,7 @@
  #two{
     -skrollr-animation-name: skylineanim3;
 }
- #three{
-    -skrollr-animation-name: skylineanim4;
-}
+
 
 @-skrollr-keyframes skylineanim1{
 	skrollr-0 {
@@ -105,38 +103,31 @@
 }
 
 @-skrollr-keyframes skylineanim2{
-	_bskyline-800{
+	_bskyline-1000{
 		transform:translate(0,0%);
 	}
-	_bskyline-1400{
+	_bskyline-1600{
 		transform:translate(0,-100%);
 	}
 }
 
 
  @-skrollr-keyframes skylineanim3{
- 	_bskyline-1800{ 
+ 	_bskyline-2000{ 
  		transform:translate(0%,0%); 
  	}
- 	_bskyline-2400{
+ 	_bskyline-2600{
  		transform:translate(0%,-100%); 
  	}
- 	_bskyline-3100{
+ 	_bskyline-3400{
  		transform:translate(0%,-100%); 
  	}
- 	_bskyline-3600{
+ 	_bskyline-4000{
  		transform:translate(0%,-200%); 
  	}
  }	
 
-@-skrollr-keyframes skylineanim4{
-  	_bskyline-3600{
-    		transform:translate(0,-100%);
-    	}
-    	_bskyline-4500{
-    		transform:translate(0,-200%);
-    	}
-    }
+
 
 #brick {
 	 -skrollr-animation-name: brickanim1;
@@ -410,9 +401,7 @@
       #two{
         -skrollr-animation-name: skylineanim3ie;
     }
-      #three{
-        -skrollr-animation-name: skylineanim4ie;
-    }
+
    	
     @-skrollr-keyframes skylineanim1ie {
         _astreetupper {
@@ -430,11 +419,11 @@
     }
 
     @-skrollr-keyframes skylineanim2ie{
-		 _bskyline-800{
+		 _bskyline-1000{
 		    	top: 0%;
 		    	display: block;
 		 }
-	    	_bskyline-1400{
+	    	_bskyline-1600{
 	    		top: -100%;
 	    		display:none;
 	    	}
@@ -444,36 +433,23 @@
     	skrollr-0{
     		display: none;
     	}
-    	_bskyline-1800{ 
+    	_bskyline-2000{ 
     		top: 0%; 
     		display: block;
     	}
-    	_bskyline-2400{
+    	_bskyline-2600{
     		top: -100%; 
     	}
-    	_bskyline-3100{
+    	_bskyline-3400{
     		top: -100%; 
     		display: block;
     	}
-    	_bskyline-3600{
+    	_bskyline-4000{
     		top: -200%; 
     		display: none;
     	}
     }
-
-    @-skrollr-keyframes skylineanim4ie{
-    	skrollr-0{
-    		display: none;
-    	}
-    	_bskyline-3600{
-    		top: -100%;
-    		display: block;
-    	}
-    	_bskyline-4500{
-    		top:-200%;
-    	}
-	}
-
+	
 	#brick {
 		 -skrollr-animation-name: brickanim1ie;
 	}

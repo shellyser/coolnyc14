@@ -187,9 +187,10 @@
 			@include break-min($main-break-xtrlg){
 				left: 6.3em;
 				top: 3.5em;
+				width: 15em;
 			}
 			@include break-min($panel4-text-break6){
-				width: 23em;
+				width: 21em;
 			}
 		}
 	}
@@ -214,15 +215,15 @@
 				width: 13em;
 			}
 			@include break-min($main-break-lg){
-				top: 2.7em;
+				top: 2.7em;	
 			}
 			@include break-min($main-break-xtrlg){
 				top: 3.7em;
 				font-size: 1em;
 			}
 			@include break-min($panel1-text-break2){
-				width: 25em;
-				left: -25.3em;
+				width: 18em;
+				left: -18.8em;
 			}
 		}
 	}
@@ -258,7 +259,7 @@
 				width: 12em;
 			}
 			@include break-min($panel4-text-break6){
-				width: 22em;
+				width: 15em;
 			}
 		}
 	}

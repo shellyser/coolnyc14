@@ -84,7 +84,7 @@
   .street-text {
       position: absolute;
       width: 100%;
-      height: 60%;
+      height: rem(17);
       margin: auto;
       top: 55%;
       left: 50%;
@@ -101,9 +101,6 @@
         margin: auto;
         margin-top: 3%;
       }
-      @include break-min($main-break){
-        height: 73%;
-      }
       @include break-between($panel3-text-break, $panel2-text-break3){
         h1{
           font-size: rem(5.3);
@@ -114,7 +111,7 @@
         }
       }
       @include break-min($panel2-text-break3){
-        height: 58%;
+        height: rem(20);
         h1 {
           font-size: rem(8);
         }
@@ -126,12 +123,12 @@
         }
       }    
       @include break-min($main-break-xxtrlg){
-        height: 75%;
+        height: rem(22);
         h1 {
           font-size: rem(9);
         }
       }
       @include break-min($main-break-xxxtrlg){
-        height: 88%;
+        height: rem(24);
       }
 }
