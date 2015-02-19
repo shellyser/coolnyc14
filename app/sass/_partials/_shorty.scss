@@ -37,9 +37,9 @@
 	}
 	#fence{
 		#fence-header{
-			height: rem(6);
+			height: rem(9);
 			h1{
-				padding-top: 2rem;
+				padding-top: rem(2);
 			}
 		}
 		#fence-content{
@@ -63,11 +63,11 @@
 		}
 		#closing{
 			height: 56px;
-			padding-top: 0.7rem;
+			padding-top: rem(0.7);
 			p{
-				font-size: .9rem;
-				padding-bottom: .6rem;
-				line-height: 0rem;
+				font-size: rem(.9);
+				padding-bottom: rem(.6);
+				line-height: rem(0);
 			}
 			#logos {
 				img {

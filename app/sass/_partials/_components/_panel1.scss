@@ -46,7 +46,7 @@ header {
     margin: auto;
     @include calc(height, "100% - #{$footer_height} - 86px");
     .box {
-        min-height: 38%;
+        min-height: 34%;
         width: rem(3);
         position: absolute;
         border-left: #68d0ef rem(.3) solid;

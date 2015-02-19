@@ -114,7 +114,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 39, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header {
-  height: 6rem;
+  height: 9rem;
 }
 /* line 41, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header h1 {
@@ -150,8 +150,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 67, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing p {
-  font-size: .9rem;
-  padding-bottom: .6rem;
+  font-size: 0.9rem;
+  padding-bottom: 0.6rem;
   line-height: 0rem;
 }
 /* line 73, ../sass/_partials/_shorty.scss */
@@ -951,7 +951,7 @@ header #tagline {
 }
 /* line 48, ../sass/_partials/_components/_panel1.scss */
 #intro-content .box {
-  min-height: 38%;
+  min-height: 34%;
   width: 3rem;
   position: absolute;
   border-left: #68d0ef 0.3rem solid;
@@ -1347,6 +1347,7 @@ footer #footer-content #intro-scroll:hover {
 .street-text {
   position: absolute;
   width: 100%;
+  height: 60%;
   margin: auto;
   top: 55%;
   left: 50%;
@@ -1357,11 +1358,11 @@ footer #footer-content #intro-scroll:hover {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 93, ../sass/_partials/_components/_panel2.scss */
+/* line 94, ../sass/_partials/_components/_panel2.scss */
 .street-text h1 {
   font-size: 3.5rem;
 }
-/* line 96, ../sass/_partials/_components/_panel2.scss */
+/* line 97, ../sass/_partials/_components/_panel2.scss */
 .street-text p {
   font-size: 1rem;
   width: 22.6rem;
@@ -1369,23 +1370,33 @@ footer #footer-content #intro-scroll:hover {
   margin: auto;
   margin-top: 3%;
 }
+@media screen and (min-width: 400px) {
+  /* line 84, ../sass/_partials/_components/_panel2.scss */
+  .street-text {
+    height: 73%;
+  }
+}
 @media screen and (min-width: 550px) and (max-width: 780px) {
-  /* line 104, ../sass/_partials/_components/_panel2.scss */
+  /* line 108, ../sass/_partials/_components/_panel2.scss */
   .street-text h1 {
     font-size: 5.3rem;
   }
-  /* line 107, ../sass/_partials/_components/_panel2.scss */
+  /* line 111, ../sass/_partials/_components/_panel2.scss */
   .street-text p {
     font-size: 1rem;
     width: 36rem;
   }
 }
 @media screen and (min-width: 780px) {
-  /* line 113, ../sass/_partials/_components/_panel2.scss */
+  /* line 84, ../sass/_partials/_components/_panel2.scss */
+  .street-text {
+    height: 58%;
+  }
+  /* line 118, ../sass/_partials/_components/_panel2.scss */
   .street-text h1 {
     font-size: 8rem;
   }
-  /* line 116, ../sass/_partials/_components/_panel2.scss */
+  /* line 121, ../sass/_partials/_components/_panel2.scss */
   .street-text p {
     font-size: 1rem;
     width: 51.5rem;
@@ -1394,9 +1405,19 @@ footer #footer-content #intro-scroll:hover {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 124, ../sass/_partials/_components/_panel2.scss */
+  /* line 84, ../sass/_partials/_components/_panel2.scss */
+  .street-text {
+    height: 75%;
+  }
+  /* line 130, ../sass/_partials/_components/_panel2.scss */
   .street-text h1 {
     font-size: 9rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  /* line 84, ../sass/_partials/_components/_panel2.scss */
+  .street-text {
+    height: 88%;
   }
 }
 
@@ -1480,15 +1501,15 @@ footer #footer-content #intro-scroll:hover {
 }
 /* line 38, ../sass/_partials/_components/_panel3.scss */
 #skyline .skyline-content {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  line-height: 1.9rem;
+  line-height: 2rem;
 }
 /* line 42, ../sass/_partials/_components/_panel3.scss */
 #skyline .skyline-content h1 {
   margin: 0;
   display: block;
-  width: 93%;
+  width: 85%;
   top: 50%;
   left: 50%;
   margin-right: -50%;
@@ -1502,7 +1523,7 @@ footer #footer-content #intro-scroll:hover {
 @media screen and (min-width: 550px) {
   /* line 42, ../sass/_partials/_components/_panel3.scss */
   #skyline .skyline-content h1 {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     line-height: 2.4rem;
     text-shadow: rgba(0, 0, 0, 0.15) 6px 4px 5px;
   }
@@ -1510,22 +1531,24 @@ footer #footer-content #intro-scroll:hover {
 @media screen and (max-width: 399px) {
   /* line 42, ../sass/_partials/_components/_panel3.scss */
   #skyline .skyline-content h1 {
-    width: 73%;
+    width: 89%;
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 900px) {
   /* line 42, ../sass/_partials/_components/_panel3.scss */
   #skyline .skyline-content h1 {
-    font-size: 3.08rem;
-    line-height: 3.5rem;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    width: 70%;
   }
 }
 @media screen and (min-width: 1200px) {
   /* line 42, ../sass/_partials/_components/_panel3.scss */
   #skyline .skyline-content h1 {
-    font-size: 3.5rem;
-    line-height: 4.2rem;
-    width: 92%;
+    font-size: 2.5rem;
+    line-height: 3.2rem;
   }
 }
 
@@ -1680,7 +1703,7 @@ footer #footer-content #intro-scroll:hover {
   text-align: left;
   display: block;
   margin: 0;
-  top: 45%;
+  top: 53%;
   left: 61%;
   margin-right: -50%;
   -moz-transform: translate(-50%, -50%);
@@ -1700,7 +1723,7 @@ footer #footer-content #intro-scroll:hover {
   /* line 82, ../sass/_partials/_components/_panel4.scss */
   #brick #brick-content > div:first-of-type h1 {
     width: 13em;
-    top: 50%;
+    top: 67%;
   }
 }
 /* line 107, ../sass/_partials/_components/_panel4.scss */
@@ -1727,8 +1750,8 @@ footer #footer-content #intro-scroll:hover {
 @media screen and (max-width: 399px) {
   /* line 110, ../sass/_partials/_components/_panel4.scss */
   #brick #brick-content > div:nth-of-type(2n) .circle {
-    width: 18.5em;
-    height: 18.5em;
+    width: 19.5em;
+    height: 19.5em;
   }
 }
 /* line 126, ../sass/_partials/_components/_panel4.scss */
@@ -2025,7 +2048,7 @@ footer #footer-content #intro-scroll:hover {
 #street-lower .layer-1 p {
   left: 6em;
   top: 3.2em;
-  width: 13em;
+  width: 15em;
 }
 @media screen and (max-width: 399px) {
   /* line 140, ../sass/_partials/_components/_panel6.scss */
@@ -2056,8 +2079,8 @@ footer #footer-content #intro-scroll:hover {
 @media screen and (max-width: 399px) {
   /* line 158, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-2 {
-    top: 14em;
-    left: 27em;
+    top: 11em;
+    left: 20em;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -2080,8 +2103,9 @@ footer #footer-content #intro-scroll:hover {
 @media screen and (max-width: 399px) {
   /* line 173, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-2 p {
-    left: -13em;
+    left: 4em;
     top: 2.4em;
+    width: 11em;
   }
 }
 @media screen and (min-width: 600px) {
@@ -2105,17 +2129,23 @@ footer #footer-content #intro-scroll:hover {
     width: 23em;
   }
 }
-/* line 195, ../sass/_partials/_components/_panel6.scss */
+/* line 196, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-3 {
   top: 10em;
   left: 23em;
 }
-/* line 198, ../sass/_partials/_components/_panel6.scss */
+@media screen and (max-width: 399px) {
+  /* line 196, ../sass/_partials/_components/_panel6.scss */
+  #street-lower .layer-3 {
+    left: 15em;
+  }
+}
+/* line 202, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-3 .line {
   top: 3em;
   left: -10.8em;
 }
-/* line 202, ../sass/_partials/_components/_panel6.scss */
+/* line 206, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-3 p {
   top: 2.2em;
   left: -13.3em;
@@ -2123,69 +2153,70 @@ footer #footer-content #intro-scroll:hover {
   text-align: right;
 }
 @media screen and (max-width: 399px) {
-  /* line 202, ../sass/_partials/_components/_panel6.scss */
+  /* line 206, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-3 p {
-    left: 3.5em;
-    top: 2.2em;
+    left: -13.5em;
+    top: 2.8em;
+    width: 13em;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 202, ../sass/_partials/_components/_panel6.scss */
+  /* line 206, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-3 p {
     top: 2.7em;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 202, ../sass/_partials/_components/_panel6.scss */
+  /* line 206, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-3 p {
     top: 3.7em;
     font-size: 1em;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 202, ../sass/_partials/_components/_panel6.scss */
+  /* line 206, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-3 p {
     width: 25em;
     left: -25.3em;
   }
 }
-/* line 224, ../sass/_partials/_components/_panel6.scss */
+/* line 229, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-4 {
   top: 6em;
   left: 28em;
 }
 @media screen and (max-width: 399px) {
-  /* line 224, ../sass/_partials/_components/_panel6.scss */
+  /* line 229, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 {
     top: 3em;
-    left: 24em;
+    left: 20em;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 224, ../sass/_partials/_components/_panel6.scss */
+  /* line 229, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 {
     left: 30em;
   }
 }
-/* line 234, ../sass/_partials/_components/_panel6.scss */
+/* line 239, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-4 .line {
   top: 3em;
   right: -16.4em;
 }
-/* line 238, ../sass/_partials/_components/_panel6.scss */
+/* line 243, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-4 p {
   top: 2.2em;
   left: 3em;
 }
 @media screen and (max-width: 399px) {
-  /* line 238, ../sass/_partials/_components/_panel6.scss */
+  /* line 243, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 p {
-    top: 2.8em;
-    left: -12em;
+    top: 2.5em;
+    left: 4em;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 238, ../sass/_partials/_components/_panel6.scss */
+  /* line 243, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 p {
     top: 2.8em;
     left: 4.5em;
@@ -2193,7 +2224,7 @@ footer #footer-content #intro-scroll:hover {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 238, ../sass/_partials/_components/_panel6.scss */
+  /* line 243, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 p {
     top: 3.8em;
     left: 6.5em;
@@ -2201,75 +2232,75 @@ footer #footer-content #intro-scroll:hover {
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 238, ../sass/_partials/_components/_panel6.scss */
+  /* line 243, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 p {
     width: 22em;
   }
 }
-/* line 260, ../sass/_partials/_components/_panel6.scss */
+/* line 265, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 {
   top: 28em;
   right: 32.3em;
 }
 @media screen and (max-width: 399px) {
-  /* line 260, ../sass/_partials/_components/_panel6.scss */
+  /* line 265, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 {
-    top: 11em;
-    right: 13em;
+    top: 17em;
+    right: 24em;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 260, ../sass/_partials/_components/_panel6.scss */
+  /* line 265, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 {
     top: 29em;
     right: 30.3em;
   }
 }
-/* line 271, ../sass/_partials/_components/_panel6.scss */
+/* line 276, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 .circle-outter {
   width: 12.5em;
   height: 12.5em;
 }
-/* line 275, ../sass/_partials/_components/_panel6.scss */
+/* line 280, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 .circle-inner {
   left: 1.25em;
   top: 1.25em;
   width: 10.1em;
   height: 10.1em;
 }
-/* line 281, ../sass/_partials/_components/_panel6.scss */
+/* line 286, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 h3 {
   font-size: 4em;
   height: 1em;
   color: #000;
 }
-/* line 286, ../sass/_partials/_components/_panel6.scss */
+/* line 291, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 .line {
   right: -22.7em;
   top: 6em;
 }
-/* line 290, ../sass/_partials/_components/_panel6.scss */
+/* line 295, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 p {
   width: 12em;
   top: 4em;
   text-align: left;
   left: 6.1em;
 }
-/* line 295, ../sass/_partials/_components/_panel6.scss */
+/* line 300, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 p em {
   color: #000;
   font-weight: 700;
 }
 @media screen and (max-width: 399px) {
-  /* line 290, ../sass/_partials/_components/_panel6.scss */
+  /* line 295, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 p {
     width: 11em;
-    left: 6.1em;
-    top: 4em;
+    left: 8.8em;
+    top: 4.5em;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 290, ../sass/_partials/_components/_panel6.scss */
+  /* line 295, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 p {
     width: 16em;
     top: 5.5em;
@@ -2277,7 +2308,7 @@ footer #footer-content #intro-scroll:hover {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 290, ../sass/_partials/_components/_panel6.scss */
+  /* line 295, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 p {
     width: 16em;
     top: 7em;
@@ -2285,7 +2316,7 @@ footer #footer-content #intro-scroll:hover {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 290, ../sass/_partials/_components/_panel6.scss */
+  /* line 295, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 p {
     width: 21em;
   }
@@ -2356,9 +2387,9 @@ footer #footer-content #intro-scroll:hover {
 /* line 30, ../sass/_partials/_components/_panel7.scss */
 #taxi #taxi-header h1 {
   font-size: 220%;
-  line-height: 110%;
+  line-height: 125%;
   text-shadow: rgba(0, 0, 0, 0.15) 4px 4px 5px;
-  width: 75%;
+  width: 90%;
   margin: auto;
 }
 /* line 38, ../sass/_partials/_components/_panel7.scss */

@@ -6,7 +6,7 @@ $modern: false;
 @import "style";
 
 .backgroundimage{
-	-ms-behavior: url(/JS/polyfills/backgroundsize.min.htc);
+	-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
 
 [class^="circle"] {
@@ -188,8 +188,11 @@ $modern: false;
 	#circle-wrapper{
 		#circles{
 			[id^="circle-"] {
+				-ms-behavior: url(/js/polyfills/PIE.htc);
 				display: inline-block;
 				float:left;
+				background-color: $black;
+				@include opacity(0.6);
 				> div{
 					width: 85%;
 					height: 55%;
@@ -207,6 +210,7 @@ $modern: false;
 	#fence-content{
 		.circles{
 			.circle{
+				-ms-behavior: url(/js/polyfills/PIE.htc);
 				@include border-radius(50%);
 				background-color: $white;
 				@include opacity(0.9);
@@ -293,3 +297,18 @@ $modern: false;
 	}
 }
 
+#outro{
+	.wrapper{
+		.outro-content{
+			#social-media{
+				#outro-social-media{
+					.addthis_toolbox{
+						a{
+							-ms-behavior: url(/js/polyfills/PIE.htc);
+						}
+					}
+				}
+			}
+		}
+	}
+}

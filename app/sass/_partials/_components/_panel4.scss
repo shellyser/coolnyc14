@@ -88,7 +88,7 @@
 				text-align: left;
 				display: block;
 				margin: 0;
-				top: 45%;
+				top: 53%;
 				left: 61%;
 				margin-right: -50%;
 				@include transform(translate(-50%, -50%));
@@ -96,13 +96,13 @@
 		    		max-width: 16em;
 		    		font-size: 2em;
 		    		left: 52%;
-		    		}
+		    	}
 			    @include break-min($main-break-xxtrlg){
 			    	width: 13em;
-			    	top: 50%;
-			    	}	
+			    	top: 67%;
+			    }	
 
-		    	}
+		    }
 		    }
 			&:nth-of-type(2n) {
 				right: 0;
@@ -120,8 +120,8 @@
 					bottom:0;
 					padding: 5%;
 					@include break-max($main-break) {
-						width: 18.5em;
-						height: 18.5em;
+						width: 19.5em;
+						height: 19.5em;
 					}
 					h1 {
 						font-size: 7em;

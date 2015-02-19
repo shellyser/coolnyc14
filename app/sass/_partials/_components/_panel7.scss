@@ -29,9 +29,9 @@
 		text-align: center;
 		h1 {
 			font-size: 220%;
-			line-height: 110%;
+			line-height: 125%;
 			@include text-shadow(rgba(0, 0, 0, 0.15) 4px 4px 5px); 
-			width: 75%;
+			width: 90%;
 			margin: auto;			
 		}
 	}
