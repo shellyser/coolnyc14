@@ -1762,7 +1762,7 @@ footer #footer-content #intro-scroll:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 60%;
-  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
+  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000353}}
 #fence #fence-content .circles .circle:hover {
@@ -1773,7 +1773,7 @@ footer #footer-content #intro-scroll:hover {
   background-image: url("../assets/logo_abcnews.png");
   background-position: 50% 51%;
   background-size: 52%;
-  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
+  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000360}}
 #fence #fence-content .circles .circle#abc:hover {
@@ -1792,7 +1792,7 @@ footer #footer-content #intro-scroll:hover {
   background-image: url("../assets/logo_gothamist.svg");
   background-position: 50% 52%;
   background-size: 53%;
-  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
+  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000374}}
 #fence #fence-content .circles .circle#gothamist:hover {
@@ -1803,7 +1803,7 @@ footer #footer-content #intro-scroll:hover {
   background-image: url("../assets/logo_nyc1.svg");
   background-position: 50% 61%;
   background-size: 45%;
-  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
+  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000382}}
 #fence #fence-content .circles .circle#nyc1:hover {
@@ -1821,7 +1821,7 @@ footer #footer-content #intro-scroll:hover {
 #fence #fence-content .circles .circle#dna {
   background-image: url("../assets/logo_dna.svg");
   background-size: 46%;
-  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
+  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000395}}
 #fence #fence-content .circles .circle#dna:hover {
@@ -2144,7 +2144,7 @@ footer #footer-content #intro-scroll:hover {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000327}}
 .backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #bridge {
   background-size: cover;
-  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
+  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -2482,7 +2482,7 @@ html section, body section {
 #fence #fence-content .circles .circle#dna {
   background-image: url("../assets/logo_dna.png");
   background-size: 46%;
-  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
+  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie\.scss}line{font-family:\00003252}}
 #fence #fence-content .circles .circle#dna:hover {
