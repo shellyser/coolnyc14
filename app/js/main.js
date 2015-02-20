@@ -50,7 +50,10 @@ $(document).ready(function () {
 	    	clickCounter++;
 	    }
 	    else{
-	    	$("html,body").animate({scrollTop: selectors[1] + 'px' }, 2000);
+	    	$("html,body").animate({scrollTop: selectors[1] + 'px' }, {
+	    		duration: 4000,
+	    		easing: 'swing'
+	    	});
 	    	clickCounter = 0;
 	    }
 	});
