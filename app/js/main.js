@@ -36,20 +36,23 @@ $(document).ready(function () {
 	beforeOutro = afterTaxi + transition,
 	afterOutro = beforeOutro + panel;
 
+	var clickCounter = 0;
 
 	$("#intro-scroll").click(function () {
-	    var delay = 2000,
-	        selectors = [ 3000 , 5700 ];
-
-	    (function scrollPage() {
-	        var el = selectors.shift();
-	     	
-	        //animate
-	        $("html,body").animate({ scrollTop: el + 'px' }, 2000, function () {
-	            setTimeout(scrollPage, delay);
-	        });
-	    })();
-
+	    var selectors = [ 2200 , 5700 ];
+	    var position = document.body.scrollTop;
+	    if(position >= selectors[0]){
+	    	clickCounter++;
+	    } 
+	    if (clickCounter === 0){
+	    	//animate
+	    	$("html,body").animate({scrollTop: selectors[0] + 'px' }, 2000);
+	    	clickCounter++;
+	    }
+	    else{
+	    	$("html,body").animate({scrollTop: selectors[1] + 'px' }, 2000);
+	    	clickCounter = 0;
+	    }
 	});
 
 	
