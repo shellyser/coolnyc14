@@ -83,6 +83,7 @@ $modern: false;
 		}
 	}
 }
+
 #skyline{
 	.triangle-1, .triangle-2{
 		display:none;
@@ -129,9 +130,10 @@ $modern: false;
 			.circle{
 				width: 22.5em;
 				height: 22.5em;
+				@include border-radius(50%);
+				-ms-behavior: url(/js/polyfills/PIE.htc);
 				@include opacity(.6);
 				background-color: $white;
-				@include border-radius(50%);
 				position: absolute;
 				right: 0;
 				margin: auto;

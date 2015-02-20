@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -3207,4 +3203,62 @@ html section, body section {
 /* line 104, ../sass/_partials/_index.scss */
 .no-cssanimations #loading .loading-icon {
   display: none;
+}
+
+/* line 110, ../sass/_partials/_index.scss */
+#main {
+  width: 15px;
+  position: fixed;
+  top: 50%;
+  margin-top: -223px;
+  right: 50px;
+  z-index: 9001;
+  overflow-x: hidden;
+}
+
+/* line 119, ../sass/_partials/_index.scss */
+#main > span {
+  cursor: pointer;
+  position: relative;
+  height: 15px;
+  display: block;
+  margin-bottom: 10px;
+  background-image: url("../assets/nav/inactive.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+/* line 129, ../sass/_partials/_index.scss */
+#main > span > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+/* line 135, ../sass/_partials/_index.scss */
+#main > span[id="play"], #main > span[id="back-to-top"] {
+  background: none;
+}
+
+/* line 138, ../sass/_partials/_index.scss */
+#scrollto {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 9000;
+}
+
+/* line 144, ../sass/_partials/_index.scss */
+#backtotop {
+  position: fixed;
+  top: 80px;
+  right: 50px;
+  z-index: 9000;
+}
+
+/* line 150, ../sass/_partials/_index.scss */
+#top {
+  height: 96px;
+  background-color: #73d9ff;
 }

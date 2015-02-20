@@ -8,6 +8,7 @@
       -moz-border-radius: $value;
       border-radius: $value;
       behavior: url('/js/polyfills/PIE.htc');
+      -ms-behavior: url(/js/polyfills/PIE.htc);
 }
 
 @mixin background-size($value){

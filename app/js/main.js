@@ -58,7 +58,84 @@ $(document).ready(function () {
 	    }
 	});
 
-	
+	var scrollTime = 1500;
+
+	$("#to-intro, #back-to-top").click(function() {
+	    $('body, html').animate({
+	        scrollTop: 0 + 'px'
+	    }, scrollTime);
+	});
+
+	$("#to-street-upper").click(function() {
+	    $('body, html').animate({
+	        scrollTop: afterStreetUpper + 'px'
+	    }, scrollTime);
+	});
+
+	$("#to-skyline").click(function() {
+	    $('body, html').animate({
+	        scrollTop: afterSkyline + 'px'
+	    }, scrollTime);
+	});
+
+	$("#to-brick").click(function() {
+	    $('body, html').animate({
+	        scrollTop: afterBrick + 'px'
+	    }, scrollTime);
+	});
+
+	$("#to-nycave").click(function() {
+	    $('body, html').animate({
+	        scrollTop: afterNycave + 'px'
+	    }, scrollTime);
+	});
+
+	$("#to-street-lower").click(function() {
+	    $('body, html').animate({
+	        scrollTop: afterStreetLower + 'px'
+	    }, scrollTime);
+	});
+
+	$("#to-fence").click(function() {
+	    $('body, html').animate({
+	        scrollTop: afterFence + 'px'
+	    }, scrollTime);
+	});
+
+	$("#to-bridge").click(function() {
+	    $('body, html').animate({
+	        scrollTop: afterBridge + 'px'
+	    }, scrollTime);
+	});
+
+	$("#to-taxi").click(function() {
+	    $('body, html').animate({
+	        scrollTop: afterTaxi + 'px'
+	    }, scrollTime);
+	});
+
+	$("#to-outro").click(function() {
+	    $('body, html').animate({
+	        scrollTop: afterOutro + 'px'
+	    }, scrollTime);
+	});
+
+	var isPlaying = false;
+
+	$("#play, #intro-play").click(function() {
+		if (!isPlaying){
+			isPlaying = true;
+			var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
+		    $('body, html').animate({
+		        scrollTop: afterOutro + 'px'
+		    }, time, 'linear');
+		}
+		else{
+			$('body, html').stop(true);
+			isPlaying = false;
+		}
+	});
+
 	var scroll = skrollr.init({
 		// scale: 2,
 		// forceHeight: false,
@@ -191,6 +268,7 @@ $(document).ready(function () {
 		
 
 });
+
 $(window).resize(function () {
     var winWR = 0, winHR = 0;
 	if( typeof( window.innerWidth ) == 'number' ) {

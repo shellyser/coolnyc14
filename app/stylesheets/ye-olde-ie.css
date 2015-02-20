@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -2383,17 +2379,17 @@ html section, body section {
   margin: auto;
 }
 
-/* line 87, ../sass/ye-olde-ie.scss */
+/* line 88, ../sass/ye-olde-ie.scss */
 #skyline .triangle-1, #skyline .triangle-2 {
   display: none;
 }
-/* line 90, ../sass/ye-olde-ie.scss */
+/* line 91, ../sass/ye-olde-ie.scss */
 #skyline .skyline-container {
   background-color: #000;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 94, ../sass/ye-olde-ie.scss */
+/* line 95, ../sass/ye-olde-ie.scss */
 #skyline .skyline-container .skyline-content h1 {
   position: absolute;
   width: 100%;
@@ -2405,13 +2401,13 @@ html section, body section {
   right: 0;
 }
 
-/* line 108, ../sass/ye-olde-ie.scss */
+/* line 109, ../sass/ye-olde-ie.scss */
 #brick .panel {
   background-color: #fff;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 114, ../sass/ye-olde-ie.scss */
+/* line 115, ../sass/ye-olde-ie.scss */
 #brick #brick-content h1#brick-text {
   position: absolute;
   width: 12em;
@@ -2424,21 +2420,22 @@ html section, body section {
   right: 0;
   height: 5em;
 }
-/* line 126, ../sass/ye-olde-ie.scss */
+/* line 127, ../sass/ye-olde-ie.scss */
 #brick #brick-content .right-panel {
   right: 0;
   position: absolute;
 }
-/* line 129, ../sass/ye-olde-ie.scss */
+/* line 130, ../sass/ye-olde-ie.scss */
 #brick #brick-content .right-panel .circle {
   width: 22.5em;
   height: 22.5em;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background-color: #fff;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  -ms-behavior: url(/js/polyfills/PIE.htc);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background-color: #fff;
   position: absolute;
   right: 0;
   margin: auto;
@@ -2447,7 +2444,7 @@ html section, body section {
   bottom: 0;
   padding: 5%;
 }
-/* line 142, ../sass/ye-olde-ie.scss */
+/* line 144, ../sass/ye-olde-ie.scss */
 #brick #brick-content .right-panel .circle h1 {
   padding: auto;
   display: block;
@@ -2460,7 +2457,7 @@ html section, body section {
   height: 1em;
 }
 
-/* line 161, ../sass/ye-olde-ie.scss */
+/* line 163, ../sass/ye-olde-ie.scss */
 #street-lower #map-wrapper [class^="layer-"] .circle-outter {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -2469,7 +2466,7 @@ html section, body section {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
-/* line 166, ../sass/ye-olde-ie.scss */
+/* line 168, ../sass/ye-olde-ie.scss */
 #street-lower #map-wrapper [class^="layer-"] .circle-inner {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -2478,7 +2475,7 @@ html section, body section {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 174, ../sass/ye-olde-ie.scss */
+/* line 176, ../sass/ye-olde-ie.scss */
 #street-lower #map-header h1 {
   position: absolute;
   width: 100%;
@@ -2491,7 +2488,7 @@ html section, body section {
   right: 0;
 }
 
-/* line 190, ../sass/ye-olde-ie.scss */
+/* line 192, ../sass/ye-olde-ie.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] {
   -ms-behavior: url(/js/polyfills/PIE.htc);
   display: inline-block;
@@ -2500,19 +2497,19 @@ html section, body section {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 196, ../sass/ye-olde-ie.scss */
+/* line 198, ../sass/ye-olde-ie.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] > div {
   width: 85%;
   height: 55%;
 }
 
-/* line 206, ../sass/ye-olde-ie.scss */
+/* line 208, ../sass/ye-olde-ie.scss */
 #fence #fence-header {
   background-color: #000;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 212, ../sass/ye-olde-ie.scss */
+/* line 214, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle {
   -ms-behavior: url(/js/polyfills/PIE.htc);
   -moz-border-radius: 50%;
@@ -2524,48 +2521,48 @@ html section, body section {
   display: inline-block;
   float: left;
 }
-/* line 219, ../sass/ye-olde-ie.scss */
+/* line 221, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#abc {
   background-image: url("../assets/logo_abc.png");
 }
-/* line 221, ../sass/ye-olde-ie.scss */
+/* line 223, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#abc:hover {
   background-image: url("../assets/logo_abc_white.png");
 }
-/* line 225, ../sass/ye-olde-ie.scss */
+/* line 227, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#fox {
   background-image: url("../assets/logo_fox.png");
 }
-/* line 227, ../sass/ye-olde-ie.scss */
+/* line 229, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#fox:hover {
   background-image: url("../assets/logo_fox_white.png");
 }
-/* line 231, ../sass/ye-olde-ie.scss */
+/* line 233, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#gothamist {
   background-image: url("../assets/logo_gothamist.png");
 }
-/* line 233, ../sass/ye-olde-ie.scss */
+/* line 235, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#gothamist:hover {
   background-image: url("../assets/logo_gothamist_white.png");
 }
-/* line 237, ../sass/ye-olde-ie.scss */
+/* line 239, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#nyc1 {
   background-image: url("../assets/logo_nyc1.png");
 }
-/* line 239, ../sass/ye-olde-ie.scss */
+/* line 241, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#nyc1:hover {
   background-image: url("../assets/logo_nyc1_white.png");
 }
-/* line 243, ../sass/ye-olde-ie.scss */
+/* line 245, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#wired {
   background-image: url("../assets/logo_wired.png");
   -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-/* line 246, ../sass/ye-olde-ie.scss */
+/* line 248, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#wired:hover {
   background-image: url("../assets/logo_wired_white.png");
 }
-/* line 250, ../sass/ye-olde-ie.scss */
+/* line 252, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#dna {
   background-image: url("../assets/logo_dna.png");
   -webkit-background-size: 46%;
@@ -2575,18 +2572,18 @@ html section, body section {
   -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
   -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-/* line 254, ../sass/ye-olde-ie.scss */
+/* line 256, ../sass/ye-olde-ie.scss */
 #fence #fence-content .circles .circle#dna:hover {
   background-image: url("../assets/logo_dna_white.png");
 }
 
-/* line 264, ../sass/ye-olde-ie.scss */
+/* line 266, ../sass/ye-olde-ie.scss */
 #bridge #bridge-overlay {
   background-color: #0091d9;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-/* line 269, ../sass/ye-olde-ie.scss */
+/* line 271, ../sass/ye-olde-ie.scss */
 #bridge #bridge-content h1 {
   top: 0;
   bottom: 0;
@@ -2595,28 +2592,28 @@ html section, body section {
   margin: auto;
   height: 24px;
 }
-/* line 278, ../sass/ye-olde-ie.scss */
+/* line 280, ../sass/ye-olde-ie.scss */
 #bridge #bridge-content .table .row.first {
   vertical-align: bottom;
   height: 36px;
 }
-/* line 282, ../sass/ye-olde-ie.scss */
+/* line 284, ../sass/ye-olde-ie.scss */
 #bridge #bridge-content .table .row.first .col:right {
   color: #015fd0;
 }
-/* line 288, ../sass/ye-olde-ie.scss */
+/* line 290, ../sass/ye-olde-ie.scss */
 #bridge #bridge-content .table .row .col.left {
   float: left;
   text-align: left;
 }
-/* line 292, ../sass/ye-olde-ie.scss */
+/* line 294, ../sass/ye-olde-ie.scss */
 #bridge #bridge-content .table .row .col.right {
   float: right;
   text-align: right;
   color: #000;
 }
 
-/* line 308, ../sass/ye-olde-ie.scss */
+/* line 310, ../sass/ye-olde-ie.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media .addthis_toolbox a {
   -ms-behavior: url(/js/polyfills/PIE.htc);
 }

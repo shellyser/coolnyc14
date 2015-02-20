@@ -107,5 +107,49 @@ html, body {
 	}
 }
 
+#main{
+	width:15px;
+	position:fixed;
+	top:50%;
+	margin-top:-223px;
+	right:50px;
+	z-index:9001;
+	overflow-x:hidden;
+}
+#main>span{
+	cursor:pointer;
+	position:relative;
+	height:15px;
+	display:block;
+	margin-bottom:10px;
+	background-image:url('../assets/nav/inactive.png');
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+#main>span>img{
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+}
+#main>span[id="play"],#main>span[id="back-to-top"]{
+	background:none;
+}
+#scrollto{
+	position:fixed;
+	top:50px;
+	right:50px;
+	z-index:9000;
+}
+#backtotop{
+	position:fixed;
+	top:80px;
+	right:50px;
+	z-index:9000;
+}
+#top{
+	height:96px;
+	background-color:#73d9ff;
+}
 
 
