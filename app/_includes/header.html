@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if lte IE 8]><html id="ie" class="no-js" lang="en"><![endif]-->
-<!--[if gt IE 8]><html class="no-js"  lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9"  lang="en"><![endif]-->
 <!--[if !IE ]><!--><html lang="en" class="no-js" ><!--<![endif]-->
   <head>
     <meta charset="utf-8">
@@ -11,14 +11,23 @@
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-    <!-- build:css({app,.tmp}) /css/main.css -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">    
     <link rel="stylesheet" href="stylesheets/normalize.css">
-    <!--[if gte IE 9]><link href="stylesheets/style.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet><![endif]-->
-    <!--[if !IE]> --><link href="stylesheets/style.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet><!-- <![endif]-->
-
+    <!--[if !IE]> -->
+    <!-- build:css({app,.tmp}) /css/style.css -->
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
     <!-- endbuild -->
+    <!-- <![endif]-->
+    
+    <!--[if IE 9]>
+        <link href="/stylesheets/ie9.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link href="/stylesheets/ye-olde-ie.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
+    <![endif]--> 
+
     <!-- build:js(app) /js/head-scripts.js -->
     <!-- endbuild -->
     <!--[if lt IE 9]>
