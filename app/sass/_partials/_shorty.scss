@@ -43,11 +43,11 @@
 			}
 		}
 		#fence-content{
-			@include calc(height, "100% - rem(6)");
+			@include calc(height, "100% - rem(9)");
 			@include break-min($panel2-line-break){
 				.circles{
 					width: rem(40);
-					height: rem(20);
+					height: rem(23);
 					.circle{
 						width: rem(11);
 						height: rem(11);

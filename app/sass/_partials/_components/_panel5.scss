@@ -29,15 +29,15 @@
 		@include text-shadow(rgba(0, 0, 0, 0.15) 4px 4px 5px); 
 		@include break-min($panel3-text-break) {
 			font-size: rem(2.6);
-			line-height: rem(2.9);
+			line-height: rem(3.6);
 		}
 		@include break-min($main-break-xtrlg) {
 			font-size: rem(3.5);
-			line-height: rem(3.5);
+			line-height: rem(4);
 		}
 		@include break-min($main-break-xxtrlg) {
 			font-size: rem(4.2);
-			line-height: rem(4.2);
+			line-height: rem(4.8);
 		}
 	}
 }

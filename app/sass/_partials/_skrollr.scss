@@ -115,16 +115,10 @@
 
  @-skrollr-keyframes skylineanim3{
  	_bskyline-2000{ 
- 		transform:translate(0%,0%); 
+ 		transform:translate(0%,100%); 
  	}
  	_bskyline-2600{
- 		transform:translate(0%,-100%); 
- 	}
- 	_bskyline-3400{
- 		transform:translate(0%,-100%); 
- 	}
- 	_bskyline-4000{
- 		transform:translate(0%,-200%); 
+ 		transform:translate(0%, 0%); 
  	}
  }	
 
@@ -435,19 +429,11 @@
     		display: none;
     	}
     	_bskyline-2000{ 
-    		top: 0%; 
+    		top: 100%; 
     		display: block;
     	}
     	_bskyline-2600{
-    		top: -100%; 
-    	}
-    	_bskyline-3400{
-    		top: -100%; 
-    		display: block;
-    	}
-    	_bskyline-4000{
-    		top: -200%; 
-    		display: none;
+    		top: 0%; 
     	}
     }
 	

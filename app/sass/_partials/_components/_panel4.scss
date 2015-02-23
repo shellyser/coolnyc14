@@ -58,8 +58,8 @@
 	    	width: 67%;
 	    	z-index: 1;
 	    	@include break-between($panel4-text-break6, $panel4-text-break5){
-	    		left: 8%;
-	    		width: 61%;
+	    		left: 6%;
+	    		width: 70%;
 	    	}
 	    	@include break-between($panel4-text-break5, $main-break-xxxtrlg){
 	    		left: 9%;
@@ -82,7 +82,7 @@
 			h1 {
 				position: absolute;
 				right: 1em;
-				width: 12em;
+				width: 11em;
 				font-size: 2.2em;
 				line-height: 1.3em;
 				text-align: left;
@@ -97,19 +97,22 @@
 		    		font-size: 2em;
 		    		left: 52%;
 		    	}
-			    @include break-min($main-break-xxtrlg){
-			    	width: 13em;
-			    	top: 57%;
-			    }	
-
+		    	@include break-min($main-break-lg){
+		    		width: 12em;
+		    		top: 57%;
+		    	}	
+			@include break-min($main-break-xxtrlg){
+				width: 13em;
+				top: 57%;
+			}	
 		    }
 		    }
 			&:nth-of-type(2n) {
 				right: 0;
 				position: absolute;
 				.circle {
-					width: 22.5em;
-					height: 22.5em;
+					width: 18.5em;
+					height: 18.5em;
 					@include border-radius(50%);
 					background-color: $white_60;
 					position: absolute;
@@ -124,7 +127,7 @@
 						height: 19.5em;
 					}
 					h1 {
-						font-size: 7em;
+						font-size: 6em;
 						line-height: .5em;
 						padding: auto;
 						display: block;

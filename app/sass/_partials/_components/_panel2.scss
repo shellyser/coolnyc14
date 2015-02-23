@@ -103,21 +103,21 @@
       }
       @include break-between($panel3-text-break, $panel2-text-break3){
         h1{
-          font-size: rem(5.3);
+          font-size: rem(4.7);
         }
         p{
           font-size: rem(1);
-          width: rem(36);
+          width: rem(30);
         }
       }
       @include break-min($panel2-text-break3){
         height: rem(20);
         h1 {
-          font-size: rem(8);
+          font-size: rem(7.4);
         }
         p {
           font-size: rem(1);
-          width: rem(51.5);
+          width: rem(47);
           line-height: rem(1.9);
           margin-top: 1%;
         }
