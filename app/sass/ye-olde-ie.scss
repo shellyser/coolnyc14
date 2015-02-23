@@ -131,6 +131,7 @@ $modern: false;
 				width: 22.5em;
 				height: 22.5em;
 				background-image: url("../assets/brick_circle.png");
+				@extend .backgroundimage;     
 				@include background-size(cover);
 				background-repeat: no-repeat;
 				background-position: center center; 
@@ -171,11 +172,15 @@ $modern: false;
 				@include border-radius(50%);
 				background-color: $white;
 				@include opacity(0.3);
+				-ms-behavior: url(/js/polyfills/PIE.htc);
+				behavior: url(/js/polyfills/PIE.htc);
 			}
 			.circle-inner{
 				@include border-radius(50%);
 				background-color:$white;
 				@include opacity(0.6);
+				-ms-behavior: url(/js/polyfills/PIE.htc);
+				behavior: url(/js/polyfills/PIE.htc);
 			}
 		}
 	}
@@ -198,6 +203,7 @@ $modern: false;
 		#circles{
 			[id^="circle-"] {
 				-ms-behavior: url(/js/polyfills/PIE.htc);
+				behavior: url(/js/polyfills/PIE.htc);
 				display: inline-block;
 				float:left;
 				background-color: $black;
@@ -272,6 +278,7 @@ $modern: false;
 					.addthis_toolbox{
 						a{
 							-ms-behavior: url(/js/polyfills/PIE.htc);
+							behavior: url(/js/polyfills/PIE.htc);
 						}
 					}
 				}

@@ -2140,7 +2140,7 @@ footer #footer-content #intro-scroll {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000327}}
-.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #fence #fence-content .circles .circle#abc, #fence #fence-content .circles .circle#fox, #fence #fence-content .circles .circle#gothamist, #fence #fence-content .circles .circle#nyc1, #fence #fence-content .circles .circle#wired, #fence #fence-content .circles .circle#dna, #bridge {
+.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #fence #fence-content .circles .circle#abc, #fence #fence-content .circles .circle#fox, #fence #fence-content .circles .circle#gothamist, #fence #fence-content .circles .circle#nyc1, #fence #fence-content .circles .circle#wired, #fence #fence-content .circles .circle#dna, #bridge, #brick #brick-content .right-panel .circle {
   background-size: cover;
   -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
   behavior: url("/js/polyfills/backgroundsize.min.htc");
@@ -2285,7 +2285,7 @@ html section, body section {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\000038}}
-.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #fence #fence-content .circles .circle#abc, #fence #fence-content .circles .circle#fox, #fence #fence-content .circles .circle#gothamist, #fence #fence-content .circles .circle#nyc1, #fence #fence-content .circles .circle#wired, #fence #fence-content .circles .circle#dna, #bridge {
+.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #fence #fence-content .circles .circle#abc, #fence #fence-content .circles .circle#fox, #fence #fence-content .circles .circle#gothamist, #fence #fence-content .circles .circle#nyc1, #fence #fence-content .circles .circle#wired, #fence #fence-content .circles .circle#dna, #bridge, #brick #brick-content .right-panel .circle {
   -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
 
@@ -2430,7 +2430,7 @@ html section, body section {
   bottom: 0;
   padding: 5%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003145}}
 #brick #brick-content .right-panel .circle h1 {
   padding: auto;
   display: block;
@@ -2444,27 +2444,31 @@ html section, body section {
   font-size: 7em;
   line-height: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003157}}
 #brick #brick-content .right-panel .circle h1 em {
   font-size: .4em;
   margin-top: 0em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003171}}
 #street-lower #map-wrapper [class^="layer-"] .circle-outter {
   border-radius: 50%;
   background-color: #fff;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
+  -ms-behavior: url(/js/polyfills/PIE.htc);
+  behavior: url(/js/polyfills/PIE.htc);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003178}}
 #street-lower #map-wrapper [class^="layer-"] .circle-inner {
   border-radius: 50%;
   background-color: #fff;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
+  -ms-behavior: url(/js/polyfills/PIE.htc);
+  behavior: url(/js/polyfills/PIE.htc);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003188}}
 #street-lower #map-header h1 {
   position: absolute;
   width: 100%;
@@ -2477,35 +2481,36 @@ html section, body section {
   right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003204}}
 #taxi #circle-wrapper #circles [id^="circle-"] {
   -ms-behavior: url(/js/polyfills/PIE.htc);
+  behavior: url(/js/polyfills/PIE.htc);
   display: inline-block;
   float: left;
   background-color: #000;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003211}}
 #taxi #circle-wrapper #circles [id^="circle-"] > div {
   width: 85%;
   height: 55%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003221}}
 #fence #fence-header {
   background-color: #000;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003228}}
 #bridge #bridge-overlay {
   background-color: #0091d9;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003233}}
 #bridge #bridge-content h1 {
   top: 0;
   bottom: 0;
@@ -2514,39 +2519,40 @@ html section, body section {
   margin: auto;
   height: 24px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003236}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003242}}
 #bridge #bridge-content .table .row.first {
   vertical-align: bottom;
   height: 36px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003245}}
 #bridge #bridge-content .table .row.first .col.left {
   width: 40%;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003249}}
 #bridge #bridge-content .table .row.first .col.right {
   line-height: 22px;
   width: 50%;
   margin-top: -20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003250}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003256}}
 #bridge #bridge-content .table .row .col.left {
   float: left;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003260}}
 #bridge #bridge-content .table .row .col.right {
   float: right;
   text-align: right;
   color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003260}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003266}}
 #bridge #bridge-content .table .row.small {
   height: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003279}}
 #outro .wrapper .outro-content #social-media #outro-social-media .addthis_toolbox a {
   -ms-behavior: url(/js/polyfills/PIE.htc);
+  behavior: url(/js/polyfills/PIE.htc);
 }
