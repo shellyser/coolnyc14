@@ -3209,3 +3209,153 @@ html section, body section {
   height: 96px;
   background-color: #73d9ff;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\000035}}
+#intro #intro-content .box {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\000038}}
+#intro #intro-content .asterick {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000312}}
+#intro #intro-content #intro-content-top #intro-title {
+  padding: 2%;
+  position: absolute;
+  width: 100%;
+  margin: auto 0;
+  height: 4.5rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000325}}
+#intro #intro-content #intro-content-bottom #intro-section {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  height: 10rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000334}}
+#intro #intro-content #intro-content-bottom #intro-section #intro-year {
+  display: inline-block;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000338}}
+#intro #intro-content #intro-content-bottom #intro-section #intro-text {
+  display: inline-block;
+  float: right;
+  width: 35rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000346}}
+#intro footer {
+  height: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000353}}
+#street-upper #street-content .top {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000356}}
+#street-upper #street-content .asterick {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000359}}
+#street-upper #street-content .street-text {
+  height: 10.5rem;
+  width: 90%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000372}}
+#skyline .triangle-1, #skyline .triangle-2 {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000375}}
+#skyline .skyline-container {
+  background-color: #000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000379}}
+#skyline .skyline-container .skyline-content h1 {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  height: 3rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000395}}
+#brick #brick-content h1#brick-text {
+  position: absolute;
+  width: 12em;
+  text-align: left;
+  display: block;
+  margin: auto;
+  top: 40%;
+  left: 0;
+  right: 0;
+  height: 7em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003106}}
+#brick #brick-content img {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003109}}
+#brick #brick-content .right-panel {
+  right: 0;
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003112}}
+#brick #brick-content .right-panel .circle {
+  width: 22.5em;
+  height: 22.5em;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 5%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003122}}
+#brick #brick-content .right-panel .circle h1 {
+  padding: auto;
+  display: block;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003139}}
+#bridge #bridge-overlay {
+  background-color: #0091d9;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003144}}
+#bridge #bridge-content h1 {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 2rem;
+}
