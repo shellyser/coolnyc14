@@ -81,23 +81,26 @@
 					height: rem(4);
 					@include break-min($panel3-text-break) {
 			    			font-size: rem(1.2);
-				    	}
-				    	.col{
-				    		margin-top: rem(.3);
-				    		&:first-of-type{
-				    			padding-top: 1.2rem;
-				    		}
-					    	&:last-of-type{
-					    		color: $white;
-					    		width: 50%;
-					    		line-height: 1.5rem;	
-				    		}
+				    }
+			    	.col{
+			    		margin-top: rem(.3);
+			    		&:first-of-type{
+			    			padding-top: rem(1.2);
 			    		}
+				    	&:last-of-type{
+				    		color: $white;
+				    		width: 50%;
+				    		line-height: 1.5rem;
+				    		@include break-max($main-break){
+				    			width: 54%;
+				    		}	
+			    		}
+		    		}
 				}
 				&.small{
 					background-image: url('../assets/dotted_line.png');
 					background-repeat: no-repeat;
-					height: 1rem;
+					height: rem(1);
 				}
 				&.line{
 					height:rem(.3);

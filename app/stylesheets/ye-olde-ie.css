@@ -1,4 +1,4 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/\.rvm\/gems\/ruby-2\.1\.1\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\000035}}
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/\.rvm\/gems\/ruby-2\.1\.1\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/\.rvm\/gems\/ruby-2\.1\.1\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/\.rvm\/gems\/ruby-2\.1\.1\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/\.rvm\/gems\/ruby-2\.1\.1\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/\.rvm\/gems\/ruby-2\.1\.1\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/\.rvm\/gems\/ruby-2\.1\.1\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/\.rvm\/gems\/ruby-2\.1\.1\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/\.rvm\/gems\/ruby-2\.1\.1\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -66,113 +66,115 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* These mixins handle IE < 9, which doesn't respond to media queries.
   To "activate" them in ye-olde-ie stylesheet, set $dim to NUMpx and
   set $ye-olde-ie to a version number and then import the main stylesheet. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\000033}}
+/* line 3, ../sass/_partials/_shorty.scss */
 .shorty #intro header {
   height: 60px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\000035}}
+/* line 5, ../sass/_partials/_shorty.scss */
 .shorty #intro header img {
   margin-top: 4px;
   width: 125px;
   height: 33px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000310}}
+/* line 10, ../sass/_partials/_shorty.scss */
 .shorty #intro header h2 {
   margin-top: 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000314}}
-.shorty #intro #intro-content {
-  height: calc(100% - 60px - 46px);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000317}}
+/* line 14, ../sass/_partials/_shorty.scss */
 .shorty #intro footer {
   height: 46px;
   padding: 3.6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000320}}
+/* line 17, ../sass/_partials/_shorty.scss */
 .shorty #intro footer #footer-content {
   height: 3.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000323}}
+/* line 20, ../sass/_partials/_shorty.scss */
 .shorty #intro footer img {
   width: 33px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000326}}
+/* line 23, ../sass/_partials/_shorty.scss */
 .shorty #intro footer h3 {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000333}}
+/* line 30, ../sass/_partials/_shorty.scss */
 .shorty #street-lower #map-wrapper {
   font-size: 13px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000339}}
+/* line 36, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header {
   height: 108px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000341}}
+/* line 38, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header h1 {
   padding-top: 24px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000345}}
+/* line 42, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-content {
+  height: -webkit-calc(100% - rem(9));
   height: calc(100% - rem(9));
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000348}}
+/* line 45, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-content .circles {
   width: 480px;
   height: 276px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000351}}
+/* line 48, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-content .circles .circle {
   width: 132px;
   height: 132px;
   margin: 3.6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000361}}
+/* line 58, ../sass/_partials/_shorty.scss */
 .shorty #outro wrapper:first-of-type {
+  height: -webkit-calc(100% - 53px);
   height: calc(100% - 53px);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000364}}
+/* line 61, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing {
   height: 56px;
   padding-top: 8.4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000367}}
+/* line 64, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing p {
   font-size: 10.8px;
   padding-bottom: 7.2px;
   line-height: 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000373}}
+/* line 70, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing #logos img {
   width: 90px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_shorty\.scss}line{font-family:\0000376}}
+/* line 73, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing #logos #thinkeco-logo {
   margin-left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\000031}}
+/* line 1, ../sass/_partials/_skrollr.scss */
 #intro {
   -skrollr-animation-name: introanim1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\000035}}
+/* line 5, ../sass/_partials/_skrollr.scss */
 #intro-year {
   -skrollr-animation-name: introyearanim1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\000038}}
+/* line 8, ../sass/_partials/_skrollr.scss */
 #intro-text {
   -skrollr-animation-name: introtextanim1;
 }
 
 @-skrollr-keyframes introanim1 {
   _bstreetupper--500 {
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%);
     transform: translate(0, 0%);
   }
   _bstreetupper {
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
     -webkit-transform: translate(0, -100%);
     transform: translate(0, -100%);
   }
@@ -181,10 +183,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     opacity: 0;
   }
-  _bstreetupper--1900 {
+  _bstreetupper--2500 {
     opacity: 0;
   }
-  _bstreetupper--1600 {
+  _bstreetupper--2400 {
     opacity: 1;
   }
 }
@@ -192,14 +194,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     opacity: 0;
   }
-  _bstreetupper--1600 {
+  _bstreetupper--2400 {
     opacity: 0;
   }
-  _bstreetupper--1300 {
+  _bstreetupper--2300 {
     opacity: 1;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\0000347}}
+/* line 47, ../sass/_partials/_skrollr.scss */
 #street-upper {
   -skrollr-animation-name: streetupperanim1;
 }
@@ -209,37 +211,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
   _bstreetupper--500 {
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
     -webkit-transform: translate(0, 100%);
     transform: translate(0, 100%);
     display: block;
   }
   _bstreetupper {
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%);
     transform: translate(0, 0%);
     display: block;
   }
   _astreetupper {
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%);
     transform: translate(0, 0%);
     display: block;
   }
   _bskyline {
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
     -webkit-transform: translate(0, -100%);
     transform: translate(0, -100%);
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\0000373}}
+/* line 73, ../sass/_partials/_skrollr.scss */
 #skyline {
   -skrollr-animation-name: skylineanim1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\0000376}}
+/* line 76, ../sass/_partials/_skrollr.scss */
 #one {
   -skrollr-animation-name: skylineanim2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\0000379}}
+/* line 79, ../sass/_partials/_skrollr.scss */
 #two {
   -skrollr-animation-name: skylineanim3;
 }
@@ -249,47 +259,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
   _astreetupper {
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
     -webkit-transform: translate(0, 100%);
     transform: translate(0, 100%);
     display: block;
   }
   _bskyline {
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%);
     transform: translate(0, 0%);
     display: block;
   }
   _askyline {
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%);
     transform: translate(0, 0%);
     display: block;
   }
   _bbrick {
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
     -webkit-transform: translate(0, -100%);
     transform: translate(0, -100%);
     display: none;
   }
 }
 @-skrollr-keyframes skylineanim2 {
-  _bskyline-1000 {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+  _bskyline-2100 {
+    transform: translate(0, 0%);
   }
-  _bskyline-1600 {
-    -webkit-transform: translate(0, -100%);
-            transform: translate(0, -100%);
+  _bskyline-2600 {
+    transform: translate(0, -100%);
   }
 }
 @-skrollr-keyframes skylineanim3 {
-  _bskyline-2000 {
-    -webkit-transform: translate(0%, 100%);
-            transform: translate(0%, 100%);
+  _bskyline-2700 {
+    transform: translate(0%, 100%);
   }
-  _bskyline-2600 {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
+  _bskyline-3200 {
+    transform: translate(0%, -100%);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003127}}
+/* line 127, ../sass/_partials/_skrollr.scss */
 #brick {
   -skrollr-animation-name: brickanim1;
 }
@@ -299,53 +313,57 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
   _askyline {
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
     -webkit-transform: translate(0, 100%);
     transform: translate(0, 100%);
     display: block;
   }
   _bbrick {
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%);
     transform: translate(0, 0%);
   }
   _abrick {
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%);
     transform: translate(0, 0%);
     display: block;
   }
   _bnycave {
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
     -webkit-transform: translate(0, -100%);
     transform: translate(0, -100%);
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003151}}
+/* line 151, ../sass/_partials/_skrollr.scss */
 #nycave {
   -skrollr-animation-name: nycaveanim1;
 }
 
 @-skrollr-keyframes nycaveanim1 {
   _abrick {
-    -webkit-transform: translate(0, 100%);
-            transform: translate(0, 100%);
+    transform: translate(0, 100%);
   }
   _bnycave {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
     background-position: 50% 0%;
   }
   _bnycave-1200 {
     background-position: 50% 100%;
   }
   _anycave {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
   }
   _bstreetlower {
-    -webkit-transform: translate(0, -100%);
-            transform: translate(0, -100%);
+    transform: translate(0, -100%);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003174}}
+/* line 174, ../sass/_partials/_skrollr.scss */
 #street-lower {
   -skrollr-animation-name: streetloweranim1;
 }
@@ -355,41 +373,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
   _anycave {
-    -webkit-transform: translate(0, 100%);
-            transform: translate(0, 100%);
+    transform: translate(0, 100%);
     display: block;
   }
   _bstreetlower {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
   }
   _astreetlower {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
     display: block;
   }
   _bfence {
-    -webkit-transform: translate(0, -100%);
-            transform: translate(0, -100%);
+    transform: translate(0, -100%);
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003199}}
+/* line 199, ../sass/_partials/_skrollr.scss */
 #taxi {
   -skrollr-animation-name: taxianim1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003202}}
+/* line 202, ../sass/_partials/_skrollr.scss */
 #circle-1 {
   -skrollr-animation-name: circle1anim2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003205}}
+/* line 205, ../sass/_partials/_skrollr.scss */
 #circle-2 {
   -skrollr-animation-name: circle2anim3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003208}}
+/* line 208, ../sass/_partials/_skrollr.scss */
 #circle-3 {
   -skrollr-animation-name: circle3anim4;
 }
@@ -399,65 +413,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
   _abridge {
-    -webkit-transform: translate(0, 100%);
-            transform: translate(0, 100%);
+    transform: translate(0, 100%);
     display: block;
   }
   _btaxi {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
     display: block;
   }
   _ataxi {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
     display: block;
   }
   _boutro {
-    -webkit-transform: translate(0, -100%);
-            transform: translate(0, -100%);
+    transform: translate(0, -100%);
     display: none;
   }
 }
 @-skrollr-keyframes circle1anim2 {
   _btaxi-600 {
-    -webkit-transform: translate(0, -75%);
-            transform: translate(0, -75%);
+    transform: translate(0, -75%);
     opacity: 0;
   }
   _btaxi-1100 {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
     opacity: 1;
   }
 }
 @-skrollr-keyframes circle2anim3 {
   _btaxi-1600 {
-    -webkit-transform: translate(0, -75%);
-            transform: translate(0, -75%);
+    transform: translate(0, -75%);
     opacity: 0;
   }
   _btaxi-2100 {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
     opacity: 1;
   }
 }
 @-skrollr-keyframes circle3anim4 {
   _btaxi-2500 {
-    -webkit-transform: translate(0, -75%);
-            transform: translate(0, -75%);
+    transform: translate(0, -75%);
     opacity: 0;
   }
   _btaxi-3000 {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
     opacity: 1;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003265}}
+/* line 265, ../sass/_partials/_skrollr.scss */
 #fence {
   -skrollr-animation-name: fenceanim1;
+}
+
+/* line 269, ../sass/_partials/_skrollr.scss */
+#fence-header {
+  -skrollr-animation-name: fenceanim2;
 }
 
 @-skrollr-keyframes fenceanim1 {
@@ -465,26 +474,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
   _astreetlower {
-    -webkit-transform: translate(0, 100%);
-            transform: translate(0, 100%);
+    transform: translate(0, 100%);
     display: block;
   }
   _bfence {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
   }
   _afence {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
     display: block;
   }
   _bbridge {
-    -webkit-transform: translate(0, -100%);
-            transform: translate(0, -100%);
+    transform: translate(0, -100%);
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003290}}
+@-skrollr-keyframes fenceanim2 {
+  skrollr-0 {
+    transform: translate(0%, -50%);
+    opacity: 0;
+  }
+  _bfence-1000 {
+    transform: translate(0%, -50%);
+    opacity: 0;
+  }
+  _bfence-1500 {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+/* line 310, ../sass/_partials/_skrollr.scss */
 #bridge {
   -skrollr-animation-name: bridgeanim1;
 }
@@ -494,26 +513,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
   _afence {
-    -webkit-transform: translate(0, 100%);
-            transform: translate(0, 100%);
+    transform: translate(0, 100%);
     display: block;
   }
   _bbridge {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
   }
   _abridge {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
     display: block;
   }
   _btaxi {
-    -webkit-transform: translate(0, -100%);
-            transform: translate(0, -100%);
+    transform: translate(0, -100%);
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003315}}
+/* line 335, ../sass/_partials/_skrollr.scss */
 #outro {
   -skrollr-animation-name: outroanim1;
 }
@@ -523,41 +538,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
   _ataxi {
-    -webkit-transform: translate(0, 100%);
-            transform: translate(0, 100%);
+    transform: translate(0, 100%);
     display: block;
   }
   _boutro {
-    -webkit-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    transform: translate(0, 0%);
     display: block;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003334}}
+/* line 354, ../sass/_partials/_skrollr.scss */
 #ie #intro {
   -skrollr-animation-name: introanim1ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003337}}
+/* line 357, ../sass/_partials/_skrollr.scss */
 #ie #intro-year {
   -skrollr-animation-name: introyear1ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003340}}
+/* line 360, ../sass/_partials/_skrollr.scss */
 #ie #intro-text {
   -skrollr-animation-name: introtext1ie;
 }
 @-skrollr-keyframes introyearanim1ie {
   skrollr-0 {
-    display: none;
+    visibility: hidden;
   }
-  _bstreetupper--1900 {
-    display: block;
+  _bstreetupper--2400 {
+    visibility: visible;
   }
 }
 @-skrollr-keyframes introtextanim1ie {
   skrollr-0 {
     display: none;
   }
-  _bstreetupper--1600 {
+  _bstreetupper--2300 {
     display: block;
   }
 }
@@ -569,7 +582,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -100%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003371}}
+/* line 392, ../sass/_partials/_skrollr.scss */
 #ie #street-upper {
   -skrollr-animation-name: streetupperanim1ie;
 }
@@ -587,15 +600,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -100%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003390}}
+/* line 411, ../sass/_partials/_skrollr.scss */
 #ie #skyline {
   -skrollr-animation-name: skylineanim1ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003393}}
+/* line 414, ../sass/_partials/_skrollr.scss */
 #ie #one {
   -skrollr-animation-name: skylineanim2ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003396}}
+/* line 417, ../sass/_partials/_skrollr.scss */
 #ie #two {
   -skrollr-animation-name: skylineanim3ie;
 }
@@ -614,11 +627,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @-skrollr-keyframes skylineanim2ie {
-  _bskyline-1000 {
+  _bskyline-2100 {
     top: 0%;
     display: block;
   }
-  _bskyline-1600 {
+  _bskyline-2600 {
     top: -100%;
     display: none;
   }
@@ -627,15 +640,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _bskyline-2000 {
-    top: 0%;
+  _bskyline-2700 {
+    top: 100%;
     display: block;
   }
-  _bskyline-2600 {
-    top: -100%;
+  _bskyline-3200 {
+    top: 0%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003440}}
+/* line 462, ../sass/_partials/_skrollr.scss */
 #ie #brick {
   -skrollr-animation-name: brickanim1ie;
 }
@@ -659,7 +672,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003464}}
+/* line 486, ../sass/_partials/_skrollr.scss */
 #ie #nycave {
   -skrollr-animation-name: nycaveanim1ie;
 }
@@ -681,7 +694,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -100%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003487}}
+/* line 509, ../sass/_partials/_skrollr.scss */
 #ie #street-lower {
   -skrollr-animation-name: streetloweranim1ie;
 }
@@ -705,19 +718,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003512}}
+/* line 534, ../sass/_partials/_skrollr.scss */
 #ie #taxi {
   -skrollr-animation-name: taxianim1ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003515}}
+/* line 537, ../sass/_partials/_skrollr.scss */
 #ie #circle-1 {
   -skrollr-animation-name: circle1anim2ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003518}}
+/* line 540, ../sass/_partials/_skrollr.scss */
 #ie #circle-2 {
   -skrollr-animation-name: circle2anim3ie;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003521}}
+/* line 543, ../sass/_partials/_skrollr.scss */
 #ie #circle-3 {
   -skrollr-animation-name: circle3anim4ie;
 }
@@ -765,9 +778,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     visibility: visible;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003571}}
+/* line 593, ../sass/_partials/_skrollr.scss */
 #ie #fence {
   -skrollr-animation-name: fenceanim1ie;
+}
+/* line 596, ../sass/_partials/_skrollr.scss */
+#ie #fence-header {
+  -skrollr-animation-name: fenceanim2ie;
 }
 @-skrollr-keyframes fenceanim1ie {
   skrollr-0 {
@@ -789,7 +806,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003595}}
+@-skrollr-keyframes fenceanim2ie {
+  skrollr-0 {
+    visibility: hidden;
+  }
+  _bfence-1000 {
+    visibility: hidden;
+  }
+  _bfence-1500 {
+    visibility: visible;
+  }
+}
+/* line 633, ../sass/_partials/_skrollr.scss */
 #ie #bridge {
   -skrollr-animation-name: bridgeanim1ie;
 }
@@ -813,7 +841,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_skrollr\.scss}line{font-family:\00003620}}
+/* line 658, ../sass/_partials/_skrollr.scss */
 #ie #outro {
   -skrollr-animation-name: outroanim1ie;
 }
@@ -830,7 +858,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\000033}}
+/* line 3, ../sass/_partials/_components/_panel1.scss */
 #intro #intro-content-bg {
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
@@ -839,7 +867,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
   z-index: -1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\0000311}}
+/* line 11, ../sass/_partials/_components/_panel1.scss */
 #intro #intro-sky-bg {
   width: 100%;
   height: 100%;
@@ -849,18 +877,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-image: url("../assets/bgphotos/sky.jpg");
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\0000326}}
+/* line 26, ../sass/_partials/_components/_panel1.scss */
 header {
   height: 86px;
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\0000329}}
+/* line 29, ../sass/_partials/_components/_panel1.scss */
 header img {
   margin-top: 9px;
   width: 159px;
   height: 42;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\0000334}}
+/* line 34, ../sass/_partials/_components/_panel1.scss */
 header #tagline {
   color: #00aced;
   margin-top: 7px;
@@ -869,17 +897,18 @@ header #tagline {
   font-family: "Arial", sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\0000343}}
+/* line 43, ../sass/_partials/_components/_panel1.scss */
 #intro-content {
   width: 312px;
   position: relative;
   margin: auto;
-  height: calc(100% - 11% - 86px);
+  height: -webkit-calc(100% - 80px - 86px);
+  height: calc(100% - 80px - 86px);
   width: 420px;
   width: 636px;
   width: 684px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\0000348}}
+/* line 48, ../sass/_partials/_components/_panel1.scss */
 #intro-content .box {
   min-height: 34%;
   width: 36px;
@@ -889,7 +918,7 @@ header #tagline {
   left: 40.8px;
   top: 33%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\0000357}}
+/* line 57, ../sass/_partials/_components/_panel1.scss */
 #intro-content .asterick {
   width: 19.2px;
   left: -12px;
@@ -898,25 +927,25 @@ header #tagline {
   background-image: url("/assets/asterick_black.png");
   background-repeat: no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\0000367}}
+/* line 67, ../sass/_partials/_components/_panel1.scss */
 #intro-content .box {
   min-height: 38%;
   width: 72px;
   left: 48px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\0000375}}
+/* line 75, ../sass/_partials/_components/_panel1.scss */
 #intro-content .box {
   min-height: 53%;
   width: 168px;
   top: 35%;
   left: 42px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\0000384}}
+/* line 84, ../sass/_partials/_components/_panel1.scss */
 #intro-content .box {
   left: 18px;
   min-height: 54%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\0000396}}
+/* line 96, ../sass/_partials/_components/_panel1.scss */
 #intro-content #intro-content-top {
   height: 50%;
   width: 100%;
@@ -924,7 +953,7 @@ header #tagline {
   color: #0091d9;
   position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003102}}
+/* line 102, ../sass/_partials/_components/_panel1.scss */
 #intro-content #intro-content-top #intro-title {
   display: none;
   padding: 2%;
@@ -934,6 +963,8 @@ header #tagline {
   top: 50%;
   left: 50%;
   margin-right: -50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 32.4px;
@@ -941,7 +972,7 @@ header #tagline {
   font-size: 46.8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003126}}
+/* line 126, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom {
   display: block;
   position: relative;
@@ -949,12 +980,14 @@ header #tagline {
   padding: 2%;
   top: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003132}}
+/* line 132, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
@@ -963,14 +996,14 @@ header #tagline {
   min-width: 100%;
   margin: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003139}}
+/* line 139, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-year {
   display: block;
   font-size: 67.2px;
   font-weight: 700;
   text-shadow: rgba(0, 0, 0, 0.15) 2px 1px 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003145}}
+/* line 145, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-text {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -979,13 +1012,13 @@ header #tagline {
   width: 24rem;
   text-shadow: rgba(0, 0, 0, 0.6) 2px 0px 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003161}}
+/* line 161, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-year {
   font-size: 84px;
   font-weight: 700;
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003166}}
+/* line 166, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-text {
   font-size: 10.8px;
   line-height: 21px;
@@ -994,14 +1027,14 @@ header #tagline {
   margin-left: 2%;
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003178}}
+/* line 178, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-year {
   font-size: 99.6px;
   margin-left: 18px;
   font-weight: 700;
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003184}}
+/* line 184, ../sass/_partials/_components/_panel1.scss */
 #intro-content-bottom #intro-section #intro-text {
   font-size: 12px;
   line-height: 21.6px;
@@ -1011,19 +1044,19 @@ header #tagline {
   width: 396px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003215}}
+/* line 215, ../sass/_partials/_components/_panel1.scss */
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   background-color: #fff;
   text-align: center;
-  color: #0E9DD8;
+  color: #00aced;
   font-style: italic;
-  height: 11%;
+  height: 80px;
   font-size: .8em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003225}}
+/* line 225, ../sass/_partials/_components/_panel1.scss */
 footer #footer-content {
   height: 5em;
   position: absolute;
@@ -1033,33 +1066,28 @@ footer #footer-content {
   left: 0;
   right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003236}}
+/* line 233, ../sass/_partials/_components/_panel1.scss */
 footer #footer-content h3 {
   display: block;
-  margin-top: 2.4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003240}}
+/* line 236, ../sass/_partials/_components/_panel1.scss */
 footer #footer-content #intro-scroll {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel1\.scss}line{font-family:\00003243}}
-footer #footer-content #intro-scroll:hover {
-  cursor: pointer;
-}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\000031}}
+/* line 1, ../sass/_partials/_components/_panel2.scss */
 #street-upper {
   background-image: url("../assets/bgphotos/street600.jpg");
   background-image: url("../assets/bgphotos/street1200.jpg");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000313}}
+/* line 13, ../sass/_partials/_components/_panel2.scss */
 #street-upper .bottom {
   background-color: #fff;
   min-height: 3.6px;
   top: 456px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000320}}
+/* line 20, ../sass/_partials/_components/_panel2.scss */
 #street-content {
   position: relative;
   text-align: center;
@@ -1067,17 +1095,17 @@ footer #footer-content #intro-scroll:hover {
   background-color: #000;
   top: 60px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000326}}
+/* line 26, ../sass/_partials/_components/_panel2.scss */
 #street-content .bottom {
   background-color: #fff;
   min-height: 7.2px;
   top: 300px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000332}}
+/* line 32, ../sass/_partials/_components/_panel2.scss */
 #street-content .top {
   position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000334}}
+/* line 34, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.left {
   top: 12%;
   min-height: 3.6px;
@@ -1086,57 +1114,69 @@ footer #footer-content #intro-scroll:hover {
   background-color: #fff;
   left: 50%;
   margin-right: -50%;
+  -moz-transform: translate(-111%, 50%);
+  -ms-transform: translate(-111%, 50%);
   -webkit-transform: translate(-111%, 50%);
   transform: translate(-111%, 50%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000343}}
+/* line 43, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.left.blue {
   background-color: #0091d9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000347}}
+/* line 47, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.right {
   top: 12%;
   min-height: 3.6px;
   left: 50%;
   margin-right: -50%;
   width: 1800px;
+  -moz-transform: translate(-4%, 50%);
+  -ms-transform: translate(-4%, 50%);
   -webkit-transform: translate(-4%, 50%);
   transform: translate(-4%, 50%);
   background-color: #fff;
   min-width: 69%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000356}}
+/* line 56, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.right.blue {
   background-color: #0091d9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000360}}
+/* line 60, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.asterick {
   width: 30px;
   top: 7.5%;
   top: 53%;
   left: 50%;
   margin-right: -50%;
+  -moz-transform: translate(-394%, -352%);
+  -ms-transform: translate(-394%, -352%);
   -webkit-transform: translate(-394%, -352%);
   transform: translate(-394%, -352%);
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000372}}
+/* line 72, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.left {
+  -moz-transform: translate(-122%, 50%);
+  -ms-transform: translate(-122%, 50%);
   -webkit-transform: translate(-122%, 50%);
   transform: translate(-122%, 50%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000375}}
+/* line 75, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.right {
   width: 4908px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000378}}
+/* line 78, ../sass/_partials/_components/_panel2.scss */
 #street-content .top.asterick {
+  -moz-transform: translate(-814%, -359%);
+  -ms-transform: translate(-814%, -359%);
   -webkit-transform: translate(-814%, -359%);
   transform: translate(-814%, -359%);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000384}}
+/* line 84, ../sass/_partials/_components/_panel2.scss */
 .street-text {
   position: absolute;
   width: 100%;
@@ -1146,15 +1186,17 @@ footer #footer-content #intro-scroll:hover {
   left: 50%;
   padding: 5%;
   margin-right: -50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   height: 240px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000394}}
+/* line 94, ../sass/_partials/_components/_panel2.scss */
 .street-text h1 {
   font-size: 42px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000397}}
+/* line 97, ../sass/_partials/_components/_panel2.scss */
 .street-text p {
   font-size: 12px;
   width: 271.2px;
@@ -1162,11 +1204,11 @@ footer #footer-content #intro-scroll:hover {
   margin: auto;
   margin-top: 3%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003115}}
+/* line 115, ../sass/_partials/_components/_panel2.scss */
 .street-text h1 {
   font-size: 88.8px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003118}}
+/* line 118, ../sass/_partials/_components/_panel2.scss */
 .street-text p {
   font-size: 12px;
   width: 564px;
@@ -1174,12 +1216,12 @@ footer #footer-content #intro-scroll:hover {
   margin-top: 1%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel3\.scss}line{font-family:\000031}}
+/* line 1, ../sass/_partials/_components/_panel3.scss */
 #skyline {
   background-image: url("../assets/bgphotos/skyline600.jpg");
   background-image: url("../assets/bgphotos/skyline1200.jpg");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel3\.scss}line{font-family:\0000313}}
+/* line 13, ../sass/_partials/_components/_panel3.scss */
 #skyline [class^="triangle-"] {
   width: 0;
   height: 0;
@@ -1187,36 +1229,49 @@ footer #footer-content #intro-scroll:hover {
   line-height: 0;
   position: absolute;
   z-index: 2;
+  -moz-transition-property: scale;
+  -o-transition-property: scale;
+  -webkit-transition-property: scale;
   transition-property: scale;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel3\.scss}line{font-family:\0000324}}
+/* line 24, ../sass/_partials/_components/_panel3.scss */
 #skyline .triangle-1 {
   left: 0;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
   -webkit-transform-origin: 0% 0%;
   transform-origin: 0% 0%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel3\.scss}line{font-family:\0000328}}
+/* line 28, ../sass/_partials/_components/_panel3.scss */
 #skyline .triangle-2 {
   right: 0;
+  -moz-transform-origin: 101% 101%;
+  -ms-transform-origin: 101% 101%;
   -webkit-transform-origin: 101% 101%;
   transform-origin: 101% 101%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel3\.scss}line{font-family:\0000332}}
+/* line 32, ../sass/_partials/_components/_panel3.scss */
 #skyline .skyline-container {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   z-index: -1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel3\.scss}line{font-family:\0000338}}
+/* line 38, ../sass/_partials/_components/_panel3.scss */
 #skyline .skyline-content {
   font-size: 14.4px;
   font-weight: 700;
   line-height: 24px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel3\.scss}line{font-family:\0000342}}
+/* line 42, ../sass/_partials/_components/_panel3.scss */
 #skyline .skyline-content h1 {
   margin: 0;
   display: block;
@@ -1225,6 +1280,8 @@ footer #footer-content #intro-scroll:hover {
   left: 50%;
   margin-right: -50%;
   position: absolute;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding: 15% 2%;
@@ -1236,7 +1293,7 @@ footer #footer-content #intro-scroll:hover {
   width: 70%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel4\.scss}line{font-family:\000031}}
+/* line 1, ../sass/_partials/_components/_panel4.scss */
 #brick {
   background-image: url("../assets/bgphotos/brick600.jpg");
   color: #000;
@@ -1248,7 +1305,7 @@ footer #footer-content #intro-scroll:hover {
   font-size: 14px;
   font-size: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel4\.scss}line{font-family:\0000332}}
+/* line 32, ../sass/_partials/_components/_panel4.scss */
 #brick .panel {
   width: 50%;
   height: 100%;
@@ -1256,7 +1313,7 @@ footer #footer-content #intro-scroll:hover {
   background-color: rgba(255, 255, 255, 0.6);
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel4\.scss}line{font-family:\0000339}}
+/* line 39, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content {
   width: 90%;
   height: 34em;
@@ -1267,7 +1324,7 @@ footer #footer-content #intro-scroll:hover {
   right: 0;
   left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel4\.scss}line{font-family:\0000354}}
+/* line 54, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content img {
   position: absolute;
   top: 23em;
@@ -1275,14 +1332,14 @@ footer #footer-content #intro-scroll:hover {
   width: 67%;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel4\.scss}line{font-family:\0000373}}
+/* line 73, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div {
   width: 42%;
   position: relative;
   top: 0;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel4\.scss}line{font-family:\0000382}}
+/* line 82, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:first-of-type h1 {
   position: absolute;
   right: 1em;
@@ -1295,20 +1352,24 @@ footer #footer-content #intro-scroll:hover {
   top: 53%;
   left: 61%;
   margin-right: -50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 12em;
   top: 57%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel4\.scss}line{font-family:\00003110}}
+/* line 110, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:nth-of-type(2n) {
   right: 0;
   position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel4\.scss}line{font-family:\00003113}}
+/* line 113, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:nth-of-type(2n) .circle {
   width: 18.5em;
   height: 18.5em;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.6);
   position: absolute;
@@ -1319,7 +1380,7 @@ footer #footer-content #intro-scroll:hover {
   bottom: 0;
   padding: 5%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel4\.scss}line{font-family:\00003129}}
+/* line 129, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:nth-of-type(2n) .circle h1 {
   font-size: 6em;
   line-height: .5em;
@@ -1333,18 +1394,18 @@ footer #footer-content #intro-scroll:hover {
   bottom: 0;
   height: 1.1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel4\.scss}line{font-family:\00003141}}
+/* line 141, ../sass/_partials/_components/_panel4.scss */
 #brick #brick-content > div:nth-of-type(2n) .circle h1 em {
   font-size: .45em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel5\.scss}line{font-family:\000031}}
+/* line 1, ../sass/_partials/_components/_panel5.scss */
 #nycave {
   background-image: url("../assets/bgphotos/nycave450.jpg");
   background-image: url("../assets/bgphotos/nycave600.jpg");
   background-image: url("../assets/bgphotos/nycave1200.jpg");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel5\.scss}line{font-family:\0000316}}
+/* line 16, ../sass/_partials/_components/_panel5.scss */
 #nycave > h1 {
   font-size: 19.2px;
   font-weight: 700;
@@ -1365,7 +1426,7 @@ footer #footer-content #intro-scroll:hover {
   line-height: 48px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\000031}}
+/* line 1, ../sass/_partials/_components/_panel6.scss */
 #street-lower {
   font-size: 6px;
   font-size: 11px;
@@ -1374,7 +1435,7 @@ footer #footer-content #intro-scroll:hover {
   text-align: center;
   background-color: #0091d9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\0000321}}
+/* line 21, ../sass/_partials/_components/_panel6.scss */
 #street-lower #map-header {
   background-color: #000;
   height: 8.2em;
@@ -1382,7 +1443,7 @@ footer #footer-content #intro-scroll:hover {
   z-index: 9999;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\0000327}}
+/* line 27, ../sass/_partials/_components/_panel6.scss */
 #street-lower #map-header h1 {
   position: absolute;
   width: 100%;
@@ -1392,20 +1453,22 @@ footer #footer-content #intro-scroll:hover {
   top: 50%;
   left: 50%;
   margin-right: -50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\0000337}}
+/* line 37, ../sass/_partials/_components/_panel6.scss */
 #street-lower #map-header h1 span {
   font-weight: 700;
   color: #0091d9;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\0000343}}
+/* line 43, ../sass/_partials/_components/_panel6.scss */
 #street-lower #map-header h1 span {
   display: initial;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\0000349}}
+/* line 49, ../sass/_partials/_components/_panel6.scss */
 #street-lower #map-wrapper {
   position: absolute;
   width: 49em;
@@ -1416,26 +1479,30 @@ footer #footer-content #intro-scroll:hover {
   right: 0;
   bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\0000358}}
+/* line 58, ../sass/_partials/_components/_panel6.scss */
 #street-lower #map-wrapper #map {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
   opacity: 0.15;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\0000367}}
+/* line 67, ../sass/_partials/_components/_panel6.scss */
 #street-lower [class^="layer-"] {
   position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\0000369}}
+/* line 69, ../sass/_partials/_components/_panel6.scss */
 #street-lower [class^="layer-"] .circle-outter {
   background-color: rgba(255, 255, 255, 0.3);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   position: absolute;
   width: 5.7em;
   height: 5.7em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\0000376}}
+/* line 76, ../sass/_partials/_components/_panel6.scss */
 #street-lower [class^="layer-"] .circle-inner {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.6);
   position: relative;
@@ -1444,7 +1511,7 @@ footer #footer-content #intro-scroll:hover {
   left: 0.6em;
   top: 0.6em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\0000385}}
+/* line 85, ../sass/_partials/_components/_panel6.scss */
 #street-lower [class^="layer-"] h3 {
   display: block;
   font-size: 2.2em;
@@ -1460,7 +1527,7 @@ footer #footer-content #intro-scroll:hover {
   bottom: 0;
   right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003100}}
+/* line 100, ../sass/_partials/_components/_panel6.scss */
 #street-lower [class^="layer-"] .line {
   height: 3px;
   width: 11em;
@@ -1468,66 +1535,66 @@ footer #footer-content #intro-scroll:hover {
   position: absolute;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003107}}
+/* line 107, ../sass/_partials/_components/_panel6.scss */
 #street-lower [class^="layer-"] p {
   display: block;
   position: absolute;
   text-align: left;
   line-height: 1.8em;
   width: 27em;
-  font-size: 1.4em;
-  line-height: 1.7em;
+  font-size: 1em;
+  line-height: 1.6em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003134}}
+/* line 134, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-1 {
   top: 34em;
   left: 3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003141}}
+/* line 141, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-1 .line {
   left: 5.4em;
   top: 2.8em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003145}}
+/* line 145, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-1 p {
   left: 6em;
   top: 3.2em;
   width: 15em;
-  left: 4.5em;
-  top: 2.5em;
+  left: 6.3em;
+  top: 3.3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003167}}
+/* line 167, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-2 {
   top: 17em;
-  right: 20em;
+  right: 22em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003178}}
+/* line 178, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-2 .line {
   right: -16.5em;
   top: 2.8em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003182}}
+/* line 182, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-2 p {
   left: 4.2em;
   top: 2.5em;
   left: 5.3em;
   top: 2.8em;
   width: 14em;
-  left: 4.5em;
-  top: 2.5em;
+  left: 6.2em;
+  top: 3.2em;
   width: 15em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003205}}
+/* line 202, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-3 {
-  top: 10em;
-  left: 23em;
+  top: 12em;
+  left: 22em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003211}}
+/* line 209, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-3 .line {
   top: 3em;
   left: -10.8em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003215}}
+/* line 213, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-3 p {
   top: 2.8em;
   left: -13.3em;
@@ -1537,59 +1604,58 @@ footer #footer-content #intro-scroll:hover {
   top: 3.7em;
   width: 18em;
   left: -18.8em;
-  top: 3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003238}}
+/* line 235, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-4 {
   top: 6em;
   left: 28em;
   left: 30em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003248}}
+/* line 245, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-4 .line {
   top: 3em;
   right: -16.4em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003252}}
+/* line 249, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-4 p {
   top: 2.7em;
   left: 4.2em;
   top: 2.8em;
   left: 5em;
   width: 12em;
-  top: 2.8em;
-  left: 4.5em;
+  top: 3.4em;
+  left: 6.2em;
   width: 12em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003274}}
+/* line 271, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 {
   top: 28em;
   right: 32.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003285}}
+/* line 282, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 .circle-outter {
   width: 12.5em;
   height: 12.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003289}}
+/* line 286, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 .circle-inner {
   left: 1.25em;
   top: 1.25em;
   width: 10.1em;
   height: 10.1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003295}}
+/* line 292, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 h3 {
   font-size: 4em;
   height: 1em;
   color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003300}}
+/* line 297, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 .line {
   right: -22.7em;
   top: 6em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003304}}
+/* line 301, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 p {
   width: 12em;
   top: 4.8em;
@@ -1599,23 +1665,23 @@ footer #footer-content #intro-scroll:hover {
   top: 5.7em;
   left: 11em;
   width: 16em;
-  top: 5em;
-  left: 10em;
+  top: 6.6em;
+  left: 13.4em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel6\.scss}line{font-family:\00003309}}
+/* line 306, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 p em {
   color: #000;
   font-weight: 700;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel7\.scss}line{font-family:\000031}}
+/* line 1, ../sass/_partials/_components/_panel7.scss */
 #taxi {
   background-image: url("../assets/bgphotos/taxis600.jpg");
   background-image: url("../assets/bgphotos/taxis1200.jpg");
   font-size: 18px;
   font-size: 23px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel7\.scss}line{font-family:\0000323}}
+/* line 23, ../sass/_partials/_components/_panel7.scss */
 #taxi #taxi-header {
   height: 3.2em;
   top: 9%;
@@ -1624,7 +1690,7 @@ footer #footer-content #intro-scroll:hover {
   width: 100%;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel7\.scss}line{font-family:\0000330}}
+/* line 30, ../sass/_partials/_components/_panel7.scss */
 #taxi #taxi-header h1 {
   font-size: 220%;
   line-height: 125%;
@@ -1632,7 +1698,7 @@ footer #footer-content #intro-scroll:hover {
   width: 90%;
   margin: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel7\.scss}line{font-family:\0000338}}
+/* line 38, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper {
   width: 90%;
   height: 34em;
@@ -1645,20 +1711,24 @@ footer #footer-content #intro-scroll:hover {
   height: 11em;
   width: 91%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel7\.scss}line{font-family:\0000351}}
+/* line 51, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: -webkit-transform 0.5s ease-in;
+  -moz-transition: -moz-transform 0.5s ease-in;
+  -o-transition: -o-transform 0.5s ease-in;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel7\.scss}line{font-family:\0000356}}
+/* line 56, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] {
   vertical-align: middle;
   text-align: center;
   display: block;
   background-color: rgba(0, 0, 0, 0.6);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 11em;
   height: 11em;
@@ -1667,7 +1737,7 @@ footer #footer-content #intro-scroll:hover {
   display: inline-block;
   margin: auto 2%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel7\.scss}line{font-family:\0000372}}
+/* line 72, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] > div {
   letter-spacing: .01em;
   width: 85%;
@@ -1679,14 +1749,14 @@ footer #footer-content #intro-scroll:hover {
   left: 0;
   right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel7\.scss}line{font-family:\0000382}}
+/* line 82, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] > div h1 {
   font-size: 3.5em;
   border-bottom: #0091d9 0.05em solid;
   margin-bottom: 0.08em;
   padding-bottom: .08em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel7\.scss}line{font-family:\0000388}}
+/* line 88, ../sass/_partials/_components/_panel7.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] > div p {
   line-height: 1.4em;
   font-size: .7em;
@@ -1694,12 +1764,12 @@ footer #footer-content #intro-scroll:hover {
   margin: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\000031}}
+/* line 1, ../sass/_partials/_components/_panel8.scss */
 #fence {
   background-image: url("../assets/bgphotos/fence600.jpg");
   background-image: url("../assets/bgphotos/fence1200.jpg");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000313}}
+/* line 13, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-header {
   width: 100%;
   height: 108px;
@@ -1707,20 +1777,21 @@ footer #footer-content #intro-scroll:hover {
   text-align: center;
   font-size: 24px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000318}}
+/* line 18, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-header h1 {
   font-weight: 700;
   font-size: 16.8px;
   line-height: 26.4px;
   padding-top: 36px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000328}}
+/* line 28, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content {
   width: 100%;
+  height: -webkit-calc(100% - 8rem);
   height: calc(100% - 8rem);
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000332}}
+/* line 32, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles {
   width: 324px;
   height: 192px;
@@ -1731,113 +1802,102 @@ footer #footer-content #intro-scroll:hover {
   right: 0;
   bottom: 0;
   margin: auto;
-  transition: -webkit-transform 0.5s ease-in;
+  -moz-transition: -moz-transform 0.5s ease-in;
+  -o-transition: -o-transform 0.5s ease-in;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
   width: 408px;
   height: 276px;
   width: 648px;
   height: 408px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000343}}
+/* line 43, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
   width: 84px;
   height: 84px;
   margin: 6px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 60%;
-  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000353}}
-#fence #fence-content .circles .circle:hover {
-  background-color: #0091d9;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000356}}
+/* line 50, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#abc {
-  background-image: url("../assets/logo_abcnews.png");
-  background-position: 50% 51%;
-  background-size: 52%;
-  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+  background-image: url("../assets/logo_full_abcnews.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000360}}
+/* line 54, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#abc:hover {
-  background-image: url("../assets/logo_abcnews_white.png");
+  background-image: url("../assets/logo_full_abcnews_blue.png");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000364}}
+/* line 58, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#fox {
-  background-image: url("../assets/logo_fox.svg");
+  background-image: url("../assets/logo_full_fox.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000366}}
+/* line 62, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#fox:hover {
-  background-image: url("../assets/logo_fox_white.svg");
+  background-image: url("../assets/logo_full_fox_blue.png");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000370}}
+/* line 66, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#gothamist {
-  background-image: url("../assets/logo_gothamist.svg");
-  background-position: 50% 52%;
-  background-size: 53%;
-  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+  background-image: url("../assets/logo_full_gothamist.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000374}}
+/* line 70, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#gothamist:hover {
-  background-image: url("../assets/logo_gothamist_white.svg");
+  background-image: url("../assets/logo_full_gothamist_blue.png");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000378}}
+/* line 74, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#nyc1 {
-  background-image: url("../assets/logo_nyc1.svg");
-  background-position: 50% 61%;
-  background-size: 45%;
-  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+  background-image: url("../assets/logo_full_nyc1.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000382}}
+/* line 78, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#nyc1:hover {
-  background-image: url("../assets/logo_nyc1_white.svg");
+  background-image: url("../assets/logo_full_nyc1_blue.png");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000386}}
+/* line 82, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#wired {
-  background-image: url("../assets/logo_wired.svg");
+  background-image: url("../assets/logo_full_wired.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000388}}
+/* line 86, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#wired:hover {
-  background-image: url("../assets/logo_wired_white.svg");
+  background-image: url("../assets/logo_full_wired_blue.png");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000392}}
+/* line 90, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#dna {
-  background-image: url("../assets/logo_dna.svg");
-  background-size: 46%;
-  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+  background-image: url("../assets/logo_full_dna.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\0000395}}
+/* line 94, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#dna:hover {
-  background-image: url("../assets/logo_dna_white.svg");
+  background-image: url("../assets/logo_full_dna_blue.png");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\00003103}}
+/* line 102, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle {
   width: 120px;
   height: 120px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel8\.scss}line{font-family:\00003111}}
+/* line 110, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle {
   width: 180px;
   height: 180px;
   margin: 10.8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\000031}}
+/* line 1, ../sass/_partials/_components/_panel9.scss */
 #bridge {
   background-image: url("../assets/bgphotos/bridge600.jpg");
   background-image: url("../assets/bgphotos/bridge1200.jpg");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\0000313}}
+/* line 13, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-overlay {
   background-color: rgba(0, 145, 217, 0.9);
   width: 100%;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\0000318}}
+/* line 18, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content {
   font-size: 19.2px;
   font-weight: 700;
@@ -1851,7 +1911,7 @@ footer #footer-content #intro-scroll:hover {
   bottom: 0;
   margin: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\0000330}}
+/* line 30, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content h1 {
   margin: 0;
   display: block;
@@ -1859,6 +1919,8 @@ footer #footer-content #intro-scroll:hover {
   left: 50%;
   margin-right: -50%;
   position: absolute;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 24px;
@@ -1870,7 +1932,7 @@ footer #footer-content #intro-scroll:hover {
   font-size: 42px;
   line-height: 44.4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\0000362}}
+/* line 62, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table {
   width: 85%;
   height: 396px;
@@ -1882,58 +1944,58 @@ footer #footer-content #intro-scroll:hover {
   bottom: 0;
   width: 564px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\0000374}}
+/* line 74, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row {
   width: 100%;
   height: 96px;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\0000378}}
+/* line 78, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row:first-of-type {
   font-size: 10.2px;
   vertical-align: bottom;
   height: 48px;
   font-size: 14.4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\0000385}}
+/* line 85, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row:first-of-type .col {
   margin-top: 3.6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\0000387}}
+/* line 87, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row:first-of-type .col:first-of-type {
-  padding-top: 1.2rem;
+  padding-top: 14.4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\0000390}}
+/* line 90, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row:first-of-type .col:last-of-type {
   color: #fff;
   width: 50%;
   line-height: 1.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\0000397}}
+/* line 100, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row.small {
   background-image: url("../assets/dotted_line.png");
   background-repeat: no-repeat;
-  height: 1rem;
+  height: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\00003102}}
+/* line 105, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row.line {
   height: 3.6px;
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\00003105}}
+/* line 108, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row.line .blue-line {
   background-color: #015fd0;
   width: 100%;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\00003111}}
+/* line 114, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col {
   display: block;
   width: 108px;
   height: 100%;
   width: 168px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\00003118}}
+/* line 121, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col h2 {
   font-size: 48px;
   display: block;
@@ -1941,24 +2003,24 @@ footer #footer-content #intro-scroll:hover {
   font-size: 72px;
   margin-top: 33.6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\00003131}}
+/* line 134, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:first-of-type {
   float: left;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel9\.scss}line{font-family:\00003135}}
+/* line 138, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:last-of-type {
   float: right;
   text-align: right;
   color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\000031}}
+/* line 1, ../sass/_partials/_components/_panel10.scss */
 #outro {
   background-color: #0091d9;
   font-weight: 700;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\000034}}
+/* line 4, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper {
   width: 300px;
   position: relative;
@@ -1967,11 +2029,12 @@ footer #footer-content #intro-scroll:hover {
   width: 384px;
   width: 600px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000315}}
+/* line 15, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper:first-of-type {
+  height: -webkit-calc(100% - 100px);
   height: calc(100% - 100px);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000318}}
+/* line 18, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content {
   width: 100%;
   height: 240px;
@@ -1982,12 +2045,12 @@ footer #footer-content #intro-scroll:hover {
   right: 0;
   position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000327}}
+/* line 27, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #outro-text {
   height: 50%;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000330}}
+/* line 30, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #outro-text h2 {
   text-align: center;
   font-size: 30px;
@@ -1997,29 +2060,31 @@ footer #footer-content #intro-scroll:hover {
   font-size: 49.2px;
   line-height: 50.4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000341}}
+/* line 41, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #outro-text h1 {
   font-size: 61.2px;
   padding-top: 36px;
   font-size: 85.2px;
   padding-top: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000350}}
+/* line 50, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media {
   border-top: 3.6px #fff solid;
   height: 50%;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000354}}
+/* line 54, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media {
   margin: 12px auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000356}}
+/* line 56, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a {
   display: inline-block;
   width: 39.6px;
   height: 39.6px;
   background-color: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   margin: 3.6px;
   position: relative;
@@ -2027,15 +2092,15 @@ footer #footer-content #intro-scroll:hover {
   height: 56.4px;
   margin: 7.2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000369}}
+/* line 69, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a:hover {
   background-color: #015fd0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000372}}
+/* line 72, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a:focus {
   outline: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000375}}
+/* line 75, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a .fa {
   font-size: 24px;
   position: absolute;
@@ -2046,41 +2111,41 @@ footer #footer-content #intro-scroll:hover {
   right: 0;
   font-size: 31.2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000387}}
+/* line 87, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#linkedin .fa {
   top: 15%;
   top: 20%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000393}}
+/* line 93, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#facebook .fa {
   top: 15%;
   top: 23%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\0000399}}
+/* line 99, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#twitter .fa {
   top: 19%;
   top: 23%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\00003105}}
+/* line 105, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#googleplus .fa {
   top: 25%;
   top: 28%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\00003111}}
+/* line 111, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media div > a#email .fa {
   font-size: 21.6px;
   top: 17%;
   font-size: 27.6px;
   top: 23%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\00003122}}
+/* line 122, ../sass/_partials/_components/_panel10.scss */
 #outro .wrapper .outro-content h3 {
   color: #015fd0;
   font-weight: 600;
   font-size: 15.6px;
   font-size: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\00003133}}
+/* line 133, ../sass/_partials/_components/_panel10.scss */
 #outro #closing {
   padding-top: 6px;
   width: 100%;
@@ -2089,7 +2154,7 @@ footer #footer-content #intro-scroll:hover {
   bottom: 0px;
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\00003140}}
+/* line 140, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p {
   text-align: center;
   font-size: 12px;
@@ -2102,47 +2167,55 @@ footer #footer-content #intro-scroll:hover {
   position: absolute;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\00003153}}
+/* line 153, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p > a {
   color: #015fd0;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\00003156}}
+/* line 156, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p > a:hover {
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\00003161}}
+/* line 161, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos {
   margin: auto;
   position: absolute;
   right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_components\/_panel10\.scss}line{font-family:\00003163}}
+/* line 163, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos #thinkeco-logo {
   margin-left: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000322}}
+/* line 22, ../sass/_partials/_index.scss */
 .verticalboxes, #street-upper .bottom, #street-content .bottom {
   position: absolute;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000327}}
-.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #bridge {
+/* line 27, ../sass/_partials/_index.scss */
+.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #fence #fence-content .circles .circle#abc, #fence #fence-content .circles .circle#fox, #fence #fence-content .circles .circle#gothamist, #fence #fence-content .circles .circle#nyc1, #fence #fence-content .circles .circle#wired, #fence #fence-content .circles .circle#dna, #bridge {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+  behavior: url("/js/polyfills/backgroundsize.min.htc");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000334}}
+/* line 34, ../sass/_partials/_index.scss */
 * {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000339}}
+/* line 39, ../sass/_partials/_index.scss */
 html {
   font-family: "Roboto Slab", serif;
   color: #fff;
@@ -2151,17 +2224,17 @@ html {
   font-size: 14px;
   font-size: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000344}}
+/* line 44, ../sass/_partials/_index.scss */
 html h1 {
   font-weight: 700;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000361}}
+/* line 61, ../sass/_partials/_index.scss */
 html, body {
   width: 100%;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000364}}
+/* line 64, ../sass/_partials/_index.scss */
 html section, body section {
   position: fixed;
   top: 0;
@@ -2170,12 +2243,12 @@ html section, body section {
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000373}}
+/* line 73, ../sass/_partials/_index.scss */
 #page {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000377}}
+/* line 77, ../sass/_partials/_index.scss */
 #loading {
   z-index: 1;
   position: fixed;
@@ -2190,28 +2263,28 @@ html section, body section {
   text-align: center;
   padding-top: 144px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000389}}
+/* line 89, ../sass/_partials/_index.scss */
 #loading .loading-icon {
   font-size: 48px;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000393}}
+/* line 93, ../sass/_partials/_index.scss */
 #loading .loading-title {
   font-size: 48px;
   line-height: 1em;
   margin: .25em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\0000398}}
+/* line 98, ../sass/_partials/_index.scss */
 #loading a {
   color: #0091d9;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\00003104}}
+/* line 104, ../sass/_partials/_index.scss */
 .no-cssanimations #loading .loading-icon {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\00003110}}
+/* line 110, ../sass/_partials/_index.scss */
 #main {
   display: none;
   display: block;
@@ -2225,7 +2298,7 @@ html section, body section {
   z-index: 9001;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\00003124}}
+/* line 124, ../sass/_partials/_index.scss */
 #main > span {
   cursor: pointer;
   position: relative;
@@ -2237,7 +2310,7 @@ html section, body section {
   background-repeat: no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\00003134}}
+/* line 134, ../sass/_partials/_index.scss */
 #main > span > img {
   position: absolute;
   top: 0;
@@ -2245,12 +2318,12 @@ html section, body section {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\00003140}}
+/* line 140, ../sass/_partials/_index.scss */
 #main > span[id="play"], #main > span[id="back-to-top"] {
   background: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\00003143}}
+/* line 143, ../sass/_partials/_index.scss */
 #scrollto {
   position: fixed;
   top: 50px;
@@ -2258,7 +2331,7 @@ html section, body section {
   z-index: 9000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\00003149}}
+/* line 149, ../sass/_partials/_index.scss */
 #backtotop {
   position: fixed;
   top: 80px;
@@ -2266,37 +2339,37 @@ html section, body section {
   z-index: 9000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/_partials\/_index\.scss}line{font-family:\00003155}}
+/* line 155, ../sass/_partials/_index.scss */
 #top {
   height: 96px;
   background-color: #73d9ff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\000038}}
-.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #bridge {
+/* line 8, ../sass/ye-olde-ie.scss */
+.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #fence #fence-content .circles .circle#abc, #fence #fence-content .circles .circle#fox, #fence #fence-content .circles .circle#gothamist, #fence #fence-content .circles .circle#nyc1, #fence #fence-content .circles .circle#wired, #fence #fence-content .circles .circle#dna, #bridge {
   -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000312}}
+/* line 12, ../sass/ye-olde-ie.scss */
 [class^="circle"] {
   -ms-behavior: url(/js/polyfills/PIE.htc);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000317}}
+/* line 17, ../sass/ye-olde-ie.scss */
 #intro #intro-content-bg {
   background-color: white;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000322}}
+/* line 22, ../sass/ye-olde-ie.scss */
 #intro #intro-content .box {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000325}}
+/* line 25, ../sass/ye-olde-ie.scss */
 #intro #intro-content .asterick {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000329}}
+/* line 29, ../sass/ye-olde-ie.scss */
 #intro #intro-content #intro-content-top #intro-title {
   padding: 2%;
   position: absolute;
@@ -2308,7 +2381,7 @@ html section, body section {
   left: 0;
   right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000342}}
+/* line 42, ../sass/ye-olde-ie.scss */
 #intro #intro-content #intro-content-bottom #intro-section {
   position: absolute;
   width: 100%;
@@ -2319,31 +2392,31 @@ html section, body section {
   left: 0;
   right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000351}}
+/* line 51, ../sass/ye-olde-ie.scss */
 #intro #intro-content #intro-content-bottom #intro-section #intro-year {
   display: inline-block;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000355}}
+/* line 55, ../sass/ye-olde-ie.scss */
 #intro #intro-content #intro-content-bottom #intro-section #intro-text {
   display: inline-block;
   float: right;
   width: 420px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000363}}
+/* line 63, ../sass/ye-olde-ie.scss */
 #intro footer {
   height: 50px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000370}}
+/* line 70, ../sass/ye-olde-ie.scss */
 #street-upper #street-content .top {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000373}}
+/* line 73, ../sass/ye-olde-ie.scss */
 #street-upper #street-content .asterick {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000376}}
+/* line 76, ../sass/ye-olde-ie.scss */
 #street-upper #street-content .street-text {
   height: 210px;
   top: 0;
@@ -2353,20 +2426,20 @@ html section, body section {
   margin: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000388}}
+/* line 88, ../sass/ye-olde-ie.scss */
 #skyline .triangle-1, #skyline .triangle-2 {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000391}}
+/* line 91, ../sass/ye-olde-ie.scss */
 #skyline .skyline-container {
   background-color: #000;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\0000395}}
+/* line 95, ../sass/ye-olde-ie.scss */
 #skyline .skyline-container .skyline-content h1 {
   position: absolute;
-  width: 100%;
+  width: 85%;
   margin: auto;
   height: 36px;
   top: 0;
@@ -2375,39 +2448,44 @@ html section, body section {
   right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003109}}
+/* line 109, ../sass/ye-olde-ie.scss */
 #brick .panel {
   background-color: #fff;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003115}}
+/* line 114, ../sass/ye-olde-ie.scss */
 #brick #brick-content h1#brick-text {
   position: absolute;
-  width: 12em;
+  width: 13em;
+  font-size: 2em;
   text-align: left;
   display: block;
   margin: auto;
-  top: 0;
+  top: 4em;
   left: 0;
   bottom: 0;
   right: 0;
-  height: 5em;
+  height: 3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003127}}
+/* line 127, ../sass/ye-olde-ie.scss */
 #brick #brick-content .right-panel {
   right: 0;
   position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003130}}
+/* line 130, ../sass/ye-olde-ie.scss */
 #brick #brick-content .right-panel .circle {
   width: 22.5em;
   height: 22.5em;
-  border-radius: 50%;
-  -ms-behavior: url(/js/polyfills/PIE.htc);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background-color: #fff;
+  background-image: url("../assets/brick_circle.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+  behavior: url("/js/polyfills/backgroundsize.min.htc");
+  background-repeat: no-repeat;
+  background-position: center center;
   position: absolute;
   right: 0;
   margin: auto;
@@ -2416,7 +2494,7 @@ html section, body section {
   bottom: 0;
   padding: 5%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003144}}
+/* line 144, ../sass/ye-olde-ie.scss */
 #brick #brick-content .right-panel .circle h1 {
   padding: auto;
   display: block;
@@ -2426,28 +2504,39 @@ html section, body section {
   left: 0;
   top: 0;
   bottom: 0;
-  height: 1em;
+  height: 1.5em;
+  font-size: 7em;
+  line-height: 1em;
+}
+/* line 156, ../sass/ye-olde-ie.scss */
+#brick #brick-content .right-panel .circle h1 em {
+  font-size: .4em;
+  margin-top: 0em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003163}}
+/* line 170, ../sass/ye-olde-ie.scss */
 #street-lower #map-wrapper [class^="layer-"] .circle-outter {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #fff;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003168}}
+/* line 175, ../sass/ye-olde-ie.scss */
 #street-lower #map-wrapper [class^="layer-"] .circle-inner {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #fff;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003176}}
+/* line 183, ../sass/ye-olde-ie.scss */
 #street-lower #map-header h1 {
   position: absolute;
   width: 100%;
-  height: 1em;
+  height: 2em;
   font-weight: 400;
   margin: auto;
   top: 0;
@@ -2456,7 +2545,7 @@ html section, body section {
   right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003192}}
+/* line 199, ../sass/ye-olde-ie.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] {
   -ms-behavior: url(/js/polyfills/PIE.htc);
   display: inline-block;
@@ -2465,88 +2554,26 @@ html section, body section {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003198}}
+/* line 205, ../sass/ye-olde-ie.scss */
 #taxi #circle-wrapper #circles [id^="circle-"] > div {
   width: 85%;
   height: 55%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003208}}
+/* line 215, ../sass/ye-olde-ie.scss */
 #fence #fence-header {
   background-color: #000;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003214}}
-#fence #fence-content .circles .circle {
-  -ms-behavior: url(/js/polyfills/PIE.htc);
-  border-radius: 50%;
-  background-color: #fff;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  opacity: 0.9;
-  display: inline-block;
-  float: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003221}}
-#fence #fence-content .circles .circle#abc {
-  background-image: url("../assets/logo_abc.png");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003223}}
-#fence #fence-content .circles .circle#abc:hover {
-  background-image: url("../assets/logo_abc_white.png");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003227}}
-#fence #fence-content .circles .circle#fox {
-  background-image: url("../assets/logo_fox.png");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003229}}
-#fence #fence-content .circles .circle#fox:hover {
-  background-image: url("../assets/logo_fox_white.png");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003233}}
-#fence #fence-content .circles .circle#gothamist {
-  background-image: url("../assets/logo_gothamist.png");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003235}}
-#fence #fence-content .circles .circle#gothamist:hover {
-  background-image: url("../assets/logo_gothamist_white.png");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003239}}
-#fence #fence-content .circles .circle#nyc1 {
-  background-image: url("../assets/logo_nyc1.png");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003241}}
-#fence #fence-content .circles .circle#nyc1:hover {
-  background-image: url("../assets/logo_nyc1_white.png");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003245}}
-#fence #fence-content .circles .circle#wired {
-  background-image: url("../assets/logo_wired.png");
-  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003248}}
-#fence #fence-content .circles .circle#wired:hover {
-  background-image: url("../assets/logo_wired_white.png");
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003252}}
-#fence #fence-content .circles .circle#dna {
-  background-image: url("../assets/logo_dna.png");
-  background-size: 46%;
-  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
-  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003256}}
-#fence #fence-content .circles .circle#dna:hover {
-  background-image: url("../assets/logo_dna_white.png");
-}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003266}}
+/* line 222, ../sass/ye-olde-ie.scss */
 #bridge #bridge-overlay {
   background-color: #0091d9;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003271}}
+/* line 227, ../sass/ye-olde-ie.scss */
 #bridge #bridge-content h1 {
   top: 0;
   bottom: 0;
@@ -2555,28 +2582,39 @@ html section, body section {
   margin: auto;
   height: 24px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003280}}
+/* line 236, ../sass/ye-olde-ie.scss */
 #bridge #bridge-content .table .row.first {
   vertical-align: bottom;
   height: 36px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003284}}
-#bridge #bridge-content .table .row.first .col:right {
-  color: #015fd0;
+/* line 239, ../sass/ye-olde-ie.scss */
+#bridge #bridge-content .table .row.first .col.left {
+  width: 40%;
+  color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003290}}
+/* line 243, ../sass/ye-olde-ie.scss */
+#bridge #bridge-content .table .row.first .col.right {
+  line-height: 22px;
+  width: 50%;
+  margin-top: -20px;
+}
+/* line 250, ../sass/ye-olde-ie.scss */
 #bridge #bridge-content .table .row .col.left {
   float: left;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003294}}
+/* line 254, ../sass/ye-olde-ie.scss */
 #bridge #bridge-content .table .row .col.right {
   float: right;
   text-align: right;
   color: #000;
 }
+/* line 260, ../sass/ye-olde-ie.scss */
+#bridge #bridge-content .table .row.small {
+  height: 12px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shellyser\/Dev\/thinkeco\/coolnyc14\/app\/sass\/ye-olde-ie\.scss}line{font-family:\00003310}}
+/* line 273, ../sass/ye-olde-ie.scss */
 #outro .wrapper .outro-content #social-media #outro-social-media .addthis_toolbox a {
   -ms-behavior: url(/js/polyfills/PIE.htc);
 }

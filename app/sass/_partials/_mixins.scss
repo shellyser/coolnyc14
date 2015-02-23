@@ -17,5 +17,6 @@
       -o-background-size: $value;
        background-size:   $value;
        -ms-behavior: url('/js/polyfills/backgroundsize.min.htc');
+      behavior: url('/js/polyfills/backgroundsize.min.htc');
 }
  

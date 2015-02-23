@@ -42,58 +42,57 @@
 			@include transition(transform 0.5s ease-in);
 			.circle {
 				display: inline-block;
-				background-color: $white_90;
-				@include border-radius(50%);
 				width: rem(7);
 				height: rem(7);
 				margin: rem(.5);
 				background-position: center center;
 				background-repeat: no-repeat;
-				@include background-size(60%);
-				&:hover{
-					background-color: $color_blue;
-				}
 				&#abc{
-					background-image: url("../assets/logo_abcnews.png");
-					background-position: 50% 51%;
-					@include background-size(52%);
+					background-image: url("../assets/logo_full_abcnews.png");
+					@extend .backgroundimage;
+					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 					&:hover{
-						background-image: url("../assets/logo_abcnews_white.png");
+						background-image: url("../assets/logo_full_abcnews_blue.png");
 					}
 				}
 				&#fox{
-					background-image: url("../assets/logo_fox.svg");
+					background-image: url("../assets/logo_full_fox.png");
+					@extend .backgroundimage;
+					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 					&:hover{
-						background-image: url("../assets/logo_fox_white.svg");
+						background-image: url("../assets/logo_full_fox_blue.png");
 					}
 				}
 				&#gothamist{
-					background-image: url("../assets/logo_gothamist.svg");
-					background-position: 50% 52%;
-					@include background-size(53%);
+					background-image: url("../assets/logo_full_gothamist.png");
+					@extend .backgroundimage;
+					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 					&:hover{
-						background-image: url("../assets/logo_gothamist_white.svg");
+						background-image: url("../assets/logo_full_gothamist_blue.png");
 					}
 				}
 				&#nyc1{
-					background-image: url("../assets/logo_nyc1.svg");
-					background-position: 50% 61%;
-					@include background-size(45%);
+					background-image: url("../assets/logo_full_nyc1.png");
+					@extend .backgroundimage;
+					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 					&:hover{
-						background-image: url("../assets/logo_nyc1_white.svg");
+						background-image: url("../assets/logo_full_nyc1_blue.png");
 					}
 				}
 				&#wired{
-					background-image: url("../assets/logo_wired.svg");
+					background-image: url("../assets/logo_full_wired.png");
+					@extend .backgroundimage;
+					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 					&:hover{
-						background-image: url("../assets/logo_wired_white.svg");
+						background-image: url("../assets/logo_full_wired_blue.png");
 					}
 				}
 				&#dna{
-					background-image: url("../assets/logo_dna.svg");
-					@include background-size(46%);
+					background-image: url("../assets/logo_full_dna.png");
+					@extend .backgroundimage;
+					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 					&:hover{
-						background-image: url("../assets/logo_dna_white.svg");
+						background-image: url("../assets/logo_full_dna_blue.png");
 					}
 				}
 			}

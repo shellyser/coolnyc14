@@ -24,10 +24,10 @@
 	skrollr-0{
 		opacity:0; 
 	}
-	_bstreetupper--1900{
+	_bstreetupper--2500{
 		opacity:0; 
 	}
-	_bstreetupper--1600{
+	_bstreetupper--2400{
 		opacity:1
 	}
 }
@@ -35,10 +35,10 @@
 	skrollr-0{
 		opacity:0; 
 	}
-	_bstreetupper--1600{
+	_bstreetupper--2400{
 		opacity:0; 
 	}
-	_bstreetupper--1300{
+	_bstreetupper--2300{
 		opacity:1
 	}
 }
@@ -104,21 +104,21 @@
 }
 
 @-skrollr-keyframes skylineanim2{
-	_bskyline-1000{
+	_bskyline-2100{
 		transform:translate(0,0%);
 	}
-	_bskyline-1600{
+	_bskyline-2600{
 		transform:translate(0,-100%);
 	}
 }
 
 
  @-skrollr-keyframes skylineanim3{
- 	_bskyline-2000{ 
+ 	_bskyline-2700{ 
  		transform:translate(0%,100%); 
  	}
- 	_bskyline-2600{
- 		transform:translate(0%, 0%); 
+ 	_bskyline-3200{
+ 		transform:translate(0%, -100%); 
  	}
  }	
 
@@ -266,6 +266,11 @@
 	-skrollr-animation-name: fenceanim1;
 }
 
+#fence-header{
+	-skrollr-animation-name: fenceanim2;
+}
+
+
 @-skrollr-keyframes fenceanim1{
 	skrollr-0{
 		display: none;
@@ -286,6 +291,21 @@
 	display: none;
 	} 
 }
+
+@-skrollr-keyframes fenceanim2{
+		skrollr-0{
+			transform: translate(0%,-50%); 
+			opacity: 0;
+		} 
+		_bfence-1000{
+			transform: translate(0%,-50%); 
+			opacity: 0;
+		} 
+		_bfence-1500{
+			transform: translate(0%,0%); 
+			opacity: 1;
+		}
+	}
 
 #bridge{
 	-skrollr-animation-name: bridgeanim1;
@@ -344,17 +364,18 @@
 
     @-skrollr-keyframes introyearanim1ie {
     	skrollr-0{
-    		display:none; 
+    		visibility: hidden; 
     	}
-    	_bstreetupper--1900{
-    		display:block; 
+
+    	_bstreetupper--2400{
+    		visibility: visible; 
     	}
     }
     @-skrollr-keyframes introtextanim1ie {
     	skrollr-0{
     		display:none; 
-    	}
-    	_bstreetupper--1600{
+}
+    	_bstreetupper--2300{
     		display:block;  
     	}
     }
@@ -414,11 +435,11 @@
     }
 
     @-skrollr-keyframes skylineanim2ie{
-		 _bskyline-1000{
+		 _bskyline-2100{
 		    	top: 0%;
 		    	display: block;
 		 }
-	    	_bskyline-1600{
+	    	_bskyline-2600{
 	    		top: -100%;
 	    		display:none;
 	    	}
@@ -428,15 +449,16 @@
     	skrollr-0{
     		display: none;
     	}
-    	_bskyline-2000{ 
+    	_bskyline-2700{ 
     		top: 100%; 
     		display: block;
     	}
-    	_bskyline-2600{
+    	_bskyline-3200{
     		top: 0%; 
     	}
     }
 	
+
 	#brick {
 		 -skrollr-animation-name: brickanim1ie;
 	}
@@ -571,6 +593,9 @@
 	#fence{
 		-skrollr-animation-name: fenceanim1ie;
 	}
+	#fence-header{
+		-skrollr-animation-name: fenceanim2ie;
+	}
 
 	@-skrollr-keyframes fenceanim1ie{
 		skrollr-0{
@@ -592,6 +617,19 @@
 		display: none;
 		} 
 	}
+
+	@-skrollr-keyframes fenceanim2ie{
+		skrollr-0{
+			visibility: hidden;
+		} 
+		_bfence-1000{
+			visibility:hidden;
+		} 
+		_bfence-1500{
+			visibility:visible;
+		}
+	}
+
 	#bridge{
 		-skrollr-animation-name: bridgeanim1ie;
 	}

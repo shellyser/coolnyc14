@@ -1,4 +1,4 @@
-$footer_height: 11%;
+$footer_height: 80px;
 #intro {
     #intro-content-bg {
         background-color: $white_50;
@@ -218,7 +218,7 @@ footer {
     width: 100%;
     background-color: $white;
     text-align: center;
-    color: #0E9DD8;
+    color: $cerulean;
     font-style: italic;
     height: $footer_height;
     font-size: .8em;
@@ -229,19 +229,12 @@ footer {
         top: 0;
         bottom: 0;
         left: 0;
-        right: 0;
-        @include break-min($main-break-xxxtrlg){
-            height: 4em;
-        }   
+        right: 0;  
         h3{
             display:block;
-            margin-top: rem(0.2);
         }
         #intro-scroll {
             display: none;
-        } 
-        #intro-scroll:hover {
-            cursor: pointer;
         } 
     }   
 }

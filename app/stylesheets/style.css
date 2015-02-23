@@ -1,4 +1,4 @@
-/* line 5, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -81,80 +81,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 0px;
 }
 /* line 14, ../sass/_partials/_shorty.scss */
-.shorty #intro #intro-content {
-  height: -webkit-calc(100% - 60px - 46px);
-  height: calc(100% - 60px - 46px);
-}
-/* line 17, ../sass/_partials/_shorty.scss */
 .shorty #intro footer {
   height: 46px;
   padding: 0.3rem;
 }
-/* line 20, ../sass/_partials/_shorty.scss */
+/* line 17, ../sass/_partials/_shorty.scss */
 .shorty #intro footer #footer-content {
   height: 3.5em;
 }
-/* line 23, ../sass/_partials/_shorty.scss */
+/* line 20, ../sass/_partials/_shorty.scss */
 .shorty #intro footer img {
   width: 33px;
 }
-/* line 26, ../sass/_partials/_shorty.scss */
+/* line 23, ../sass/_partials/_shorty.scss */
 .shorty #intro footer h3 {
   display: none;
 }
 @media screen and (min-width: 900px) {
-  /* line 33, ../sass/_partials/_shorty.scss */
+  /* line 30, ../sass/_partials/_shorty.scss */
   .shorty #street-lower #map-wrapper {
     font-size: 13px;
   }
 }
-/* line 39, ../sass/_partials/_shorty.scss */
+/* line 36, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header {
   height: 9rem;
 }
-/* line 41, ../sass/_partials/_shorty.scss */
+/* line 38, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header h1 {
   padding-top: 2rem;
 }
-/* line 45, ../sass/_partials/_shorty.scss */
+/* line 42, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-content {
   height: -webkit-calc(100% - rem(9));
   height: calc(100% - rem(9));
 }
 @media screen and (min-width: 800px) {
-  /* line 48, ../sass/_partials/_shorty.scss */
+  /* line 45, ../sass/_partials/_shorty.scss */
   .shorty #fence #fence-content .circles {
     width: 40rem;
     height: 23rem;
   }
-  /* line 51, ../sass/_partials/_shorty.scss */
+  /* line 48, ../sass/_partials/_shorty.scss */
   .shorty #fence #fence-content .circles .circle {
     width: 11rem;
     height: 11rem;
     margin: 0.3rem;
   }
 }
-/* line 61, ../sass/_partials/_shorty.scss */
+/* line 58, ../sass/_partials/_shorty.scss */
 .shorty #outro wrapper:first-of-type {
   height: -webkit-calc(100% - 53px);
   height: calc(100% - 53px);
 }
-/* line 64, ../sass/_partials/_shorty.scss */
+/* line 61, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing {
   height: 56px;
   padding-top: 0.7rem;
 }
-/* line 67, ../sass/_partials/_shorty.scss */
+/* line 64, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing p {
   font-size: 0.9rem;
   padding-bottom: 0.6rem;
   line-height: 0rem;
 }
-/* line 73, ../sass/_partials/_shorty.scss */
+/* line 70, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing #logos img {
   width: 90px;
 }
-/* line 76, ../sass/_partials/_shorty.scss */
+/* line 73, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing #logos #thinkeco-logo {
   margin-left: 10px;
 }
@@ -192,10 +187,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     opacity: 0;
   }
-  _bstreetupper--1900 {
+  _bstreetupper--2500 {
     opacity: 0;
   }
-  _bstreetupper--1600 {
+  _bstreetupper--2400 {
     opacity: 1;
   }
 }
@@ -203,10 +198,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     opacity: 0;
   }
-  _bstreetupper--1600 {
+  _bstreetupper--2400 {
     opacity: 0;
   }
-  _bstreetupper--1300 {
+  _bstreetupper--2300 {
     opacity: 1;
   }
 }
@@ -297,28 +292,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @-skrollr-keyframes skylineanim2 {
-  _bskyline-1000 {
+  _bskyline-2100 {
     transform: translate(0, 0%);
   }
-  _bskyline-1600 {
+  _bskyline-2600 {
     transform: translate(0, -100%);
   }
 }
 @-skrollr-keyframes skylineanim3 {
-  _bskyline-2000 {
-    transform: translate(0%, 0%);
+  _bskyline-2700 {
+    transform: translate(0%, 100%);
   }
-  _bskyline-2600 {
+  _bskyline-3200 {
     transform: translate(0%, -100%);
-  }
-  _bskyline-3400 {
-    transform: translate(0%, -100%);
-  }
-  _bskyline-4000 {
-    transform: translate(0%, -200%);
   }
 }
-/* line 133, ../sass/_partials/_skrollr.scss */
+/* line 127, ../sass/_partials/_skrollr.scss */
 #brick {
   -skrollr-animation-name: brickanim1;
 }
@@ -355,7 +344,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-/* line 157, ../sass/_partials/_skrollr.scss */
+/* line 151, ../sass/_partials/_skrollr.scss */
 #nycave {
   -skrollr-animation-name: nycaveanim1;
 }
@@ -378,7 +367,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform: translate(0, -100%);
   }
 }
-/* line 180, ../sass/_partials/_skrollr.scss */
+/* line 174, ../sass/_partials/_skrollr.scss */
 #street-lower {
   -skrollr-animation-name: streetloweranim1;
 }
@@ -403,22 +392,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-/* line 205, ../sass/_partials/_skrollr.scss */
+/* line 199, ../sass/_partials/_skrollr.scss */
 #taxi {
   -skrollr-animation-name: taxianim1;
 }
 
-/* line 208, ../sass/_partials/_skrollr.scss */
+/* line 202, ../sass/_partials/_skrollr.scss */
 #circle-1 {
   -skrollr-animation-name: circle1anim2;
 }
 
-/* line 211, ../sass/_partials/_skrollr.scss */
+/* line 205, ../sass/_partials/_skrollr.scss */
 #circle-2 {
   -skrollr-animation-name: circle2anim3;
 }
 
-/* line 214, ../sass/_partials/_skrollr.scss */
+/* line 208, ../sass/_partials/_skrollr.scss */
 #circle-3 {
   -skrollr-animation-name: circle3anim4;
 }
@@ -474,9 +463,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     opacity: 1;
   }
 }
-/* line 271, ../sass/_partials/_skrollr.scss */
+/* line 265, ../sass/_partials/_skrollr.scss */
 #fence {
   -skrollr-animation-name: fenceanim1;
+}
+
+/* line 269, ../sass/_partials/_skrollr.scss */
+#fence-header {
+  -skrollr-animation-name: fenceanim2;
 }
 
 @-skrollr-keyframes fenceanim1 {
@@ -499,7 +493,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-/* line 296, ../sass/_partials/_skrollr.scss */
+@-skrollr-keyframes fenceanim2 {
+  skrollr-0 {
+    transform: translate(0%, -50%);
+    opacity: 0;
+  }
+  _bfence-1000 {
+    transform: translate(0%, -50%);
+    opacity: 0;
+  }
+  _bfence-1500 {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+/* line 310, ../sass/_partials/_skrollr.scss */
 #bridge {
   -skrollr-animation-name: bridgeanim1;
 }
@@ -524,7 +532,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-/* line 321, ../sass/_partials/_skrollr.scss */
+/* line 335, ../sass/_partials/_skrollr.scss */
 #outro {
   -skrollr-animation-name: outroanim1;
 }
@@ -542,31 +550,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
   }
 }
-/* line 340, ../sass/_partials/_skrollr.scss */
+/* line 354, ../sass/_partials/_skrollr.scss */
 #ie #intro {
   -skrollr-animation-name: introanim1ie;
 }
-/* line 343, ../sass/_partials/_skrollr.scss */
+/* line 357, ../sass/_partials/_skrollr.scss */
 #ie #intro-year {
   -skrollr-animation-name: introyear1ie;
 }
-/* line 346, ../sass/_partials/_skrollr.scss */
+/* line 360, ../sass/_partials/_skrollr.scss */
 #ie #intro-text {
   -skrollr-animation-name: introtext1ie;
 }
 @-skrollr-keyframes introyearanim1ie {
   skrollr-0 {
-    display: none;
+    visibility: hidden;
   }
-  _bstreetupper--1900 {
-    display: block;
+  _bstreetupper--2400 {
+    visibility: visible;
   }
 }
 @-skrollr-keyframes introtextanim1ie {
   skrollr-0 {
     display: none;
   }
-  _bstreetupper--1600 {
+  _bstreetupper--2300 {
     display: block;
   }
 }
@@ -578,7 +586,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -100%;
   }
 }
-/* line 377, ../sass/_partials/_skrollr.scss */
+/* line 392, ../sass/_partials/_skrollr.scss */
 #ie #street-upper {
   -skrollr-animation-name: streetupperanim1ie;
 }
@@ -596,15 +604,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -100%;
   }
 }
-/* line 396, ../sass/_partials/_skrollr.scss */
+/* line 411, ../sass/_partials/_skrollr.scss */
 #ie #skyline {
   -skrollr-animation-name: skylineanim1ie;
 }
-/* line 399, ../sass/_partials/_skrollr.scss */
+/* line 414, ../sass/_partials/_skrollr.scss */
 #ie #one {
   -skrollr-animation-name: skylineanim2ie;
 }
-/* line 402, ../sass/_partials/_skrollr.scss */
+/* line 417, ../sass/_partials/_skrollr.scss */
 #ie #two {
   -skrollr-animation-name: skylineanim3ie;
 }
@@ -623,11 +631,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @-skrollr-keyframes skylineanim2ie {
-  _bskyline-1000 {
+  _bskyline-2100 {
     top: 0%;
     display: block;
   }
-  _bskyline-1600 {
+  _bskyline-2600 {
     top: -100%;
     display: none;
   }
@@ -636,23 +644,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   skrollr-0 {
     display: none;
   }
-  _bskyline-2000 {
+  _bskyline-2700 {
+    top: 100%;
+    display: block;
+  }
+  _bskyline-3200 {
     top: 0%;
-    display: block;
-  }
-  _bskyline-2600 {
-    top: -100%;
-  }
-  _bskyline-3400 {
-    top: -100%;
-    display: block;
-  }
-  _bskyline-4000 {
-    top: -200%;
-    display: none;
   }
 }
-/* line 454, ../sass/_partials/_skrollr.scss */
+/* line 462, ../sass/_partials/_skrollr.scss */
 #ie #brick {
   -skrollr-animation-name: brickanim1ie;
 }
@@ -676,7 +676,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-/* line 478, ../sass/_partials/_skrollr.scss */
+/* line 486, ../sass/_partials/_skrollr.scss */
 #ie #nycave {
   -skrollr-animation-name: nycaveanim1ie;
 }
@@ -698,7 +698,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: -100%;
   }
 }
-/* line 501, ../sass/_partials/_skrollr.scss */
+/* line 509, ../sass/_partials/_skrollr.scss */
 #ie #street-lower {
   -skrollr-animation-name: streetloweranim1ie;
 }
@@ -722,19 +722,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-/* line 526, ../sass/_partials/_skrollr.scss */
+/* line 534, ../sass/_partials/_skrollr.scss */
 #ie #taxi {
   -skrollr-animation-name: taxianim1ie;
 }
-/* line 529, ../sass/_partials/_skrollr.scss */
+/* line 537, ../sass/_partials/_skrollr.scss */
 #ie #circle-1 {
   -skrollr-animation-name: circle1anim2ie;
 }
-/* line 532, ../sass/_partials/_skrollr.scss */
+/* line 540, ../sass/_partials/_skrollr.scss */
 #ie #circle-2 {
   -skrollr-animation-name: circle2anim3ie;
 }
-/* line 535, ../sass/_partials/_skrollr.scss */
+/* line 543, ../sass/_partials/_skrollr.scss */
 #ie #circle-3 {
   -skrollr-animation-name: circle3anim4ie;
 }
@@ -782,9 +782,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     visibility: visible;
   }
 }
-/* line 585, ../sass/_partials/_skrollr.scss */
+/* line 593, ../sass/_partials/_skrollr.scss */
 #ie #fence {
   -skrollr-animation-name: fenceanim1ie;
+}
+/* line 596, ../sass/_partials/_skrollr.scss */
+#ie #fence-header {
+  -skrollr-animation-name: fenceanim2ie;
 }
 @-skrollr-keyframes fenceanim1ie {
   skrollr-0 {
@@ -806,7 +810,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-/* line 609, ../sass/_partials/_skrollr.scss */
+@-skrollr-keyframes fenceanim2ie {
+  skrollr-0 {
+    visibility: hidden;
+  }
+  _bfence-1000 {
+    visibility: hidden;
+  }
+  _bfence-1500 {
+    visibility: visible;
+  }
+}
+/* line 633, ../sass/_partials/_skrollr.scss */
 #ie #bridge {
   -skrollr-animation-name: bridgeanim1ie;
 }
@@ -830,7 +845,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: none;
   }
 }
-/* line 634, ../sass/_partials/_skrollr.scss */
+/* line 658, ../sass/_partials/_skrollr.scss */
 #ie #outro {
   -skrollr-animation-name: outroanim1ie;
 }
@@ -914,8 +929,8 @@ header #tagline {
   width: 26rem;
   position: relative;
   margin: auto;
-  height: -webkit-calc(100% - 11% - 86px);
-  height: calc(100% - 11% - 86px);
+  height: -webkit-calc(100% - 80px - 86px);
+  height: calc(100% - 80px - 86px);
 }
 /* line 48, ../sass/_partials/_components/_panel1.scss */
 #intro-content .box {
@@ -1144,9 +1159,9 @@ footer {
   width: 100%;
   background-color: #fff;
   text-align: center;
-  color: #0E9DD8;
+  color: #00aced;
   font-style: italic;
-  height: 11%;
+  height: 80px;
   font-size: .8em;
 }
 /* line 225, ../sass/_partials/_components/_panel1.scss */
@@ -1159,24 +1174,13 @@ footer #footer-content {
   left: 0;
   right: 0;
 }
-@media screen and (min-width: 1600px) {
-  /* line 225, ../sass/_partials/_components/_panel1.scss */
-  footer #footer-content {
-    height: 4em;
-  }
-}
-/* line 236, ../sass/_partials/_components/_panel1.scss */
+/* line 233, ../sass/_partials/_components/_panel1.scss */
 footer #footer-content h3 {
   display: block;
-  margin-top: 0.2rem;
 }
-/* line 240, ../sass/_partials/_components/_panel1.scss */
+/* line 236, ../sass/_partials/_components/_panel1.scss */
 footer #footer-content #intro-scroll {
   display: none;
-}
-/* line 243, ../sass/_partials/_components/_panel1.scss */
-footer #footer-content #intro-scroll:hover {
-  cursor: pointer;
 }
 
 /* line 1, ../sass/_partials/_components/_panel2.scss */
@@ -2000,8 +2004,8 @@ footer #footer-content #intro-scroll:hover {
   /* line 107, ../sass/_partials/_components/_panel6.scss */
   #street-lower [class^="layer-"] p {
     width: 27em;
-    font-size: 1.4em;
-    line-height: 1.7em;
+    font-size: 1em;
+    line-height: 1.6em;
   }
 }
 /* line 134, ../sass/_partials/_components/_panel6.scss */
@@ -2051,14 +2055,14 @@ footer #footer-content #intro-scroll:hover {
 @media screen and (min-width: 900px) {
   /* line 145, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-1 p {
-    left: 4.5em;
-    top: 2.5em;
+    left: 6.3em;
+    top: 3.3em;
   }
 }
 /* line 167, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-2 {
   top: 17em;
-  right: 20em;
+  right: 22em;
 }
 @media screen and (max-width: 399px) {
   /* line 167, ../sass/_partials/_components/_panel6.scss */
@@ -2089,7 +2093,7 @@ footer #footer-content #intro-scroll:hover {
   #street-lower .layer-2 p {
     left: 4em;
     top: 2.4em;
-    width: 11em;
+    width: 10em;
   }
 }
 @media screen and (min-width: 600px) {
@@ -2103,34 +2107,29 @@ footer #footer-content #intro-scroll:hover {
 @media screen and (min-width: 900px) {
   /* line 182, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-2 p {
-    left: 4.5em;
-    top: 2.5em;
+    left: 6.2em;
+    top: 3.2em;
     width: 15em;
   }
 }
-@media screen and (min-width: 1400px) {
-  /* line 182, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-2 p {
-    width: 21em;
-  }
-}
-/* line 205, ../sass/_partials/_components/_panel6.scss */
+/* line 202, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-3 {
-  top: 10em;
-  left: 23em;
+  top: 12em;
+  left: 22em;
 }
 @media screen and (max-width: 399px) {
-  /* line 205, ../sass/_partials/_components/_panel6.scss */
+  /* line 202, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-3 {
     left: 15em;
+    top: 7em;
   }
 }
-/* line 211, ../sass/_partials/_components/_panel6.scss */
+/* line 209, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-3 .line {
   top: 3em;
   left: -10.8em;
 }
-/* line 215, ../sass/_partials/_components/_panel6.scss */
+/* line 213, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-3 p {
   top: 2.8em;
   left: -13.3em;
@@ -2138,7 +2137,7 @@ footer #footer-content #intro-scroll:hover {
   text-align: right;
 }
 @media screen and (max-width: 399px) {
-  /* line 215, ../sass/_partials/_components/_panel6.scss */
+  /* line 213, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-3 p {
     left: -13.5em;
     top: 2.8em;
@@ -2146,62 +2145,61 @@ footer #footer-content #intro-scroll:hover {
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 215, ../sass/_partials/_components/_panel6.scss */
+  /* line 213, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-3 p {
     top: 3.1em;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 215, ../sass/_partials/_components/_panel6.scss */
+  /* line 213, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-3 p {
     top: 3.7em;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 215, ../sass/_partials/_components/_panel6.scss */
+  /* line 213, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-3 p {
     width: 18em;
     left: -18.8em;
-    top: 3em;
   }
 }
-/* line 238, ../sass/_partials/_components/_panel6.scss */
+/* line 235, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-4 {
   top: 6em;
   left: 28em;
 }
 @media screen and (max-width: 399px) {
-  /* line 238, ../sass/_partials/_components/_panel6.scss */
+  /* line 235, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 {
-    top: 3em;
+    top: 1em;
     left: 20em;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 238, ../sass/_partials/_components/_panel6.scss */
+  /* line 235, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 {
     left: 30em;
   }
 }
-/* line 248, ../sass/_partials/_components/_panel6.scss */
+/* line 245, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-4 .line {
   top: 3em;
   right: -16.4em;
 }
-/* line 252, ../sass/_partials/_components/_panel6.scss */
+/* line 249, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-4 p {
   top: 2.7em;
   left: 4.2em;
 }
 @media screen and (max-width: 399px) {
-  /* line 252, ../sass/_partials/_components/_panel6.scss */
+  /* line 249, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 p {
     top: 2.5em;
     left: 4em;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 252, ../sass/_partials/_components/_panel6.scss */
+  /* line 249, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 p {
     top: 2.8em;
     left: 5em;
@@ -2209,75 +2207,75 @@ footer #footer-content #intro-scroll:hover {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 252, ../sass/_partials/_components/_panel6.scss */
+  /* line 249, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 p {
-    top: 2.8em;
-    left: 4.5em;
+    top: 3.4em;
+    left: 6.2em;
     width: 12em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 252, ../sass/_partials/_components/_panel6.scss */
+  /* line 249, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-4 p {
     width: 15em;
   }
 }
-/* line 274, ../sass/_partials/_components/_panel6.scss */
+/* line 271, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 {
   top: 28em;
   right: 32.5em;
 }
 @media screen and (max-width: 399px) {
-  /* line 274, ../sass/_partials/_components/_panel6.scss */
+  /* line 271, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 {
     top: 17em;
     right: 24em;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 274, ../sass/_partials/_components/_panel6.scss */
+  /* line 271, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 {
     top: 29em;
     right: 30.3em;
   }
 }
-/* line 285, ../sass/_partials/_components/_panel6.scss */
+/* line 282, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 .circle-outter {
   width: 12.5em;
   height: 12.5em;
 }
-/* line 289, ../sass/_partials/_components/_panel6.scss */
+/* line 286, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 .circle-inner {
   left: 1.25em;
   top: 1.25em;
   width: 10.1em;
   height: 10.1em;
 }
-/* line 295, ../sass/_partials/_components/_panel6.scss */
+/* line 292, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 h3 {
   font-size: 4em;
   height: 1em;
   color: #000;
 }
-/* line 300, ../sass/_partials/_components/_panel6.scss */
+/* line 297, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 .line {
   right: -22.7em;
   top: 6em;
 }
-/* line 304, ../sass/_partials/_components/_panel6.scss */
+/* line 301, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 p {
   width: 12em;
   top: 4.8em;
   text-align: left;
   left: 9em;
 }
-/* line 309, ../sass/_partials/_components/_panel6.scss */
+/* line 306, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-5 p em {
   color: #000;
   font-weight: 700;
 }
 @media screen and (max-width: 399px) {
-  /* line 304, ../sass/_partials/_components/_panel6.scss */
+  /* line 301, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 p {
     width: 11em;
     left: 8.8em;
@@ -2285,7 +2283,7 @@ footer #footer-content #intro-scroll:hover {
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 304, ../sass/_partials/_components/_panel6.scss */
+  /* line 301, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 p {
     width: 16em;
     top: 5.7em;
@@ -2293,19 +2291,11 @@ footer #footer-content #intro-scroll:hover {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 304, ../sass/_partials/_components/_panel6.scss */
+  /* line 301, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-5 p {
     width: 16em;
-    top: 5em;
-    left: 10em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 304, ../sass/_partials/_components/_panel6.scss */
-  #street-lower .layer-5 p {
-    width: 24em;
-    top: 5em;
-    left: 10em;
+    top: 6.6em;
+    left: 13.4em;
   }
 }
 
@@ -2394,7 +2384,7 @@ footer #footer-content #intro-scroll:hover {
   /* line 38, ../sass/_partials/_components/_panel7.scss */
   #taxi #circle-wrapper {
     height: 11em;
-    width: 91%;
+    width: 92%;
   }
 }
 /* line 51, ../sass/_partials/_components/_panel7.scss */
@@ -2540,95 +2530,65 @@ footer #footer-content #intro-scroll:hover {
 /* line 43, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.9);
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   width: 7rem;
   height: 7rem;
   margin: 0.5rem;
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: 60%;
-  -moz-background-size: 60%;
-  -o-background-size: 60%;
-  background-size: 60%;
-  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
 }
-/* line 53, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle:hover {
-  background-color: #0091d9;
-}
-/* line 56, ../sass/_partials/_components/_panel8.scss */
+/* line 50, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#abc {
-  background-image: url("../assets/logo_abcnews.png");
-  background-position: 50% 51%;
-  -webkit-background-size: 52%;
-  -moz-background-size: 52%;
-  -o-background-size: 52%;
-  background-size: 52%;
-  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+  background-image: url("../assets/logo_full_abcnews.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-/* line 60, ../sass/_partials/_components/_panel8.scss */
+/* line 54, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#abc:hover {
-  background-image: url("../assets/logo_abcnews_white.png");
+  background-image: url("../assets/logo_full_abcnews_blue.png");
 }
-/* line 64, ../sass/_partials/_components/_panel8.scss */
+/* line 58, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#fox {
-  background-image: url("../assets/logo_fox.svg");
+  background-image: url("../assets/logo_full_fox.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+}
+/* line 62, ../sass/_partials/_components/_panel8.scss */
+#fence #fence-content .circles .circle#fox:hover {
+  background-image: url("../assets/logo_full_fox_blue.png");
 }
 /* line 66, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle#fox:hover {
-  background-image: url("../assets/logo_fox_white.svg");
+#fence #fence-content .circles .circle#gothamist {
+  background-image: url("../assets/logo_full_gothamist.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
 /* line 70, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle#gothamist {
-  background-image: url("../assets/logo_gothamist.svg");
-  background-position: 50% 52%;
-  -webkit-background-size: 53%;
-  -moz-background-size: 53%;
-  -o-background-size: 53%;
-  background-size: 53%;
-  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+#fence #fence-content .circles .circle#gothamist:hover {
+  background-image: url("../assets/logo_full_gothamist_blue.png");
 }
 /* line 74, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle#gothamist:hover {
-  background-image: url("../assets/logo_gothamist_white.svg");
+#fence #fence-content .circles .circle#nyc1 {
+  background-image: url("../assets/logo_full_nyc1.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
 /* line 78, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle#nyc1 {
-  background-image: url("../assets/logo_nyc1.svg");
-  background-position: 50% 61%;
-  -webkit-background-size: 45%;
-  -moz-background-size: 45%;
-  -o-background-size: 45%;
-  background-size: 45%;
-  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+#fence #fence-content .circles .circle#nyc1:hover {
+  background-image: url("../assets/logo_full_nyc1_blue.png");
 }
 /* line 82, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle#nyc1:hover {
-  background-image: url("../assets/logo_nyc1_white.svg");
+#fence #fence-content .circles .circle#wired {
+  background-image: url("../assets/logo_full_wired.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
 /* line 86, ../sass/_partials/_components/_panel8.scss */
-#fence #fence-content .circles .circle#wired {
-  background-image: url("../assets/logo_wired.svg");
-}
-/* line 88, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#wired:hover {
-  background-image: url("../assets/logo_wired_white.svg");
+  background-image: url("../assets/logo_full_wired_blue.png");
 }
-/* line 92, ../sass/_partials/_components/_panel8.scss */
+/* line 90, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#dna {
-  background-image: url("../assets/logo_dna.svg");
-  -webkit-background-size: 46%;
-  -moz-background-size: 46%;
-  -o-background-size: 46%;
-  background-size: 46%;
-  -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+  background-image: url("../assets/logo_full_dna.png");
+  -ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
 }
-/* line 95, ../sass/_partials/_components/_panel8.scss */
+/* line 94, ../sass/_partials/_components/_panel8.scss */
 #fence #fence-content .circles .circle#dna:hover {
-  background-image: url("../assets/logo_dna_white.svg");
+  background-image: url("../assets/logo_full_dna_blue.png");
 }
 @media screen and (min-width: 550px) {
   /* line 32, ../sass/_partials/_components/_panel8.scss */
@@ -2636,7 +2596,7 @@ footer #footer-content #intro-scroll:hover {
     width: 34rem;
     height: 23rem;
   }
-  /* line 103, ../sass/_partials/_components/_panel8.scss */
+  /* line 102, ../sass/_partials/_components/_panel8.scss */
   #fence #fence-content .circles .circle {
     width: 10rem;
     height: 10rem;
@@ -2648,7 +2608,7 @@ footer #footer-content #intro-scroll:hover {
     width: 54rem;
     height: 34rem;
   }
-  /* line 111, ../sass/_partials/_components/_panel8.scss */
+  /* line 110, ../sass/_partials/_components/_panel8.scss */
   #fence #fence-content .circles .circle {
     width: 15rem;
     height: 15rem;
@@ -2809,60 +2769,66 @@ footer #footer-content #intro-scroll:hover {
   width: 50%;
   line-height: 1.5rem;
 }
-/* line 97, ../sass/_partials/_components/_panel9.scss */
+@media screen and (max-width: 399px) {
+  /* line 90, ../sass/_partials/_components/_panel9.scss */
+  #bridge #bridge-content .table .row:first-of-type .col:last-of-type {
+    width: 54%;
+  }
+}
+/* line 100, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row.small {
   background-image: url("../assets/dotted_line.png");
   background-repeat: no-repeat;
   height: 1rem;
 }
-/* line 102, ../sass/_partials/_components/_panel9.scss */
+/* line 105, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row.line {
   height: 0.3rem;
   background-color: #fff;
 }
-/* line 105, ../sass/_partials/_components/_panel9.scss */
+/* line 108, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row.line .blue-line {
   background-color: #015fd0;
   width: 100%;
   height: 100%;
 }
-/* line 111, ../sass/_partials/_components/_panel9.scss */
+/* line 114, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col {
   display: block;
   width: 9rem;
   height: 100%;
 }
 @media screen and (min-width: 550px) {
-  /* line 111, ../sass/_partials/_components/_panel9.scss */
+  /* line 114, ../sass/_partials/_components/_panel9.scss */
   #bridge #bridge-content .table .row .col {
     width: 14rem;
   }
 }
-/* line 118, ../sass/_partials/_components/_panel9.scss */
+/* line 121, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col h2 {
   font-size: 4rem;
   display: block;
   margin-top: 3rem;
 }
 @media screen and (min-width: 550px) {
-  /* line 118, ../sass/_partials/_components/_panel9.scss */
+  /* line 121, ../sass/_partials/_components/_panel9.scss */
   #bridge #bridge-content .table .row .col h2 {
     font-size: 6rem;
     margin-top: 2.8rem;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  /* line 118, ../sass/_partials/_components/_panel9.scss */
+  /* line 121, ../sass/_partials/_components/_panel9.scss */
   #bridge #bridge-content .table .row .col h2 {
     font-size: 7.2rem;
   }
 }
-/* line 131, ../sass/_partials/_components/_panel9.scss */
+/* line 134, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:first-of-type {
   float: left;
   text-align: left;
 }
-/* line 135, ../sass/_partials/_components/_panel9.scss */
+/* line 138, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:last-of-type {
   float: right;
   text-align: right;
@@ -3118,12 +3084,13 @@ footer #footer-content #intro-scroll:hover {
 }
 
 /* line 27, ../sass/_partials/_index.scss */
-.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #bridge {
+.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #taxi, #fence, #fence #fence-content .circles .circle#abc, #fence #fence-content .circles .circle#fox, #fence #fence-content .circles .circle#gothamist, #fence #fence-content .circles .circle#nyc1, #fence #fence-content .circles .circle#wired, #fence #fence-content .circles .circle#dna, #bridge {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   -ms-behavior: url("/js/polyfills/backgroundsize.min.htc");
+  behavior: url("/js/polyfills/backgroundsize.min.htc");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -3247,8 +3214,14 @@ html section, body section {
     z-index: 9001;
   }
 }
+@media screen and (min-width: 1200px) {
+  /* line 110, ../sass/_partials/_index.scss */
+  #main {
+    right: 60px;
+  }
+}
 
-/* line 124, ../sass/_partials/_index.scss */
+/* line 127, ../sass/_partials/_index.scss */
 #main > span {
   cursor: pointer;
   position: relative;
@@ -3260,7 +3233,7 @@ html section, body section {
   background-repeat: no-repeat;
 }
 
-/* line 134, ../sass/_partials/_index.scss */
+/* line 137, ../sass/_partials/_index.scss */
 #main > span > img {
   position: absolute;
   top: 0;
@@ -3268,12 +3241,12 @@ html section, body section {
   display: none;
 }
 
-/* line 140, ../sass/_partials/_index.scss */
+/* line 143, ../sass/_partials/_index.scss */
 #main > span[id="play"], #main > span[id="back-to-top"] {
   background: none;
 }
 
-/* line 143, ../sass/_partials/_index.scss */
+/* line 146, ../sass/_partials/_index.scss */
 #scrollto {
   position: fixed;
   top: 50px;
@@ -3281,7 +3254,7 @@ html section, body section {
   z-index: 9000;
 }
 
-/* line 149, ../sass/_partials/_index.scss */
+/* line 152, ../sass/_partials/_index.scss */
 #backtotop {
   position: fixed;
   top: 80px;
@@ -3289,7 +3262,7 @@ html section, body section {
   z-index: 9000;
 }
 
-/* line 155, ../sass/_partials/_index.scss */
+/* line 158, ../sass/_partials/_index.scss */
 #top {
   height: 96px;
   background-color: #73d9ff;

@@ -11,9 +11,6 @@
 				margin-top: 0px;
 			}
 		}
-		#intro-content{
-			@include calc(height, "100% - 60px - 46px");
-		}
 		footer{
 			height: 46px;
 			padding: rem(0.3);

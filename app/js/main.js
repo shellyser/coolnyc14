@@ -18,7 +18,7 @@ $(document).ready(function () {
 	transition = 500,
 
 	beforeStreetUpper = transition + panel,
-	afterStreetUpper = beforeStreetUpper + panel,
+	afterStreetUpper = beforeStreetUpper + panel*1.5,
 	beforeSkyline = afterStreetUpper + transition,
 	afterSkyline = beforeSkyline + panel/0.6,
 	beforeBrick = afterSkyline + transition,
@@ -36,27 +36,27 @@ $(document).ready(function () {
 	beforeOutro = afterTaxi + transition,
 	afterOutro = beforeOutro + panel;
 
-	var clickCounter = 0;
+	// var clickCounter = 0;
 
-	$("#intro-scroll").click(function () {
-	    var selectors = [ 2200 , 5700 ];
-	    var position = document.body.scrollTop;
-	    if(position >= selectors[0]){
-	    	clickCounter++;
-	    } 
-	    if (clickCounter === 0){
-	    	//animate
-	    	$("html,body").animate({scrollTop: selectors[0] + 'px' }, 2000);
-	    	clickCounter++;
-	    }
-	    else{
-	    	$("html,body").animate({scrollTop: selectors[1] + 'px' }, {
-	    		duration: 4000,
-	    		easing: 'swing'
-	    	});
-	    	clickCounter = 0;
-	    }
-	});
+	// $("#intro-scroll").click(function () {
+	//     var selectors = [ 2200 , 5700 ];
+	//     var position = document.body.scrollTop;
+	//     if(position >= selectors[0]){
+	//     	clickCounter++;
+	//     } 
+	//     if (clickCounter === 0){
+	//     	//animate
+	//     	$("html,body").animate({scrollTop: selectors[0] + 'px' }, 2000);
+	//     	clickCounter++;
+	//     }
+	//     else{
+	//     	$("html,body").animate({scrollTop: selectors[1] + 'px' }, {
+	//     		duration: 4000,
+	//     		easing: 'swing'
+	//     	});
+	//     	clickCounter = 0;
+	//     }
+	// });
 
 	var scrollTime = 3000;
 
@@ -142,7 +142,7 @@ $(document).ready(function () {
 		render: function(data) {
 	        //Debugging - Log the current scroll position.
 			console.log(data.curTop); 
-	     	if(data.curTop >= 37300){
+	     	if(data.curTop >= 38830){
 	    	    	$('#circles #circle-1 h1 span').prop('Counter',0).animate({
 	    	        Counter: 6
 	    	    	}, {
@@ -153,7 +153,7 @@ $(document).ready(function () {
     	          	}
 	       	 	});
 	    	}
-	    	if(data.curTop >= 38300){
+	    	if(data.curTop >= 39830){
 	    		$('#circles #circle-2 h1 span').prop('Counter',0).animate({
 	    	          Counter: 1
 	    	      		}, {
@@ -164,7 +164,7 @@ $(document).ready(function () {
 	    	          }
 	       	 });			       	 
 	    }
-    		if(data.curTop >= 39200){
+    		if(data.curTop >= 40730){
     			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
 		           Counter: 20
 		      	 	}, {
@@ -246,8 +246,8 @@ $(document).ready(function () {
 		$('html').removeClass('shorty');
 	}
 	//calc in intro section
-	$('#intro-content').css({'height': winH - (winH * (11 / 100)) - 86 + 'px'});
-	$('.shorty #intro-content').css({'height': winH - (winH * (11 / 100)) - 86 + 'px'});
+	$('#intro-content').css({'height': winH - 80 - 86 + 'px'});
+	$('.shorty #intro-content').css({'height': winH - 46 - 60 + 'px'});
 	//ie replacement for calc in intro section
 	$('#ie #intro-content').css({'height': winH - (50 - 86) + 'px'});
 	//// calc in intro section
@@ -299,8 +299,8 @@ $(window).resize(function () {
     }
 
     ///calc in intro section
-	$('#intro-content').css({'height': winHR - (winHR * (11 / 100)) - 86 + 'px'});
-	$('.shorty #intro-content').css({'height': winHR - (winHR * (11 / 100)) - 86 + 'px'});
+	$('#intro-content').css({'height': winHR - 80 - 86 + 'px'});
+	$('.shorty #intro-content').css({'height': winHR - 46 - 60 + 'px'});
 	//ie replacement for calc in intro section
 	$('#ie #intro-content').css({'height': winHR - (50 - 86) + 'px'});
 	//// calc in intro section
