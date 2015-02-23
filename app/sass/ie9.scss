@@ -56,15 +56,6 @@
     .asterick{
       display:none;
     }
-    .street-text{
-      height: rem(10.5);
-      width: 90%;
-      top:0;
-      left:0;
-      right:0;
-      bottom:0;
-      margin: auto;
-    }
   }
 }
 
@@ -133,6 +124,19 @@
       }
     }
   }   
+}
+
+#street-lower{
+	#map-header{
+		h1{
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			height: 1em;
+		}	
+	}
 }
 
 #bridge{

@@ -1307,20 +1307,18 @@ footer #footer-content #intro-scroll {
 .street-text {
   position: absolute;
   width: 100%;
-  height: 17rem;
   margin: auto;
-  top: 55%;
-  left: 50%;
-  padding: 5%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 20%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 14rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000393}}
 .street-text h1 {
   font-size: 3.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000396}}
 .street-text p {
   font-size: 1rem;
   width: 22.6rem;
@@ -1329,26 +1327,22 @@ footer #footer-content #intro-scroll {
   margin-top: 3%;
 }
 @media screen and (min-width: 550px) and (max-width: 780px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003104}}
   .street-text h1 {
     font-size: 4.7rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003107}}
   .street-text p {
     font-size: 1rem;
     width: 30rem;
   }
 }
 @media screen and (min-width: 780px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000384}}
-  .street-text {
-    height: 20rem;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003113}}
   .street-text h1 {
     font-size: 7.4rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003116}}
   .street-text p {
     font-size: 1rem;
     width: 47rem;
@@ -1359,9 +1353,9 @@ footer #footer-content #intro-scroll {
 @media screen and (min-width: 1200px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000384}}
   .street-text {
-    height: 22rem;
+    height: 16rem;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\00003125}}
   .street-text h1 {
     font-size: 9rem;
   }
@@ -1369,7 +1363,7 @@ footer #footer-content #intro-scroll {
 @media screen and (min-width: 1600px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/_partials\/_components\/_panel2\.scss}line{font-family:\0000384}}
   .street-text {
-    height: 24rem;
+    height: 17rem;
   }
 }
 
@@ -3265,28 +3259,18 @@ html section, body section {
 #street-upper #street-content .asterick {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000359}}
-#street-upper #street-content .street-text {
-  height: 10.5rem;
-  width: 90%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000363}}
 #skyline .triangle-1, #skyline .triangle-2 {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000366}}
 #skyline .skyline-container {
   background-color: #000;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000370}}
 #skyline .skyline-container .skyline-content h1 {
   position: absolute;
   width: 100%;
@@ -3298,7 +3282,7 @@ html section, body section {
   right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000386}}
 #brick #brick-content h1#brick-text {
   position: absolute;
   width: 12em;
@@ -3310,16 +3294,16 @@ html section, body section {
   right: 0;
   height: 7em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\0000397}}
 #brick #brick-content img {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003100}}
 #brick #brick-content .right-panel {
   right: 0;
   position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003103}}
 #brick #brick-content .right-panel .circle {
   width: 22.5em;
   height: 22.5em;
@@ -3331,7 +3315,7 @@ html section, body section {
   bottom: 0;
   padding: 5%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003113}}
 #brick #brick-content .right-panel .circle h1 {
   padding: auto;
   display: block;
@@ -3344,13 +3328,23 @@ html section, body section {
   height: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003131}}
+#street-lower #map-header h1 {
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  height: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003143}}
 #bridge #bridge-overlay {
   background-color: #0091d9;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/car_2014\/app\/sass\/ie9\.scss}line{font-family:\00003148}}
 #bridge #bridge-content h1 {
   top: 0;
   bottom: 0;
