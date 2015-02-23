@@ -58,7 +58,7 @@ $(document).ready(function () {
 	    }
 	});
 
-	var scrollTime = 1500;
+	var scrollTime = 3000;
 
 	$("#to-intro, #back-to-top").click(function() {
 	    $('body, html').animate({
@@ -116,7 +116,7 @@ $(document).ready(function () {
 
 	$("#to-outro").click(function() {
 	    $('body, html').animate({
-	        scrollTop: afterOutro + 'px'
+	        scrollTop: afterOutro + 1500 + 'px'
 	    }, scrollTime);
 	});
 
@@ -127,7 +127,7 @@ $(document).ready(function () {
 			isPlaying = true;
 			var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
 		    $('body, html').animate({
-		        scrollTop: afterOutro + 'px'
+		        scrollTop: afterOutro + 1500 + 'px'
 		    }, time, 'linear');
 		}
 		else{
