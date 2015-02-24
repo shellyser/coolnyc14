@@ -1182,22 +1182,29 @@ footer #footer-content h3 {
 footer #footer-content #intro-scroll {
   font-size: 1.5em;
   display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 2em;
+  margin: auto;
 }
-/* line 239, ../sass/_partials/_components/_panel1.scss */
+/* line 246, ../sass/_partials/_components/_panel1.scss */
 footer #footer-content #intro-scroll i.fa {
   padding: .35em;
 }
-/* line 242, ../sass/_partials/_components/_panel1.scss */
+/* line 249, ../sass/_partials/_components/_panel1.scss */
 footer #footer-content #intro-scroll .play {
   display: none;
 }
 @media screen and (min-width: 450px) {
-  /* line 242, ../sass/_partials/_components/_panel1.scss */
+  /* line 249, ../sass/_partials/_components/_panel1.scss */
   footer #footer-content #intro-scroll .play {
     display: inline-block;
   }
 }
-/* line 248, ../sass/_partials/_components/_panel1.scss */
+/* line 255, ../sass/_partials/_components/_panel1.scss */
 footer #footer-content #intro-scroll .play:hover {
   cursor: pointer;
 }

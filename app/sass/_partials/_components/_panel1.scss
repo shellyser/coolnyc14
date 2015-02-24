@@ -236,6 +236,13 @@ footer {
         #intro-scroll {
             font-size: 1.5em;
             display: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 2em;
+            margin: auto;
             i.fa{
                 padding:.35em;
             }
