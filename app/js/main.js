@@ -17,8 +17,8 @@ $(document).ready(function () {
 	var panel = 3000,
 	transition = 500,
 
-	beforeStreetUpper = transition + panel,
-	afterStreetUpper = beforeStreetUpper + panel*1.5,
+	beforeStreetUpper = transition + panel*1.75,
+	afterStreetUpper = beforeStreetUpper + panel*2.5,
 	beforeSkyline = afterStreetUpper + transition,
 	afterSkyline = beforeSkyline + panel/0.6,
 	beforeBrick = afterSkyline + transition,
@@ -32,7 +32,7 @@ $(document).ready(function () {
 	beforeBridge = afterFence + transition,
 	afterBridge = beforeBridge + panel/0.75,
 	beforeTaxi = afterBridge + transition,
-	afterTaxi = beforeTaxi + panel/0.65,
+	afterTaxi = beforeTaxi + panel,
 	beforeOutro = afterTaxi + transition,
 	afterOutro = beforeOutro + panel;
 
@@ -122,7 +122,7 @@ $(document).ready(function () {
 
 	var isPlaying = false;
 
-	$("#play, #intro-play").click(function() {
+	$("#play, #intro-play, .play").click(function() {
 		if (!isPlaying){
 			isPlaying = true;
 			var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
@@ -142,7 +142,7 @@ $(document).ready(function () {
 		render: function(data) {
 	        //Debugging - Log the current scroll position.
 			console.log(data.curTop); 
-	     	if(data.curTop >= 38830){
+	     	if(data.curTop >= 43880){
 	    	    	$('#circles #circle-1 h1 span').prop('Counter',0).animate({
 	    	        Counter: 6
 	    	    	}, {
@@ -153,7 +153,7 @@ $(document).ready(function () {
     	          	}
 	       	 	});
 	    	}
-	    	if(data.curTop >= 39830){
+	    	if(data.curTop >= 44406){
 	    		$('#circles #circle-2 h1 span').prop('Counter',0).animate({
 	    	          Counter: 1
 	    	      		}, {
@@ -164,7 +164,7 @@ $(document).ready(function () {
 	    	          }
 	       	 });			       	 
 	    }
-    		if(data.curTop >= 40730){
+    		if(data.curTop >= 44880){
     			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
 		           Counter: 20
 		      	 	}, {
@@ -265,7 +265,6 @@ $(document).ready(function () {
 	//intro fadeIn effects on first slide
 	$('#intro-scroll').delay(1000).fadeIn(2000);
 	$('#intro-title').delay(500).fadeIn(2000);
-		
 
 });
 
@@ -289,8 +288,6 @@ $(window).resize(function () {
     $('.triangle-2').css({'border-bottom': winHR + 'px solid rgba(0, 0, 0, 1)'});
     $('.triangle-2').css({'border-left': winWR + 'px solid transparent'});
 
-    // $('#fence-content').css({"width": winWR - (winWR * 0.2) + 'px'});
-    // $('#fence-content').css({"height": winHR - (winHR * 0.2) + 'px'});
     if (winHR < 800){
     	$('html').addClass('shorty');
     }

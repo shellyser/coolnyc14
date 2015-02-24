@@ -120,7 +120,7 @@ html, body {
         right:30px;
         z-index:9001;
     }
-    @include break-min($main-break-xxtrlg){
+    @include break-min($main-break-xxxtrlg){
     	right: 60px;
     }
 }

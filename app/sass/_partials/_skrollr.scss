@@ -24,10 +24,10 @@
 	skrollr-0{
 		opacity:0; 
 	}
-	_bstreetupper--2500{
+	_bstreetupper--4300{
 		opacity:0; 
 	}
-	_bstreetupper--2400{
+	_bstreetupper--4100{
 		opacity:1
 	}
 }
@@ -35,10 +35,10 @@
 	skrollr-0{
 		opacity:0; 
 	}
-	_bstreetupper--2400{
+	_bstreetupper--4100{
 		opacity:0; 
 	}
-	_bstreetupper--2300{
+	_bstreetupper--3900{
 		opacity:1
 	}
 }
@@ -104,20 +104,20 @@
 }
 
 @-skrollr-keyframes skylineanim2{
-	_bskyline-2100{
+	_bskyline-2800{
 		transform:translate(0,0%);
 	}
-	_bskyline-2600{
+	_bskyline-3100{
 		transform:translate(0,-100%);
 	}
 }
 
 
  @-skrollr-keyframes skylineanim3{
- 	_bskyline-2700{ 
+ 	_bskyline-3200{ 
  		transform:translate(0%,100%); 
  	}
- 	_bskyline-3200{
+ 	_bskyline-3600{
  		transform:translate(0%, -100%); 
  	}
  }	
@@ -236,27 +236,27 @@
 		transform:translate(0,-75%); 
 		opacity: 0; 
 	}
-	_btaxi-1100{
+	_btaxi-900{
 		transform:translate(0,0%); 
 		opacity: 1; 
 	}
 }
 @-skrollr-keyframes circle2anim3{
-	_btaxi-1600{
+	_btaxi-1100{
 		transform:translate(0,-75%); 
 		opacity: 0; 
 	}
-	_btaxi-2100{
+	_btaxi-1400{
 		transform:translate(0,0%); 
 		opacity: 1; 
 	}
 }
 @-skrollr-keyframes circle3anim4{
-	_btaxi-2500{
+	_btaxi-1500{
 		transform:translate(0,-75%); 
 		opacity: 0; 
 	}
-	_btaxi-3000{
+	_btaxi-1900{
 		transform:translate(0,0%); 
 		opacity: 1; 
 	}
@@ -297,11 +297,11 @@
 			transform: translate(0%,-50%); 
 			opacity: 0;
 		} 
-		_bfence-1000{
+		_bfence-600{
 			transform: translate(0%,-50%); 
 			opacity: 0;
 		} 
-		_bfence-1500{
+		_bfence-950{
 			transform: translate(0%,0%); 
 			opacity: 1;
 		}
@@ -367,18 +367,20 @@
     		visibility: hidden; 
     	}
 
-    	_bstreetupper--2400{
+    	_bstreetupper--4300{
     		visibility: visible; 
     	}
     }
+    
     @-skrollr-keyframes introtextanim1ie {
     	skrollr-0{
     		display:none; 
-}
-    	_bstreetupper--2300{
+	}
+    	_bstreetupper--4100{
     		display:block;  
     	}
     }
+
 
     @-skrollr-keyframes introanim1ie {
         _bstreetupper--500 {
@@ -435,11 +437,11 @@
     }
 
     @-skrollr-keyframes skylineanim2ie{
-		 _bskyline-2100{
+		 _bskyline-2800{
 		    	top: 0%;
 		    	display: block;
 		 }
-	    	_bskyline-2600{
+	    	_bskyline-3100{
 	    		top: -100%;
 	    		display:none;
 	    	}
@@ -449,15 +451,15 @@
     	skrollr-0{
     		display: none;
     	}
-    	_bskyline-2700{ 
+    	_bskyline-3200{ 
     		top: 100%; 
     		display: block;
     	}
-    	_bskyline-3200{
+    	_bskyline-3600{
     		top: 0%; 
     	}
     }
-	
+
 
 	#brick {
 		 -skrollr-animation-name: brickanim1ie;
@@ -574,18 +576,18 @@
 		}
 	}
 	@-skrollr-keyframes circle2anim3ie{
-		_btaxi-1600{
+		_btaxi-1100{
 			visibility: hidden;
 		}
-		_btaxi-2100{
+		_btaxi-1400{
 			visibility: visible;
 		}
 	}
 	@-skrollr-keyframes circle3anim4ie{
-		_btaxi-2500{
+		_btaxi-1500{
 			visibility: hidden;
 		}
-		_btaxi-3000{
+		_btaxi-1900{
 			visibility: visible;
 		}
 	}

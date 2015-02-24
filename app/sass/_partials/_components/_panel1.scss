@@ -231,10 +231,23 @@ footer {
         left: 0;
         right: 0;  
         h3{
-            display:block;
+            display: inline-block;
         }
         #intro-scroll {
+            font-size: 1.5em;
             display: none;
+            i.fa{
+                padding:.35em;
+            }
+            .play{
+                display: none;
+                @include break-min($main-break-nav){
+                    display: inline-block;
+                }
+            }
+            .play:hover{
+                cursor: pointer;
+            }
         } 
     }   
 }
