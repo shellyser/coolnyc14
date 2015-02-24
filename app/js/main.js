@@ -122,7 +122,7 @@ $(document).ready(function () {
 
 	var isPlaying = false;
 
-	$("#play, #intro-play, .play").click(function() {
+	$("#play, #intro-play").click(function() {
 		if (!isPlaying){
 			isPlaying = true;
 			var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
@@ -133,6 +133,16 @@ $(document).ready(function () {
 		else{
 			$('body, html').stop(true);
 			isPlaying = false;
+		}
+	});
+
+	$(".play").click(function() {
+		if (!isPlaying){
+			isPlaying = true;
+			var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
+		    $('body, html').animate({
+		        scrollTop: afterOutro + 1500 + 'px'
+		    }, time, 'linear');
 		}
 	});
 
