@@ -39,7 +39,7 @@
 	#brick-content {
 		width: 90%;
 		height: 34em; 
-        margin: auto;
+        	margin: auto;
 	    position: absolute;
 	    top:0;
 	    bottom:0;
@@ -93,7 +93,7 @@
 				margin-right: -50%;
 				@include transform(translate(-50%, -50%));
 		    	@include break-max($main-break){
-		    		max-width: 16em;
+		    		max-width: 9.5em;
 		    		font-size: 2em;
 		    		left: 52%;
 		    	}

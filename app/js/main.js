@@ -146,6 +146,27 @@ $(document).ready(function () {
 		}
 	});
 
+
+
+	 $(".fa-arrow-down").on({
+	 	'touchstart': function(e){
+	 		alert("button clicked");
+		   	 if (!isPlaying){
+		 		isPlaying = true;
+		 		var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
+				 if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {       
+				 		alert("I'm almost there!");
+				             setTimeout(window.scrollTo( 0, 0), 100); // first value for left offset, second value for top offset
+				 } 
+				 else{
+				 	$('body, html').animate({
+				 	    scrollTop: afterOutro + 1500 + 'px'
+				 	}, time, 'linear');
+				 }
+			}
+		} 
+	});
+
 	var scroll = skrollr.init({
 		// scale: 2,
 		// forceHeight: false,
@@ -185,7 +206,7 @@ $(document).ready(function () {
 		           }
     	   		});			       	 
     		}
-		},        
+	},        
 	    constants: {
 	        bstreetupper: beforeStreetUpper,
 	        astreetupper: afterStreetUpper,

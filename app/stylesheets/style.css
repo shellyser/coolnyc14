@@ -1,4 +1,4 @@
-/* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -93,63 +93,59 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .shorty #intro footer img {
   width: 33px;
 }
-/* line 23, ../sass/_partials/_shorty.scss */
-.shorty #intro footer h3 {
-  display: none;
-}
 @media screen and (min-width: 900px) {
-  /* line 30, ../sass/_partials/_shorty.scss */
+  /* line 27, ../sass/_partials/_shorty.scss */
   .shorty #street-lower #map-wrapper {
     font-size: 13px;
   }
 }
-/* line 36, ../sass/_partials/_shorty.scss */
+/* line 33, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header {
   height: 9rem;
 }
-/* line 38, ../sass/_partials/_shorty.scss */
+/* line 35, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-header h1 {
   padding-top: 2rem;
 }
-/* line 42, ../sass/_partials/_shorty.scss */
+/* line 39, ../sass/_partials/_shorty.scss */
 .shorty #fence #fence-content {
   height: -webkit-calc(100% - rem(9));
   height: calc(100% - rem(9));
 }
 @media screen and (min-width: 800px) {
-  /* line 45, ../sass/_partials/_shorty.scss */
+  /* line 42, ../sass/_partials/_shorty.scss */
   .shorty #fence #fence-content .circles {
     width: 40rem;
     height: 23rem;
   }
-  /* line 48, ../sass/_partials/_shorty.scss */
+  /* line 45, ../sass/_partials/_shorty.scss */
   .shorty #fence #fence-content .circles .circle {
     width: 11rem;
     height: 11rem;
     margin: 0.3rem;
   }
 }
-/* line 58, ../sass/_partials/_shorty.scss */
+/* line 55, ../sass/_partials/_shorty.scss */
 .shorty #outro wrapper:first-of-type {
   height: -webkit-calc(100% - 53px);
   height: calc(100% - 53px);
 }
-/* line 61, ../sass/_partials/_shorty.scss */
+/* line 58, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing {
   height: 56px;
   padding-top: 0.7rem;
 }
-/* line 64, ../sass/_partials/_shorty.scss */
+/* line 61, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing p {
   font-size: 0.9rem;
   padding-bottom: 0.6rem;
   line-height: 0rem;
 }
-/* line 70, ../sass/_partials/_shorty.scss */
+/* line 67, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing #logos img {
   width: 90px;
 }
-/* line 73, ../sass/_partials/_shorty.scss */
+/* line 70, ../sass/_partials/_shorty.scss */
 .shorty #outro #closing #logos #thinkeco-logo {
   margin-left: 10px;
 }
@@ -1515,9 +1511,13 @@ footer #footer-content #intro-scroll .play:hover {
 @media screen and (max-width: 399px) {
   /* line 42, ../sass/_partials/_components/_panel3.scss */
   #skyline .skyline-content h1 {
-    width: 89%;
-    font-size: 1.3rem;
+    width: 70%;
+    font-size: 1.2rem;
     line-height: 2rem;
+  }
+  /* line 61, ../sass/_partials/_components/_panel3.scss */
+  #skyline .skyline-content h1:last-of-type {
+    width: 78%;
   }
 }
 @media screen and (min-width: 900px) {
@@ -1698,7 +1698,7 @@ footer #footer-content #intro-scroll .play:hover {
 @media screen and (max-width: 399px) {
   /* line 82, ../sass/_partials/_components/_panel4.scss */
   #brick #brick-content > div:first-of-type h1 {
-    max-width: 16em;
+    max-width: 9.5em;
     font-size: 2em;
     left: 52%;
   }
@@ -2082,6 +2082,11 @@ footer #footer-content #intro-scroll .play:hover {
   top: 17em;
   right: 22em;
 }
+/* line 170, ../sass/_partials/_components/_panel6.scss */
+#street-lower .layer-2 .line {
+  left: 5.5em;
+  top: 2.8em;
+}
 @media screen and (max-width: 399px) {
   /* line 167, ../sass/_partials/_components/_panel6.scss */
   #street-lower .layer-2 {
@@ -2095,11 +2100,6 @@ footer #footer-content #intro-scroll .play:hover {
     top: 19em;
     right: 15em;
   }
-}
-/* line 178, ../sass/_partials/_components/_panel6.scss */
-#street-lower .layer-2 .line {
-  right: -16.5em;
-  top: 2.8em;
 }
 /* line 182, ../sass/_partials/_components/_panel6.scss */
 #street-lower .layer-2 p {
@@ -2841,12 +2841,12 @@ footer #footer-content #intro-scroll .play:hover {
     font-size: 7.2rem;
   }
 }
-/* line 134, ../sass/_partials/_components/_panel9.scss */
+/* line 133, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:first-of-type {
   float: left;
   text-align: left;
 }
-/* line 138, ../sass/_partials/_components/_panel9.scss */
+/* line 137, ../sass/_partials/_components/_panel9.scss */
 #bridge #bridge-content .table .row .col:last-of-type {
   float: right;
   text-align: right;

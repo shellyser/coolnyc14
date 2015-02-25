@@ -115,9 +115,9 @@
 				    display:block;
 				    width: rem(9);
 				    height: 100%;
-		    		@include break-min($panel3-text-break) {
-		        		width: rem(14);
-		        	}
+			    		@include break-min($panel3-text-break) {
+			        		width: rem(14);
+			        	}
 				    h2{
 				    	font-size: rem(4);
 				    	display: block;
@@ -129,8 +129,7 @@
 				    	@include break-between($panel2-line-break, $panel4-text-break2){
 				    		font-size: rem(7.2);
 				    	}
-
-				    }
+ 				    }
 				    &:first-of-type{
 				      float:left;
 				      text-align: left;
