@@ -182,9 +182,9 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();	
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
+	 	nextControllers.hide();
 	 	scroll.animateTo(afterStreetUpper, {
-			duration: mobileTime+2000,
+			duration: mobileTime + 35000,
 			done: function(){
 				nextControllers.slideDown();
 				that.parent().slideDown();
@@ -196,9 +196,9 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
+	 	nextControllers.hide();
 	 	scroll.animateTo(afterSkyline, {
-	 		duration: mobileTime,
+	 		duration: mobileTime + 8000,
 	 		done: function(){
 	 			nextControllers.slideDown();
 	 			that.parent().slideDown();
@@ -210,9 +210,9 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
-	 	scroll.animateTo(afterBrick-1000, {
-	 		duration: mobileTime,
+	 	nextControllers.hide();
+	 	scroll.animateTo(afterBrick, {
+	 		duration: mobileTime - 4000,
 	 		done: function(){
 	 			nextControllers.slideDown();
 	 			that.parent().slideDown();
@@ -224,9 +224,9 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
+	 	nextControllers.hide();
 	 	scroll.animateTo(afterNycave, {
-	 		duration: mobileTime,
+	 		duration: mobileTime - 4000,
 	 		done: function(){
 	 			nextControllers.slideDown();
 	 			that.parent().slideDown();
@@ -238,9 +238,9 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
+	 	nextControllers.hide();
 	 	scroll.animateTo(afterStreetLower, {
-	 		duration: mobileTime,
+	 		duration: mobileTime + 1000,
 	 		done: function(){
 	 			nextControllers.slideDown();
 	 			that.parent().slideDown();
@@ -252,9 +252,9 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
+	 	nextControllers.hide();
 	 	scroll.animateTo(afterFence, {
-	 		duration: mobileTime,
+	 		duration: mobileTime - 3000,
 	 		done: function(){
 	 			nextControllers.slideDown();
 	 			that.parent().slideDown();
@@ -266,9 +266,9 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
+	 	nextControllers.hide();
 	 	scroll.animateTo(afterBridge, {
-	 		duration: mobileTime,
+	 		duration: mobileTime + 1000,
 	 		done: function(){
 	 			nextControllers.slideDown();
 	 			that.parent().slideDown();
@@ -280,6 +280,7 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 	nextControllers.hide();
 	 	scroll.animateTo(afterTaxi, {
 	 		duration: mobileTime,
 	 		done: function(){
@@ -293,7 +294,7 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
+	 	nextControllers.hide();
 	 	scroll.animateTo(afterOutro + 1500, {
 	 		duration: mobileTime,
 	 		done: function(){
@@ -308,6 +309,7 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll').slideDown();
+	 	prevControllers.hide();
 	 	scroll.animateTo(beforeStreetUpper-500, {
 	 		duration: mobileUpTime,
 	 		done: function(){
@@ -321,6 +323,7 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	prevControllers.hide();
 	 	scroll.animateTo(afterStreetUpper, {
 	 		duration: mobileUpTime,
 	 		done: function(){
@@ -334,6 +337,7 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	prevControllers.hide();
 	 	scroll.animateTo(afterSkyline, {
 	 		duration: mobileUpTime,
 	 		done: function(){
@@ -347,6 +351,7 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	prevControllers.hide();
 	 	scroll.animateTo(afterBrick, {
 			duration: mobileUpTime,
 			done: function(){
@@ -360,6 +365,7 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	prevControllers.hide();
 	 	scroll.animateTo(afterNycave, {
 			duration: mobileUpTime,
 			done: function(){
@@ -373,6 +379,7 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	prevControllers.hide();
 	 	scroll.animateTo(afterStreetLower, {
 			duration: mobileUpTime,
 			done: function(){
@@ -386,6 +393,7 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	prevControllers.hide();
 	 	scroll.animateTo(afterFence, {
 			duration: mobileUpTime,
 			done: function(){
@@ -399,6 +407,7 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	prevControllers.hide();
 	 	scroll.animateTo(afterBridge, {
 			duration: mobileUpTime,
 			done: function(){
@@ -412,7 +421,8 @@ $(document).ready(function () {
 	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	scroll.animateTo(afterTaxi + 1500, {
+	 	prevControllers.hide();
+	 	scroll.animateTo(afterTaxi, {
 			duration: mobileUpTime,
 			done: function(){
 				prevControllers.slideDown();
@@ -506,6 +516,7 @@ $(document).ready(function () {
 	$('.triangle-1').css({'border-right': winW + 'px solid transparent'});
 	$('.triangle-2').css({'border-bottom': winH + 'px solid rgba(0, 0, 0, 1)'});
 	$('.triangle-2').css({'border-left': winW + 'px solid transparent'});
+	$('#outro .mobile-scroll').css({'bottom': winH - 41 + 'px'});
 
 	
 	//intro fadeIn effects on first slide
@@ -547,6 +558,8 @@ $(window).resize(function () {
     	$('.mobile-scroll').show();
     }
 
+
+
     ///calc in intro section
 	$('#intro-content').css({'height': winHR - 80 - 86 + 'px'});
 	$('.shorty #intro-content').css({'height': winHR - 46 - 60 + 'px'});
@@ -555,6 +568,7 @@ $(window).resize(function () {
 	//// calc in intro section
 	$('#fence-content').css({'height': winHR - 126 + 'px'});	
 	////ie replacement for calc in intro section
-	$('#ie #fence-content').css({'height': winHR - 112 + 'px'});		
+	$('#ie #fence-content').css({'height': winHR - 112 + 'px'});
+	$('#outro .mobile-scroll').css({'bottom': winHR - 41 + 'px'});		
 });
 
