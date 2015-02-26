@@ -179,12 +179,12 @@ $(document).ready(function () {
 
 	 //mobile scroll down icon
 	 $("#intro i.fa.fa-chevron-circle-down").click(function() {	 
-	 	$(this).slideUp();	
+	 	$(this).parent().slideUp();	
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterStreetUpper, {
-			duration: mobileTime,
+			duration: mobileTime+2000,
 			done: function(){
 				nextControllers.slideDown();
 			}
@@ -192,10 +192,10 @@ $(document).ready(function () {
 	 });
 
 	 $("#street-upper i.fa.fa-chevron-circle-down").click(function() {
-	 	$(this).slideUp();
+	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterSkyline, {
 	 		duration: mobileTime,
 	 		done: function(){
@@ -205,10 +205,11 @@ $(document).ready(function () {
 	 });
 
 	 $("#skyline i.fa.fa-chevron-circle-down").click(function() {
+	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
-	 	scroll.animateTo(afterBrick, {
+	 	// nextControllers.hide();
+	 	scroll.animateTo(afterBrick-1000, {
 	 		duration: mobileTime,
 	 		done: function(){
 	 			nextControllers.slideDown();
@@ -217,9 +218,10 @@ $(document).ready(function () {
 	 });
 
 	 $("#brick i.fa.fa-chevron-circle-down").click(function() {
+	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterNycave, {
 	 		duration: mobileTime,
 	 		done: function(){
@@ -229,9 +231,10 @@ $(document).ready(function () {
 	 });
 
 	 $("#nycave i.fa.fa-chevron-circle-down").click(function() {
+	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterStreetLower, {
 	 		duration: mobileTime,
 	 		done: function(){
@@ -241,9 +244,10 @@ $(document).ready(function () {
 	 });
 
 	 $("#street-lower i.fa.fa-chevron-circle-down").click(function() {
+	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterFence, {
 	 		duration: mobileTime,
 	 		done: function(){
@@ -253,9 +257,10 @@ $(document).ready(function () {
 	 });
 
 	 $("#fence i.fa.fa-chevron-circle-down").click(function() {
+	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterBridge, {
 	 		duration: mobileTime,
 	 		done: function(){
@@ -265,9 +270,9 @@ $(document).ready(function () {
 	 });
 
 	 $("#bridge i.fa.fa-chevron-circle-down").click(function() {
+	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
 	 	scroll.animateTo(afterTaxi, {
 	 		duration: mobileTime,
 	 		done: function(){
@@ -277,9 +282,10 @@ $(document).ready(function () {
 	 });
 
 	 $("#taxi i.fa.fa-chevron-circle-down").click(function() {
+	 	$(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterOutro + 1500, {
 	 		duration: mobileTime,
 	 		done: function(){
@@ -290,50 +296,116 @@ $(document).ready(function () {
 
 
 	 $("#street-upper i.fa.fa-chevron-circle-up").click(function() {
-	 	// $(this).fadeOut(2000);
 	 	$(this).parent().slideUp();
-	 	scroll.animateTo(beforeStreetUpper-500, {duration: mobileUpTime});
+	 	var that = $(this);
+	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll').slideDown();
+	 	scroll.animateTo(beforeStreetUpper-500, {
+	 		duration: mobileUpTime,
+	 		done: function(){
+	 			prevControllers.slideDown();
+	 		}
+	 	});
 	 });
 
 	 $("#skyline i.fa.fa-chevron-circle-up").click(function() {
-	 	// $(this).fadeOut(2000);
-	 	scroll.animateTo(afterStreetUpper, {duration: mobileUpTime});
+	 	$(this).parent().slideUp();
+	 	var that = $(this);
+	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	scroll.animateTo(afterStreetUpper, {
+	 		duration: mobileUpTime,
+	 		done: function(){
+	 			prevControllers.slideDown();
+	 		}
+	 	});
 	 });
 
 	 $("#brick i.fa.fa-chevron-circle-up").click(function() {
-	 	// $(this).fadeOut(2000);
-	 	scroll.animateTo(afterSkyline, {duration: mobileUpTime});
+	 	$(this).parent().slideUp();
+	 	var that = $(this);
+	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	scroll.animateTo(afterSkyline, {
+	 		duration: mobileUpTime,
+	 		done: function(){
+	 			prevControllers.slideDown();
+	 		}
+	 	});
 	 });
 
 	 $("#nycave i.fa.fa-chevron-circle-up").click(function() {
-	 	// $(this).fadeOut(2000);
-	 	scroll.animateTo(afterBrick, {duration: mobileUpTime});
+	 	$(this).parent().slideUp();
+	 	var that = $(this);
+	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	scroll.animateTo(afterBrick, {
+			duration: mobileUpTime,
+			done: function(){
+				prevControllers.slideDown();
+			}
+	 	});
 	 });
 
 	 $("#street-lower i.fa.fa-chevron-circle-up").click(function() {
-	 	// $(this).fadeOut(2000);
-	 	scroll.animateTo(afterNycave, {duration: mobileUpTime});
+	 	$(this).parent().slideUp();
+	 	var that = $(this);
+	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	scroll.animateTo(afterNycave, {
+			duration: mobileUpTime,
+			done: function(){
+				prevControllers.slideDown();
+			}
+	 	});
 	 });
 
 	 $("#fence i.fa.fa-chevron-circle-up").click(function() {
-	 	// $(this).fadeOut(2000);
-	 	scroll.animateTo(afterStreetLower, {duration: mobileUpTime});
+	 	$(this).parent().slideUp();
+	 	var that = $(this);
+	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	scroll.animateTo(afterStreetLower, {
+			duration: mobileUpTime,
+			done: function(){
+				prevControllers.slideDown();
+			}
+	 	});
 	 });
 
 	 $("#bridge i.fa.fa-chevron-circle-up").click(function() {
-	 	// $(this).fadeOut(2000);
-	 	scroll.animateTo(afterFence, {duration: mobileUpTime});
+	 	$(this).parent().slideUp();
+	 	var that = $(this);
+	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	scroll.animateTo(afterFence, {
+			duration: mobileUpTime,
+			done: function(){
+				prevControllers.slideDown();
+			}
+	 	});
 	 });
 
 	 $("#taxi i.fa.fa-chevron-circle-up").click(function() {
-	 	// $(this).fadeOut(2000);
-	 	scroll.animateTo(afterBridge + 1500, {duration: mobileUpTime});
+	 	$(this).parent().slideUp();
+	 	var that = $(this);
+	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	scroll.animateTo(afterBridge, {
+			duration: mobileUpTime,
+			done: function(){
+				prevControllers.slideDown();
+			}
+	 	});
 	 });
 
 	 $("#outro i.fa.fa-chevron-circle-up").click(function() {
-	 	// $(this).fadeOut(2000);
-	 	scroll.animateTo(afterTaxi + 1500, {duration: mobileUpTime});
+	 	$(this).parent().slideUp();
+	 	var that = $(this);
+	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 	scroll.animateTo(afterTaxi + 1500, {
+			duration: mobileUpTime,
+			done: function(){
+				prevControllers.slideDown();
+			}
+	 	});
 	 });
+
+	 // if (!isAnimatingTo()){
+
+	 // }
 
 	 var isPlaying = false;
 
@@ -341,7 +413,7 @@ $(document).ready(function () {
 	 	if (!isPlaying){
 	 		isPlaying = true;
 	 		var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
-	 	    scroll.animateTo(afterOutro + 1500,{ duration: time});
+	 	  	 scroll.animateTo(afterOutro + 1500,{ duration: time});
 	 	}
 	 	else{
 	 		$('body, html').stop(true);

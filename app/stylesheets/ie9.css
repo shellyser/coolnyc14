@@ -1,4 +1,4 @@
-/* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -3292,6 +3292,7 @@ html section, body section {
 /* line 163, ../sass/_partials/_index.scss */
 .mobile-scroll {
   display: none;
+  bottom: 15px;
   font-size: 40px;
   position: fixed;
   margin: auto;
@@ -3306,12 +3307,12 @@ html section, body section {
     display: none;
   }
 }
-/* line 175, ../sass/_partials/_index.scss */
+/* line 176, ../sass/_partials/_index.scss */
 .mobile-scroll i.fa {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 179, ../sass/_partials/_index.scss */
+/* line 180, ../sass/_partials/_index.scss */
 .mobile-scroll i.fa:hover {
   color: #fff;
   -moz-transition: color 0.5s ease-in;
@@ -3319,13 +3320,29 @@ html section, body section {
   -webkit-transition: color 0.5s ease-in;
   transition: color 0.5s ease-in;
 }
-/* line 183, ../sass/_partials/_index.scss */
+/* line 184, ../sass/_partials/_index.scss */
 .mobile-scroll i.fa:active {
   bottom: 0px;
   -moz-transition: bottom 0.5s ease-in;
   -o-transition: bottom 0.5s ease-in;
   -webkit-transition: bottom 0.5s ease-in;
   transition: bottom 0.5s ease-in;
+}
+
+/* line 189, ../sass/_partials/_index.scss */
+#intro .mobile-scroll {
+  display: block;
+}
+@media screen and (min-width: 450px) {
+  /* line 189, ../sass/_partials/_index.scss */
+  #intro .mobile-scroll {
+    display: none;
+  }
+}
+
+/* line 195, ../sass/_partials/_index.scss */
+#outro .mobile-scroll {
+  top: 15px;
 }
 
 /* line 5, ../sass/ie9.scss */

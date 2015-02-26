@@ -162,6 +162,7 @@ html, body {
 
 .mobile-scroll{
     display: none;
+    bottom: 15px;
     font-size: 40px;
     position: fixed;
     margin: auto;
@@ -183,6 +184,14 @@ html, body {
     i.fa:active{
     	bottom: 0px;
     	@include transition(bottom 0.5s ease-in)
+    }   
+}
+#intro .mobile-scroll{
+    display: block;
+    @include break-min($main-break-nav){
+        display: none;
     }
-   
+}
+#outro .mobile-scroll{
+    top: 15px;
 }
