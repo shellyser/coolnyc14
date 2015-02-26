@@ -18,7 +18,7 @@
 	 	h1{
 	 		font-weight: 700;
 	 		font-size: rem(1.4);
-	 		line-height: rem(2.2);
+	 		line-height: rem(2);
 	 		padding-top: rem(3);
 	 	}
 	 	@include break-min($panel8-text-break){
@@ -50,7 +50,7 @@
 				&#abc{
 					background-image: url("../assets/logo_full_abcnews.png");
 					@extend .backgroundimage;
-					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+					-ms-behavior: url(js/polyfills/backgroundsize.min.htc);
 					&:hover{
 						background-image: url("../assets/logo_full_abcnews_blue.png");
 					}
@@ -58,7 +58,7 @@
 				&#fox{
 					background-image: url("../assets/logo_full_fox.png");
 					@extend .backgroundimage;
-					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+					-ms-behavior: url(js/polyfills/backgroundsize.min.htc);
 					&:hover{
 						background-image: url("../assets/logo_full_fox_blue.png");
 					}
@@ -66,7 +66,7 @@
 				&#gothamist{
 					background-image: url("../assets/logo_full_gothamist.png");
 					@extend .backgroundimage;
-					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+					-ms-behavior: url(js/polyfills/backgroundsize.min.htc);
 					&:hover{
 						background-image: url("../assets/logo_full_gothamist_blue.png");
 					}
@@ -74,7 +74,7 @@
 				&#nyc1{
 					background-image: url("../assets/logo_full_nyc1.png");
 					@extend .backgroundimage;
-					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+					-ms-behavior: url(js/polyfills/backgroundsize.min.htc);
 					&:hover{
 						background-image: url("../assets/logo_full_nyc1_blue.png");
 					}
@@ -82,7 +82,7 @@
 				&#wired{
 					background-image: url("../assets/logo_full_wired.png");
 					@extend .backgroundimage;
-					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+					-ms-behavior: url(js/polyfills/backgroundsize.min.htc);
 					&:hover{
 						background-image: url("../assets/logo_full_wired_blue.png");
 					}
@@ -90,7 +90,7 @@
 				&#dna{
 					background-image: url("../assets/logo_full_dna.png");
 					@extend .backgroundimage;
-					-ms-behavior: url(/js/polyfills/backgroundsize.min.htc);
+					-ms-behavior: url(js/polyfills/backgroundsize.min.htc);
 					&:hover{
 						background-image: url("../assets/logo_full_dna_blue.png");
 					}

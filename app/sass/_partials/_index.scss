@@ -174,9 +174,16 @@ html, body {
     @include break-min($main-break-nav){
         display: none;
     }
+    span {
+	    width: 48%;
+	    display: inline-block;
+	    &:first-of-type{
+	    	border-right: 1px solid rgba(0,0,0,.1);
+	    }
+    }
     i.fa{
-    	padding-left: 15px;
-    	padding-right: 15px;
+    	padding-left: 20px;
+    	padding-right: 20px;
     }
     i.fa:hover{
     	color: $color_blue;

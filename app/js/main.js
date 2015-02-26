@@ -61,7 +61,9 @@ $(document).ready(function () {
 	//     }
 	// });
 
-	
+	$(document).on('touchmove', function(e) {
+	    e.preventDefault();
+	});
 
 
 	var scroll = skrollr.init({
@@ -126,13 +128,6 @@ $(document).ready(function () {
 	       }
 	});
 
-
-	 $(".fa-arrow-down").click(function(){
-	 		var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
-	 		scroll.animateTo(sectionArray[sectionCounter], time, 'linear');	
-	 		sectionCounter++;	
-	});
-
 	 var scrollTime = 3000;
 	 var mobileTime = 9000;
 	 var mobileUpTime = 3000;
@@ -174,259 +169,259 @@ $(document).ready(function () {
 	 });
 
 	 $("#to-outro").click(function() {
-	 	scroll.animateTo(afterOutro, {duration: scrollTime});
+	 	scroll.animateTo(afterOutro + 5000, {duration: scrollTime});
 	 });
 
 	 //mobile scroll down icon
 	 $("#intro i.fa.fa-angle-down").click(function() {	 
-	 	$(this).parent().slideUp();	
+	 	// $(this).parent().slideUp();	
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterStreetUpper, {
-			duration: mobileTime + 35000,
+			duration: mobileTime + 10000,
 			done: function(){
-				nextControllers.slideDown();
-				that.parent().slideDown();
+				// nextControllers.slideDown();
+				// that.parent().slideDown();
 			}
 	 	});
 	 });
 
 	 $("#street-upper i.fa.fa-angle-down").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterSkyline, {
 	 		duration: mobileTime + 8000,
 	 		done: function(){
-	 			nextControllers.slideDown();
-	 			that.parent().slideDown();
+	 			// nextControllers.slideDown();
+	 			// that.parent().slideDown();
 	 		}
 	 	});
 	 });
 
 	 $("#skyline i.fa.fa-angle-down").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterBrick, {
 	 		duration: mobileTime - 4000,
 	 		done: function(){
-	 			nextControllers.slideDown();
-	 			that.parent().slideDown();
+	 			// nextControllers.slideDown();
+	 			// that.parent().slideDown();
 	 		}
 	 	});
 	 });
 
 	 $("#brick i.fa.fa-angle-down").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterNycave, {
 	 		duration: mobileTime - 4000,
 	 		done: function(){
-	 			nextControllers.slideDown();
-	 			that.parent().slideDown();
+	 			// nextControllers.slideDown();
+	 			// that.parent().slideDown();
 	 		}
 	 	});
 	 });
 
 	 $("#nycave i.fa.fa-angle-down").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterStreetLower, {
-	 		duration: mobileTime + 1000,
+	 		duration: mobileTime + 3500,
 	 		done: function(){
-	 			nextControllers.slideDown();
-	 			that.parent().slideDown();
+	 			// nextControllers.slideDown();
+	 			// that.parent().slideDown();
 	 		}
 	 	});
 	 });
 
 	 $("#street-lower i.fa.fa-angle-down").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterFence, {
-	 		duration: mobileTime - 3000,
+	 		duration: mobileTime - 4000,
 	 		done: function(){
-	 			nextControllers.slideDown();
-	 			that.parent().slideDown();
+	 			// nextControllers.slideDown();
+	 			// that.parent().slideDown();
 	 		}
 	 	});
 	 });
 
 	 $("#fence i.fa.fa-angle-down").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterBridge, {
 	 		duration: mobileTime + 1000,
 	 		done: function(){
-	 			nextControllers.slideDown();
-	 			that.parent().slideDown();
+	 			// nextControllers.slideDown();
+	 			// that.parent().slideDown();
 	 		}
 	 	});
 	 });
 
 	 $("#bridge i.fa.fa-angle-down").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterTaxi, {
-	 		duration: mobileTime,
+	 		duration: mobileTime - 1000,
 	 		done: function(){
-	 			nextControllers.slideDown();
-	 			that.parent().slideDown();
+	 			// nextControllers.slideDown();
+	 			// that.parent().slideDown();
 	 		}
 	 	});
 	 });
 
 	 $("#taxi i.fa.fa-angle-down").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	nextControllers.hide();
+	 	// nextControllers.hide();
 	 	scroll.animateTo(afterOutro + 1500, {
 	 		duration: mobileTime,
 	 		done: function(){
-	 			nextControllers.slideDown();
-	 			that.parent().slideDown();
+	 			// nextControllers.slideDown();
+	 			// that.parent().slideDown();
 	 		}
 	 	});
 	 });
 
 
 	 $("#street-upper i.fa.fa-angle-up").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll').slideDown();
-	 	prevControllers.hide();
+	 	// prevControllers.hide();
 	 	scroll.animateTo(beforeStreetUpper-500, {
 	 		duration: mobileUpTime,
 	 		done: function(){
-	 			prevControllers.slideDown();
-	 			that.parent().slideDown();
+	 			// prevControllers.slideDown();
+	 			// that.parent().slideDown();
 	 		}
 	 	});
 	 });
 
 	 $("#skyline i.fa.fa-angle-up").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	prevControllers.hide();
+	 	// prevControllers.hide();
 	 	scroll.animateTo(afterStreetUpper, {
 	 		duration: mobileUpTime,
 	 		done: function(){
-	 			prevControllers.slideDown();
-	 			that.parent().slideDown();
+	 			// prevControllers.slideDown();
+	 			// that.parent().slideDown();
 	 		}
 	 	});
 	 });
 
 	 $("#brick i.fa.fa-angle-up").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	prevControllers.hide();
+	 	// prevControllers.hide();
 	 	scroll.animateTo(afterSkyline, {
 	 		duration: mobileUpTime,
 	 		done: function(){
-	 			prevControllers.slideDown();
-	 			that.parent().slideDown();
+	 			// prevControllers.slideDown();
+	 			// that.parent().slideDown();
 	 		}
 	 	});
 	 });
 
 	 $("#nycave i.fa.fa-angle-up").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	prevControllers.hide();
+	 	// prevControllers.hide();
 	 	scroll.animateTo(afterBrick, {
 			duration: mobileUpTime,
 			done: function(){
-				prevControllers.slideDown();
-				that.parent().slideDown();
+				// prevControllers.slideDown();
+				// that.parent().slideDown();
 			}
 	 	});
 	 });
 
 	 $("#street-lower i.fa.fa-angle-up").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	prevControllers.hide();
+	 	// prevControllers.hide();
 	 	scroll.animateTo(afterNycave, {
 			duration: mobileUpTime,
 			done: function(){
-				prevControllers.slideDown();
-				that.parent().slideDown();
+				// prevControllers.slideDown();
+				// that.parent().slideDown();
 			}
 	 	});
 	 });
 
 	 $("#fence i.fa.fa-angle-up").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	prevControllers.hide();
+	 	// prevControllers.hide();
 	 	scroll.animateTo(afterStreetLower, {
 			duration: mobileUpTime,
 			done: function(){
-				prevControllers.slideDown();
-				that.parent().slideDown();
+				// prevControllers.slideDown();
+				// that.parent().slideDown();
 			}
 	 	});
 	 });
 
 	 $("#bridge i.fa.fa-angle-up").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	prevControllers.hide();
+	 	// prevControllers.hide();
 	 	scroll.animateTo(afterFence, {
 			duration: mobileUpTime,
 			done: function(){
-				prevControllers.slideDown();
-				that.parent().slideDown();
+				// prevControllers.slideDown();
+				// that.parent().slideDown();
 			}
 	 	});
 	 });
 
 	 $("#taxi i.fa.fa-angle-up").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	prevControllers.hide();
+	 	// prevControllers.hide();
 	 	scroll.animateTo(afterBridge, {
 			duration: mobileUpTime,
 			done: function(){
-				prevControllers.slideDown();
-				that.parent().slideDown();
+				// prevControllers.slideDown();
+				// that.parent().slideDown();
 			}
 	 	});
 	 });
 
 	 $("#outro i.fa.fa-angle-up").click(function() {
-	 	$(this).parent().slideUp();
+	 	// $(this).parent().slideUp();
 	 	var that = $(this);
 	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	prevControllers.hide();
+	 	// prevControllers.hide();
 	 	scroll.animateTo(afterTaxi, {
 			duration: mobileUpTime,
 			done: function(){
-				prevControllers.slideDown();
-				that.parent().slideDown();
+				// prevControllers.slideDown();
+				// that.parent().slideDown();
 			}
 	 	});
 	 });
@@ -450,9 +445,7 @@ $(document).ready(function () {
 	 	if (!isPlaying){
 	 		isPlaying = true;
 	 		var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
-	 	    $('body, html').animate({
-	 	        scrollTop: afterOutro + 1500 + 'px'
-	 	    }, time, 'linear');
+	 	    scroll.animateTo(afterOutro + 1500,{ duration: time});
 	 	}
 	 });
 
@@ -501,6 +494,11 @@ $(document).ready(function () {
 	else{
 		$('html').removeClass('shorty');
 	}
+
+	if (winH < 450){
+    	winH = 450;
+    }
+
 	//calc in intro section
 	$('#intro-content').css({'height': winH - 80 - 86 + 'px'});
 	$('.shorty #intro-content').css({'height': winH - 46 - 60 + 'px'});
@@ -519,9 +517,15 @@ $(document).ready(function () {
 	$('#outro .mobile-scroll').css({'bottom': winH - 41 + 'px'});
 
 	
-	//intro fadeIn effects on first slide
-	// $('#intro-scroll').delay(1000).fadeIn(2000);
-	$('#intro-title').delay(500).fadeIn(2000);
+	//intro fadeIn/scroll effects on first slide	
+	function animateIntro(){
+		//$('#intro-title').delay(500).fadeIn(2000);
+		// $('.mobile-scroll').delay(1000).fadeIn(2000);
+		scroll.animateTo(beforeStreetUpper-500, {duration: 6000});
+	}
+ 	setTimeout(animateIntro, 2000);
+
+
 
 });
 
@@ -554,11 +558,14 @@ $(window).resize(function () {
     
     if (winWR > 450 ) {
     	$('.mobile-scroll').hide();
-    }else{
+    }
+    else{
     	$('.mobile-scroll').show();
     }
 
-
+    if (winHR < 450){
+    	winHR = 450;
+    }
 
     ///calc in intro section
 	$('#intro-content').css({'height': winHR - 80 - 86 + 'px'});
