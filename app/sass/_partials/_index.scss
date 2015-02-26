@@ -161,15 +161,16 @@ html, body {
 }
 
 .mobile-scroll{
-    display: none;
-    bottom: 15px;
+    display: block;
+    bottom: 0px;
     font-size: 40px;
     position: fixed;
     margin: auto;
     left: 0;
     right: 0;
     z-index: 9999;
-    color: $white_80;
+    background-color: $white_80;
+    color: $blue_90;
     @include break-min($main-break-nav){
         display: none;
     }
@@ -178,7 +179,7 @@ html, body {
     	padding-right: 15px;
     }
     i.fa:hover{
-    	color: $white;
+    	color: $color_blue;
     	@include transition(color 0.5s ease-in)
     }
     i.fa:active{
