@@ -213,15 +213,19 @@ header {
 }
 
 footer {
+    background-color: transparent;
+    color: $white;
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: $white;
     text-align: center;
-    color: $cerulean;
     font-style: italic;
     height: $footer_height;
     font-size: .8em;
+    @include break-min($main-break-nav){
+        background-color: $white;
+        color: $cerulean;
+    }
     #footer-content {
         height: 5em;
         position: absolute;
@@ -243,14 +247,11 @@ footer {
             bottom: 0;
             height: 2em;
             margin: auto;
+            @include break-min($main-break-nav){
+                display:block;
+            }
             i.fa{
                 padding:.35em;
-            }
-            .play{
-                display: none;
-                @include break-min($main-break-nav){
-                    display: inline-block;
-                }
             }
             .play:hover{
                 cursor: pointer;

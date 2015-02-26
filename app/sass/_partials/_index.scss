@@ -110,7 +110,7 @@ html, body {
 #main{
     display: none;
     @include break-min($main-break-nav){
-      display: block;
+     	display: block;
         width:15px;
         height: 292px;
         position:fixed;
@@ -160,4 +160,29 @@ html, body {
 	background-color:#73d9ff;
 }
 
-
+.mobile-scroll{
+    display: none;
+    font-size: 40px;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    color: $white_80;
+    @include break-min($main-break-nav){
+        display: none;
+    }
+    i.fa{
+    	padding-left: 15px;
+    	padding-right: 15px;
+    }
+    i.fa:hover{
+    	color: $white;
+    	@include transition(color 0.5s ease-in)
+    }
+    i.fa:active{
+    	bottom: 0px;
+    	@include transition(bottom 0.5s ease-in)
+    }
+   
+}

@@ -36,6 +36,9 @@ $(document).ready(function () {
 	beforeOutro = afterTaxi + transition,
 	afterOutro = beforeOutro + panel;
 
+	var streetUpper = $("section#street-upper");
+	var sectionArray = [afterStreetUpper, afterSkyline, afterBrick, afterNycave, afterStreetLower, afterFence, afterBridge, afterTaxi, afterOutro],
+		sectionCounter = 0;
 	// var clickCounter = 0;
 
 	// $("#intro-scroll").click(function () {
@@ -58,114 +61,8 @@ $(document).ready(function () {
 	//     }
 	// });
 
-	var scrollTime = 3000;
+	
 
-	$("#to-intro, #back-to-top").click(function() {
-	    $('body, html').animate({
-	        scrollTop: 0 + 'px'
-	    }, scrollTime);
-	});
-
-	$("#to-street-upper").click(function() {
-	    $('body, html').animate({
-	        scrollTop: afterStreetUpper + 'px'
-	    }, scrollTime);
-	});
-
-	$("#to-skyline").click(function() {
-	    $('body, html').animate({
-	        scrollTop: afterSkyline + 'px'
-	    }, scrollTime);
-	});
-
-	$("#to-brick").click(function() {
-	    $('body, html').animate({
-	        scrollTop: afterBrick + 'px'
-	    }, scrollTime);
-	});
-
-	$("#to-nycave").click(function() {
-	    $('body, html').animate({
-	        scrollTop: afterNycave + 'px'
-	    }, scrollTime);
-	});
-
-	$("#to-street-lower").click(function() {
-	    $('body, html').animate({
-	        scrollTop: afterStreetLower + 'px'
-	    }, scrollTime);
-	});
-
-	$("#to-fence").click(function() {
-	    $('body, html').animate({
-	        scrollTop: afterFence + 'px'
-	    }, scrollTime);
-	});
-
-	$("#to-bridge").click(function() {
-	    $('body, html').animate({
-	        scrollTop: afterBridge + 'px'
-	    }, scrollTime);
-	});
-
-	$("#to-taxi").click(function() {
-	    $('body, html').animate({
-	        scrollTop: afterTaxi + 'px'
-	    }, scrollTime);
-	});
-
-	$("#to-outro").click(function() {
-	    $('body, html').animate({
-	        scrollTop: afterOutro + 1500 + 'px'
-	    }, scrollTime);
-	});
-
-	var isPlaying = false;
-
-	$("#play, #intro-play").click(function() {
-		if (!isPlaying){
-			isPlaying = true;
-			var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
-		    $('body, html').animate({
-		        scrollTop: afterOutro + 1500 + 'px'
-		    }, time, 'linear');
-		}
-		else{
-			$('body, html').stop(true);
-			isPlaying = false;
-		}
-	});
-
-	$(".play").click(function() {
-		if (!isPlaying){
-			isPlaying = true;
-			var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
-		    $('body, html').animate({
-		        scrollTop: afterOutro + 1500 + 'px'
-		    }, time, 'linear');
-		}
-	});
-
-
-
-	 $(".fa-arrow-down").on({
-	 	'touchstart': function(e){
-	 		alert("button clicked");
-		   	 if (!isPlaying){
-		 		isPlaying = true;
-		 		var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
-				 if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {       
-				 		alert("I'm almost there!");
-				             setTimeout(window.scrollTo( 0, 0), 100); // first value for left offset, second value for top offset
-				 } 
-				 else{
-				 	$('body, html').animate({
-				 	    scrollTop: afterOutro + 1500 + 'px'
-				 	}, time, 'linear');
-				 }
-			}
-		} 
-	});
 
 	var scroll = skrollr.init({
 		// scale: 2,
@@ -229,7 +126,239 @@ $(document).ready(function () {
 	       }
 	});
 
-	
+
+	 $(".fa-arrow-down").click(function(){
+	 		var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
+	 		scroll.animateTo(sectionArray[sectionCounter], time, 'linear');	
+	 		sectionCounter++;	
+	});
+
+	 var scrollTime = 3000;
+	 var mobileTime = 9000;
+	 var mobileUpTime = 3000;
+
+	 $("#to-intro, #back-to-top").click(function() {
+	     scroll.animateTo(0, {duration: scrollTime});
+	 });
+
+	 $("#to-street-upper, #intro i.fa.fa-chevron-circle-down").click(function() {	 	
+	 	scroll.animateTo(afterStreetUpper, {duration: scrollTime});
+	 });
+
+	 $("#to-skyline, #street-upper i.fa.fa-chevron-circle-down").click(function() {
+	 	scroll.animateTo(afterSkyline, {duration: scrollTime});
+	 });
+
+	 $("#to-brick, #skyline i.fa.fa-chevron-circle-down").click(function() {
+	 	scroll.animateTo(afterBrick, {duration: scrollTime});
+	 });
+
+	 $("#to-nycave, #brick i.fa.fa-chevron-circle-down").click(function() {
+	 	scroll.animateTo(afterNycave, {duration: scrollTime});
+	 });
+
+	 $("#to-street-lower, #nycave i.fa.fa-chevron-circle-down").click(function() {
+	 	scroll.animateTo(afterStreetLower, {duration: scrollTime});
+	 });
+
+	 $("#to-fence, #street-lower i.fa.fa-chevron-circle-down").click(function() {
+	 	scroll.animateTo(afterFence, {duration: scrollTime});
+	 });
+
+	 $("#to-bridge, #fence i.fa.fa-chevron-circle-down").click(function() {
+	 	scroll.animateTo(afterBridge, {duration: scrollTime});
+	 });
+
+	 $("#to-taxi, #bridge i.fa.fa-chevron-circle-down").click(function() {
+	 	scroll.animateTo(afterTaxi, {duration: scrollTime});
+	 });
+
+	 $("#to-outro, #taxi i.fa.fa-chevron-circle-down").click(function() {
+	 	scroll.animateTo(afterOutro, {duration: scrollTime});
+	 });
+
+	 //mobile scroll down icon
+	 $("#intro i.fa.fa-chevron-circle-down").click(function() {	 
+	 	$(this).slideUp();	
+	 	var that = $(this);
+	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 	nextControllers.hide();
+	 	scroll.animateTo(afterStreetUpper, {
+			duration: mobileTime,
+			done: function(){
+				nextControllers.slideDown();
+			}
+	 	});
+	 });
+
+	 $("#street-upper i.fa.fa-chevron-circle-down").click(function() {
+	 	$(this).slideUp();
+	 	var that = $(this);
+	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 	nextControllers.hide();
+	 	scroll.animateTo(afterSkyline, {
+	 		duration: mobileTime,
+	 		done: function(){
+	 			nextControllers.slideDown();
+	 		}
+	 	});
+	 });
+
+	 $("#skyline i.fa.fa-chevron-circle-down").click(function() {
+	 	var that = $(this);
+	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 	nextControllers.hide();
+	 	scroll.animateTo(afterBrick, {
+	 		duration: mobileTime,
+	 		done: function(){
+	 			nextControllers.slideDown();
+	 		}
+	 	});
+	 });
+
+	 $("#brick i.fa.fa-chevron-circle-down").click(function() {
+	 	var that = $(this);
+	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 	nextControllers.hide();
+	 	scroll.animateTo(afterNycave, {
+	 		duration: mobileTime,
+	 		done: function(){
+	 			nextControllers.slideDown();
+	 		}
+	 	});
+	 });
+
+	 $("#nycave i.fa.fa-chevron-circle-down").click(function() {
+	 	var that = $(this);
+	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 	nextControllers.hide();
+	 	scroll.animateTo(afterStreetLower, {
+	 		duration: mobileTime,
+	 		done: function(){
+	 			nextControllers.slideDown();
+	 		}
+	 	});
+	 });
+
+	 $("#street-lower i.fa.fa-chevron-circle-down").click(function() {
+	 	var that = $(this);
+	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 	nextControllers.hide();
+	 	scroll.animateTo(afterFence, {
+	 		duration: mobileTime,
+	 		done: function(){
+	 			nextControllers.slideDown();
+	 		}
+	 	});
+	 });
+
+	 $("#fence i.fa.fa-chevron-circle-down").click(function() {
+	 	var that = $(this);
+	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 	nextControllers.hide();
+	 	scroll.animateTo(afterBridge, {
+	 		duration: mobileTime,
+	 		done: function(){
+	 			nextControllers.slideDown();
+	 		}
+	 	});
+	 });
+
+	 $("#bridge i.fa.fa-chevron-circle-down").click(function() {
+	 	var that = $(this);
+	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 	nextControllers.hide();
+	 	scroll.animateTo(afterTaxi, {
+	 		duration: mobileTime,
+	 		done: function(){
+	 			nextControllers.slideDown();
+	 		}
+	 	});
+	 });
+
+	 $("#taxi i.fa.fa-chevron-circle-down").click(function() {
+	 	var that = $(this);
+	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 	nextControllers.hide();
+	 	scroll.animateTo(afterOutro + 1500, {
+	 		duration: mobileTime,
+	 		done: function(){
+	 			nextControllers.slideDown();
+	 		}
+	 	});
+	 });
+
+
+	 $("#street-upper i.fa.fa-chevron-circle-up").click(function() {
+	 	// $(this).fadeOut(2000);
+	 	$(this).parent().slideUp();
+	 	scroll.animateTo(beforeStreetUpper-500, {duration: mobileUpTime});
+	 });
+
+	 $("#skyline i.fa.fa-chevron-circle-up").click(function() {
+	 	// $(this).fadeOut(2000);
+	 	scroll.animateTo(afterStreetUpper, {duration: mobileUpTime});
+	 });
+
+	 $("#brick i.fa.fa-chevron-circle-up").click(function() {
+	 	// $(this).fadeOut(2000);
+	 	scroll.animateTo(afterSkyline, {duration: mobileUpTime});
+	 });
+
+	 $("#nycave i.fa.fa-chevron-circle-up").click(function() {
+	 	// $(this).fadeOut(2000);
+	 	scroll.animateTo(afterBrick, {duration: mobileUpTime});
+	 });
+
+	 $("#street-lower i.fa.fa-chevron-circle-up").click(function() {
+	 	// $(this).fadeOut(2000);
+	 	scroll.animateTo(afterNycave, {duration: mobileUpTime});
+	 });
+
+	 $("#fence i.fa.fa-chevron-circle-up").click(function() {
+	 	// $(this).fadeOut(2000);
+	 	scroll.animateTo(afterStreetLower, {duration: mobileUpTime});
+	 });
+
+	 $("#bridge i.fa.fa-chevron-circle-up").click(function() {
+	 	// $(this).fadeOut(2000);
+	 	scroll.animateTo(afterFence, {duration: mobileUpTime});
+	 });
+
+	 $("#taxi i.fa.fa-chevron-circle-up").click(function() {
+	 	// $(this).fadeOut(2000);
+	 	scroll.animateTo(afterBridge + 1500, {duration: mobileUpTime});
+	 });
+
+	 $("#outro i.fa.fa-chevron-circle-up").click(function() {
+	 	// $(this).fadeOut(2000);
+	 	scroll.animateTo(afterTaxi + 1500, {duration: mobileUpTime});
+	 });
+
+	 var isPlaying = false;
+
+	 $("#play, #intro-play").click(function() {
+	 	if (!isPlaying){
+	 		isPlaying = true;
+	 		var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
+	 	    scroll.animateTo(afterOutro + 1500,{ duration: time});
+	 	}
+	 	else{
+	 		$('body, html').stop(true);
+	 		isPlaying = false;
+	 	}
+	 });
+
+	 $(".play").click(function() {
+	 	if (!isPlaying){
+	 		isPlaying = true;
+	 		var time = 100000*((afterOutro - $(window).scrollTop())/afterOutro);
+	 	    $('body, html').animate({
+	 	        scrollTop: afterOutro + 1500 + 'px'
+	 	    }, time, 'linear');
+	 	}
+	 });
+
 	// get window size
 	var winW = 0, winH = 0;
 	  if( typeof( window.innerWidth ) === 'number' ) {
@@ -246,7 +375,6 @@ $(document).ready(function () {
 	    winH = document.body.clientHeight;
 	  };
 
-	  
 	  
 	  //adds a loading id until the page is loaded
 	  function onReady(callback) {
@@ -294,7 +422,7 @@ $(document).ready(function () {
 
 	
 	//intro fadeIn effects on first slide
-	$('#intro-scroll').delay(1000).fadeIn(2000);
+	// $('#intro-scroll').delay(1000).fadeIn(2000);
 	$('#intro-title').delay(500).fadeIn(2000);
 
 });
