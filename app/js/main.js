@@ -157,7 +157,6 @@ $(document).ready(function () {
 
 
 	 $(".mobile-scroll i.fa.fa-angle-down").click(function(){
-	 	checkMobilePosition();
 	 	if (positionCounter < 15){
 	 	positionCounter++;
 	 	scroll.animateTo(positionArray[positionCounter], {duration: 4000});
@@ -167,8 +166,6 @@ $(document).ready(function () {
 	 });
 
 	 $(".mobile-scroll i.fa.fa-angle-up").click(function(){
-	 	checkMobilePosition();
-
 	 	if (positionCounter > 0){
 	 	positionCounter--;
 	 	console.log("after click: " + positionCounter);
@@ -176,30 +173,44 @@ $(document).ready(function () {
 	 	}
 	 });
 
-	function checkMobilePosition(){
-		var touchScrollPosition = scroll.getScrollTop();
-		var currentPositionCounter = positionCounter;
-		var nextPositionCounter = currentPositionCounter + 1;
-		var i = 0;
-		if ((touchScrollPosition >= (positionArray[currentPositionCounter])) && (touchScrollPosition <= (positionArray[nextPositionCounter]))){
-			console.log("All is good");
-		}
-		else {		
-			if (touchScrollPosition > (positionArray[currentPositionCounter])){
-			   	//user scrolled down and now want to use the nav
-			   	while (positionArray[i] < touchScrollPosition){
-					i++;
-					console.log("Im in here: " + i);
-			   	}
-			   	console.log(i);
-			   	positionCounter = i-1;
-			}   	
-			//user scrolled up and now want to use the nav
-			else {
-				
-			}   	
-		}
-	}
+	 $('body').on('touchmove', function(){
+	 	var touchScrollPosition = scroll.getScrollTop();
+	 	var currentPositionCounter = positionCounter;
+	 	var nextPositionCounter = currentPositionCounter + 1;
+	 	if ((touchScrollPosition >= (positionArray[currentPositionCounter])) && (touchScrollPosition <= (positionArray[nextPositionCounter]))){
+	 		console.log("All is good");
+	 	}
+	 	else {	
+	 		var i = 0;	
+	 		   	//user scrolled down and now want to use the nav
+	 		   	while (positionArray[i] < touchScrollPosition){
+	 				i++;
+	 				console.log("Im in here: " + i);
+	 		   	}
+	 		   	console.log(i);
+	 		   	positionCounter = i-1;
+	 		}   
+	 	});
+	// function checkMobilePosition(){
+	// 	var touchScrollPosition = scroll.getScrollTop();
+	// 	var currentPositionCounter = positionCounter;
+	// 	var nextPositionCounter = currentPositionCounter + 1;
+	// 	if ((touchScrollPosition >= (positionArray[currentPositionCounter])) && (touchScrollPosition <= (positionArray[nextPositionCounter]))){
+	// 		console.log("All is good");
+	// 	}
+	// 	else {	
+	// 		var i = 0;	
+	// 		   	//user scrolled down and now want to use the nav
+	// 		   	while (positionArray[i] < touchScrollPosition){
+	// 				i++;
+	// 				console.log("Im in here: " + i);
+	// 		   	}
+	// 		   	console.log(i);
+	// 		   	positionCounter = i-1;
+	// 		}   	
+	// 		//user scrolled up and now want to use the nav
+	
+	// };
 
 	 //mobile scroll down icon
 	 // $("#intro i.fa.fa-angle-down").click(function() {	 
