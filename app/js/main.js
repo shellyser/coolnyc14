@@ -37,9 +37,10 @@ $(document).ready(function () {
 	afterOutro = beforeOutro + panel;
 
 	var streetUpper = $("section#street-upper");
-	var sectionArray = [afterStreetUpper, afterSkyline, afterBrick, afterNycave, afterStreetLower, afterFence, afterBridge, afterTaxi, afterOutro],
+	var downArray = [beforeStreetUpper-500, afterStreetUpper - 4000, afterStreetUpper, afterSkyline - 2200, afterSkyline, afterBrick, afterNycave, afterStreetLower-2200, afterStreetLower, afterFence, afterBridge - 3150, afterBridge, afterTaxi - 2600, afterTaxi, afterOutro + 1500],
+		upArray = [beforeStreetUpper-5800, beforeStreetUpper-500, afterStreetUpper - 4000, afterStreetUpper, afterSkyline - 2200, afterSkyline, afterBrick, afterNycave, afterStreetLower-2200, afterStreetLower, afterFence, afterBridge - 3150, afterBridge, afterTaxi - 2600, afterTaxi, afterOutro + 1500],
 		sectionCounter = 0;
-	// var clickCounter = 0;
+	var clickCounter = 0;
 
 	// $("#intro-scroll").click(function () {
 	//     var selectors = [ 2200 , 5700 ];
@@ -61,17 +62,13 @@ $(document).ready(function () {
 	//     }
 	// });
 
-	$(document).on('touchmove', function(e) {
-	    e.preventDefault();
-	});
-
 
 	var scroll = skrollr.init({
 		// scale: 2,
 		// forceHeight: false,
 		render: function(data) {
 	        //Debugging - Log the current scroll position.
-			console.log(data.curTop); 
+			// console.log(data.curTop); 
 	     	if(data.curTop >= 43880){
 	    	    	$('#circles #circle-1 h1 span').prop('Counter',0).animate({
 	    	        Counter: 6
@@ -172,259 +169,279 @@ $(document).ready(function () {
 	 	scroll.animateTo(afterOutro + 5000, {duration: scrollTime});
 	 });
 
+	 $('body').on('touchmove', function(e) {
+	     e.preventDefault();
+	 });
+
+	 $(".mobile-scroll i.fa.fa-angle-down").click(function(){
+	 	if (clickCounter < 15){
+	 	scroll.animateTo(downArray[clickCounter], {duration: 4000});
+	 	clickCounter++;
+	 	console.log("after click: " + clickCounter);
+		 }
+	 });
+
+	 $(".mobile-scroll i.fa.fa-angle-up").click(function(){
+	 	if (clickCounter > 0){
+	 	clickCounter--;
+	 	console.log("after click: " + clickCounter);
+	 	scroll.animateTo(upArray[clickCounter], {duration: 2000});
+	 	}
+	 });
+
 	 //mobile scroll down icon
-	 $("#intro i.fa.fa-angle-down").click(function() {	 
-	 	// $(this).parent().slideUp();	
-	 	var that = $(this);
-	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
-	 	scroll.animateTo(afterStreetUpper, {
-			duration: mobileTime + 10000,
-			done: function(){
-				// nextControllers.slideDown();
-				// that.parent().slideDown();
-			}
-	 	});
-	 });
+	 // $("#intro i.fa.fa-angle-down").click(function() {	 
+	 // 	// $(this).parent().slideUp();	
+	 // 	var that = $(this);
+	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 // 	// nextControllers.hide();
+	 // 	scroll.animateTo(afterStreetUpper, {
+		// 	duration: mobileTime + 10000,
+		// 	done: function(){
+		// 		// nextControllers.slideDown();
+		// 		// that.parent().slideDown();
+		// 	}
+	 // 	});
+	 // });
 
-	 $("#street-upper i.fa.fa-angle-down").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
-	 	scroll.animateTo(afterSkyline, {
-	 		duration: mobileTime + 8000,
-	 		done: function(){
-	 			// nextControllers.slideDown();
-	 			// that.parent().slideDown();
-	 		}
-	 	});
-	 });
+	 // $("#street-upper i.fa.fa-angle-down").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 // 	// nextControllers.hide();
+	 // 	scroll.animateTo(afterSkyline, {
+	 // 		duration: mobileTime + 8000,
+	 // 		done: function(){
+	 // 			// nextControllers.slideDown();
+	 // 			// that.parent().slideDown();
+	 // 		}
+	 // 	});
+	 // });
 
-	 $("#skyline i.fa.fa-angle-down").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
-	 	scroll.animateTo(afterBrick, {
-	 		duration: mobileTime - 4000,
-	 		done: function(){
-	 			// nextControllers.slideDown();
-	 			// that.parent().slideDown();
-	 		}
-	 	});
-	 });
+	 // $("#skyline i.fa.fa-angle-down").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 // 	// nextControllers.hide();
+	 // 	scroll.animateTo(afterBrick, {
+	 // 		duration: mobileTime - 4000,
+	 // 		done: function(){
+	 // 			// nextControllers.slideDown();
+	 // 			// that.parent().slideDown();
+	 // 		}
+	 // 	});
+	 // });
 
-	 $("#brick i.fa.fa-angle-down").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
-	 	scroll.animateTo(afterNycave, {
-	 		duration: mobileTime - 4000,
-	 		done: function(){
-	 			// nextControllers.slideDown();
-	 			// that.parent().slideDown();
-	 		}
-	 	});
-	 });
+	 // $("#brick i.fa.fa-angle-down").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 // 	// nextControllers.hide();
+	 // 	scroll.animateTo(afterNycave, {
+	 // 		duration: mobileTime - 4000,
+	 // 		done: function(){
+	 // 			// nextControllers.slideDown();
+	 // 			// that.parent().slideDown();
+	 // 		}
+	 // 	});
+	 // });
 
-	 $("#nycave i.fa.fa-angle-down").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
-	 	scroll.animateTo(afterStreetLower, {
-	 		duration: mobileTime + 3500,
-	 		done: function(){
-	 			// nextControllers.slideDown();
-	 			// that.parent().slideDown();
-	 		}
-	 	});
-	 });
+	 // $("#nycave i.fa.fa-angle-down").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 // 	// nextControllers.hide();
+	 // 	scroll.animateTo(afterStreetLower, {
+	 // 		duration: mobileTime + 3500,
+	 // 		done: function(){
+	 // 			// nextControllers.slideDown();
+	 // 			// that.parent().slideDown();
+	 // 		}
+	 // 	});
+	 // });
 
-	 $("#street-lower i.fa.fa-angle-down").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
-	 	scroll.animateTo(afterFence, {
-	 		duration: mobileTime - 4000,
-	 		done: function(){
-	 			// nextControllers.slideDown();
-	 			// that.parent().slideDown();
-	 		}
-	 	});
-	 });
+	 // $("#street-lower i.fa.fa-angle-down").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 // 	// nextControllers.hide();
+	 // 	scroll.animateTo(afterFence, {
+	 // 		duration: mobileTime - 4000,
+	 // 		done: function(){
+	 // 			// nextControllers.slideDown();
+	 // 			// that.parent().slideDown();
+	 // 		}
+	 // 	});
+	 // });
 
-	 $("#fence i.fa.fa-angle-down").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
-	 	scroll.animateTo(afterBridge, {
-	 		duration: mobileTime + 1000,
-	 		done: function(){
-	 			// nextControllers.slideDown();
-	 			// that.parent().slideDown();
-	 		}
-	 	});
-	 });
+	 // $("#fence i.fa.fa-angle-down").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 // 	// nextControllers.hide();
+	 // 	scroll.animateTo(afterBridge, {
+	 // 		duration: mobileTime + 1000,
+	 // 		done: function(){
+	 // 			// nextControllers.slideDown();
+	 // 			// that.parent().slideDown();
+	 // 		}
+	 // 	});
+	 // });
 
-	 $("#bridge i.fa.fa-angle-down").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
-	 	scroll.animateTo(afterTaxi, {
-	 		duration: mobileTime - 1000,
-	 		done: function(){
-	 			// nextControllers.slideDown();
-	 			// that.parent().slideDown();
-	 		}
-	 	});
-	 });
+	 // $("#bridge i.fa.fa-angle-down").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 // 	// nextControllers.hide();
+	 // 	scroll.animateTo(afterTaxi, {
+	 // 		duration: mobileTime - 1000,
+	 // 		done: function(){
+	 // 			// nextControllers.slideDown();
+	 // 			// that.parent().slideDown();
+	 // 		}
+	 // 	});
+	 // });
 
-	 $("#taxi i.fa.fa-angle-down").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 	// nextControllers.hide();
-	 	scroll.animateTo(afterOutro + 1500, {
-	 		duration: mobileTime,
-	 		done: function(){
-	 			// nextControllers.slideDown();
-	 			// that.parent().slideDown();
-	 		}
-	 	});
-	 });
+	 // $("#taxi i.fa.fa-angle-down").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
+	 // 	// nextControllers.hide();
+	 // 	scroll.animateTo(afterOutro + 1500, {
+	 // 		duration: mobileTime,
+	 // 		done: function(){
+	 // 			// nextControllers.slideDown();
+	 // 			// that.parent().slideDown();
+	 // 		}
+	 // 	});
+	 // });
 
 
-	 $("#street-upper i.fa.fa-angle-up").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll').slideDown();
-	 	// prevControllers.hide();
-	 	scroll.animateTo(beforeStreetUpper-500, {
-	 		duration: mobileUpTime,
-	 		done: function(){
-	 			// prevControllers.slideDown();
-	 			// that.parent().slideDown();
-	 		}
-	 	});
-	 });
+	 // $("#street-upper i.fa.fa-angle-up").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll').slideDown();
+	 // 	// prevControllers.hide();
+	 // 	scroll.animateTo(beforeStreetUpper-500, {
+	 // 		duration: mobileUpTime,
+	 // 		done: function(){
+	 // 			// prevControllers.slideDown();
+	 // 			// that.parent().slideDown();
+	 // 		}
+	 // 	});
+	 // });
 
-	 $("#skyline i.fa.fa-angle-up").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	// prevControllers.hide();
-	 	scroll.animateTo(afterStreetUpper, {
-	 		duration: mobileUpTime,
-	 		done: function(){
-	 			// prevControllers.slideDown();
-	 			// that.parent().slideDown();
-	 		}
-	 	});
-	 });
+	 // $("#skyline i.fa.fa-angle-up").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 // 	// prevControllers.hide();
+	 // 	scroll.animateTo(afterStreetUpper, {
+	 // 		duration: mobileUpTime,
+	 // 		done: function(){
+	 // 			// prevControllers.slideDown();
+	 // 			// that.parent().slideDown();
+	 // 		}
+	 // 	});
+	 // });
 
-	 $("#brick i.fa.fa-angle-up").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	// prevControllers.hide();
-	 	scroll.animateTo(afterSkyline, {
-	 		duration: mobileUpTime,
-	 		done: function(){
-	 			// prevControllers.slideDown();
-	 			// that.parent().slideDown();
-	 		}
-	 	});
-	 });
+	 // $("#brick i.fa.fa-angle-up").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 // 	// prevControllers.hide();
+	 // 	scroll.animateTo(afterSkyline, {
+	 // 		duration: mobileUpTime,
+	 // 		done: function(){
+	 // 			// prevControllers.slideDown();
+	 // 			// that.parent().slideDown();
+	 // 		}
+	 // 	});
+	 // });
 
-	 $("#nycave i.fa.fa-angle-up").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	// prevControllers.hide();
-	 	scroll.animateTo(afterBrick, {
-			duration: mobileUpTime,
-			done: function(){
-				// prevControllers.slideDown();
-				// that.parent().slideDown();
-			}
-	 	});
-	 });
+	 // $("#nycave i.fa.fa-angle-up").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 // 	// prevControllers.hide();
+	 // 	scroll.animateTo(afterBrick, {
+		// 	duration: mobileUpTime,
+		// 	done: function(){
+		// 		// prevControllers.slideDown();
+		// 		// that.parent().slideDown();
+		// 	}
+	 // 	});
+	 // });
 
-	 $("#street-lower i.fa.fa-angle-up").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	// prevControllers.hide();
-	 	scroll.animateTo(afterNycave, {
-			duration: mobileUpTime,
-			done: function(){
-				// prevControllers.slideDown();
-				// that.parent().slideDown();
-			}
-	 	});
-	 });
+	 // $("#street-lower i.fa.fa-angle-up").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 // 	// prevControllers.hide();
+	 // 	scroll.animateTo(afterNycave, {
+		// 	duration: mobileUpTime,
+		// 	done: function(){
+		// 		// prevControllers.slideDown();
+		// 		// that.parent().slideDown();
+		// 	}
+	 // 	});
+	 // });
 
-	 $("#fence i.fa.fa-angle-up").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	// prevControllers.hide();
-	 	scroll.animateTo(afterStreetLower, {
-			duration: mobileUpTime,
-			done: function(){
-				// prevControllers.slideDown();
-				// that.parent().slideDown();
-			}
-	 	});
-	 });
+	 // $("#fence i.fa.fa-angle-up").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 // 	// prevControllers.hide();
+	 // 	scroll.animateTo(afterStreetLower, {
+		// 	duration: mobileUpTime,
+		// 	done: function(){
+		// 		// prevControllers.slideDown();
+		// 		// that.parent().slideDown();
+		// 	}
+	 // 	});
+	 // });
 
-	 $("#bridge i.fa.fa-angle-up").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	// prevControllers.hide();
-	 	scroll.animateTo(afterFence, {
-			duration: mobileUpTime,
-			done: function(){
-				// prevControllers.slideDown();
-				// that.parent().slideDown();
-			}
-	 	});
-	 });
+	 // $("#bridge i.fa.fa-angle-up").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 // 	// prevControllers.hide();
+	 // 	scroll.animateTo(afterFence, {
+		// 	duration: mobileUpTime,
+		// 	done: function(){
+		// 		// prevControllers.slideDown();
+		// 		// that.parent().slideDown();
+		// 	}
+	 // 	});
+	 // });
 
-	 $("#taxi i.fa.fa-angle-up").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	// prevControllers.hide();
-	 	scroll.animateTo(afterBridge, {
-			duration: mobileUpTime,
-			done: function(){
-				// prevControllers.slideDown();
-				// that.parent().slideDown();
-			}
-	 	});
-	 });
+	 // $("#taxi i.fa.fa-angle-up").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 // 	// prevControllers.hide();
+	 // 	scroll.animateTo(afterBridge, {
+		// 	duration: mobileUpTime,
+		// 	done: function(){
+		// 		// prevControllers.slideDown();
+		// 		// that.parent().slideDown();
+		// 	}
+	 // 	});
+	 // });
 
-	 $("#outro i.fa.fa-angle-up").click(function() {
-	 	// $(this).parent().slideUp();
-	 	var that = $(this);
-	 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 	// prevControllers.hide();
-	 	scroll.animateTo(afterTaxi, {
-			duration: mobileUpTime,
-			done: function(){
-				// prevControllers.slideDown();
-				// that.parent().slideDown();
-			}
-	 	});
-	 });
+	 // $("#outro i.fa.fa-angle-up").click(function() {
+	 // 	// $(this).parent().slideUp();
+	 // 	var that = $(this);
+	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
+	 // 	// prevControllers.hide();
+	 // 	scroll.animateTo(afterTaxi, {
+		// 	duration: mobileUpTime,
+		// 	done: function(){
+		// 		// prevControllers.slideDown();
+		// 		// that.parent().slideDown();
+		// 	}
+	 // 	});
+	 // });
 
 
 	 var isPlaying = false;
@@ -523,7 +540,7 @@ $(document).ready(function () {
 		// $('.mobile-scroll').delay(1000).fadeIn(2000);
 		scroll.animateTo(beforeStreetUpper-500, {duration: 6000});
 	}
- 	setTimeout(animateIntro, 2000);
+ 	// setTimeout(animateIntro, 2000);
 
 
 

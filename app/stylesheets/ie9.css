@@ -3052,10 +3052,16 @@ footer #footer-content #intro-scroll .play:hover {
   width: 100%;
   height: 100px;
   position: fixed;
-  bottom: 0px;
+  bottom: 41px;
   background-color: #fff;
 }
-/* line 140, ../sass/_partials/_components/_panel10.scss */
+@media screen and (min-width: 450px) {
+  /* line 133, ../sass/_partials/_components/_panel10.scss */
+  #outro #closing {
+    bottom: 0px;
+  }
+}
+/* line 143, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p {
   text-align: center;
   font-size: 1rem;
@@ -3067,31 +3073,31 @@ footer #footer-content #intro-scroll .play:hover {
   padding: 0.4rem;
 }
 @media screen and (min-width: 800px) {
-  /* line 140, ../sass/_partials/_components/_panel10.scss */
+  /* line 143, ../sass/_partials/_components/_panel10.scss */
   #outro #closing p {
     position: absolute;
     text-align: left;
   }
 }
-/* line 153, ../sass/_partials/_components/_panel10.scss */
+/* line 156, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p > a {
   color: #015fd0;
   text-decoration: none;
 }
-/* line 156, ../sass/_partials/_components/_panel10.scss */
+/* line 159, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p > a:hover {
   text-decoration: underline;
 }
-/* line 161, ../sass/_partials/_components/_panel10.scss */
+/* line 164, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos {
   margin: auto;
 }
-/* line 163, ../sass/_partials/_components/_panel10.scss */
+/* line 166, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos #thinkeco-logo {
   margin-left: 20px;
 }
 @media screen and (min-width: 800px) {
-  /* line 161, ../sass/_partials/_components/_panel10.scss */
+  /* line 164, ../sass/_partials/_components/_panel10.scss */
   #outro #closing #logos {
     position: absolute;
     right: 0;

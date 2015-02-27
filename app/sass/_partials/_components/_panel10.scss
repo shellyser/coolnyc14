@@ -135,8 +135,11 @@
 		width: 100%;
 		height: 100px;
 		position: fixed;
-		bottom: 0px;
+		bottom: 41px;
 		background-color: $white;
+		@include break-min($main-break-nav){
+			bottom: 0px;
+		}
 		p {
 			text-align: center;
 			font-size: rem(1);
