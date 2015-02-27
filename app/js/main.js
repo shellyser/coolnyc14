@@ -37,35 +37,18 @@ $(document).ready(function () {
 	afterOutro = beforeOutro + panel;
 
 	var streetUpper = $("section#street-upper");
-	var downArray = [beforeStreetUpper-500, afterStreetUpper - 4000, afterStreetUpper, afterSkyline - 2200, afterSkyline, afterBrick, afterNycave, afterStreetLower-2200, afterStreetLower, afterFence, afterBridge - 3150, afterBridge, afterTaxi - 2600, afterTaxi, afterOutro + 1500],
-		upArray = [beforeStreetUpper-5800, beforeStreetUpper-500, afterStreetUpper - 4000, afterStreetUpper, afterSkyline - 2200, afterSkyline, afterBrick, afterNycave, afterStreetLower-2200, afterStreetLower, afterFence, afterBridge - 3150, afterBridge, afterTaxi - 2600, afterTaxi, afterOutro + 1500],
-		sectionCounter = 0;
-	var clickCounter = 0;
-
-	// $("#intro-scroll").click(function () {
-	//     var selectors = [ 2200 , 5700 ];
-	//     var position = document.body.scrollTop;
-	//     if(position >= selectors[0]){
-	//     	clickCounter++;
-	//     } 
-	//     if (clickCounter === 0){
-	//     	//animate
-	//     	$("html,body").animate({scrollTop: selectors[0] + 'px' }, 2000);
-	//     	clickCounter++;
-	//     }
-	//     else{
-	//     	$("html,body").animate({scrollTop: selectors[1] + 'px' }, {
-	//     		duration: 4000,
-	//     		easing: 'swing'
-	//     	});
-	//     	clickCounter = 0;
-	//     }
-	// });
-
+	var positionArray = [0, beforeStreetUpper-500, afterStreetUpper - 4000, afterStreetUpper, afterSkyline - 2200, afterSkyline, afterBrick, afterNycave, afterStreetLower-2200, afterStreetLower, afterFence, afterBridge - 3150, afterBridge, afterTaxi - 2600, afterTaxi, afterOutro + 1500],
+		positionCounter = 0;
 
 	var scroll = skrollr.init({
 		// scale: 2,
 		// forceHeight: false,
+		// mobileDeceleration: 0.001,
+		smoothScrolling: true,
+		smoothScrollingDuration: 100,
+		// mobileCheck: function(){
+		// 	return false;
+		// },
 		render: function(data) {
 	        //Debugging - Log the current scroll position.
 			// console.log(data.curTop); 
@@ -169,25 +152,54 @@ $(document).ready(function () {
 	 	scroll.animateTo(afterOutro + 5000, {duration: scrollTime});
 	 });
 
-	 $('body').on('touchmove', function(e) {
-	     e.preventDefault();
-	 });
+
+
+
 
 	 $(".mobile-scroll i.fa.fa-angle-down").click(function(){
-	 	if (clickCounter < 15){
-	 	scroll.animateTo(downArray[clickCounter], {duration: 4000});
-	 	clickCounter++;
-	 	console.log("after click: " + clickCounter);
+	 	checkMobilePosition();
+	 	if (positionCounter < 15){
+	 	positionCounter++;
+	 	scroll.animateTo(positionArray[positionCounter], {duration: 4000});
+	 		 	console.log("after click: " + positionCounter);
+
 		 }
 	 });
 
 	 $(".mobile-scroll i.fa.fa-angle-up").click(function(){
-	 	if (clickCounter > 0){
-	 	clickCounter--;
-	 	console.log("after click: " + clickCounter);
-	 	scroll.animateTo(upArray[clickCounter], {duration: 2000});
+	 	checkMobilePosition();
+
+	 	if (positionCounter > 0){
+	 	positionCounter--;
+	 	console.log("after click: " + positionCounter);
+	 	scroll.animateTo(positionArray[positionCounter], {duration: 2000});
 	 	}
 	 });
+
+	function checkMobilePosition(){
+		var touchScrollPosition = scroll.getScrollTop();
+		var currentPositionCounter = positionCounter;
+		var nextPositionCounter = currentPositionCounter + 1;
+		var i = 0;
+		if ((touchScrollPosition >= (positionArray[currentPositionCounter])) && (touchScrollPosition <= (positionArray[nextPositionCounter]))){
+			console.log("All is good");
+		}
+		else {		
+			if (touchScrollPosition > (positionArray[currentPositionCounter])){
+			   	//user scrolled down and now want to use the nav
+			   	while (positionArray[i] < touchScrollPosition){
+					i++;
+					console.log("Im in here: " + i);
+			   	}
+			   	console.log(i);
+			   	positionCounter = i-1;
+			}   	
+			//user scrolled up and now want to use the nav
+			else {
+				
+			}   	
+		}
+	}
 
 	 //mobile scroll down icon
 	 // $("#intro i.fa.fa-angle-down").click(function() {	 
