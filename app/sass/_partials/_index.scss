@@ -175,31 +175,32 @@ html, body {
         display: none;
     }
     span {
-	    width: 48%;
+	    width: 50%;
 	    display: inline-block;
 	    &:first-of-type{
 	    	border-right: 1px solid rgba(0,0,0,.1);
 	    }
     }
+    span:hover{
+    	
+    }
     i.fa{
     	padding-left: 20px;
     	padding-right: 20px;
     }
-    i.fa:hover{
-    	color: $color_blue;
-    	@include transition(color 0.5s ease-in)
-    }
+
     i.fa:active{
     	bottom: 0px;
     	@include transition(bottom 0.5s ease-in)
     }   
 }
-#intro .mobile-scroll{
-    display: block;
-    @include break-min($main-break-nav){
-        display: none;
-    }
+
+.active-mobile{
+	background-color: $color_blue;
+	@include opacity(.6);
+	color: $white;
+	@include transition(all 0.5s linear);
 }
-#outro .mobile-scroll{
-    top: 0px;
+.disabled-mobile{
+	color: $white;
 }

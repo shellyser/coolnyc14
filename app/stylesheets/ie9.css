@@ -3316,25 +3316,17 @@ html section, body section {
 }
 /* line 177, ../sass/_partials/_index.scss */
 .mobile-scroll span {
-  width: 48%;
+  width: 50%;
   display: inline-block;
 }
 /* line 180, ../sass/_partials/_index.scss */
 .mobile-scroll span:first-of-type {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 184, ../sass/_partials/_index.scss */
+/* line 187, ../sass/_partials/_index.scss */
 .mobile-scroll i.fa {
   padding-left: 20px;
   padding-right: 20px;
-}
-/* line 188, ../sass/_partials/_index.scss */
-.mobile-scroll i.fa:hover {
-  color: #0091d9;
-  -moz-transition: color 0.5s ease-in;
-  -o-transition: color 0.5s ease-in;
-  -webkit-transition: color 0.5s ease-in;
-  transition: color 0.5s ease-in;
 }
 /* line 192, ../sass/_partials/_index.scss */
 .mobile-scroll i.fa:active {
@@ -3345,20 +3337,21 @@ html section, body section {
   transition: bottom 0.5s ease-in;
 }
 
-/* line 197, ../sass/_partials/_index.scss */
-#intro .mobile-scroll {
-  display: block;
-}
-@media screen and (min-width: 450px) {
-  /* line 197, ../sass/_partials/_index.scss */
-  #intro .mobile-scroll {
-    display: none;
-  }
+/* line 198, ../sass/_partials/_index.scss */
+.active-mobile {
+  background-color: #0091d9;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  color: #fff;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
-/* line 203, ../sass/_partials/_index.scss */
-#outro .mobile-scroll {
-  top: 0px;
+/* line 204, ../sass/_partials/_index.scss */
+.disabled-mobile {
+  color: #fff;
 }
 
 /* line 5, ../sass/ie9.scss */

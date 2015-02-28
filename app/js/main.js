@@ -151,27 +151,52 @@ $(document).ready(function () {
 	 $("#to-outro").click(function() {
 	 	scroll.animateTo(afterOutro + 5000, {duration: scrollTime});
 	 });
-
-
-
-
-
-	 $(".mobile-scroll i.fa.fa-angle-down").click(function(){
-	 	if (positionCounter < 15){
-	 	positionCounter++;
-	 	scroll.animateTo(positionArray[positionCounter], {duration: 4000});
-	 		 	console.log("after click: " + positionCounter);
-
-		 }
-	 });
-
-	 $(".mobile-scroll i.fa.fa-angle-up").click(function(){
-	 	if (positionCounter > 0){
-	 	positionCounter--;
-	 	console.log("after click: " + positionCounter);
-	 	scroll.animateTo(positionArray[positionCounter], {duration: 2000});
+	 function disabledColor(){
+	 	if (positionCounter === 0){
+	 		$(".fa.fa-angle-up").addClass("disabled-mobile");
+	 	} 
+	 	if (positionCounter > 0) {
+	 		$(".fa.fa-angle-up").removeClass("disabled-mobile");
 	 	}
+	 	if (positionCounter === 15){
+	 		$(".fa.fa-angle-down").addClass("disabled-mobile");
+	 	}
+	 }
+	 
+	 $(".mobile-scroll span").click(function(){
+	 	var directionIcon = $(this).children()[0];
+	 	if (directionIcon.className === "fa fa-angle-down"){
+ 		 	if (positionCounter < 15){
+ 		 	$(this).addClass("active-mobile");
+ 		 	var that = $(this);
+ 		 	positionCounter++;
+ 		 	scroll.animateTo(positionArray[positionCounter], {
+ 		 			duration: 4000,
+ 		 			done: function(){
+ 		 				that.removeClass("active-mobile");
+ 		 				disabledColor();
+ 		 			}
+ 		 		});
+
+ 			 }
+ 			 console.log("after click: " + positionCounter);
+ 			} else{
+ 				if (positionCounter > 0){
+ 				$(this).addClass("active-mobile");
+ 				var that = $(this);
+ 				positionCounter--;
+ 				console.log("after click: " + positionCounter);
+ 				scroll.animateTo(positionArray[positionCounter], {
+ 						duration: 2000,
+ 						done: function(){
+ 							that.removeClass("active-mobile");
+ 						}
+ 					});
+ 				}
+ 			}
+	 	
 	 });
+
 
 	 $('body').on('touchmove', function(){
 	 	var touchScrollPosition = scroll.getScrollTop();
@@ -191,280 +216,6 @@ $(document).ready(function () {
 	 		   	positionCounter = i-1;
 	 		}   
 	 	});
-	// function checkMobilePosition(){
-	// 	var touchScrollPosition = scroll.getScrollTop();
-	// 	var currentPositionCounter = positionCounter;
-	// 	var nextPositionCounter = currentPositionCounter + 1;
-	// 	if ((touchScrollPosition >= (positionArray[currentPositionCounter])) && (touchScrollPosition <= (positionArray[nextPositionCounter]))){
-	// 		console.log("All is good");
-	// 	}
-	// 	else {	
-	// 		var i = 0;	
-	// 		   	//user scrolled down and now want to use the nav
-	// 		   	while (positionArray[i] < touchScrollPosition){
-	// 				i++;
-	// 				console.log("Im in here: " + i);
-	// 		   	}
-	// 		   	console.log(i);
-	// 		   	positionCounter = i-1;
-	// 		}   	
-	// 		//user scrolled up and now want to use the nav
-	
-	// };
-
-	 //mobile scroll down icon
-	 // $("#intro i.fa.fa-angle-down").click(function() {	 
-	 // 	// $(this).parent().slideUp();	
-	 // 	var that = $(this);
-	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 // 	// nextControllers.hide();
-	 // 	scroll.animateTo(afterStreetUpper, {
-		// 	duration: mobileTime + 10000,
-		// 	done: function(){
-		// 		// nextControllers.slideDown();
-		// 		// that.parent().slideDown();
-		// 	}
-	 // 	});
-	 // });
-
-	 // $("#street-upper i.fa.fa-angle-down").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 // 	// nextControllers.hide();
-	 // 	scroll.animateTo(afterSkyline, {
-	 // 		duration: mobileTime + 8000,
-	 // 		done: function(){
-	 // 			// nextControllers.slideDown();
-	 // 			// that.parent().slideDown();
-	 // 		}
-	 // 	});
-	 // });
-
-	 // $("#skyline i.fa.fa-angle-down").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 // 	// nextControllers.hide();
-	 // 	scroll.animateTo(afterBrick, {
-	 // 		duration: mobileTime - 4000,
-	 // 		done: function(){
-	 // 			// nextControllers.slideDown();
-	 // 			// that.parent().slideDown();
-	 // 		}
-	 // 	});
-	 // });
-
-	 // $("#brick i.fa.fa-angle-down").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 // 	// nextControllers.hide();
-	 // 	scroll.animateTo(afterNycave, {
-	 // 		duration: mobileTime - 4000,
-	 // 		done: function(){
-	 // 			// nextControllers.slideDown();
-	 // 			// that.parent().slideDown();
-	 // 		}
-	 // 	});
-	 // });
-
-	 // $("#nycave i.fa.fa-angle-down").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 // 	// nextControllers.hide();
-	 // 	scroll.animateTo(afterStreetLower, {
-	 // 		duration: mobileTime + 3500,
-	 // 		done: function(){
-	 // 			// nextControllers.slideDown();
-	 // 			// that.parent().slideDown();
-	 // 		}
-	 // 	});
-	 // });
-
-	 // $("#street-lower i.fa.fa-angle-down").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 // 	// nextControllers.hide();
-	 // 	scroll.animateTo(afterFence, {
-	 // 		duration: mobileTime - 4000,
-	 // 		done: function(){
-	 // 			// nextControllers.slideDown();
-	 // 			// that.parent().slideDown();
-	 // 		}
-	 // 	});
-	 // });
-
-	 // $("#fence i.fa.fa-angle-down").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 // 	// nextControllers.hide();
-	 // 	scroll.animateTo(afterBridge, {
-	 // 		duration: mobileTime + 1000,
-	 // 		done: function(){
-	 // 			// nextControllers.slideDown();
-	 // 			// that.parent().slideDown();
-	 // 		}
-	 // 	});
-	 // });
-
-	 // $("#bridge i.fa.fa-angle-down").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 // 	// nextControllers.hide();
-	 // 	scroll.animateTo(afterTaxi, {
-	 // 		duration: mobileTime - 1000,
-	 // 		done: function(){
-	 // 			// nextControllers.slideDown();
-	 // 			// that.parent().slideDown();
-	 // 		}
-	 // 	});
-	 // });
-
-	 // $("#taxi i.fa.fa-angle-down").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var nextControllers = that.closest('section').next('section').find('.mobile-scroll');
-	 // 	// nextControllers.hide();
-	 // 	scroll.animateTo(afterOutro + 1500, {
-	 // 		duration: mobileTime,
-	 // 		done: function(){
-	 // 			// nextControllers.slideDown();
-	 // 			// that.parent().slideDown();
-	 // 		}
-	 // 	});
-	 // });
-
-
-	 // $("#street-upper i.fa.fa-angle-up").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll').slideDown();
-	 // 	// prevControllers.hide();
-	 // 	scroll.animateTo(beforeStreetUpper-500, {
-	 // 		duration: mobileUpTime,
-	 // 		done: function(){
-	 // 			// prevControllers.slideDown();
-	 // 			// that.parent().slideDown();
-	 // 		}
-	 // 	});
-	 // });
-
-	 // $("#skyline i.fa.fa-angle-up").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 // 	// prevControllers.hide();
-	 // 	scroll.animateTo(afterStreetUpper, {
-	 // 		duration: mobileUpTime,
-	 // 		done: function(){
-	 // 			// prevControllers.slideDown();
-	 // 			// that.parent().slideDown();
-	 // 		}
-	 // 	});
-	 // });
-
-	 // $("#brick i.fa.fa-angle-up").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 // 	// prevControllers.hide();
-	 // 	scroll.animateTo(afterSkyline, {
-	 // 		duration: mobileUpTime,
-	 // 		done: function(){
-	 // 			// prevControllers.slideDown();
-	 // 			// that.parent().slideDown();
-	 // 		}
-	 // 	});
-	 // });
-
-	 // $("#nycave i.fa.fa-angle-up").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 // 	// prevControllers.hide();
-	 // 	scroll.animateTo(afterBrick, {
-		// 	duration: mobileUpTime,
-		// 	done: function(){
-		// 		// prevControllers.slideDown();
-		// 		// that.parent().slideDown();
-		// 	}
-	 // 	});
-	 // });
-
-	 // $("#street-lower i.fa.fa-angle-up").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 // 	// prevControllers.hide();
-	 // 	scroll.animateTo(afterNycave, {
-		// 	duration: mobileUpTime,
-		// 	done: function(){
-		// 		// prevControllers.slideDown();
-		// 		// that.parent().slideDown();
-		// 	}
-	 // 	});
-	 // });
-
-	 // $("#fence i.fa.fa-angle-up").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 // 	// prevControllers.hide();
-	 // 	scroll.animateTo(afterStreetLower, {
-		// 	duration: mobileUpTime,
-		// 	done: function(){
-		// 		// prevControllers.slideDown();
-		// 		// that.parent().slideDown();
-		// 	}
-	 // 	});
-	 // });
-
-	 // $("#bridge i.fa.fa-angle-up").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 // 	// prevControllers.hide();
-	 // 	scroll.animateTo(afterFence, {
-		// 	duration: mobileUpTime,
-		// 	done: function(){
-		// 		// prevControllers.slideDown();
-		// 		// that.parent().slideDown();
-		// 	}
-	 // 	});
-	 // });
-
-	 // $("#taxi i.fa.fa-angle-up").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 // 	// prevControllers.hide();
-	 // 	scroll.animateTo(afterBridge, {
-		// 	duration: mobileUpTime,
-		// 	done: function(){
-		// 		// prevControllers.slideDown();
-		// 		// that.parent().slideDown();
-		// 	}
-	 // 	});
-	 // });
-
-	 // $("#outro i.fa.fa-angle-up").click(function() {
-	 // 	// $(this).parent().slideUp();
-	 // 	var that = $(this);
-	 // 	var prevControllers = that.closest('section').prev('section').find('.mobile-scroll');
-	 // 	// prevControllers.hide();
-	 // 	scroll.animateTo(afterTaxi, {
-		// 	duration: mobileUpTime,
-		// 	done: function(){
-		// 		// prevControllers.slideDown();
-		// 		// that.parent().slideDown();
-		// 	}
-	 // 	});
-	 // });
 
 
 	 var isPlaying = false;
