@@ -199,7 +199,7 @@ html, body {
 	background-color: $color_blue;
 	@include opacity(.6);
 	color: $white;
-	@include transition(all 0.5s linear);
+	@include transition(all 0.5s ease-in-out);
 }
 .disabled-mobile{
 	color: $white;

@@ -1,4 +1,4 @@
-/* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -2161,10 +2161,11 @@ footer #footer-content #intro-scroll .play:hover {
   width: 100%;
   height: 100px;
   position: fixed;
-  bottom: 0px;
+  bottom: 41px;
   background-color: #fff;
+  bottom: 0px;
 }
-/* line 140, ../sass/_partials/_components/_panel10.scss */
+/* line 143, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p {
   text-align: center;
   font-size: 12px;
@@ -2177,22 +2178,22 @@ footer #footer-content #intro-scroll .play:hover {
   position: absolute;
   text-align: left;
 }
-/* line 153, ../sass/_partials/_components/_panel10.scss */
+/* line 156, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p > a {
   color: #015fd0;
   text-decoration: none;
 }
-/* line 156, ../sass/_partials/_components/_panel10.scss */
+/* line 159, ../sass/_partials/_components/_panel10.scss */
 #outro #closing p > a:hover {
   text-decoration: underline;
 }
-/* line 161, ../sass/_partials/_components/_panel10.scss */
+/* line 164, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos {
   margin: auto;
   position: absolute;
   right: 0;
 }
-/* line 163, ../sass/_partials/_components/_panel10.scss */
+/* line 166, ../sass/_partials/_components/_panel10.scss */
 #outro #closing #logos #thinkeco-logo {
   margin-left: 20px;
 }
@@ -2370,19 +2371,20 @@ html section, body section {
   display: none;
 }
 /* line 177, ../sass/_partials/_index.scss */
+.mobile-scroll span {
+  width: 50%;
+  display: inline-block;
+}
+/* line 180, ../sass/_partials/_index.scss */
+.mobile-scroll span:first-of-type {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 187, ../sass/_partials/_index.scss */
 .mobile-scroll i.fa {
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 181, ../sass/_partials/_index.scss */
-.mobile-scroll i.fa:hover {
-  color: #0091d9;
-  -moz-transition: color 0.5s ease-in;
-  -o-transition: color 0.5s ease-in;
-  -webkit-transition: color 0.5s ease-in;
-  transition: color 0.5s ease-in;
-}
-/* line 185, ../sass/_partials/_index.scss */
+/* line 192, ../sass/_partials/_index.scss */
 .mobile-scroll i.fa:active {
   bottom: 0px;
   -moz-transition: bottom 0.5s ease-in;
@@ -2391,15 +2393,22 @@ html section, body section {
   transition: bottom 0.5s ease-in;
 }
 
-/* line 190, ../sass/_partials/_index.scss */
-#intro .mobile-scroll {
-  display: block;
+/* line 198, ../sass/_partials/_index.scss */
+.active-mobile {
   display: none;
+  background-color: #0091d9;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  color: #fff;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-/* line 196, ../sass/_partials/_index.scss */
-#outro .mobile-scroll {
-  top: 0px;
+/* line 205, ../sass/_partials/_index.scss */
+.disabled-mobile {
+  color: #fff;
 }
 
 /* line 8, ../sass/ye-olde-ie.scss */

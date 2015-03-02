@@ -6,9 +6,9 @@ $(document).ready(function () {
 // snippet from http://justinhileman.info/article/a-jquery-widont-snippet/
 // for preventing widowed words.
 
-    $('h1,h2, #stats h5').each(function() {
-        $(this).html($(this).html().replace(/\s([^\s<]{0,10})\s*$/,'&nbsp;$1'));
-    });
+   $('h1,h2, #stats h5').each(function() {
+       $(this).html($(this).html().replace(/\s([^\s<]{0,10})\s*$/,'&nbsp;$1'));
+   });
 
 
 // for scrolling animations
@@ -43,7 +43,7 @@ $(document).ready(function () {
 	var scroll = skrollr.init({
 		// scale: 2,
 		// forceHeight: false,
-		// mobileDeceleration: 0.001,
+		mobileDeceleration: 0.001,
 		smoothScrolling: true,
 		smoothScrollingDuration: 100,
 		// mobileCheck: function(){
@@ -151,51 +151,57 @@ $(document).ready(function () {
 	 $("#to-outro").click(function() {
 	 	scroll.animateTo(afterOutro + 5000, {duration: scrollTime});
 	 });
+
 	 function disabledColor(){
 	 	if (positionCounter === 0){
 	 		$(".fa.fa-angle-up").addClass("disabled-mobile");
 	 	} 
-	 	if (positionCounter > 0) {
+	 	else if ((positionCounter > 0) && (positionCounter < 15)){
 	 		$(".fa.fa-angle-up").removeClass("disabled-mobile");
+	 		$(".fa.fa-angle-down").removeClass("disabled-mobile");
 	 	}
-	 	if (positionCounter === 15){
+	 	else {
 	 		$(".fa.fa-angle-down").addClass("disabled-mobile");
 	 	}
 	 }
 	 
-	 $(".mobile-scroll span").click(function(){
-	 	var directionIcon = $(this).children()[0];
-	 	if (directionIcon.className === "fa fa-angle-down"){
- 		 	if (positionCounter < 15){
- 		 	$(this).addClass("active-mobile");
- 		 	var that = $(this);
- 		 	positionCounter++;
- 		 	scroll.animateTo(positionArray[positionCounter], {
- 		 			duration: 4000,
- 		 			done: function(){
- 		 				that.removeClass("active-mobile");
- 		 				disabledColor();
- 		 			}
- 		 		});
-
- 			 }
- 			 console.log("after click: " + positionCounter);
- 			} else{
- 				if (positionCounter > 0){
- 				$(this).addClass("active-mobile");
- 				var that = $(this);
- 				positionCounter--;
- 				console.log("after click: " + positionCounter);
- 				scroll.animateTo(positionArray[positionCounter], {
- 						duration: 2000,
- 						done: function(){
- 							that.removeClass("active-mobile");
- 						}
- 					});
- 				}
- 			}
-	 	
-	 });
+	$(".mobile-scroll span").click(function(){
+		var directionIcon = $(this).children()[0].className;
+		var arrowDirection = directionIcon.split(" ")[0] + " " + directionIcon.split(" ")[1]; 
+		if (arrowDirection === "fa fa-angle-down"){
+			console.log("this is happening");
+			if (positionCounter < 15){
+				$(this).addClass("active-mobile").delay(1000).queue(function(){
+					$(this).removeClass("active-mobile").dequeue();
+				});
+				positionCounter++;
+				scroll.animateTo(positionArray[positionCounter], {
+					duration: 3000,
+					ease: 'linear',
+					done: function(){
+					disabledColor();
+					}
+				});
+			} 
+			console.log("after click: " + positionCounter);
+		} 
+		if (arrowDirection === "fa fa-angle-up"){
+			if (positionCounter > 0){
+				$(this).addClass("active-mobile").delay(1000).queue(function(){
+					$(this).removeClass("active-mobile").dequeue();
+				});
+				positionCounter--;
+				console.log("after click: " + positionCounter);
+				scroll.animateTo(positionArray[positionCounter], {
+					duration: 2000,
+					ease: 'linear',
+					done: function(){
+						disabledColor();
+					}
+				});
+			}
+		}	 	
+	});
 
 
 	 $('body').on('touchmove', function(){
@@ -210,10 +216,9 @@ $(document).ready(function () {
 	 		   	//user scrolled down and now want to use the nav
 	 		   	while (positionArray[i] < touchScrollPosition){
 	 				i++;
-	 				console.log("Im in here: " + i);
 	 		   	}
-	 		   	console.log(i);
 	 		   	positionCounter = i-1;
+	 		   	disabledColor();
 	 		}   
 	 	});
 
