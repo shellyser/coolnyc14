@@ -169,7 +169,6 @@ $(document).ready(function () {
 		var directionIcon = $(this).children()[0].className;
 		var arrowDirection = directionIcon.split(" ")[0] + " " + directionIcon.split(" ")[1]; 
 		if (arrowDirection === "fa fa-angle-down"){
-			console.log("this is happening");
 			if (positionCounter < 15){
 				$(this).addClass("active-mobile").delay(1000).queue(function(){
 					$(this).removeClass("active-mobile").dequeue();
@@ -183,7 +182,6 @@ $(document).ready(function () {
 					}
 				});
 			} 
-			console.log("after click: " + positionCounter);
 		} 
 		if (arrowDirection === "fa fa-angle-up"){
 			if (positionCounter > 0){
@@ -191,7 +189,6 @@ $(document).ready(function () {
 					$(this).removeClass("active-mobile").dequeue();
 				});
 				positionCounter--;
-				console.log("after click: " + positionCounter);
 				scroll.animateTo(positionArray[positionCounter], {
 					duration: 2000,
 					ease: 'linear',
@@ -204,24 +201,30 @@ $(document).ready(function () {
 	});
 
 
-	 $('body').on('touchmove', function(){
-	 	var touchScrollPosition = scroll.getScrollTop();
-	 	var currentPositionCounter = positionCounter;
-	 	var nextPositionCounter = currentPositionCounter + 1;
-	 	if ((touchScrollPosition >= (positionArray[currentPositionCounter])) && (touchScrollPosition <= (positionArray[nextPositionCounter]))){
-	 		console.log("All is good");
+	 
+	 $('body').on('touchmove', function(event){
+	 	if (scroll.isAnimatingTo()){
+	 		event.preventDefault();
+	 		console.log("Im here");
 	 	}
-	 	else {	
-	 		var i = 0;	
-	 		   	//user scrolled down and now want to use the nav
-	 		   	while (positionArray[i] < touchScrollPosition){
-	 				i++;
-	 		   	}
-	 		   	positionCounter = i-1;
-	 		   	disabledColor();
+	 	else{
+	 		var touchScrollPosition = scroll.getScrollTop();
+	 		var currentPositionCounter = positionCounter;
+	 		var nextPositionCounter = currentPositionCounter + 1;
+	 		if ((touchScrollPosition >= (positionArray[currentPositionCounter])) && (touchScrollPosition <= (positionArray[nextPositionCounter]))){
+	 			return true;
+	 		}
+	 		else {	
+	 			var i = 0;	
+ 			   	//user scrolled down and now want to use the nav
+ 			   	while (positionArray[i] < touchScrollPosition){
+ 					i++;
+ 			   	}
+ 			   	positionCounter = i-1;
+ 			   	disabledColor();
 	 		}   
-	 	});
-
+	 	} 	
+	 });
 
 	 var isPlaying = false;
 
