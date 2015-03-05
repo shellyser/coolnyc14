@@ -38,7 +38,8 @@ $(document).ready(function () {
 
 	var streetUpper = $("section#street-upper");
 	var positionArray = [0, beforeStreetUpper-500, afterStreetUpper - 4000, afterStreetUpper, afterSkyline - 2200, afterSkyline, afterBrick, afterNycave, afterStreetLower-2200, afterStreetLower, afterFence, afterBridge - 3150, afterBridge, afterTaxi - 2600, afterTaxi, afterOutro + 1500],
-		positionCounter = 0;
+		positionCounter = 0, 
+		touchscroll = false;
 
 	var scroll = skrollr.init({
 		// scale: 2,
@@ -168,6 +169,26 @@ $(document).ready(function () {
 	$(".mobile-scroll span").click(function(){
 		var directionIcon = $(this).children()[0].className;
 		var arrowDirection = directionIcon.split(" ")[0] + " " + directionIcon.split(" ")[1]; 
+		//if touch scrolling took place make sure at the end of the scroll counter is at the right position
+		// if (touchscroll){
+	 // 		var touchScrollPosition = scroll.getScrollTop();
+	 // 		var currentPositionCounter = positionCounter;
+	 // 		var nextPositionCounter = currentPositionCounter + 1;
+	 // 		if ((touchScrollPosition >= (positionArray[currentPositionCounter])) && (touchScrollPosition <= (positionArray[nextPositionCounter]))){
+	 // 			return true;
+	 // 		}
+	 // 		else {	
+	 // 			var i = 0;	
+		// 	   	//user scrolled down and now want to use the nav
+		// 	   	while (positionArray[i] < touchScrollPosition){
+		// 			i++;
+		// 	   	}
+		// 	   	positionCounter = i-1;
+		// 	   	disabledColor();
+	 // 		}   
+	 // 		touchscroll = false;
+		// }
+		//down arrow button was clicked
 		if (arrowDirection === "fa fa-angle-down"){
 			if (positionCounter < 15){
 				$(this).addClass("active-mobile").delay(1000).queue(function(){
@@ -183,6 +204,7 @@ $(document).ready(function () {
 				});
 			} 
 		} 
+		//up arrow button was clicked
 		if (arrowDirection === "fa fa-angle-up"){
 			if (positionCounter > 0){
 				$(this).addClass("active-mobile").delay(1000).queue(function(){
@@ -201,8 +223,9 @@ $(document).ready(function () {
 	});
 
 
-	 
+	 //mobile touch scroll detection, updating of counter
 	 $('body').on('touchmove', function(event){
+	 	touchscroll = true;
 	 	if (scroll.isAnimatingTo()){
 	 		event.preventDefault();
 	 		console.log("Im here");
@@ -227,7 +250,7 @@ $(document).ready(function () {
 	 });
 
 	 var isPlaying = false;
-
+	 //mobile nav detection
 	 $("#play, #intro-play").click(function() {
 	 	if (!isPlaying){
 	 		isPlaying = true;
