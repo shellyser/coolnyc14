@@ -170,24 +170,25 @@ $(document).ready(function () {
 		var directionIcon = $(this).children()[0].className;
 		var arrowDirection = directionIcon.split(" ")[0] + " " + directionIcon.split(" ")[1]; 
 		//if touch scrolling took place make sure at the end of the scroll counter is at the right position
-		// if (touchscroll){
-	 // 		var touchScrollPosition = scroll.getScrollTop();
-	 // 		var currentPositionCounter = positionCounter;
-	 // 		var nextPositionCounter = currentPositionCounter + 1;
-	 // 		if ((touchScrollPosition >= (positionArray[currentPositionCounter])) && (touchScrollPosition <= (positionArray[nextPositionCounter]))){
-	 // 			return true;
-	 // 		}
-	 // 		else {	
-	 // 			var i = 0;	
-		// 	   	//user scrolled down and now want to use the nav
-		// 	   	while (positionArray[i] < touchScrollPosition){
-		// 			i++;
-		// 	   	}
-		// 	   	positionCounter = i-1;
-		// 	   	disabledColor();
-	 // 		}   
-	 // 		touchscroll = false;
-		// }
+		if (touchscroll){
+	 		var touchScrollPosition = scroll.getScrollTop();
+	 		var currentPositionCounter = positionCounter;
+	 		var nextPositionCounter = currentPositionCounter + 1;
+	 		if ((touchScrollPosition >= (positionArray[currentPositionCounter])) && (touchScrollPosition <= (positionArray[nextPositionCounter]))){
+	 			touchscroll = false;
+	 			return true;
+	 		}
+	 		else {	
+	 			var i = 0;	
+			   	//user scrolled down and now want to use the nav
+			   	while (positionArray[i] < touchScrollPosition){
+					i++;
+			   	}
+			   	positionCounter = i-1;
+			   	disabledColor();
+	 		}   
+	 		touchscroll = false;
+		}
 		//down arrow button was clicked
 		if (arrowDirection === "fa fa-angle-down"){
 			if (positionCounter < 15){
@@ -221,7 +222,10 @@ $(document).ready(function () {
 			}
 		}	 	
 	});
-
+	
+	if (scroll.getScrollTop() >= afterOutro){
+		// disabledColor();
+	}
 
 	 //mobile touch scroll detection, updating of counter
 	 $('body').on('touchmove', function(event){
@@ -235,6 +239,7 @@ $(document).ready(function () {
 	 		var currentPositionCounter = positionCounter;
 	 		var nextPositionCounter = currentPositionCounter + 1;
 	 		if ((touchScrollPosition >= (positionArray[currentPositionCounter])) && (touchScrollPosition <= (positionArray[nextPositionCounter]))){
+	 			disabledColor();
 	 			return true;
 	 		}
 	 		else {	
@@ -250,7 +255,7 @@ $(document).ready(function () {
 	 });
 
 	 var isPlaying = false;
-	 //mobile nav detection
+	 //non-mobile nav 
 	 $("#play, #intro-play").click(function() {
 	 	if (!isPlaying){
 	 		isPlaying = true;
